@@ -13,9 +13,10 @@ The following hosts must be in the environment's network egress allowlist:
 - `news.ycombinator.com`
 - `hacker-news.firebaseio.com`
 
-## Target Slack channel
+## Target Slack destination
 - **Workspace**: vetto-ai.slack.com
-- **Channel**: TBD (ask user — options: `#general` C04GP0BUNQ2, `#agents-general` C0AKGP05B6J)
+- **Delivery**: DM to Giulia Federighi (user_id: `U0AJKBAQ29H`)
+- Use `user_id` as `channel_id` when calling `slack_send_message`
 
 ## How it works
 1. Fetch the top 30 stories from HN front page
@@ -50,7 +51,7 @@ Track questions asked and answers received to evolve these instructions.
 
 | Date | Question asked | Answer |
 |------|---------------|--------|
-| 2026-06-15 | Which Slack channel? | — |
+| 2026-06-15 | Which Slack channel? | DM to self (U0AJKBAQ29H) |
 | 2026-06-15 | Timezone for 8am? | — |
 | 2026-06-15 | Fixed themes or auto-detect? | — |
 | 2026-06-15 | How many stories per theme? | — |
