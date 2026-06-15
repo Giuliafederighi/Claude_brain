@@ -8,11 +8,25 @@ Every day at 8am Brasília time, this routine:
 4. Logs what was covered and waits for feedback to improve the next session
 
 ## How Themes Are Selected
-- Aim for variety: not all 5 themes should be AI/LLM. Mix in science, programming culture, open source, security, society/philosophy.
-- Prioritize stories that sparked large HN comment threads (discussion = community interest).
-- Prefer stories that have a "why does this matter to a smart generalist?" angle — not just news summaries.
-- Avoid pure press-release stories with no substance.
-- Always include at least one non-tech human interest or science story if available.
+
+### Priority topics (fill as many of the 5 slots as possible with these):
+1. **Model updates & releases** — new models, version bumps, capability announcements (any lab)
+2. **Benchmarks & evals** — new benchmark results, leaderboard changes, eval methodology debates
+3. **Data: training & labeling** — datasets released, synthetic data approaches, labeling pipelines, RLHF/RLAIF
+4. **AI research papers** — notable arXiv/NeurIPS/ICML/ICLR papers, new techniques, findings that shift understanding
+5. **AI infrastructure & tooling** — frameworks, inference optimization, fine-tuning tools (only if closely tied to the above)
+
+### Topics to deprioritize or avoid:
+- Security / cybercrime (max 1 slot, only if extremely significant — otherwise skip)
+- Robotics, biology, autonomous science (not a focus area)
+- Market trend commentary, startup funding, hiring
+- Society/philosophy essays about AI
+- Open source for its own sake (only include if it's a meaningful model or dataset release)
+
+### Other rules:
+- Prioritize stories that sparked large HN comment threads (community discussion = real signal).
+- Prefer stories with concrete numbers: parameter counts, benchmark scores, dataset sizes.
+- If a day is slow on AI papers, use a second model release or a strong eval story instead.
 
 ## Fetching Strategy
 - Direct HN fetch often returns 403. Workaround: use WebSearch for `hacker news [date]`, then fetch linked aggregators.
@@ -37,13 +51,14 @@ Every day at 8am Brasília time, this routine:
 4. Biology experiment compiler for robots (autonomous science)
 5. Market shift from flashy AI demos to trust/auditability
 
-**Status:** Sent ✅ — waiting for user feedback.
+**Status:** Sent ✅
 
-**Open questions for Giulia:**
-- Was the security-heavy weighting right (2 out of 5 themes were security)? Or prefer 1 max?
-- Should "Ask HN" community discussions count as a theme, or only external news?
-- Prefer more startup/YC news? More science? More programming/tools?
-- Any topics to always avoid (e.g. pure hiring posts, crypto)?
+**Feedback received (2026-06-15):**
+- Theme 1 (model/code news) was good ✅
+- Themes 2–5 not interesting ❌
+- Wanted instead: model updates, benchmarks, data training/labeling, AI papers
+- Security: too heavy, deprioritize
+- Instructions updated accordingly for next session.
 
 ---
 
@@ -51,5 +66,7 @@ Every day at 8am Brasília time, this routine:
 _(This section grows with each feedback round)_
 
 - [ ] Try HN RSS feed as fetching fallback: `https://hnrss.org/frontpage`
+- [ ] Also search arXiv for AI papers discussed on HN: `site:arxiv.org hacker news [date]`
+- [ ] Search `llm-stats.com/ai-news` and `huggingface.co/blog` for model/benchmark releases
 - [ ] Track which themes repeat too often and force variety across days
 - [ ] Add a "most-discussed" metric (comment count) as selection signal
