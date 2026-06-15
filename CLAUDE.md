@@ -11,7 +11,7 @@ Instructions grow over time as the user provides feedback.
 ### 1. HackerNews Morning Brief
 
 **Schedule:** Daily at 8am  
-**Slack channel:** `#00-updates` (ID: `C0AGY6WG55K`)  
+**Slack channel:** `#daily-ai-news` (ID: `C0BAAEKT6G7`)  
 **Source:** https://news.ycombinator.com/news  
 **Data source (fallback):** GitHub issue tracker at `github.com/luoyunchong/actions` — fetch today's "Hacker News Daily Top 10 YYYY-MM-DD" issue via WebFetch  
 
@@ -35,7 +35,7 @@ Instructions grow over time as the user provides feedback.
 
 3. Write each theme section in **natural, conversational language** — as if briefing a smart colleague who doesn't want to read 30 links. One short paragraph per story (2-4 sentences max). Always include the link and point/comment counts.
 
-4. Send the message to `#00-updates` using `mcp__Slack__slack_send_message`.
+4. Send the message to `#daily-ai-news` using `mcp__Slack__slack_send_message`.
 
 5. End the message with:  
    `_Sent by your Claude Code morning brief · Source: Hacker News front page_`  
@@ -56,7 +56,7 @@ Instructions grow over time as the user provides feedback.
 ## Open Questions for the User
 
 These questions are waiting for your answer to help improve future runs.
-Reply in `#00-updates` or edit this file directly.
+Reply in `#daily-ai-news` or edit this file directly.
 
 **Q1.** Should the brief cover all top 10 stories each day, or only the ones with the most discussion (e.g., >100 comments)?
 
@@ -85,3 +85,4 @@ None yet.
 | Date | Change |
 |------|--------|
 | 2026-06-15 | Initial setup. First run completed. 10 stories, 7 themes. |
+| 2026-06-15 | Corrected Slack channel: use `#daily-ai-news` (C0BAAEKT6G7), never `#00-updates`. |
