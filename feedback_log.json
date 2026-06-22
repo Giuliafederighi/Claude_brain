@@ -1,0 +1,58 @@
+{
+  "preferences": {
+    "prefer_topics": [
+      "AI/ML model releases",
+      "agentic AI and dev tooling",
+      "open-source releases",
+      "security with developer impact",
+      "industry-structure shifts (acquisitions, pricing, regulation)"
+    ],
+    "avoid_topics": [],
+    "language": "natural, conversational — explain WHY it matters",
+    "themes_per_source": 5
+  },
+  "sessions": [
+    {
+      "date": "2026-06-22",
+      "slack_channel_id": "C0BAAEKT6G7",
+      "threads": {
+        "hacker_news": "1782126367.007609",
+        "github_trending": "1782126423.823679",
+        "hugging_face": "1782126438.657629",
+        "x_twitter": "1782126458.566269"
+      },
+      "feedback_dm_ts": "1782126481.613819",
+      "themes_posted": {
+        "hacker_news": [
+          "SpaceX buys Cursor for $60B",
+          "Anthropic files for IPO",
+          "Meta $100B AMD chip deal",
+          "GitHub Copilot metered billing",
+          "Apple A12/A13 SecureROM exploit"
+        ],
+        "github_trending": [
+          "OpenMontage — agentic video production",
+          "voicebox — open-source AI voice studio",
+          "gstack — Claude Code power-user toolkit",
+          "hyperframes — HTML to video for agents",
+          "deer-flow — ByteDance long-horizon agent framework"
+        ],
+        "hugging_face": [
+          "Falcon-H1: hybrid architecture beats scale",
+          "Reasoning beyond limits — survey",
+          "AI4Research — AI for scientific research",
+          "LLMs as autonomous agents — state of the art",
+          "IVD — real-time face-to-face AI benchmark"
+        ],
+        "x_twitter": [
+          "SpaceX + Cursor developer implications",
+          "Anthropic export controls — first regulatory emergency",
+          "Xiaomi MiMo-V2-Pro reasoning model",
+          "Meta AMD deal — Nvidia pressure",
+          "GitHub Copilot pricing — indie dev backlash"
+        ]
+      },
+      "feedback": null
+    }
+  ]
+}
