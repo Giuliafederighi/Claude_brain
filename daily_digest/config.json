@@ -1,0 +1,96 @@
+{
+  "version": "1.0",
+  "channel_id": "C0BAAEKT6G7",
+  "channel_name": "daily-ai-news",
+  "schedule": "11:00 UTC (08:00 Brasília)",
+  "message_prefix": "🗞️ Daily AI Digest",
+  "sources": {
+    "hacker_news": {
+      "status": "blocked",
+      "note": "news.ycombinator.com and hacker-news.firebaseio.com blocked by egress proxy policy. Using GitHub tech discussion as substitute until policy is updated.",
+      "fallback": "github_tech",
+      "domains_to_unblock": ["news.ycombinator.com", "hacker-news.firebaseio.com", "hn.algolia.com"]
+    },
+    "github_tech": {
+      "status": "active",
+      "url": "https://github.com/trending",
+      "mcp_query_template": "pushed:>{DATE-2days} stars:>50 topic:ai OR topic:llm OR topic:agent",
+      "display_name": "Hacker News / GitHub Tech"
+    },
+    "github_trending": {
+      "status": "active",
+      "url": "https://github.com/trending",
+      "display_name": "GitHub Trending"
+    },
+    "huggingface_models": {
+      "status": "active",
+      "mcp_tools": ["hub_repo_search", "space_search"],
+      "search_rotation": ["text generation", "multimodal", "reasoning", "code generation", "vision"],
+      "display_name": "HuggingFace Models & Spaces"
+    },
+    "huggingface_papers": {
+      "status": "active",
+      "mcp_tools": ["paper_search"],
+      "search_terms": ["large language model agent", "machine learning", "diffusion model", "reinforcement learning", "multimodal"],
+      "display_name": "HuggingFace Research Papers"
+    },
+    "x_twitter": {
+      "status": "blocked",
+      "note": "twitter.com/x.com blocked by egress proxy policy. Using HuggingFace Papers as substitute until policy is updated.",
+      "fallback": "huggingface_papers",
+      "domains_to_unblock": ["twitter.com", "x.com", "api.twitter.com"]
+    }
+  },
+  "feedback_history": [],
+  "preferences": {
+    "explanation_style": "natural_language",
+    "audience": "non_technical_but_curious",
+    "topics_to_emphasize": [],
+    "topics_to_avoid": [],
+    "max_jargon_level": "low",
+    "theme_format": "title_plus_2_3_sentences_why_it_matters"
+  },
+  "last_runs": [
+    {
+      "date": "2026-06-24",
+      "themes_used": {
+        "github_tech": [
+          "AI video production goes fully open-source (OpenMontage)",
+          "Apple builds its own container tool — in Swift",
+          "ByteDance's super-agent tackles hours-long tasks (deer-flow)",
+          "Stock market analysis gets an AI brain",
+          "Google proposes a standard way to describe design to AI (design.md)"
+        ],
+        "github_trending": [
+          "The hermes-agent project just crossed 201,000 stars",
+          "Open WebUI hits 142,000 stars — private AI use is booming",
+          "LlamaFactory makes fine-tuning any AI model a one-click job",
+          "ComfyUI — the Photoshop of AI image generation",
+          "deer-flow — ByteDance's research-to-product agent"
+        ],
+        "huggingface_models": [
+          "Seeing + reading + reasoning in one model is now the standard (Qwen3 VL)",
+          "Google's Gemma 4 joins the multimodal race — open-source",
+          "Liquid AI's alternative to the transformer is gaining traction",
+          "AI emotional support is becoming a product category",
+          "Uncensored AI models are a thriving open-source niche"
+        ],
+        "huggingface_papers": [
+          "An AI model redesigned its own training — and beat GPT",
+          "AI reduces materials science experiments by 90% (MASTER)",
+          "AI agent teams have a groupthink problem",
+          "Writing AI plans as code cuts costs by 55-87% (CodeAgents)",
+          "AI that watches long videos the smart way (LongVideo-R1)"
+        ]
+      },
+      "feedback_received": null,
+      "slack_ts": {
+        "github_tech_parent": "1782299422.075059",
+        "github_trending_parent": "1782299442.741269",
+        "hf_models_parent": "1782299460.776629",
+        "hf_papers_parent": "1782299479.741309",
+        "feedback_message": "1782299503.058309"
+      }
+    }
+  ]
+}
