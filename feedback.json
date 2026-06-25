@@ -1,0 +1,39 @@
+{
+  "last_run": "2026-06-24",
+  "last_feedback_checked": "2026-06-25",
+  "user_feedback": [],
+  "active_preferences": {
+    "prioritize": [
+      "open-source model releases",
+      "practical AI tools and workflows",
+      "business strategy (who's winning, who's losing)",
+      "AI agents and autonomous systems",
+      "research with clear real-world application"
+    ],
+    "deprioritize": [
+      "pure benchmark comparisons with no context",
+      "highly technical ML theory without accessible angle"
+    ],
+    "always_include": [],
+    "always_exclude": [],
+    "notes": "No explicit feedback received yet — using default preferences based on observed channel content and user profile."
+  },
+  "history": [
+    {
+      "date": "2026-06-22",
+      "sources_posted": ["Hacker News", "GitHub Trending", "Hugging Face", "X/Twitter"],
+      "feedback_received": false
+    },
+    {
+      "date": "2026-06-23",
+      "sources_posted": ["Hacker News", "GitHub Trending", "Hugging Face Models", "Hugging Face Papers", "X/Twitter"],
+      "feedback_received": false
+    },
+    {
+      "date": "2026-06-24",
+      "sources_posted": ["GitHub Tech (HN blocked)", "GitHub Trending", "Hugging Face Models", "Hugging Face Papers"],
+      "feedback_received": false,
+      "notes": "HN and X/Twitter were blocked. Substituted with GitHub Tech search. User was notified in the feedback message."
+    }
+  ]
+}
