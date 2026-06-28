@@ -1,0 +1,14 @@
+{
+  "slack_channel_id": "C0BAAEKT6G7",
+  "feedback_user_id": "U0AJKBAQ29H",
+  "schedule": "8am Brasilia (BRT = UTC-3 = 11am UTC)",
+  "cron_utc": "3 11 * * *",
+  "sources": ["hackernews", "github", "huggingface", "x_twitter"],
+  "stories_per_source": 5,
+  "thread_prefixes": {
+    "hackernews": "[HN] 🗞️",
+    "github": "[GH] ⭐",
+    "huggingface": "[HF] 🤗",
+    "x_twitter": "[X] 🐦"
+  }
+}
