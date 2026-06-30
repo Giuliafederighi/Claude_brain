@@ -1,0 +1,44 @@
+name: Daily AI News Digest
+
+on:
+  schedule:
+    # 11:00 UTC = 8:00 BRT (Brasília Standard Time, UTC-3)
+    - cron: '0 11 * * *'
+  workflow_dispatch:   # manual trigger for testing
+
+permissions:
+  contents: write      # needed to commit updated preferences.json
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r daily_news/requirements.txt
+
+      - name: Run daily digest
+        run: python daily_news/digest.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SLACK_BOT_TOKEN:   ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID:  ${{ secrets.SLACK_CHANNEL_ID }}
+          SLACK_USER_ID:     ${{ secrets.SLACK_USER_ID }}
+
+      # Commit preferences.json back if the digest updated it (e.g. after reading feedback)
+      - name: Commit updated preferences
+        run: |
+          git config user.name  "Claude Brain Bot"
+          git config user.email "bot@vetto.ai"
+          git add daily_news/preferences.json
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update digest preferences from user feedback [skip ci]"
+            git push origin HEAD
+          fi
