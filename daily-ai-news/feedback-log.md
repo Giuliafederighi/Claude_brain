@@ -24,18 +24,23 @@ simulator control, CopilotKit's OpenTag, agentic crypto/digital-humans
 (2026-07-01) · OpenMontage agentic video, LLM stock analysis, ByteDance
 deer-flow, codebase-memory MCP, agent harness optimizers (2026-06-23)
 
-**Hugging Face**: _(see 2026-07-02 entry below once posted)_ · Baidu OCR
-breakout, GLM-5.2 cross-platform buzz, small reasoning models (Ornith),
-Qwen's agent world-model, faster image gen (Krea-2) (2026-07-01) ·
-open-weight rankings, SLMs for agents, Ptah deep research, embedding model
-dominance, LTX 2.3 video (2026-06-23)
+**Hugging Face**: DeepSeek V4 million-token context models, Meituan's
+LongCat-2.0 ("Owl Alpha" reveal), Nvidia LocateAnything-3B, XDOF's open
+ABC-130k robot dataset, open-source Fable 5 distillation efforts
+(2026-07-02) · Baidu OCR breakout, GLM-5.2 cross-platform buzz, small
+reasoning models (Ornith), Qwen's agent world-model, faster image gen
+(Krea-2) (2026-07-01) · open-weight rankings, SLMs for agents, Ptah deep
+research, embedding model dominance, LTX 2.3 video (2026-06-23)
 
-**X / Twitter**: _(see 2026-07-02 entry below once posted)_ · Google's $40B
-Anthropic stake + Gemini everywhere, Anthropic vs OpenAI valuation/IPO
-race, SpaceX-Reflection AI compute deal, Colorado AI Act enforcement,
-export-controls-vs-open-weights standoff (2026-07-01) · AutoScientist
-challenge, Qualcomm/Tenstorrent acquisition talk, Reflection AI compute
-spend, orbital data centers, physics-aware AI (2026-06-23)
+**X / Twitter**: Claude Sonnet 5 price war, OpenAI's Sol/Terra/Luna naming
+meme collision with Solana, Google losing Jumper (to Anthropic) and
+Shazeer (to OpenAI), Together AI's $800M raise, AI-linked tech/finance
+layoffs data (2026-07-02) · Google's $40B Anthropic stake + Gemini
+everywhere, Anthropic vs OpenAI valuation/IPO race, SpaceX-Reflection AI
+compute deal, Colorado AI Act enforcement, export-controls-vs-open-weights
+standoff (2026-07-01) · AutoScientist challenge, Qualcomm/Tenstorrent
+acquisition talk, Reflection AI compute spend, orbital data centers,
+physics-aware AI (2026-06-23)
 
 ## Entries
 
@@ -57,7 +62,9 @@ spend, orbital data centers, physics-aware AI (2026-06-23)
   it wasn't part of what was asked and caused missed-day gaps when the
   source email hadn't arrived by run time. Flagging both as open questions
   below. Today's digest (HN/GitHub/HF/X, 5 themes each) posted using this
-  playbook's format for the first time.
+  playbook's format for the first time, plus a feedback-request message
+  that explicitly asks for a text reply in-thread (not just a reaction)
+  and asks specific, answerable questions instead of an open "how was it?".
 
 ## Open questions for Giulia (carry forward until answered)
 
