@@ -7,40 +7,46 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Claude Code steganographic request-tagging controversy,
-Anthropic Sonnet 5 launch, Godot banning AI-written contributions,
-Anthropic Fable 5 export-ban reversal, "SpudCell" synthetic-cell research
-(2026-07-02) · computer-use in cheap models, Anthropic's data-center
-outreach, GLM-5.2 as open-agent step change, Fable 5's mid-tier coding
-score, "is AI slowing down?" debate (2026-07-01) · local model maturity,
-GLM-5.2 open release, Squidbleed vulnerability, Android dev identity
-enforcement, GPT-5.5-Cyber (2026-06-23)
+**Hacker News**: Pentagon-Anthropic court emails (DoD dispute), "Bad Epoll"
+Linux kernel root exploit, DuneSlide zero-click RCE in Cursor IDE, 3 US
+mini nuclear reactors hitting criticality, North Korea npm/Rollup supply
+chain attack (2026-07-04) · Claude Code steganographic request-tagging
+controversy, Anthropic Sonnet 5 launch, Godot banning AI-written
+contributions, Anthropic Fable 5 export-ban reversal, "SpudCell"
+synthetic-cell research (2026-07-02) · computer-use in cheap models,
+Anthropic's data-center outreach, GLM-5.2 as open-agent step change, Fable
+5's mid-tier coding score, "is AI slowing down?" debate (2026-07-01)
 
-**GitHub Trending**: Strix (AI pentesting agents), OmniRoute (multi-model
-API gateway), Hermes Agent (self-hosted personal AI assistant), Agency
-Agents (pre-built AI persona library), Google's agents-cli (2026-07-02) ·
+**GitHub Trending**: leaked AI system-prompt archive (system_prompts_leaks),
+Chrome DevTools MCP for coding agents, Alibaba's page-agent (web GUI
+agent), Immich self-hosted photo AI, token-diet (token-efficiency skill)
+(2026-07-04) · Strix (AI pentesting agents), OmniRoute (multi-model API
+gateway), Hermes Agent (self-hosted personal AI assistant), Agency Agents
+(pre-built AI persona library), Google's agents-cli (2026-07-02) ·
 speculative decoding (DeepSpec), self-learning agent skills, mobile
 simulator control, CopilotKit's OpenTag, agentic crypto/digital-humans
-(2026-07-01) · OpenMontage agentic video, LLM stock analysis, ByteDance
-deer-flow, codebase-memory MCP, agent harness optimizers (2026-06-23)
+(2026-07-01)
 
-**Hugging Face**: DeepSeek V4 million-token context models, Meituan's
+**Hugging Face**: Qwythos-9B (#1 trending Claude/Mythos-5 distillation
+model), Metacognition-Bench (self-doubt benchmark), Nvidia's Qwen3.6-27B
+FP4 quantization, smolagents real-time voice Space, DeepSeek-V4-Pro-DSpark
+FP8 (2026-07-04) · DeepSeek V4 million-token context models, Meituan's
 LongCat-2.0 ("Owl Alpha" reveal), Nvidia LocateAnything-3B, XDOF's open
 ABC-130k robot dataset, open-source Fable 5 distillation efforts
 (2026-07-02) · Baidu OCR breakout, GLM-5.2 cross-platform buzz, small
 reasoning models (Ornith), Qwen's agent world-model, faster image gen
-(Krea-2) (2026-07-01) · open-weight rankings, SLMs for agents, Ptah deep
-research, embedding model dominance, LTX 2.3 video (2026-06-23)
+(Krea-2) (2026-07-01)
 
-**X / Twitter**: Claude Sonnet 5 price war, OpenAI's Sol/Terra/Luna naming
-meme collision with Solana, Google losing Jumper (to Anthropic) and
-Shazeer (to OpenAI), Together AI's $800M raise, AI-linked tech/finance
-layoffs data (2026-07-02) · Google's $40B Anthropic stake + Gemini
-everywhere, Anthropic vs OpenAI valuation/IPO race, SpaceX-Reflection AI
-compute deal, Colorado AI Act enforcement, export-controls-vs-open-weights
-standoff (2026-07-01) · AutoScientist challenge, Qualcomm/Tenstorrent
-acquisition talk, Reflection AI compute spend, orbital data centers,
-physics-aware AI (2026-06-23)
+**X / Twitter**: Pentagon-Anthropic emails reaction, Claude-vs-Grok
+simulated-society study, $217B of $510B H1 2026 VC funding going to
+OpenAI+Anthropic, Anthropic-Samsung custom chip talks, nuclear reactor
+criticality timing (2026-07-04) · Claude Sonnet 5 price war, OpenAI's
+Sol/Terra/Luna naming meme collision with Solana, Google losing Jumper (to
+Anthropic) and Shazeer (to OpenAI), Together AI's $800M raise, AI-linked
+tech/finance layoffs data (2026-07-02) · Google's $40B Anthropic stake +
+Gemini everywhere, Anthropic vs OpenAI valuation/IPO race, SpaceX-Reflection
+AI compute deal, Colorado AI Act enforcement, export-controls-vs-open-weights
+standoff (2026-07-01)
 
 ## Entries
 
@@ -65,6 +71,23 @@ physics-aware AI (2026-06-23)
   playbook's format for the first time, plus a feedback-request message
   that explicitly asks for a text reply in-thread (not just a reaction)
   and asks specific, answerable questions instead of an open "how was it?".
+
+- **2026-07-04**: Ran the 4-source digest per `PLAYBOOK.md` (no format changes
+  needed — today's session request from Giulia describing the routine, 5
+  themes/source, own thread per source, ongoing feedback loop, matches what
+  was already documented). Found and checked the previous day's (2026-07-03)
+  feedback-request thread via `slack_read_thread`: **zero replies**, same as
+  every prior day audited — still no confirmed feedback ever received in
+  this channel. Also found and closed PR #19, an unmerged draft opened
+  2026-07-03 that forked a second, separate spec file
+  (`routines/daily-ai-news.md`) instead of updating the already-merged
+  `PLAYBOOK.md` — exactly the fragmentation `CLAUDE.md` warns about. Closed
+  with an explanatory comment; no content from it was worth carrying over
+  (it duplicated, in less complete form, what's already in this file).
+  Network egress unchanged: `news.ycombinator.com` and `x.com` still 403 via
+  WebFetch; both sources reconstructed via `WebSearch`, `github.com/trending`
+  fetched fine via WebFetch (no MCP needed for that path), GitHub search API
+  and Hugging Face MCP tools worked without restriction.
 
 ## Open questions for Giulia (carry forward until answered)
 
