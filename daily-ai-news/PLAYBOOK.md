@@ -71,10 +71,13 @@ convey what to change.
   `site:news.ycombinator.com` plus general current AI/tech search, and say
   so in the digest when the picks are search-reconstructed rather than a
   literal live front-page pull.
-- **GitHub Trending**: `mcp__github__search_repositories` (e.g.
-  `created:>N-days-ago stars:>100`, sorted by stars) or WebFetch on
-  `github.com/trending` — both work, no egress restriction via the GitHub
-  MCP path.
+- **GitHub Trending**: WebFetch on `github.com/trending?since=daily` works
+  directly (confirmed 2026-07-04, not blocked by egress policy) and returns
+  real trending data with today's star deltas — prefer it over
+  `mcp__github__search_repositories`, whose `created:>N-days-ago stars:>100`
+  query returns mostly noise (spam/crypto repos, non-English filler) rather
+  than genuine trending content. Use the search API only as a fallback or to
+  pull more detail on a repo already found via the trending page.
 - **Hugging Face**: `mcp__Hugging-Face__hub_repo_search` (sort by
   `trendingScore`) and `mcp__Hugging-Face__paper_search`. Works fine, real
   data, no egress restriction.
