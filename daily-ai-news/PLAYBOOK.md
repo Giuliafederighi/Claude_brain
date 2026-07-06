@@ -92,6 +92,12 @@ network policy to allow those domains — an environment-level setting
 changed outside the session (code.claude.com), not something fixable from
 inside a run. Ask her rather than silently keep substituting indefinitely.
 
+**Process note (added 2026-07-06)**: run the 4 source-research tasks as
+parallel subagents (one per source, each briefed with that source's
+fetching strategy and the current "recently covered" list to dedupe
+against) rather than serially in the main session. Confirmed faster
+wall-clock with no quality loss — keep this as the default.
+
 ## Curation rules
 
 - Never repeat a story/repo/model covered in the last 2 days verbatim — if

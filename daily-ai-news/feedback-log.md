@@ -7,55 +7,87 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: curl's July "AI slop" bug-bounty shutdown, satirical
-"CVE-2026-LGTM" AI-security incident report, LiteLLM CVE-2026-42271
-critical RCE (CISA KEV), Five Eyes "months not years" AI-cyber warning,
-"AI redundancy washing" layoffs skepticism (2026-07-05) · Pentagon-Anthropic
-court emails (DoD dispute), "Bad Epoll" Linux kernel root exploit,
-DuneSlide zero-click RCE in Cursor IDE, 3 US mini nuclear reactors hitting
-criticality, North Korea npm/Rollup supply chain attack (2026-07-04) ·
-Claude Code steganographic request-tagging controversy, Anthropic Sonnet 5
-launch, Godot banning AI-written contributions, Anthropic Fable 5
-export-ban reversal, "SpudCell" synthetic-cell research (2026-07-02)
+**Hacker News**: Mistral's Leanstral 1.5 (free 119B proof-engineering
+model), White House gating GPT-5.6's rollout over bio/cyber concerns,
+Simon Willison's "vibe coding vs agentic engineering" debate, task-stratified
+study on AI coding agent PR-acceptance rates, Google's Open Knowledge
+Format + Kage verification layer (2026-07-06) · curl's July "AI slop"
+bug-bounty shutdown, satirical "CVE-2026-LGTM" AI-security incident report,
+LiteLLM CVE-2026-42271 critical RCE (CISA KEV), Five Eyes "months not
+years" AI-cyber warning, "AI redundancy washing" layoffs skepticism
+(2026-07-05) · Pentagon-Anthropic court emails (DoD dispute), "Bad Epoll"
+Linux kernel root exploit, DuneSlide zero-click RCE in Cursor IDE, 3 US
+mini nuclear reactors hitting criticality, North Korea npm/Rollup supply
+chain attack (2026-07-04)
 
-**GitHub Trending**: mattpocock/skills (viral personal Claude-skills
-directory), agentskills/agentskills + claude-skills (agent-skills format
+**GitHub Trending**: openai/codex-plugin-cc (Codex-in-Claude-Code bridge),
+Leonxlnx/taste-skill (anti-generic-UI agent skill), alibaba/zvec (embedded
+vector DB), ogulcancelik/herdr (Rust terminal multiplexer for AI agents),
+gastownhall/gastown (multi-agent orchestrator with git-worktree isolation)
+(2026-07-06) · mattpocock/skills (viral personal Claude-skills directory),
+agentskills/agentskills + claude-skills (agent-skills format
 standardization), Zackriya-Solutions/meetily (local-only AI meeting
 notetaker), CoplayDev/unity-mcp (Unity-AI bridge), crynta/terax-ai (7MB
 terminal AI workspace) (2026-07-05) · leaked AI system-prompt archive
 (system_prompts_leaks), Chrome DevTools MCP for coding agents, Alibaba's
 page-agent (web GUI agent), Immich self-hosted photo AI, token-diet
-(token-efficiency skill) (2026-07-04) · Strix (AI pentesting agents),
-OmniRoute (multi-model API gateway), Hermes Agent (self-hosted personal AI
-assistant), Agency Agents (pre-built AI persona library), Google's
-agents-cli (2026-07-02)
+(token-efficiency skill) (2026-07-04)
 
-**Hugging Face**: google/tabfm-1.0.0 (Google's first tabular foundation
-model), InternScience/Agents-A1 (new agentic VLM entrant),
+**Hugging Face**: tencent/Hy3 (~300B MoE Hunyuan model), baidu/Unlimited-OCR
+(viral OCR VLM), "PhysisForcing" physics-grounded video-gen paper,
+nationaldesignstudio/rampart (on-device PII redaction model),
+krea/Krea-2-Turbo (fast distilled image generator) (2026-07-06) ·
+google/tabfm-1.0.0 (Google's first tabular foundation model),
+InternScience/Agents-A1 (new agentic VLM entrant),
 huihui-ai/GLM-5.2-abliterated (safety-stripped fork within days of
 release), yuxinlu1's Gemma-4 Fable-5-composer distillation,
 ByteDance-Seed/EdgeBench (new agent-evaluation benchmark) (2026-07-05) ·
 Qwythos-9B (#1 trending Claude/Mythos-5 distillation model),
 Metacognition-Bench (self-doubt benchmark), Nvidia's Qwen3.6-27B FP4
 quantization, smolagents real-time voice Space, DeepSeek-V4-Pro-DSpark FP8
-(2026-07-04) · DeepSeek V4 million-token context models, Meituan's
-LongCat-2.0 ("Owl Alpha" reveal), Nvidia LocateAnything-3B, XDOF's open
-ABC-130k robot dataset, open-source Fable 5 distillation efforts
-(2026-07-02)
+(2026-07-04)
 
-**X / Twitter**: Anthropic/OpenAI trillion-dollar IPO race vs. SpaceX's
+**X / Twitter**: Tesla's $200/week AI-spend cap exempting Grok, hidden
+prompt-injection "traps" in NeurIPS peer review, Aramco-led $800M Together
+AI raise ($8.3B valuation), Meta's "Watermelon" model matching GPT-5.5 at
+10x compute, Grok's majority-adult-content usage + EU record-preservation
+order (2026-07-06) · Anthropic/OpenAI trillion-dollar IPO race vs. SpaceX's
 volatile debut, California-Newsom-Anthropic 50%-discount Claude deal, Five
 Eyes AI-cyber warning reaction, Karp's "insane" token-business-model
 critique + AI-bubble skepticism, Gemini 3 Pro Image ("Nano Banana Pro")
 launch (2026-07-05) · Pentagon-Anthropic emails reaction, Claude-vs-Grok
 simulated-society study, $217B of $510B H1 2026 VC funding going to
 OpenAI+Anthropic, Anthropic-Samsung custom chip talks, nuclear reactor
-criticality timing (2026-07-04) · Claude Sonnet 5 price war, OpenAI's
-Sol/Terra/Luna naming meme collision with Solana, Google losing Jumper (to
-Anthropic) and Shazeer (to OpenAI), Together AI's $800M raise, AI-linked
-tech/finance layoffs data (2026-07-02)
+criticality timing (2026-07-04)
 
 ## Entries
+
+- **2026-07-06**: Ran the 4-source digest per `PLAYBOOK.md` — today's session
+  request from Giulia re-described the routine (4 sources, 5 themes each, own
+  thread per source, keep asking for feedback each day) and it matched what's
+  already documented, so executed rather than re-designed. Checked the July 5
+  feedback-request thread via `slack_read_thread`: **zero replies**, same as
+  every prior day — still no confirmed text feedback ever received in this
+  channel. Confirmed the stale "Newsly" inbox-digest posted *again* on
+  2026-07-05 at 08:03 EDT — now 3 consecutive days (07-03, 07-04, 07-05)
+  after `PLAYBOOK.md` dropped it as a 5th source on 2026-07-02; flagged this
+  more prominently in today's feedback ask since 3 days is no longer a
+  one-off. Ran the 4 source-research tasks in parallel via subagents this
+  time (previous runs did them serially in the main session) — noticeably
+  faster wall-clock, no format degradation; worth keeping as the default
+  approach for future runs. Curation note: deliberately steered HN and X away
+  from repeating yesterday's all-security-story lean and toward a broader mix
+  (research/policy/culture/methodology for HN; business/policy/culture for
+  X) — called this out explicitly in the feedback ask as a judgment call.
+  Also noticed GitHub Trending's picks today skewed almost entirely toward
+  "tooling for building with AI agents" (a Codex-in-Claude-Code plugin, an
+  agent-terminal multiplexer, a multi-agent orchestrator) — flagged this as
+  its own open question rather than silently deciding it's fine. Fetch
+  strategy unchanged from prior runs: HN and X reconstructed via `WebSearch`
+  (still 403 via WebFetch/curl for news.ycombinator.com, hn.algolia.com,
+  x.com), GitHub Trending fetched live via WebFetch on
+  `github.com/trending?since=daily`, Hugging Face MCP tools (`hub_repo_search`,
+  `paper_search`, `hub_repo_details`) worked without restriction.
 
 - **2026-07-05**: Ran the 4-source digest per `PLAYBOOK.md` — no format changes,
   today's session request from Giulia describing the routine again matched what
@@ -139,11 +171,19 @@ tech/finance layoffs data (2026-07-02)
 5. Is the "5 themes per source, plain language, why-it-matters framing"
    format itself right, or would you prefer something else (shorter,
    longer, more/fewer sources, different tone)?
-6. **New as of 2026-07-05**: a separate "Newsly" email-inbox digest kept
-   posting to `#daily-ai-news` on 07-03 and 07-04 at ~08:04 EDT, an hour
-   after this routine's 4-source digest — despite `PLAYBOOK.md` dropping
-   that exact 5th source on 2026-07-02. That strongly suggests a second,
-   older scheduled session (not controlled by this repo) is still running
-   on its own trigger. Please check code.claude.com for a stale
+6. **Escalating since 2026-07-05, now 3 days running**: a separate "Newsly"
+   email-inbox digest kept posting to `#daily-ai-news` on 07-03, 07-04, *and*
+   07-05 at ~08:03-08:04 EDT, about an hour after this routine's 4-source
+   digest — despite `PLAYBOOK.md` dropping that exact 5th source on
+   2026-07-02. That strongly suggests a second, older scheduled session (not
+   controlled by this repo) is still running on its own trigger, unaffected
+   by anything this playbook does. Please check code.claude.com for a stale
    "Newsly"/inbox-digest schedule and either kill it or tell this playbook
-   you actually want that 5th source back after all.
+   you actually want that 5th source back after all — this repo can't fix it
+   from inside a run since it's a different scheduled session entirely.
+7. **New as of 2026-07-06**: GitHub Trending's picks skewed almost entirely
+   toward "tooling for building with AI agents" (a Codex-in-Claude-Code
+   plugin, an agent-terminal multiplexer, a multi-agent orchestrator) rather
+   than a broader spread of ML/infra/dev-tools categories. Is that fine (it's
+   genuinely what's trending) or should the curation actively diversify
+   categories even if agent-tooling dominates the real trending page?
