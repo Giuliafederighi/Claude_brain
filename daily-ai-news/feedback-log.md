@@ -7,64 +7,102 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: SpaceX's $60B Cursor/Anysphere buyout wiping out $600B in
-SpaceX value, Commerce Dept lifting the 18-day Claude Fable 5/Mythos 5
-export ban, "Prompt Injection as Role Confusion" CoT-forgery paper, first
-UN Global Dialogue on AI Governance (Geneva), Unit 42's "phantom squatting"
-hallucinated-domain phishing research (2026-07-07) · Mistral's Leanstral
-1.5 (free 119B proof-engineering model), White House gating GPT-5.6's
-rollout over bio/cyber concerns, Simon Willison's "vibe coding vs agentic
-engineering" debate, task-stratified study on AI coding agent PR-acceptance
-rates, Google's Open Knowledge Format + Kage verification layer
-(2026-07-06) · curl's July "AI slop" bug-bounty shutdown, satirical
-"CVE-2026-LGTM" AI-security incident report, LiteLLM CVE-2026-42271
-critical RCE (CISA KEV), Five Eyes "months not years" AI-cyber warning,
-"AI redundancy washing" layoffs skepticism (2026-07-05)
+**Hacker News**: Anthropic's "J-lens" interpretability finding (Claude's
+"J-space" inner workspace), first fully autonomous AI-run ransomware
+("JadePuffer" via a Langflow RCE), "Januscape" 16-year-old Linux KVM
+guest-escape bug, Anthropic's ID/selfie verification policy taking effect,
+Samsung's 19x profit jump + SK Hynix's $28B Nasdaq IPO on AI-memory-chip
+demand (2026-07-08) · SpaceX's $60B Cursor/Anysphere buyout wiping out
+$600B in SpaceX value, Commerce Dept lifting the 18-day Claude Fable
+5/Mythos 5 export ban, "Prompt Injection as Role Confusion" CoT-forgery
+paper, first UN Global Dialogue on AI Governance (Geneva), Unit 42's
+"phantom squatting" hallucinated-domain phishing research (2026-07-07) ·
+Mistral's Leanstral 1.5 (free 119B proof-engineering model), White House
+gating GPT-5.6's rollout over bio/cyber concerns, Simon Willison's "vibe
+coding vs agentic engineering" debate, task-stratified study on AI coding
+agent PR-acceptance rates, Google's Open Knowledge Format + Kage
+verification layer (2026-07-06)
 
-**GitHub Trending**: firecrawl/firecrawl (web-to-LLM scraper, 147k stars),
-karakeep-app/karakeep (self-hosted AI bookmark manager), ruvnet/RuView
-(WiFi-CSI home vital-signs sensor), asgeirtj/system_prompts_leaks (leaked
-AI system-prompt archive), steipete/CodexBar (AI usage-limit menu-bar app)
-(2026-07-07) · openai/codex-plugin-cc (Codex-in-Claude-Code bridge),
-Leonxlnx/taste-skill (anti-generic-UI agent skill), alibaba/zvec (embedded
-vector DB), ogulcancelik/herdr (Rust terminal multiplexer for AI agents),
+**GitHub Trending**: MadsLorentzen/ai-job-search (Claude-Code-based
+job-search agent, hottest repo of the day), addyosmani/agent-skills (72.7k
+stars, mainstream-dev-audience agent-skills pack), obra/superpowers (249k
+stars, full agent dev-workflow methodology), TencentCloud/TencentDB-Agent-
+Memory (local long-term memory for agents), iOfficeAI/OfficeCLI (AI agents
+editing Word/Excel/PowerPoint) (2026-07-08) · firecrawl/firecrawl
+(web-to-LLM scraper, 147k stars), karakeep-app/karakeep (self-hosted AI
+bookmark manager), ruvnet/RuView (WiFi-CSI home vital-signs sensor),
+asgeirtj/system_prompts_leaks (leaked AI system-prompt archive),
+steipete/CodexBar (AI usage-limit menu-bar app) (2026-07-07) ·
+openai/codex-plugin-cc (Codex-in-Claude-Code bridge), Leonxlnx/taste-skill
+(anti-generic-UI agent skill), alibaba/zvec (embedded vector DB),
+ogulcancelik/herdr (Rust terminal multiplexer for AI agents),
 gastownhall/gastown (multi-agent orchestrator with git-worktree isolation)
-(2026-07-06) · mattpocock/skills (viral personal Claude-skills directory),
-agentskills/agentskills + claude-skills (agent-skills format
-standardization), Zackriya-Solutions/meetily (local-only AI meeting
-notetaker), CoplayDev/unity-mcp (Unity-AI bridge), crynta/terax-ai (7MB
-terminal AI workspace) (2026-07-05)
+(2026-07-06)
 
-**Hugging Face**: NVIDIA's Nemotron-TwoTower (split-tower diffusion LM,
-2.42x throughput), Meituan's LongCat-2.0 (1.7T-param MoE, MIT license),
-Mistral's Leanstral-1.5-119B-A6B (low-active-param cost-efficiency MoE),
+**Hugging Face**: deepseek-ai/DeepSeek-V4-Pro-DSpark (1.6T-param MoE,
+1M-token context via sparse attention), zai-org/GLM-5.2 ecosystem hitting
+90+ community Spaces, nvidia/LocateAnything-3B (compact visual-grounding
+VLM), nvidia/Qwen3.6-27B-NVFP4 (4-bit quantized Qwen), "ImageWAM" paper
+(image-editing AI replacing video-gen for robot planning) (2026-07-08) ·
+NVIDIA's Nemotron-TwoTower (split-tower diffusion LM, 2.42x throughput),
+Meituan's LongCat-2.0 (1.7T-param MoE, MIT license), Mistral's
+Leanstral-1.5-119B-A6B (low-active-param cost-efficiency MoE),
 Qwen-AgentWorld-35B-A3B (agent with internal world model), smolagents'
 hf-realtime-voice Space (2026-07-07) · tencent/Hy3 (~300B MoE Hunyuan
 model), baidu/Unlimited-OCR (viral OCR VLM), "PhysisForcing"
 physics-grounded video-gen paper, nationaldesignstudio/rampart (on-device
 PII redaction model), krea/Krea-2-Turbo (fast distilled image generator)
-(2026-07-06) · google/tabfm-1.0.0 (Google's first tabular foundation
-model), InternScience/Agents-A1 (new agentic VLM entrant),
-huihui-ai/GLM-5.2-abliterated (safety-stripped fork within days of
-release), yuxinlu1's Gemma-4 Fable-5-composer distillation,
-ByteDance-Seed/EdgeBench (new agent-evaluation benchmark) (2026-07-05)
+(2026-07-06)
 
-**X / Twitter**: Anthropic overtaking OpenAI in annualized revenue (~$30B
-vs ~$24-25B), AWS/Microsoft's forward-deployed-engineer land grab ($1B +
-$2.5B units), Zuckerberg's "miscalculated" AI-overhaul admission + Meta
-stock drop, Musk's Grok Imagine ship + denied SpaceX AI-phone rumor, White
-House finalizing voluntary frontier-model pre-launch review standards
+**X / Twitter**: ElevenLabs' $22B valuation talks (up from $11B in 5
+months), DeepSeek building its own AI inference chip, Beijing meeting
+Alibaba/ByteDance/Z.ai on restricting foreign access to Chinese models, the
+AI "credit war" (labs giving startups millions in free compute), Z.ai's
+ZCode open-weight coding agent undercutting Cursor/Claude Code (2026-07-08)
+· Anthropic overtaking OpenAI in annualized revenue (~$30B vs ~$24-25B),
+AWS/Microsoft's forward-deployed-engineer land grab ($1B + $2.5B units),
+Zuckerberg's "miscalculated" AI-overhaul admission + Meta stock drop,
+Musk's Grok Imagine ship + denied SpaceX AI-phone rumor, White House
+finalizing voluntary frontier-model pre-launch review standards
 (2026-07-07) · Tesla's $200/week AI-spend cap exempting Grok, hidden
 prompt-injection "traps" in NeurIPS peer review, Aramco-led $800M Together
 AI raise ($8.3B valuation), Meta's "Watermelon" model matching GPT-5.5 at
 10x compute, Grok's majority-adult-content usage + EU record-preservation
-order (2026-07-06) · Anthropic/OpenAI trillion-dollar IPO race vs. SpaceX's
-volatile debut, California-Newsom-Anthropic 50%-discount Claude deal, Five
-Eyes AI-cyber warning reaction, Karp's "insane" token-business-model
-critique + AI-bubble skepticism, Gemini 3 Pro Image ("Nano Banana Pro")
-launch (2026-07-05)
+order (2026-07-06)
 
 ## Entries
+
+- **2026-07-08**: Ran the 4-source digest per `PLAYBOOK.md` — session request
+  from Giulia re-described the routine (4 sources, 5 themes each, own thread
+  per source, keep growing instructions, keep asking for feedback) and
+  matched what's already documented, so executed rather than re-designed.
+  Checked for an existing open PR first per `CLAUDE.md`'s consolidation
+  rule: none found, so worked straight toward `main`. Checked the 2026-07-07
+  feedback-request thread via `slack_read_thread`: **zero replies**, now
+  20+ days running with confirmed zero text feedback ever received on any
+  of the 7 open questions. Ran the 4 source-research tasks as parallel
+  subagents per the existing process note. **New process catch**: HN and X
+  independently surfaced the same story (Anthropic's "J-lens"
+  interpretability finding) — this is the first time two sources have
+  collided on the same underlying story in one run. Swapped X's pick for a
+  different theme (Z.ai's ZCode) before posting rather than let it appear
+  twice in one day's channel, and added a permanent curation step to
+  `PLAYBOOK.md` to cross-check all 4 sources against each other going
+  forward, not just against prior days. **New policy**: given 20+ days of
+  zero feedback on any open question, proposed (in today's feedback ask) a
+  "default after silence" policy — state a specific default alongside a
+  stale question, and if still no reply after a few more runs, adopt the
+  default and stop re-asking daily, documented in `PLAYBOOK.md`. Applied
+  this framing to two live curation calls: GitHub Trending's heaviest-yet
+  agent-tooling skew (9 of ~15 trending repos — two competing "agent skills
+  framework" repos, addyosmani/agent-skills and obra/superpowers, trended
+  simultaneously) and HN's 4th-straight day leaning security/policy
+  (autonomous AI-run ransomware, a 16-year-old Linux kernel VM-escape bug,
+  Anthropic's new ID-verification policy). Fetch strategy unchanged: HN and
+  X reconstructed via `WebSearch` (still blocked via WebFetch/curl for
+  news.ycombinator.com, x.com), GitHub Trending fetched live via WebFetch on
+  `github.com/trending?since=daily`, Hugging Face MCP tools worked without
+  restriction.
 
 - **2026-07-07**: Ran the 4-source digest per `PLAYBOOK.md` — session request from
   Giulia re-described the routine (4 sources, 5 themes each, own thread per source,
@@ -182,6 +220,12 @@ launch (2026-07-05)
 
 ## Open questions for Giulia (carry forward until answered)
 
+**Note added 2026-07-08**: this list has gone 20+ days with zero text
+replies to any entry. Per the new "default after silence" policy in
+`PLAYBOOK.md`, entries below that now carry a stated default will have that
+default adopted (and the entry marked resolved) if a few more runs pass
+with no reply — always overridable by a reply at any time.
+
 1. **Was any daily feedback ever actually given?** No text reply has been
    found in 12 days of Slack history (only checked top-level channel
    messages so far — thread replies are still unverified). If you did
@@ -208,9 +252,17 @@ launch (2026-07-05)
    repo). Flagging so Giulia can confirm it's actually gone rather than this
    assuming so after only 2 quiet days; no action taken from this repo since
    it was never this playbook's schedule to begin with.
-7. **Open since 2026-07-06, asked again 2026-07-07**: GitHub Trending's raw
-   page keeps skewing toward "tooling for building with AI agents." Both
-   runs deliberately surfaced non-agent-tooling picks instead when
-   available. Is that the right call, or should the curation just reflect
-   whatever's actually trending even if it's agent-tooling-heavy two days
-   running?
+7. **Open since 2026-07-06, most recently 2026-07-08**: GitHub Trending's
+   raw page keeps skewing toward "tooling for building with AI agents" —
+   2026-07-08 was the heaviest yet (9 of ~15 trending repos). **Stated
+   default (2026-07-08): report what's actually trending honestly, even
+   when it's this lopsided, rather than force artificial diversity** — this
+   is what today's run already did. Will treat this as resolved/adopted if
+   no objection lands in the next few runs.
+8. **New 2026-07-08**: HN has leaned security/policy 4 days running
+   (2026-07-05 through 2026-07-08 — bug-bounty shutdowns, CVEs, Five Eyes
+   warnings, autonomous AI-run ransomware, a kernel VM-escape bug, ID
+   verification policy). Reads like a genuine shift in what's on the actual
+   front page rather than a curation blind spot. **Stated default: keep
+   reporting the front page honestly even if the security/policy lean
+   continues** — flag here if that reads as too narrow a slice of AI news.
