@@ -62,6 +62,19 @@ prompts have gone unanswered for 12+ days running (see feedback-log.md).
 Explicitly ask for a text reply in the thread, since reactions alone can't
 convey what to change.
 
+**Added 2026-07-08 — defaulting on stale open questions**: by this date the
+"Open questions for Giulia" list in `feedback-log.md` had gone 20+ days with
+zero text replies to *any* of them. Re-asking the identical question forever
+without a response is a dead loop, not a feedback mechanism. New policy: if
+an open question gets no reply for a few more runs after it's been proposed
+with a specific default attached (e.g. "I'm planning to just report GitHub
+Trending honestly even when it's agent-tooling-heavy, object if you'd
+rather I curate around it"), adopt that default, mark the question resolved
+in `feedback-log.md`, and stop re-asking it daily. Always stated as
+overridable — a reply at any time (even after a default is adopted) should
+still change behavior going forward. This keeps the log from accumulating
+questions nobody's answering while still leaving the door open.
+
 ## Fetching strategy per source
 
 - **Hacker News**: `news.ycombinator.com` and `hn.algolia.com` are blocked
@@ -104,6 +117,13 @@ wall-clock with no quality loss — keep this as the default.
   it's still developing, find the new angle or drop it. Each day's playbook
   update (or feedback-log entry) should carry forward a short "recently
   covered" list per source so the next run can dedupe.
+- **Added 2026-07-08**: also cross-check the 4 sources' picks *against each
+  other* for the same run, not just against prior days. Running 4 sources in
+  parallel means two sources can independently surface the same underlying
+  story (e.g. HN and X both picking up the same Anthropic research release)
+  — if that happens, swap one of them out for a different theme before
+  posting rather than letting the same story appear twice in one day's
+  channel.
 - Prefer concrete specifics (real names, numbers, repos, papers) over
   trend-speak.
 - Write for someone who doesn't read AI news daily — explain jargon inline,
