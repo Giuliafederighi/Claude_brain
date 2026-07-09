@@ -133,6 +133,15 @@ wall-clock with no quality loss — keep this as the default.
   explicit note explaining what failed, then log it in feedback-log.md.
   Silent skips (see June 26/27/30 in feedback-log.md) are the thing to
   avoid.
+- **Adopted 2026-07-09 (proposed 2026-07-08, unopposed across 2 more
+  runs)**: report each source's content honestly even when it's lopsided —
+  don't manufacture artificial diversity. Concretely: if GitHub Trending's
+  actual top-15 page is 50-65%+ agent-tooling repos, pick your 5 from what's
+  genuinely there rather than steering around it; if Hacker News's front
+  page genuinely leans security/policy (or any other slant) for several
+  days running, keep reporting that lean rather than forcing a broader mix
+  that isn't really on the page. Both are now standing defaults, always
+  overridable by a reply from Giulia in the feedback thread.
 
 ## Known constraint: sandboxed network egress
 
