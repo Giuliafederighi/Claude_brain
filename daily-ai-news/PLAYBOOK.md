@@ -142,6 +142,23 @@ wall-clock with no quality loss — keep this as the default.
   days running, keep reporting that lean rather than forcing a broader mix
   that isn't really on the page. Both are now standing defaults, always
   overridable by a reply from Giulia in the feedback thread.
+- **Added 2026-07-10**: the "recently covered" rolling list in
+  `feedback-log.md` only holds ~3 days, so it can miss a story that
+  resurfaces after a longer gap (caught today: a Hugging Face pick was the
+  exact same story posted 7 days earlier). Before finalizing picks, spot-
+  check anything that reads like it could be a repeat against the fuller
+  Slack channel history (`slack_read_channel` over more days, or
+  `slack_search_public` for the specific name/repo/model), not just the
+  3-day list — asked Giulia in today's feedback thread whether this extra
+  check is worth doing every day or overkill.
+- **Added 2026-07-10**: on a day a source's raw page is genuinely thin
+  once already-covered stories are excluded (e.g. GitHub Trending, once
+  repeat agent-tooling repos are stripped out, had only 4 real picks),
+  default until told otherwise: say so honestly as the 5th entry (name
+  what's actually left — usually evergreen infra with tiny deltas — rather
+  than dressing it up as news). Asked Giulia today whether she'd rather
+  that, a near-repeat from 2-3 days ago, or just 4 themes that day instead
+  of 5 — no default adopted yet since this is the first time it came up.
 
 ## Known constraint: sandboxed network egress
 
