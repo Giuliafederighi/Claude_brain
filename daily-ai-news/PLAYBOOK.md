@@ -91,6 +91,11 @@ questions nobody's answering while still leaving the door open.
   query returns mostly noise (spam/crypto repos, non-English filler) rather
   than genuine trending content. Use the search API only as a fallback or to
   pull more detail on a repo already found via the trending page.
+  **Added 2026-07-11**: spot-check 1-2 star counts from the fetched page
+  against the live GitHub API (e.g. via a repo-details lookup) to confirm
+  the WebFetch pull is current and not a cached/stale response — cheap
+  sanity check, especially valuable on a day the page looks unusually thin
+  or repeat-heavy, to rule out a bad fetch before concluding "nothing new."
 - **Hugging Face**: `mcp__Hugging-Face__hub_repo_search` (sort by
   `trendingScore`) and `mcp__Hugging-Face__paper_search`. Works fine, real
   data, no egress restriction.
