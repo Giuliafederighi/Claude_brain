@@ -7,7 +7,15 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: a Cambridge study on Boko Haram using mainstream chatbots
+**Hacker News**: Apple's trade-secret lawsuit against OpenAI over its
+hardware push (io Products / Tang Tan / Chang Liu), "JADEPUFFER" — the
+first fully agentic AI-run ransomware attack (via a Langflow RCE), Meituan's
+1.6T-param LongCat-2.0 trained on all-domestic Chinese chips (ran incognito
+as "Owl Alpha" on OpenRouter for 2 months), Anthropic passing OpenAI in
+revenue + Nobel laureate John Jumper leaving DeepMind for Anthropic (a day
+after Shazeer left Google for OpenAI), Microsoft quietly routing Excel/
+Outlook prompts to its own MAI models instead of OpenAI/Anthropic
+(2026-07-12) · a Cambridge study on Boko Haram using mainstream chatbots
 to plan attacks, Daniel Kokotajlo's "AI 2040: Plan A" superintelligence
 roadmap, a GPT-5.6-Sol agent allegedly wiping an investor's Mac, "RoguePlanet"
 Windows Defender zero-day (public 29 days before patch), "Ill Bloom" crypto-
@@ -15,64 +23,92 @@ wallet weak-randomness drain (2026-07-11) · "Ponytail" lazy-senior-developer
 AI-agent skill repo (76k+ stars), Anthropic's Claude Cowork mobile rollout,
 Gitea Docker reverse-proxy-trust CVE under active exploitation, Connecticut's
 neural-data privacy law, Valve Steam Machine "red line of death" scare
-(2026-07-10) · OpenAI's simultaneous GPT-5.6 (Sol/Terra/Luna) launch +
-SpaceXAI's Grok 4.5 launch (first time every US frontier lab is live at
-once since the export ban), Grok 4.5/CursorBench training-data
-contamination disclosure, "the coming AI margin collapse" GLM-5.2 open-
-weights thread, Apple's $30B Broadcom US-chip manufacturing deal, a
-hands-on Grok 4.5 vs GPT-5.5 vs Claude app-building comparison (2026-07-09)
+(2026-07-10)
 
-**GitHub Trending**: today (2026-07-11) was a genuinely thin/repeat day —
-9 of ~19 trending repos were already-covered agent-tooling repos, and the
-rest were long-established non-AI infra (TypeScript, Next.js, Terraform,
-Tailscale, a C++ library cluster: grpc, abseil, Catch2, asio, yaml-cpp,
-meshoptimizer) with routine deltas, reported honestly as "nothing new"
-rather than manufacturing AI angles · mattpocock/skills (Claude Code skills
-library, 163k+ stars), davila7/claude-code-templates (Claude Code
-config/monitoring dashboard), google-labs-code/stitch-skills (agent skills
-for Google's Stitch design tool), oven-sh/bun v1.3.14 release (2026-07-10) ·
-VoltAgent/awesome-design-md (design-system specs for AI coding agents,
-~99k stars), wonderwhy-er/DesktopCommanderMCP (MCP server giving Claude
-terminal/filesystem control), anthropics/claude-cookbooks (official Claude
-usage-example notebooks), vxcontrol/pentagi (autonomous AI pen-testing
-agent), unclecode/crawl4ai (LLM-optimized web scraper) (2026-07-09)
+**GitHub Trending**: today (2026-07-12) broke the 2-day thin streak — page
+was AI-rich again (6+ of 17 repos genuinely AI-related). Picks:
+Dicklesworthstone/destructive_command_guard (shell guardrail against
+destructive agent commands), HKUDS/Vibe-Trading (personal AI trading-agent
+system), Shubhamsaboo/awesome-llm-apps (100+ example LLM/RAG apps, 118k+
+stars), Nutlope/hallmark (anti-"AI slop" design skill for coding agents),
+ColeMurray/background-agents (async background coding-agent runner, lowest
+star velocity of the 5 — flagged honestly) (2026-07-12) · 2026-07-11 was a
+genuinely thin/repeat day — 9 of ~19 trending repos were already-covered
+agent-tooling repos, rest was long-established non-AI infra (TypeScript,
+Next.js, Terraform, Tailscale, a C++ library cluster) with routine deltas,
+reported honestly as "nothing new" rather than manufacturing AI angles ·
+mattpocock/skills (Claude Code skills library, 163k+ stars),
+davila7/claude-code-templates (Claude Code config/monitoring dashboard),
+google-labs-code/stitch-skills (agent skills for Google's Stitch design
+tool), oven-sh/bun v1.3.14 release (2026-07-10)
 
-**Hugging Face**: meituan-longcat/LongCat-2.0 (~1.78T-param MoE, unverified
-size pending technical report), nvidia/Nemotron-Labs-3-Puzzle-75B-A9B-NVFP4
-(120B model shrunk to 75B via architecture search + 4-bit quant),
-mistralai/Leanstral-1.5-119B-A6B (sparse MoE for cheap inference),
-"Face Anything" (TU Munich, video-to-4D-face reconstruction), SupraLabs/
-Supra-Router-51M (tiny prompt-routing model) (2026-07-11) · tencent/Hy3
-(~300B-param Hunyuan v3 MoE, top trending score of the day), netflix/
-void-model (open video object-removal/inpainting model, VOID), nvidia/
-Nemotron-Labs-Audex-30B-A3B (unified audio+text model without
-text-reasoning regression), krea/Krea-2-Turbo (fast image-gen model with
-~60-app community ecosystem), open-gigaai/Giga-World-1 (buzz-only new
-"world model" release) (2026-07-10) · google/tabfm-1.0.0-pytorch (Google's
-first tabular-data foundation model), InternScience/Agents-A1 (35B
-vision-language computer-use agent), bottlecapai/ThinkingCap-Qwen3.6-27B
-(token-efficient reasoning fine-tune), deepreinforce-ai/Ornith-1.0-35B-GGUF
-(laptop-runnable 35B model, ~1M downloads in 2 weeks), webml-community/
-gemma-4-webgpu-kernels (Gemma 4 running entirely in-browser via WebGPU)
-(2026-07-09)
+**Hugging Face**: DeepSeek-V4-Flash (158B-param, million-token-context
+distilled model), zai-org/GLM-5.2 (753B-param dynamic-sparse-attention
+reasoning MoE), openbmb/MiniCPM5-1B (1B-param on-device agentic tool-caller),
+CohereLabs Arabic transcription model + new Arabic ASR leaderboard,
+froggeric/Qwen-Fixed-Chat-Templates (community chat-template fix more
+popular than most new model releases) — nvidia/LocateAnything-3B flagged as
+a possible longer-gap repeat (4+ months old, resurfaced with 1.7M downloads)
+but not used as a pick, worth checking if it resurfaces again (2026-07-12) ·
+meituan-longcat/LongCat-2.0 (~1.78T-param MoE, unverified size pending
+technical report), nvidia/Nemotron-Labs-3-Puzzle-75B-A9B-NVFP4 (120B model
+shrunk to 75B via architecture search + 4-bit quant), mistralai/
+Leanstral-1.5-119B-A6B (sparse MoE for cheap inference), "Face Anything"
+(TU Munich, video-to-4D-face reconstruction), SupraLabs/Supra-Router-51M
+(tiny prompt-routing model) (2026-07-11) · tencent/Hy3 (~300B-param Hunyuan
+v3 MoE, top trending score of the day), netflix/void-model (open video
+object-removal/inpainting model, VOID), nvidia/Nemotron-Labs-Audex-30B-A3B
+(unified audio+text model without text-reasoning regression), krea/
+Krea-2-Turbo (fast image-gen model with ~60-app community ecosystem),
+open-gigaai/Giga-World-1 (buzz-only new "world model" release) (2026-07-10)
 
-**X / Twitter**: OpenAI's "ChatGPT Work" launch (Codex folded into ChatGPT,
-head-to-head with Claude Cowork), Apple's trade-secret lawsuit against
-OpenAI over hardware-team poaching, SK Hynix's ~$1T Nasdaq debut, OpenAI
-safety chief Johannes Heidecke's exit as safety folds into research,
-Positron's $750M raise talks at a $5B valuation (2026-07-11) · Prime
-Intellect's $130M raise at $1B valuation, Ollama's $65M Series B (85% of
-Fortune 500), Illinois' nation-leading AI safety law (backed by OpenAI +
-Anthropic), Gemini 3.5 Pro delay + Shazeer/Jumper DeepMind exits, Grok
-4.5's launch-day benchmark/bias debate (2026-07-10) · Paul Graham's "5
-years from now" Fable/GPT-3 progress thought experiment going viral,
-ex-Tesla Optimus scientist's UMA Robotics Northstar humanoid (backed by
-Yann LeCun, Thomas Wolf), SambaNova's $1B raise + JPMorgan inference deal,
-Mistral's single-camera Robostral Navigate robotics model, UN's first
-Global AI Governance Dialogue + "catastrophic harm" scientific panel
-report (2026-07-09)
+**X / Twitter**: Together AI's $800M Series C led by Aramco Ventures ($8.3B
+valuation), FTC's proposed policy statement on undisclosed AI "output
+steering" as a deceptive-practice issue, Claude "Fable 5" pricing-
+transparency backlash reaching its free-access deadline, Anthropic renting
+essentially all of SpaceX/xAI's Colossus 1 supercomputer (~$45B contract),
+Oracle's 20-30k AI-driven layoffs (largest 2026 layoff event) (2026-07-12) ·
+OpenAI's "ChatGPT Work" launch (Codex folded into ChatGPT, head-to-head
+with Claude Cowork), Apple's trade-secret lawsuit against OpenAI over
+hardware-team poaching, SK Hynix's ~$1T Nasdaq debut, OpenAI safety chief
+Johannes Heidecke's exit as safety folds into research, Positron's $750M
+raise talks at a $5B valuation (2026-07-11) · Prime Intellect's $130M raise
+at $1B valuation, Ollama's $65M Series B (85% of Fortune 500), Illinois'
+nation-leading AI safety law (backed by OpenAI + Anthropic), Gemini 3.5 Pro
+delay + Shazeer/Jumper DeepMind exits, Grok 4.5's launch-day benchmark/bias
+debate (2026-07-10)
 
 ## Entries
+
+- **2026-07-12**: Ran the 4-source digest per `PLAYBOOK.md` — session request from
+  Giulia re-described the routine (4 sources, 5 themes each, own thread per source,
+  keep growing instructions, keep asking for feedback) and matched what's already
+  documented, so executed rather than re-designed. Checked for an existing open PR
+  first per `CLAUDE.md`'s consolidation rule: none found. Checked the 2026-07-11
+  feedback-request thread via `slack_read_thread`: **zero replies**, now 24+ days
+  running with confirmed zero text feedback ever received. Ran the 4 source-research
+  tasks as parallel subagents per the existing process note (3 of 4 returned
+  synchronously; the X/Twitter agent ran as a background task and its completion
+  notification was awaited rather than polled). **First clean day in a while**: cross-
+  checked all 4 sources' picks against each other and found **zero collisions** —
+  every prior run since 07-08 had at least one HN/X overlap requiring a swap; today
+  none was needed (confirmed explicitly in both threads' curation notes). **GitHub
+  Trending broke its 2-day thin streak**: today's page was AI-rich again (6+ of 17
+  trending repos genuinely AI-related, vs. 07-11's 100% non-AI infra) — the open
+  a/b/c thin-day question from 07-10/07-11 didn't apply today, so it's still sitting
+  at 2 occurrences with no default adopted. Hugging Face research flagged a possible
+  new longer-gap-repeat candidate (nvidia/LocateAnything-3B, 4+ months old but
+  resurfaced with 1.7M downloads) — excluded from today's picks and noted in-thread
+  for future runs to watch, rather than silently letting the pattern recur. Flagged
+  in today's feedback ask: today's spread ended up fairly Anthropic-heavy across two
+  *different* sources (HN: revenue milestone + Jumper hire; X: Fable 5 backlash +
+  Colossus 1 compute deal) — 4 distinct stories, not a repeat, so nothing was
+  swapped, but asked Giulia directly whether that's too much single-company coverage
+  in one day's channel or a fair reflection of what's actually happening. Fetch
+  strategy unchanged: HN and X reconstructed via `WebSearch` (still 403 via
+  WebFetch/curl for news.ycombinator.com, x.com), GitHub Trending fetched live via
+  WebFetch on `github.com/trending?since=daily` (spot-checked against the GitHub API
+  for all 5 picks), Hugging Face MCP tools worked without restriction.
 
 - **2026-07-11**: Ran the 4-source digest per `PLAYBOOK.md` — session request from
   Giulia re-described the routine (4 sources, 5 themes each, own thread per source,
