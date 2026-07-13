@@ -156,14 +156,14 @@ wall-clock with no quality loss — keep this as the default.
   `slack_search_public` for the specific name/repo/model), not just the
   3-day list — asked Giulia in today's feedback thread whether this extra
   check is worth doing every day or overkill.
-- **Added 2026-07-10**: on a day a source's raw page is genuinely thin
-  once already-covered stories are excluded (e.g. GitHub Trending, once
-  repeat agent-tooling repos are stripped out, had only 4 real picks),
-  default until told otherwise: say so honestly as the 5th entry (name
-  what's actually left — usually evergreen infra with tiny deltas — rather
-  than dressing it up as news). Asked Giulia today whether she'd rather
-  that, a near-repeat from 2-3 days ago, or just 4 themes that day instead
-  of 5 — no default adopted yet since this is the first time it came up.
+- **Adopted 2026-07-13 (proposed 2026-07-10, recurred 07-11 and 07-13 with
+  zero replies)**: on a day a source's raw page is genuinely thin once
+  already-covered stories are excluded (three occurrences now: 07-10 had
+  only 4 real picks, 07-11 was 100% non-AI infra, 07-13 was ~1 of 25 repos
+  genuinely AI-related), the standing default is to say so honestly as the
+  5th entry — name what's actually left (usually evergreen infra with tiny
+  deltas) rather than dressing it up as news or reusing a near-repeat.
+  Always overridable by a reply from Giulia in the feedback thread.
 
 ## Known constraint: sandboxed network egress
 
