@@ -7,7 +7,16 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: A researcher's mitmproxy trace of xAI's Grok Build CLI
+**Hacker News**: Samsung Health's new consent prompt threatening to delete
+medical records (prescriptions, cycle tracking, sleep history) if users
+opt out of AI training, Bun creator's 11-day/$165K AI-agent rewrite from
+Zig to Rust and Zig creator Andrew Kelley's "unreviewed slop" pushback, an
+Ask HN thread on sandboxing/containerizing AI coding agents with real
+shell access, Redis creator antirez's "control the ideas, not the code"
+argument for reviewing AI-generated code by design doc instead of
+line-by-line, George Hotz's "I love LLMs, I hate hype" essay separating
+real LLM capability from negative-hype marketing (294 pts/177 comments)
+(2026-07-15) · A researcher's mitmproxy trace of xAI's Grok Build CLI
 silently uploading entire codebases (5.1GB of a 12GB repo) to a Google
 Cloud bucket with an unredacted secret and a no-op "opt-out" toggle,
 GLM-5.2's price-to-performance sparking a "margin collapse" thesis for
@@ -21,13 +30,19 @@ $2/$6 per Mtok), Gemini 3.5 Pro's leaked (unconfirmed by Google) July 17
 launch specs, SambaNova's $1B Series F at $11B valuation (JPMorganChase
 deployment), addyosmani/agent-skills GitHub repo hitting ~33k stars, EIA
 data on AI-datacenter-driven US electricity demand hitting record highs
-through 2027 (2026-07-13) · Apple's trade-secret lawsuit against OpenAI
-over its hardware push, "JADEPUFFER" agentic AI-run ransomware, Meituan's
-1.6T-param LongCat-2.0, Anthropic passing OpenAI in revenue + John Jumper
-leaving DeepMind for Anthropic, Microsoft routing Excel/Outlook prompts to
-its own MAI models (2026-07-12)
+through 2027 (2026-07-13)
 
-**GitHub Trending**: AI-rich day, broke the 3-thin-day streak — 9 of ~15
+**GitHub Trending**: strong AI day — 8 of ~15 trending repos genuinely
+AI-related. Picks: Shubhamsaboo/awesome-llm-apps (121k+-star curated
+collection of ready-to-run AI agent/RAG examples), HKUDS/Vibe-Trading
+(open-source AI "hedge fund researcher," paper-trading by default, +1,256
+stars today — biggest delta on the page), openinterpreter/openinterpreter
+(Codex-agent fork tuned for cheap/budget models instead of flagship ones),
+Dicklesworthstone/destructive_command_guard (Rust tool blocking dangerous
+git/shell commands from AI coding agents), Nutlope/hallmark (a "skill"
+file that stops AI-generated UIs from looking generic). mattpocock/skills
+and HenryNdubuaku/maths-cs-ai-compendium excluded as recent repeats
+(2026-07-15) · AI-rich day, broke the 3-thin-day streak — 9 of ~15
 trending repos genuinely AI-related, all non-repeat once dupes excluded.
 Picks: mattpocock/skills (one dev's personal Claude Code skills directory,
 169k+ stars in 5 months), virattt/ai-hedge-fund (multi-persona trading-
@@ -41,22 +56,40 @@ week — ~1 of 25 trending repos genuinely AI-related. Picks: f/prompts.chat,
 meilisearch/meilisearch, naptha/tesseract.js, nautechsystems/nautilus_trader,
 honest 5th-slot note naming the ~20 non-AI infra repos (2026-07-13)
 
-**Hugging Face**: tencent/Hy3 (~299B-param MoE, highest-trending model on
-the Hub today), nvidia/Nemotron-Labs-Audex-30B-A3B (unified speech/audio
-model, MoE), open-gigaai/Giga-World-1 (steerable video "world model"),
+**Hugging Face**: migtissera/Tess-4-27B (Qwen3.6-27B fine-tune for tool-use/
+long-context agentic reasoning; picked over GLM-5.2 despite GLM-5.2 still
+trending, since HN's 07-14 digest already covered that model), prism-ml's
+Bonsai 1-bit/2-bit ternary quantizations of a 27B model plus a community
+WebGPU space running them in-browser, unsloth/DeepSeek-V4-Flash-GGUF
+(quantized build of DeepSeek's new faster model), Alissonerdx/
+LTX-Best-Face-ID (identity-preserving video LoRA for Lightricks' LTX-2.3),
+ATH-MaaS/OvisOCR2 (compact 0.8B-param document-parsing OCR model,
+tables/formulas). Baidu's Unlimited-OCR excluded again (confirmed repeat);
+OpenMOSS-Team/MOSS-Transcribe-Diarize surfaced a 4th time with no fresh
+signal — now silently excluded per the adopted 07-14 default rather than
+re-flagged; nvidia/LocateAnything-3B did not surface (2026-07-15) ·
+tencent/Hy3 (~299B-param MoE, highest-trending model on the Hub today),
+nvidia/Nemotron-Labs-Audex-30B-A3B (unified speech/audio model, MoE),
+open-gigaai/Giga-World-1 (steerable video "world model"),
 deepreinforce-ai/Ornith-1.0-35B (Qwen3.5 finetune with a "metacognition"
 angle, 1.5M+ downloads), krea/Krea-2 ecosystem (image model spawning
 identity-preserving LoRAs/ControlNets — its `krea2-identity-edit` LoRA is
-today's single most-trending Hub repo) — Baidu's Unlimited-OCR excluded
-again (confirmed repeat, posted 07-03); OpenMOSS-Team/MOSS-Transcribe-
-Diarize flagged a 3rd time as a resurfacing non-story candidate (now
-planned to be silently excluded going forward, see feedback ask);
-nvidia/LocateAnything-3B didn't surface organically today, momentum looks
-flat (2026-07-14) · bottlecapai/ThinkingCap-Qwen3.6-27B, google/
-tabfm-1.0.0-pytorch, Sakana AI's Fugu, InternScience/Agents-A1,
-robbyant/lingbot-world-v2-14b + lingbot-video-moe-30b-a3b (2026-07-13)
+today's single most-trending Hub repo) (2026-07-14) · bottlecapai/
+ThinkingCap-Qwen3.6-27B, google/tabfm-1.0.0-pytorch, Sakana AI's Fugu,
+InternScience/Agents-A1, robbyant/lingbot-world-v2-14b +
+lingbot-video-moe-30b-a3b (2026-07-13)
 
-**X / Twitter**: Anthropic's confidential S-1 filing (possible Oct 2026
+**X / Twitter**: 200+ economists/researchers (incl. Anthropic's Jack Clark,
+Google DeepMind's Jeff Dean) warning of AI-driven economic disruption
+faster than the Industrial Revolution, Yann LeCun's new VC fund collapsing
+within ~8 hours of launch, China's anthropomorphic-AI rules taking effect
+today forcing Doubao/Qwen to kill AI companion features (users publicly
+mourning them), a dozen Montefiore (Bronx) hospital nurses replaced by
+Datavant's AI software with their union (NYSNA) fighting it, an
+OpenAI-run audit finding ~30% of SWE-bench Pro tasks broken reviving
+"leaderboards are theater" arguments — swapped out an initial Grok 4.5
+launch/reception pick since HN already covered that launch on 07-13
+(2026-07-15) · Anthropic's confidential S-1 filing (possible Oct 2026
 IPO window, Samsung 2nm chip talks, ~$47B annualized revenue — swapped in
 after HN and X collided on the literal same Altman/OpenAI-equity-stake
 story), Xi Jinping's first-ever personal keynote at China's WAIC summit
@@ -72,6 +105,46 @@ comment + Meta Compute, Google Search AI Mode's 1B+ users, GPT-5.6 vs
 Fable 5 (2026-07-13)
 
 ## Entries
+
+- **2026-07-15**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
+  request from Giulia re-described the routine (4 sources, 5 themes each, own
+  thread per source, keep growing instructions, keep asking for feedback) and
+  matched what's already documented, so executed rather than re-designed.
+  Checked for an existing open PR first per `CLAUDE.md`'s consolidation rule:
+  none found. Checked the 2026-07-14 feedback-request thread and all 4 of its
+  source threads via `slack_read_thread`: **zero replies anywhere**, now 28+
+  days running with confirmed zero text feedback ever received. Ran the 4
+  source-research tasks as parallel background subagents per the existing
+  process note; all 4 completed cleanly. **Clean cross-source day**: checked
+  all 4 sources' picks against each other and against the 3-day rolling
+  list — no same-day collisions. **New dedupe wrinkle caught**: X's research
+  initially surfaced Grok 4.5's launch/reception as a pick, but that model's
+  launch (with the same pricing/benchmark details) was already covered by HN
+  two days earlier (07-13) — swapped in the Montefiore-nurses/AI-replacing-
+  healthcare-workers story instead. Separately, Hugging Face's research
+  surfaced GLM-5.2 as still-trending, but HN's 07-14 digest already explained
+  that model via its margin-collapse framing — passed on it in favor of
+  Tess-4-27B, a fresh entity, rather than re-explain the same model one day
+  outside the normal 2-day dedupe window. Flagged this exact judgment call
+  (repeat entity across sources, one day past the window, different angle)
+  as an open question rather than deciding unilaterally that it's always the
+  right call. **HN's slant today**: leaned hard into AI-code-trust anxiety —
+  3 of 5 picks (Bun's AI-driven Zig-to-Rust rewrite and Zig creator Andrew
+  Kelley's pushback, an Ask HN on sandboxing agents, antirez's "review the
+  idea not the code") revolve around the same underlying question of
+  trusting AI-written/AI-run code. Reported honestly per the standing
+  default rather than force broader variety; flagged in the feedback ask in
+  case 3-of-5 on one theme reads as too narrow even with genuinely distinct
+  discussions. **Watch-list item resolved**: OpenMOSS-Team/MOSS-Transcribe-
+  Diarize surfaced for a 4th time (07-12 through 07-15) with no fresh signal
+  each time — per the 07-14 proposal (unopposed since), silently excluded
+  going forward rather than re-flagged daily. nvidia/LocateAnything-3B did
+  not surface again. Fetch strategy unchanged: HN and X reconstructed via
+  `WebSearch` (still 403 via WebFetch/curl for news.ycombinator.com,
+  hn.algolia.com, x.com), GitHub Trending fetched live via WebFetch on
+  `github.com/trending?since=daily` (cache-busted and spot-checked two star
+  counts against the live GitHub API), Hugging Face MCP tools worked without
+  restriction.
 
 - **2026-07-14**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
   request from Giulia re-described the routine (4 sources, 5 themes each, own
@@ -528,3 +601,31 @@ with no reply — always overridable by a reply at any time.
     pricing, Goldman's China call, the OpenAI equity pitch). Asked directly
     whether that one-technical-plus-broader-context mix is the right
     balance, or whether HN should lean more purely technical day to day.
+
+16. **Resolved 2026-07-15** (proposed 2026-07-14, unopposed): OpenMOSS-Team/
+    MOSS-Transcribe-Diarize surfaced a 4th time (07-12 through 07-15) as a
+    "trending score unusually high for its download count" candidate with
+    no fresh signal any time. Adopted as a standing default: silently
+    exclude it going forward rather than re-flag daily. Still overridable
+    any time by a reply.
+
+17. **New 2026-07-15**: today's HN mix leaned 3-of-5 into the same
+    underlying question (can AI-written/AI-run code be trusted) via the
+    Bun/Zig rewrite fight, an Ask HN on sandboxing agents, and antirez's
+    "review the idea not the code" post — each a genuinely distinct
+    discussion, but all one theme. Asked whether that reads as too
+    repetitive within a single day's set, or whether reporting the front
+    page's actual slant honestly (the standing default) is right even when
+    it clusters this tightly.
+
+18. **New 2026-07-15**: Hugging Face's research surfaced GLM-5.2 as still
+    trending, but it was passed over in favor of Tess-4-27B since HN's
+    07-14 digest already explained GLM-5.2 (via a margin-collapse/pricing
+    angle) — a repeat of the same entity one day *outside* the normal
+    2-day dedupe window, addressed with the same swap-it-out logic used for
+    same-day cross-source collisions. Asked directly whether that's the
+    right call, or whether the same model showing up across different
+    sources with a genuinely different angle (technical adoption vs.
+    economic thesis) should be allowed through and just flagged, the way
+    same-day HN/X collisions with distinct angles get kept rather than
+    swapped (see items 9 and 13 above).
