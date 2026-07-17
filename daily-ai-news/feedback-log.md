@@ -7,14 +7,19 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: AI-safety researcher Alex Turner's resignation from Google
-DeepMind over its 2018 killer-robots/mass-surveillance pledge (DHS supply
-chain link), Thinking Machines Lab's (Mira Murati) first open-weights
-model Inkling (975B MoE, 41B active, 1M context, multimodal), "Slopfix"
-charging $10K/week to delete AI-generated code using AI agents on a short
-leash, "The AI Whale Fall" post arguing to strip-mine subsidized frontier
-AI while it lasts, DeepSeek's reported $74B-valuation raise ahead of a
-Shanghai IPO (2026-07-16) · Samsung Health's new consent prompt threatening
+**Hacker News**: Moonshot AI's Kimi K3 launch (2.8T MoE, #1 on Arena.ai
+Frontend Code leaderboard) reigniting the Claude-distillation debate,
+Google's Gemini 3.5 Pro missing its 3rd public deadline, the NYT-led
+publisher group's sanctions motion against OpenAI, Show HN "Juggler" (GUI
+coding agent by JUCE's creator), Show HN "ai-trains-ai" (RL agent that
+RL-trains other models, ~$1,300) (2026-07-17) · AI-safety researcher Alex
+Turner's resignation from Google DeepMind over its 2018 killer-robots/
+mass-surveillance pledge (DHS supply chain link), Thinking Machines Lab's
+(Mira Murati) first open-weights model Inkling (975B MoE, 41B active, 1M
+context, multimodal), "Slopfix" charging $10K/week to delete AI-generated
+code using AI agents on a short leash, "The AI Whale Fall" post arguing to
+strip-mine subsidized frontier AI while it lasts, DeepSeek's reported
+$74B-valuation raise ahead of a Shanghai IPO (2026-07-16) · Samsung Health's new consent prompt threatening
 to delete medical records (prescriptions, cycle tracking, sleep history) if
 users opt out of AI training, Bun creator's 11-day/$165K AI-agent rewrite
 from Zig to Rust and Zig creator Andrew Kelley's "unreviewed slop" pushback,
@@ -23,17 +28,18 @@ shell access, Redis creator antirez's "control the ideas, not the code"
 argument for reviewing AI-generated code by design doc instead of
 line-by-line, George Hotz's "I love LLMs, I hate hype" essay separating
 real LLM capability from negative-hype marketing (294 pts/177 comments)
-(2026-07-15) · A researcher's mitmproxy trace of xAI's Grok Build CLI
-silently uploading entire codebases (5.1GB of a 12GB repo) to a Google
-Cloud bucket with an unredacted secret and a no-op "opt-out" toggle,
-GLM-5.2's price-to-performance sparking a "margin collapse" thesis for
-frontier labs (plus dual-use jailbreak concerns), Altman's pitch to give
-the US government a 5% OpenAI equity stake modeled on Alaska's Permanent
-Fund, Goldman Sachs' "Long China's AI Value Chain" call (Kuaishou/MiniMax/
-ByteDance Seedance), Terence Tao vibe-coding 25-year-old Java applets back
-to life and catching 2 real bugs in his 1999 code (2026-07-14)
+(2026-07-15)
 
-**GitHub Trending**: thin day, only 4 non-repeat AI picks — of ~17 visible
+**GitHub Trending**: 2nd thin day running, only 3 non-repeat AI picks — of
+14 visible trending repos, 9 were AI-related but 6 were already covered
+this week. Picks: anthropics/cwc-workshops (Anthropic's open-sourced "Code
+with Claude" workshop curriculum, 9 hands-on agent-building modules),
+tirth8205/code-review-graph (tree-sitter knowledge graph so coding agents
+stop re-reading whole repos, 19,582 stars), RyanCodrai/turbovec (Rust
+quantized vector index for RAG-scale embedding search, +280 stars today —
+biggest delta on the page). Borderline call flagged: PostHog/posthog leads
+with "AI observability" but is fundamentally a broad analytics platform —
+not counted as a core AI pick (2026-07-17) · thin day, only 4 non-repeat AI picks — of ~17 visible
 trending repos, 10 were genuinely AI-related but 6 were excluded (5
 same-source repeats plus PrismML-Eng/Bonsai-demo, excluded as a cross-source
 near-repeat of Hugging Face's 07-15 Bonsai coverage). Picks: lobehub/lobehub
@@ -51,19 +57,17 @@ models instead of flagship ones), Dicklesworthstone/destructive_command_guard
 (Rust tool blocking dangerous git/shell commands from AI coding agents),
 Nutlope/hallmark (a "skill" file that stops AI-generated UIs from looking
 generic). mattpocock/skills and HenryNdubuaku/maths-cs-ai-compendium
-excluded as recent repeats (2026-07-15) · AI-rich day, broke the 3-thin-day
-streak — 9 of ~15 trending repos genuinely AI-related, all non-repeat once
-dupes excluded. Picks: mattpocock/skills (one dev's personal Claude Code
-skills directory, 169k+ stars in 5 months), virattt/ai-hedge-fund
-(multi-persona trading-agent simulator, research only), chenyme/grok2api
-(OpenAI-API-compatible gateway for Grok), Graphify-Labs/graphify
-(codebase-to-knowledge-graph tool for coding agents), HenryNdubuaku/
-maths-cs-ai-compendium (AI/ML research study guide). Flagged: page
-continues skewing hard toward "AI coding-agent tooling" specifically
-(skills libs, knowledge-graph tools, command guards) over model
-releases/research (2026-07-14)
+excluded as recent repeats (2026-07-15)
 
-**Hugging Face**: bottlecapai/ThinkingCap-Qwen3.6-27B (token-efficient
+**Hugging Face**: openbmb/UltraX-0.6B-Preview (LLM-based adaptive
+programmatic editing of pretraining data, not just filtering), a cluster of
+new "open distillation" datasets repackaging frontier-model reasoning
+traces (Manusagents' 16M+-signal dataset naming GPT-5.5/Gemini/Grok/Claude/
+Qwen as sources; Glint-Research/Fable-5-traces), jlnsrk/GLM-5.2-colibri-int4
+(CPU-native int4 quant of GLM-5.2 via "expert streaming"), Cseti/LTX2.3-22B_
+IC-LoRA-CrossView-Prompt (camera-control LoRA for LTX-2.3, not just identity
+LoRAs), ByteDance-Seed/EdgeBench (134-task long-horizon agent-learning
+benchmark, 12+ hours/task) (2026-07-17) · bottlecapai/ThinkingCap-Qwen3.6-27B (token-efficient
 reasoning fine-tune), Cactus-Compute/needle (30M-param on-device tool-use
 router), Wan-AI/Wan-Dancer-14B (photo+song → dance video), InternScience/
 Agents-A1 (35B vision-language model for agentic screen tasks), froggeric/
@@ -81,16 +85,19 @@ Lightricks' LTX-2.3), ATH-MaaS/OvisOCR2 (compact 0.8B-param document-parsing
 OCR model, tables/formulas). Baidu's Unlimited-OCR excluded again (confirmed
 repeat); OpenMOSS-Team/MOSS-Transcribe-Diarize surfaced a 4th time with no
 fresh signal — now silently excluded per the adopted 07-14 default rather
-than re-flagged; nvidia/LocateAnything-3B did not surface (2026-07-15) ·
-tencent/Hy3 (~299B-param MoE, highest-trending model on the Hub today),
-nvidia/Nemotron-Labs-Audex-30B-A3B (unified speech/audio model, MoE),
-open-gigaai/Giga-World-1 (steerable video "world model"),
-deepreinforce-ai/Ornith-1.0-35B (Qwen3.5 finetune with a "metacognition"
-angle, 1.5M+ downloads), krea/Krea-2 ecosystem (image model spawning
-identity-preserving LoRAs/ControlNets — its `krea2-identity-edit` LoRA is
-today's single most-trending Hub repo) (2026-07-14)
+than re-flagged; nvidia/LocateAnything-3B did not surface (2026-07-15)
 
-**X / Twitter**: "Loop engineering" backlash with Uber's blown 2026 AI
+**X / Twitter**: xAI's Grok Build CLI codebase-exfiltration story continuing
+to develop (Musk's data-purge promise, full Apache-2.0 open-sourcing of the
+CLI — kept as an update, not a repeat, of HN's 07-14 story), Anthropic's
+"Ode" enterprise-AI-implementation JV with Blackstone/Goldman Sachs/Sequoia
+($1.5B, built on the Fractional AI team), FLI's Summer 2026 AI Safety Index
+(Anthropic tops the field with a C+; xAI/DeepSeek/Mistral fail), X's own AI
+moderation bots suspending security researchers for routine vuln-research
+posts, Meta scrapping its Instagram-photo-remix AI feature after Hollywood
+(SAG-AFTRA/CAA) pushback — swapped out an initial Altman 5%-equity-stake
+pick since HN already covered that story in depth on 07-14 (2026-07-17) ·
+"Loop engineering" backlash with Uber's blown 2026 AI
 budget as Exhibit A, OpenClaw's 250k+ GitHub stars now a security dataset
 (135K+ exposed instances, "ClawHavoc" malicious-skill supply-chain
 campaign), METR's GPT-5.6 Sol report showing a 27-point drop in verbalized
@@ -107,18 +114,51 @@ Datavant's AI software with their union (NYSNA) fighting it, an
 OpenAI-run audit finding ~30% of SWE-bench Pro tasks broken reviving
 "leaderboards are theater" arguments — swapped out an initial Grok 4.5
 launch/reception pick since HN already covered that launch on 07-13
-(2026-07-15) · Anthropic's confidential S-1 filing (possible Oct 2026
-IPO window, Samsung 2nm chip talks, ~$47B annualized revenue — swapped in
-after HN and X collided on the literal same Altman/OpenAI-equity-stake
-story), Xi Jinping's first-ever personal keynote at China's WAIC summit
-(pushing a rival "World AI Cooperation Organization"), Google's Gemini 3.5
-Pro rumored to have been rebuilt from scratch after tool-calling/SVG
-failures, NeurIPS's hidden-prompt trap for catching reviewers who
-outsource to chatbots (controversy over treating reviewers as suspects),
-a ~100-200-person SF march ("Freeze AI on Slushy Day") from OpenAI to
-Anthropic to Google DeepMind demanding a training freeze (2026-07-14)
+(2026-07-15)
 
 ## Entries
+
+- **2026-07-17**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
+  request from Giulia re-described the routine (4 sources, 5 themes each, own
+  thread per source, keep growing instructions, keep asking for feedback) and
+  matched what's already documented, so executed rather than re-designed.
+  Checked for an existing open PR first per `CLAUDE.md`'s consolidation rule:
+  none found. Checked the 2026-07-16 feedback-request thread and all 4 of its
+  source threads via `slack_read_thread`: **zero replies anywhere**, now 30+
+  days running with confirmed zero text feedback ever received. Ran the 4
+  source-research tasks as parallel background subagents per the existing
+  process note; all 4 completed cleanly. **Real cross-source collision
+  caught**: X's research initially surfaced Altman's 5% US-government
+  OpenAI-equity-stake pitch — the literal same story (same specifics: Alaska
+  Permanent Fund framing, ~5% stake) Hacker News already covered in depth on
+  2026-07-14. The X research brief's exclusion list only covered X's own
+  recent picks, not HN's, which is how this slipped through to the synthesis
+  step rather than being caught by the subagent itself — worth building HN's
+  recent picks into X's brief (and vice versa) going forward, not just each
+  source's own history. Swapped in a fresh story (Anthropic's new "Ode"
+  enterprise-AI-implementation joint venture with Blackstone/Goldman Sachs/
+  Sequoia) via a quick supplementary web search before posting. **New
+  judgment call — kept, not swapped**: X's Grok Build CLI pick covers the
+  same underlying incident HN first surfaced 2026-07-14 (xAI's coding CLI
+  silently uploading codebases), but 3 days later there are genuinely new
+  facts (Musk's data-purge promise, xAI open-sourcing the whole CLI under
+  Apache 2.0) — treated as a developing-story update rather than a repeat,
+  flagged directly to Giulia since this is a new combination (same incident,
+  new consequences, one source updating on another source's 3-day-old
+  story). **GitHub Trending's 2nd thin day in a row**: 9 of 14 trending repos
+  were AI-related, but 6 were already covered this week, leaving only 3
+  non-repeat picks — reported honestly per the standing default rather than
+  count the borderline PostHog/posthog pick (broad analytics platform with
+  "AI observability" as one bolted-on feature, not core AI). **Distillation
+  as a cross-source theme, not a collision**: HN's Kimi K3/Claude-distillation
+  debate and Hugging Face's "open distillation" datasets cluster are related
+  by theme but describe genuinely distinct stories/entities — kept both, per
+  standing precedent for related-but-distinct company/theme overlaps. Fetch
+  strategy unchanged: HN and X reconstructed via `WebSearch` (still 403 via
+  WebFetch/curl for news.ycombinator.com, hn.algolia.com, x.com), GitHub
+  Trending fetched live via WebFetch on `github.com/trending?since=daily`
+  (spot-checked 3 star counts against the live GitHub API), Hugging Face MCP
+  tools worked without restriction.
 
 - **2026-07-16**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
   request from Giulia re-described the routine (4 sources, 5 themes each, own
@@ -682,6 +722,17 @@ with no reply — always overridable by a reply at any time.
     economic thesis) should be allowed through and just flagged, the way
     same-day HN/X collisions with distinct angles get kept rather than
     swapped (see items 9 and 13 above).
+
+20. **New 2026-07-17**: X's pick on xAI's Grok Build CLI codebase-
+    exfiltration story covers the same underlying incident Hacker News first
+    surfaced on 07-14, but 3 days later carries genuinely new facts (Musk's
+    promise to delete all uploaded data, xAI open-sourcing the entire CLI
+    under Apache 2.0). Kept it as a "developing story" update rather than
+    swapping it out as a repeat. Is that the right line — new material
+    developments earn an update regardless of how long ago the original
+    story ran — or should a story get only one mention per routine no matter
+    what happens next, with real developments folded into a "previously
+    covered" footnote instead of a full new entry?
 
 19. **New 2026-07-16**: extended the cross-source dedupe rule one step
     further than before — excluded GitHub Trending's `PrismML-Eng/
