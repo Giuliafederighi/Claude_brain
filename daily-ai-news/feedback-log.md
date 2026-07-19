@@ -7,30 +7,41 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: OpenAI's Codex CLI encrypting parent-to-sub-agent
-instructions client-side (only OpenAI holds the key) once GPT-5.6-tier
-models require the new "MultiAgentV2" path, Google renaming NotebookLM to
-"Gemini Notebook" and adding an in-notebook code sandbox, LM Studio's
-"Bionic" full agent app for open-weight models (zero data retention), a
-researcher's $25-vs-$100 agentic music-video bake-off between Claude Fable 5
-and GPT-5.6 Sol, AI Now Institute's "Friendly Fire" PoC tricking
-auto-approve coding agents into executing a payload hidden in a README
-(flagged as our least-certain pick — couldn't confirm a live HN thread ID)
-(2026-07-18) · Moonshot AI's Kimi K3 launch (2.8T MoE, #1 on Arena.ai
-Frontend Code leaderboard) reigniting the Claude-distillation debate,
-Google's Gemini 3.5 Pro missing its 3rd public deadline, the NYT-led
-publisher group's sanctions motion against OpenAI, Show HN "Juggler" (GUI
-coding agent by JUCE's creator), Show HN "ai-trains-ai" (RL agent that
-RL-trains other models, ~$1,300) (2026-07-17) · AI-safety researcher Alex
-Turner's resignation from Google DeepMind over its 2018 killer-robots/
-mass-surveillance pledge (DHS supply chain link), Thinking Machines Lab's
-(Mira Murati) first open-weights model Inkling (975B MoE, 41B active, 1M
-context, multimodal), "Slopfix" charging $10K/week to delete AI-generated
-code using AI agents on a short leash, "The AI Whale Fall" post arguing to
-strip-mine subsidized frontier AI while it lasts, DeepSeek's reported
-$74B-valuation raise ahead of a Shanghai IPO (2026-07-16)
+**Hacker News**: GPT-5.6 "Sol" reportedly proving a 30-year-old
+convex-optimization lower bound (not yet peer-reviewed), a viral graph of
+Stack Overflow's question volume collapsing since AI chat took over, Apple
+overtaking Nvidia as the world's most valuable company (~$4.88T), China's
+Xi Jinping launching WAICO (a 29-country AI-governance bloc countering the
+US/G7 initiative), a resurfaced 2025 post on why AI company logos all look
+alike (2026-07-19, methodology note: 3 of 5 confirmed as real HN thread IDs
+via search, 2 plausible-but-unverified) · OpenAI's Codex CLI encrypting
+parent-to-sub-agent instructions client-side (only OpenAI holds the key)
+once GPT-5.6-tier models require the new "MultiAgentV2" path, Google
+renaming NotebookLM to "Gemini Notebook" and adding an in-notebook code
+sandbox, LM Studio's "Bionic" full agent app for open-weight models (zero
+data retention), a researcher's $25-vs-$100 agentic music-video bake-off
+between Claude Fable 5 and GPT-5.6 Sol, AI Now Institute's "Friendly Fire"
+PoC tricking auto-approve coding agents into executing a payload hidden in
+a README (flagged as our least-certain pick — couldn't confirm a live HN
+thread ID) (2026-07-18) · Moonshot AI's Kimi K3 launch (2.8T MoE, #1 on
+Arena.ai Frontend Code leaderboard) reigniting the Claude-distillation
+debate, Google's Gemini 3.5 Pro missing its 3rd public deadline, the
+NYT-led publisher group's sanctions motion against OpenAI, Show HN
+"Juggler" (GUI coding agent by JUCE's creator), Show HN "ai-trains-ai" (RL
+agent that RL-trains other models, ~$1,300) (2026-07-17)
 
-**GitHub Trending**: not a thin day — 9 of 11 visible trending repos AI-
+**GitHub Trending**: AI-rich day (12-13 of 18 visible trending repos
+genuinely AI-related), but agent-tooling skew continues — 4 of 5 picks.
+Picks: jamiepine/voicebox (open-source AI voice-cloning studio, +629 stars
+today — biggest delta on the page), trycua/cua (computer-use agent
+framework, drivers + benchmarks for GUI-operating AI), Canner/WrenAI
+(text-to-SQL/dashboard tool, the one non-developer-friendly pick),
+AstrBotDevs/AstrBot (LLM-to-messaging-platform agent framework),
+1jehuang/jcode (Rust coding-agent harness). Excluded: kvcache-ai/ktransformers
+as a near-repeat of airllm's "run big LLMs on a small GPU" pitch (07-18);
+elder-plinius/G0DM0D3 (last flagged 07-18 as an open editorial question) did
+not appear on today's page at all, so no live call needed (2026-07-19) · not
+a thin day — 9 of 11 visible trending repos AI-
 related, 3 excluded as repeats, 6 genuine non-repeat candidates (best 5
 picked). Picks: Robbyant/lingbot-map (feed-forward 3D world model, +827
 stars today — biggest delta on the page), lyogavin/airllm (70B-class LLM
@@ -53,17 +64,17 @@ stars), RyanCodrai/turbovec (Rust quantized vector index for RAG-scale
 embedding search, +280 stars today — biggest delta on the page). Borderline
 call flagged: PostHog/posthog leads with "AI observability" but is
 fundamentally a broad analytics platform — not counted as a core AI pick
-(2026-07-17) · thin day, only 4 non-repeat AI picks — of ~17 visible
-trending repos, 10 were genuinely AI-related but 6 were excluded (5
-same-source repeats plus PrismML-Eng/Bonsai-demo, excluded as a cross-source
-near-repeat of Hugging Face's 07-15 Bonsai coverage). Picks: lobehub/lobehub
-("Chief Agent Operator" platform for running AI-agent fleets continuously),
-HKUDS/DeepTutor (lifelong personalized AI tutoring system), github/copilot-sdk
-(SDK to embed the Copilot agent into other apps), ibelick/ui-skills (a
-"skills" library teaching coding agents better UI design taste). "AI
-coding-agent tooling" skew continued strongly (2026-07-16)
+(2026-07-17)
 
-**Hugging Face**: GLM-5.2's official 753B-parameter flagship base-model
+**Hugging Face**: prism-ml/Bonsai-27B family (Qwen3.6-27B compressed to
+~1-bit/ternary weights, plus a WebGPU in-browser demo), ATH-MaaS/OvisOCR2
+(853M-param document/OCR model with two live demos), Wan-AI/Wan-Dancer-14B
+(photo+song → stable minute-long dance video), Cactus-Compute/needle
+(30M-param on-device tool-use router), InternScience/Agents-A1 (agentic
+vision-language model for screen tasks). Excluded: Thinking Machines Lab's
+"Inkling" resurfaced as #1 trending again with zero new signal since HN's
+07-16 coverage — treated as a stale repeat, not news (2026-07-19) · GLM-5.2's
+official 753B-parameter flagship base-model
 release from zai-org (live on 7 inference providers, ~100 community demo
 Spaces in two weeks) — HN covered GLM-5.2 via a pricing/margin-collapse
 story 4 days ago (07-14), but treated this actual model release as new
@@ -83,16 +94,17 @@ Qwen as sources; Glint-Research/Fable-5-traces), jlnsrk/GLM-5.2-colibri-int4
 (CPU-native int4 quant of GLM-5.2 via "expert streaming"), Cseti/LTX2.3-22B_
 IC-LoRA-CrossView-Prompt (camera-control LoRA for LTX-2.3, not just identity
 LoRAs), ByteDance-Seed/EdgeBench (134-task long-horizon agent-learning
-benchmark, 12+ hours/task) (2026-07-17) · bottlecapai/ThinkingCap-Qwen3.6-27B (token-efficient
-reasoning fine-tune), Cactus-Compute/needle (30M-param on-device tool-use
-router), Wan-AI/Wan-Dancer-14B (photo+song → dance video), InternScience/
-Agents-A1 (35B vision-language model for agentic screen tasks), froggeric/
-Qwen-Fixed-Chat-Templates (community bug-fix template repo, 920 likes despite
-zero downloads). Thinking Machines Lab's "Inkling" was today's #1 trending
-repo but swapped out — same-day collision with Hacker News's deeper Inkling
-launch coverage — and moved to HN only (2026-07-16)
+benchmark, 12+ hours/task) (2026-07-17)
 
-**X / Twitter**: Nadella's "Reverse Information Paradox" post (enterprises
+**X / Twitter**: Musk teasing a 2T-parameter Grok successor built to beat
+Kimi K3, Microsoft's "Project Perception" (cheaper AI-security rival to
+Anthropic's Mythos), Fireworks AI's $1.505B Series D at a $17.5B valuation,
+the White House's AI "diagnosis" video tangled up with the Trump/Balogun
+World Cup red-card controversy, the AI-generated restaurant food photos
+meme. Excluded: Hassabis's AI-watchdog manifesto (repeat of X's own 07-16
+pick) and Gemini 3.5 Pro's delay (repeat of HN's 07-17 pick) — both
+surfaced independently by today's research but caught as repeats once
+checked against the fuller history (2026-07-19) · Nadella's "Reverse Information Paradox" post (enterprises
 pay twice: token costs, then their data gets distilled into the model
 makers' own advantage), the AI Futures Project's "AI 2040: Plan A" proposal
 to jointly delay superintelligence to 2040 splitting AI-safety opinion
@@ -110,17 +122,54 @@ CLI — kept as an update, not a repeat, of HN's 07-14 story), Anthropic's
 moderation bots suspending security researchers for routine vuln-research
 posts, Meta scrapping its Instagram-photo-remix AI feature after Hollywood
 (SAG-AFTRA/CAA) pushback — swapped out an initial Altman 5%-equity-stake
-pick since HN already covered that story in depth on 07-14 (2026-07-17) ·
-"Loop engineering" backlash with Uber's blown 2026 AI
-budget as Exhibit A, OpenClaw's 250k+ GitHub stars now a security dataset
-(135K+ exposed instances, "ClawHavoc" malicious-skill supply-chain
-campaign), METR's GPT-5.6 Sol report showing a 27-point drop in verbalized
-test-awareness (self-aware or just hiding it?), Hassabis's "Framework for
-Frontier AI" manifesto calling for a US-led AI watchdog, Jensen Huang's
-"lazy" jab at AI-layoffs narratives recirculating amid ongoing tech layoffs
-(2026-07-16)
+pick since HN already covered that story in depth on 07-14 (2026-07-17)
 
 ## Entries
+
+- **2026-07-19**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
+  request from Giulia re-described the routine (4 sources, 5 themes each, own
+  thread per source, keep growing instructions, keep asking for feedback) and
+  matched what's already documented, so executed rather than re-designed.
+  Checked for an existing open PR first per `CLAUDE.md`'s consolidation rule:
+  none found. Checked the 2026-07-18 feedback-request message and all 4 of its
+  source threads via `slack_read_channel`: **zero replies anywhere** (each
+  source thread's only reply is the routine's own theme-post; the
+  feedback-request message itself has zero replies) — now 33+ days running
+  with confirmed zero text feedback ever received. Ran the 4 source-research
+  tasks as parallel background subagents per the existing process note; all 4
+  completed cleanly. **Two longer-gap repeats caught, not just same-day
+  collisions**: (1) Hugging Face's research surfaced Thinking Machines Lab's
+  "Inkling" as today's #1 trending item again — but it's the exact same ~950B
+  flagship model Hacker News covered in depth on 07-16 (and HF itself passed
+  on it that day for the same reason), with no new version or fresh signal in
+  the 3 days since. Treated as a stale repeat rather than news and swapped in
+  InternScience/Agents-A1. (2) X's research independently surfaced two more
+  repeats outside the normal 2-3 day window: Hassabis's AI-watchdog manifesto
+  (literal repeat of X's own 07-16 pick) and Gemini 3.5 Pro's delay (repeat of
+  HN's 07-17 pick). Both caught via the "spot-check against fuller history,
+  not just the rolling list" rule and swapped for two fresh stories (Microsoft's
+  "Project Perception" and Fireworks AI's $1.505B raise) via a quick
+  supplementary web search before posting — same pattern as past runs that
+  needed a fresh pick mid-curation. **No same-day cross-source collisions**
+  today: HN's, GitHub's, HF's, and X's final picks were checked against each
+  other and don't overlap. **GitHub Trending's agent-tooling skew continues**:
+  4 of 5 final picks (cua, AstrBot, jcode, plus WrenAI's framework angle) are
+  agent/dev-tooling flavored — reported honestly per the standing default;
+  voicebox (the day's biggest star-delta, +629) and WrenAI are the two picks a
+  non-developer would find immediately useful. elder-plinius/G0DM0D3 (07-18's
+  open editorial-judgment flag) did not appear on today's trending page at
+  all, so no live call was needed. **New methodology question raised**: HN's
+  fetch is still fully blocked (news.ycombinator.com returns 403), so today's
+  5 picks are search-reconstructed; only 3 of 5 could be confirmed as real HN
+  thread IDs, and 2 (Apple overtaking Nvidia as most valuable company, China's
+  new WAICO governance bloc) are real, dated, on-topic stories that couldn't
+  be verified as actual live HN submissions. Asked Giulia directly whether
+  that confidence tier is acceptable to hit 5 solid themes, or whether HN
+  should only ever run fully-confirmed thread IDs even if that sometimes means
+  fewer than 5. Fetch strategy unchanged otherwise: GitHub Trending fetched
+  live via WebFetch on `github.com/trending?since=daily` (spot-checked 2 star
+  counts against the live GitHub API, both exact matches, one timestamped
+  today), Hugging Face MCP tools worked without restriction.
 
 - **2026-07-18**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
   request from Giulia re-described the routine (4 sources, 5 themes each, own
@@ -821,3 +870,15 @@ with no reply — always overridable by a reply at any time.
     the line between "different angle, same entity" (allowed) and "already
     covered this entity" (excluded) needs a clearer standing rule instead of
     being re-judged case by case.
+
+23. **New 2026-07-19**: Hacker News is fully blocked from live access in this
+    environment (news.ycombinator.com returns 403), so all of HN's picks are
+    search-reconstructed rather than pulled from a live front page. Today, 3
+    of 5 picks were confirmed as real HN thread IDs via search, but 2 (Apple
+    overtaking Nvidia as the world's most valuable company; China's new WAICO
+    AI-governance bloc) are real, dated, on-topic stories from the right news
+    window that couldn't be independently verified as an actual live HN
+    submission. Specific ask: is it fine for HN to include unconfirmed-but-real
+    stories like that to keep a full 5 solid themes, or should HN only ever
+    run fully search-confirmed thread IDs, even on days that means posting
+    fewer than 5?
