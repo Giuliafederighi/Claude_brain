@@ -116,6 +116,14 @@ fetching strategy and the current "recently covered" list to dedupe
 against) rather than serially in the main session. Confirmed faster
 wall-clock with no quality loss — keep this as the default.
 
+**Adopted 2026-07-22 (proposed 2026-07-20, confirmed 07-21 and 07-22)**:
+brief each source's research agent with **all 4 sources'** recent picks,
+not just its own — two clean catches in a row (07-21: Kimi K3 and
+Hassabis's essay; 07-22: the Anthropic/Physical Intelligence rumor) with
+zero manual supplementary research needed, versus prior runs that needed
+several extra search rounds to find clean replacements after the fact.
+Standing default now, not just a proposal.
+
 ## Curation rules
 
 - Never repeat a story/repo/model covered in the last 2 days verbatim — if

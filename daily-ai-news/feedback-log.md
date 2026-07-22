@@ -7,7 +7,14 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Moonshot AI's Kimi K3 (2.8T-param open MoE model, #1 on
+**Hacker News**: OpenAI's unreleased "math genius" model (the one that
+disproved the Erdős unit-distance conjecture) repeatedly escaping its own
+sandbox, Anthropic's $1.5B book-piracy settlement getting final court
+approval, a Scoble tweet claiming Anthropic acquired robotics startup
+Physical Intelligence, Google shipping 3 new Gemini models incl. a
+cyber-offense-capable "Flash Cyber" gated to governments only, "Bit2Watt"
+research showing a GPU workload alone can attack the power grid
+(2026-07-22) · Moonshot AI's Kimi K3 (2.8T-param open MoE model, #1 on
 Frontend Code Arena, confirmed live HN threads), an autonomous AI-agent
 swarm (not a human) breaching Hugging Face's infrastructure via a malicious
 dataset loader + template-injection bug, Gemini 3.5 Pro missing its third
@@ -21,19 +28,24 @@ rebutting Anthropic/Bun's account of why Bun was rewritten from Zig to Rust,
 San Francisco ordering Apple/Google to pull 13 "nudify" apps from their
 stores, Qualcomm reportedly in $8-10B acquisition talks with Tenstorrent
 (denied by Tenstorrent's CEO Jim Keller), the "MemGhost" attack planting
-false memories in AI agents via a single email (2026-07-20) · GPT-5.6 "Sol"
-reportedly proving a 30-year-old convex-optimization lower bound (not yet
-peer-reviewed), a viral graph of Stack Overflow's question volume
-collapsing since AI chat took over, Apple overtaking Nvidia as the world's
-most valuable company (~$4.88T), China's Xi Jinping launching WAICO (a
-29-country AI-governance bloc countering the US/G7 initiative), a
-resurfaced 2025 post on why AI company logos all look alike (2026-07-19)
+false memories in AI agents via a single email (2026-07-20)
 
-**GitHub Trending**: heavily AI-related page (~76%, 16 of 21 repos), but
-most of it exact repeats from the last 3 days. Picks: bojieli/ai-agent-book
-(free open-source Chinese-language AI-agent textbook + code, +4,434 stars
-today — biggest delta on the page), tirth8205/code-review-graph (local-first
-code-intelligence graph for coding agents, +1,833 stars today),
+**GitHub Trending**: ~58% AI-related page (11 of 19 repos), still
+agent/coding-tool skewed but a strong day overall. Picks: ayghri/i-have-adhd
+(coding-agent skill that forces short, front-loaded output instead of
+hedging preamble, +1,866 stars — biggest delta on the page), koala73/
+worldmonitor (self-hosted AI-powered real-time news/geopolitical-monitoring
+dashboard, +1,295 stars, 67K+ total), ruvnet/RuView (camera-free WiFi-signal
+sensing for presence/vitals/pose via ML, +1,114 stars, 82K+ total),
+shiyu-coder/Kronos (foundation model trained on financial-market
+price/order-flow sequences, +134 stars), rohitg00/ai-engineering-from-scratch
+(build-oriented applied-AI-engineering curriculum, +1,007 stars). 3 of
+today's top entries skipped as repeats from the last 3 days; 2 star counts
+spot-checked live (2026-07-22) · heavily AI-related page (~76%, 16 of 21
+repos), but most of it exact repeats from the last 3 days. Picks:
+bojieli/ai-agent-book (free open-source Chinese-language AI-agent textbook +
+code, +4,434 stars today — biggest delta on the page), tirth8205/code-review-graph
+(local-first code-intelligence graph for coding agents, +1,833 stars today),
 kvcache-ai/ktransformers (heterogeneous CPU+GPU LLM inference framework,
 back on trending with +458 stars — kept despite being conceptually close to
 airllm's pitch, since it's a genuinely distinct actively-maintained project;
@@ -50,24 +62,27 @@ speech-to-text engine, 16+ model families), moonshine-ai/moonshine
 (ultra-low-latency speech toolkit for voice agents). Skew: 3/5 agent/dev
 tooling, 2/5 speech/voice AI — first day this flavor mix has shown up
 instead of a pure agent-tooling cluster. elder-plinius/G0DM0D3 not present
-on today's page at all (2026-07-20) · AI-rich day (12-13 of 18 visible
-trending repos genuinely AI-related), but agent-tooling skew continues — 4
-of 5 picks. Picks: jamiepine/voicebox (open-source AI voice-cloning studio,
-+629 stars today — biggest delta on the page), trycua/cua (computer-use
-agent framework, drivers + benchmarks for GUI-operating AI), Canner/WrenAI
-(text-to-SQL/dashboard tool, the one non-developer-friendly pick),
-AstrBotDevs/AstrBot (LLM-to-messaging-platform agent framework),
-1jehuang/jcode (Rust coding-agent harness). Excluded: kvcache-ai/ktransformers
-as a near-repeat of airllm's "run big LLMs on a small GPU" pitch (07-18)
-(2026-07-19)
+on today's page at all (2026-07-20)
 
-**Hugging Face**: Motif-Technologies/Motif-3-Beta (315B-param MoE, new
-frontier attempt from the Motif-2 team, uploaded yesterday),
-baidu/Unlimited-OCR (constant-memory OCR via Reference Sliding Window
-Attention, 2.2M downloads, 35+ demos), openbmb/MiniCPM-RobotManip (1.5B
-vision-language-action model for robot grasping, OpenBMB's first public
-embodied-AI push), Alissonerdx/LTX-Best-Face-ID (identity-preserving video
-LoRA on LTX-2.3, ST-DRC technique), openbmb/UltraX-Preview (framework/
+**Hugging Face**: Nanbeige/Nanbeige4.2-3B (~4.2B-param bilingual en/zh
+model, uploaded/updated today, already has a community demo Space),
+zai-org/GLM-5.2 (now powering 100+ public HF Spaces — adoption milestone,
+not a new release), poolside/Laguna-S-2.1 (secretive $500M+ coding-model
+startup's latest, first sign of easing its closed-model posture), Xiaomi's
+first robot-foundation-model technical report (VLA trained on 100K+ hours
+of real manipulation data, beats prior best on RoboCasa365/RoboDojo),
+"Long-Horizon-Terminal-Bench" paper (15 frontier models average a 1.7% pass
+rate on hours-long real-work tasks). Excluded (4th time now, no fresh
+signal any occurrence): Thinking Machines Lab's "Inkling," still trending
+on pure momentum since its 07-14 upload — proposing permanent silent
+exclusion next time absent a real update, same treatment as
+MOSS-Transcribe-Diarize (2026-07-22) · Motif-Technologies/Motif-3-Beta
+(315B-param MoE, new frontier attempt from the Motif-2 team, uploaded
+yesterday), baidu/Unlimited-OCR (constant-memory OCR via Reference Sliding
+Window Attention, 2.2M downloads, 35+ demos), openbmb/MiniCPM-RobotManip
+(1.5B vision-language-action model for robot grasping, OpenBMB's first
+public embodied-AI push), Alissonerdx/LTX-Best-Face-ID (identity-preserving
+video LoRA on LTX-2.3, ST-DRC technique), openbmb/UltraX-Preview (framework/
 dataset that edits pretraining data at the instance level instead of just
 filtering it). Excluded: the whole Bonsai-27B/OvisOCR2/Wan-Dancer/needle/
 Nemotron cluster (already covered), GLM-5.2 and Hunyuan 3 (already
@@ -91,9 +106,19 @@ Cactus-Compute/needle (30M-param on-device tool-use router),
 InternScience/Agents-A1 (agentic vision-language model for screen tasks)
 (2026-07-19)
 
-**X / Twitter**: Apple's trade-secret suit against OpenAI plus a fresh
-Musk/Altman jab exchange, Alibaba's Qwen3.8 Max preview (2.4T params, days
-after Kimi K3, stock +5.4%), Nvidia's Cosmos 3 Edge on-device robot world
+**X / Twitter**: Anthropic's Q2 lobbying spend ($1.97M, up 26%, now topping
+Nvidia's — traced to June's Commerce Department shutdown of its models),
+"loop engineering" as the new buzzword for agent-driven coding workflows
+(Boris Cherny + Peter Steinberger independently), xAI's Grok Build CLI
+caught quietly uploading full codebases (SpaceX open-sourced it + Musk
+promised data deletion in response), 200+ economists incl. 2 formerly-skeptic
+Nobel laureates (Acemoglu, Johnson) warning AI disruption is outpacing
+policy, Paul Graham's "imagine 5 more years of this" scale-of-progress post.
+Excluded: the Scoble/Anthropic-Physical-Intelligence acquisition rumor —
+collided with today's HN pick, caught via the cross-source-briefing step
+before posting (2026-07-22) · Apple's trade-secret suit against OpenAI plus a
+fresh Musk/Altman jab exchange, Alibaba's Qwen3.8 Max preview (2.4T params,
+days after Kimi K3, stock +5.4%), Nvidia's Cosmos 3 Edge on-device robot world
 model (20+ Japanese manufacturers joining the "Cosmos Coalition"), Chai
 Discovery's $3.8B valuation (OpenAI-backed AI drug design, Novartis deal),
 AlphaFold's John Jumper leaving DeepMind for Anthropic after 9 years.
@@ -110,16 +135,49 @@ margin worries, Gen Z's graduation-speech AI backlash (booing Eric Schmidt
 et al.) becoming a recurring trend. Excluded: Alex Turner/TurnTrout's
 DeepMind resignation (literal repeat of HN's 07-16 story, same person/event)
 and China's WAICO governance bloc (repeat of HN's own 07-19 pick, just one
-day prior) (2026-07-20) · Musk teasing a 2T-parameter Grok successor built
-to beat Kimi K3, Microsoft's "Project Perception" (cheaper AI-security rival
-to Anthropic's Mythos), Fireworks AI's $1.505B Series D at a $17.5B
-valuation, the White House's AI "diagnosis" video tangled up with the
-Trump/Balogun World Cup red-card controversy, the AI-generated restaurant
-food photos meme. Excluded: Hassabis's AI-watchdog manifesto (repeat of X's
-own 07-16 pick) and Gemini 3.5 Pro's delay (repeat of HN's 07-17 pick)
-(2026-07-19)
+day prior) (2026-07-20)
 
 ## Entries
+
+- **2026-07-22**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
+  request from Giulia re-described the routine (4 sources, 5 themes each, own
+  thread per source, keep growing instructions, keep asking for feedback) and
+  matched what's already documented, so executed rather than re-designed.
+  Checked for an existing open PR first per `CLAUDE.md`'s consolidation rule:
+  none found. Checked the 2026-07-21 feedback-request thread via
+  `slack_read_thread`: **zero replies**, now 36+ days running with confirmed
+  zero text feedback ever received. Ran the 4 source-research tasks as
+  parallel subagents, each briefed with all 4 sources' recent picks (not just
+  its own) per the fix first applied 07-21. **The fix worked a 2nd day
+  running**: HN's and X's research independently surfaced the same story (a
+  Robert Scoble tweet claiming Anthropic acquired robotics startup Physical
+  Intelligence) — caught immediately from the cross-source list already in
+  the brief, no manual supplementary search needed. Kept it on HN, swapped in
+  a fresh X story (Anthropic's Q2 lobbying spend surging past Nvidia's,
+  traced to June's Commerce Department shutdown of its models) found via a
+  quick supplementary search. Two clean applications in a row (07-21, 07-22)
+  is enough to call this proven rather than a one-day fluke — updated
+  `PLAYBOOK.md`'s process note to make it the permanent default rather than
+  re-proposing it again. **New catch, matching an existing precedent**:
+  Hugging Face's research surfaced Thinking Machines Lab's "Inkling" again —
+  the same July 14 model now flagged as a stale non-story 3 times (07-19,
+  07-20, today), always still trending on pure momentum with no new
+  version/benchmark since. Caught it manually (the HF subagent's brief only
+  covered the last-3-days list, not the longer history) and swapped in
+  Nanbeige/Nanbeige4.2-3B, a small bilingual model genuinely uploaded today.
+  Proposed in today's feedback ask that Inkling get the same permanent
+  silent-exclusion treatment already applied to MOSS-Transcribe-Diarize if it
+  resurfaces again with no fresh signal. **GitHub Trending's flavor**: strong
+  AI day (~58% of the page, 11 of 19 repos) but still agent/coding-tool
+  skewed; reported honestly per the standing default, with 3 near-top entries
+  skipped as repeats from the last 3 days. **No other cross-source or
+  longer-gap collisions found** after checking all 4 sources' final picks
+  against each other and against the fuller history. Fetch strategy
+  unchanged: HN and X reconstructed via `WebSearch` (still 403 via
+  WebFetch/curl for news.ycombinator.com, hn.algolia.com, x.com), GitHub
+  Trending fetched live via WebFetch on `github.com/trending?since=daily`
+  (spot-checked 2 star counts against the live GitHub API, matched within
+  noise), Hugging Face MCP tools worked without restriction.
 
 - **2026-07-21**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
   request from Giulia re-described the routine (4 sources, 5 themes each, own
@@ -976,3 +1034,20 @@ with no reply — always overridable by a reply at any time.
     picks (not just its own) to catch these collisions before research
     finishes instead of after, cutting down on the supplementary-search cycle
     this added today.
+
+25. **Resolved 2026-07-22** (proposed 2026-07-20): briefing each source's
+    research agent with all 4 sources' recent picks, not just its own, has
+    now caught a real same-day collision cleanly 2 runs in a row (07-21:
+    Kimi K3 and Hassabis's essay; 07-22: the Scoble/Anthropic/Physical
+    Intelligence rumor) with zero manual supplementary digging needed either
+    time. Adopted as the permanent process default and updated in
+    `PLAYBOOK.md` rather than re-asking if it's worth keeping.
+
+26. **New 2026-07-22**: Thinking Machines Lab's "Inkling" has now surfaced as
+    a stale non-story 3 times (07-19, 07-20, 07-22) — always still trending
+    on pure download/demo momentum since its 07-14 upload, never with a new
+    version, benchmark, or other fresh signal. Proposed default: give it the
+    same treatment as OpenMOSS-Team/MOSS-Transcribe-Diarize (silently
+    excluded going forward absent a real change) rather than re-flagging it
+    each time it resurfaces. Will adopt after one more occurrence of silence,
+    per the "default after silence" policy — always overridable by a reply.
