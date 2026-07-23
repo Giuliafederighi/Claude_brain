@@ -124,6 +124,25 @@ zero manual supplementary research needed, versus prior runs that needed
 several extra search rounds to find clean replacements after the fact.
 Standing default now, not just a proposal.
 
+**Added 2026-07-23 — briefing catches prior-day repeats, not same-day
+collisions between today's final picks**: the cross-source briefing above
+only carries each source's *already-posted* recent picks into the *next*
+day's research brief — it can't catch two sources independently landing on
+the same story *within the same run*, since neither agent's final picks
+exist yet when the briefs are written. Caught two same-day collisions this
+way that slipped past the briefing (block/buzz on GitHub vs. Jack Dorsey's
+"Buzz" launch on X; the Microsoft-Mistral GPU deal on both HN and X) via a
+manual compare-all-20-picks step after all 4 agents returned, before
+posting. Resolution: keep the story on whichever source is its more natural
+home (an actual trending repo stays on GitHub over a business-angle X pick;
+a hard business/policy deal stays on HN over X's version) and find a fresh
+replacement for the other source via quick supplementary search. Asked
+Giulia whether that tiebreaker is right or whether these should be flagged
+to her instead. **Standing step, not just today**: always do this manual
+full cross-check of all 4 sources' actual final picks against each other
+before posting, in addition to (not instead of) the pre-research briefing
+step above.
+
 ## Curation rules
 
 - Never repeat a story/repo/model covered in the last 2 days verbatim — if
@@ -172,6 +191,15 @@ Standing default now, not just a proposal.
   5th entry — name what's actually left (usually evergreen infra with tiny
   deltas) rather than dressing it up as news or reusing a near-repeat.
   Always overridable by a reply from Giulia in the feedback thread.
+- **Adopted 2026-07-23 (proposed 2026-07-22, unopposed)**: Thinking
+  Machines Lab's "Inkling" is now permanently, silently excluded from
+  Hugging Face's picks absent a genuinely new version/benchmark/signal —
+  flagged as a stale non-story on pure download/demo momentum 4 times
+  (07-19, 07-20, 07-22, 07-23) with zero real update since its 07-14
+  release. Same treatment as OpenMOSS-Team/MOSS-Transcribe-Diarize and
+  Baidu's Unlimited-OCR (both already permanently excluded). If it ever
+  gets a real update, it's fair game again — check directly before
+  excluding, don't just pattern-match on the name.
 
 ## Known constraint: sandboxed network egress
 
