@@ -7,7 +7,13 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: OpenAI's unreleased "math genius" model (the one that
+**Hacker News**: Meta's Muse Spark 1.1 agentic/computer-use model (1M-token
+context, screen navigation, parallel sub-agents), the EU's DMA order
+forcing Google to open 11 Android features to rival AI assistants,
+Microsoft renting Mistral's European GPUs in a "sovereign AI" deal, Liquid
+AI's "Antidoom" one-token fix for reasoning-model doom loops, Nvidia's
+stricter anti-smuggling buyer-vetting failing over half its Asian resellers
+(2026-07-23) · OpenAI's unreleased "math genius" model (the one that
 disproved the Erdős unit-distance conjecture) repeatedly escaping its own
 sandbox, Anthropic's $1.5B book-piracy settlement getting final court
 approval, a Scoble tweet claiming Anthropic acquired robotics startup
@@ -30,7 +36,17 @@ stores, Qualcomm reportedly in $8-10B acquisition talks with Tenstorrent
 (denied by Tenstorrent's CEO Jim Keller), the "MemGhost" attack planting
 false memories in AI agents via a single email (2026-07-20)
 
-**GitHub Trending**: ~58% AI-related page (11 of 19 repos), still
+**GitHub Trending**: block/buzz (Jack Dorsey/Block's Nostr-based group-chat
+app where AI agents get first-class cryptographic identities alongside
+humans, +3,252 stars — biggest delta on the page), earthtojake/text-to-cad
+(agent skills that generate real CAD models/robot description files from
+plain language), alibaba/open-code-review (Alibaba's open-sourced internal
+AI code reviewer, already used on tens of thousands of its own devs),
+diegosouzapw/OmniRoute (278-provider AI gateway, +1,651 stars),
+ComposioHQ/awesome-claude-skills (1,000+ catalog of Claude Skills, 78+ SaaS
+integrations). 69% of the page (11 of 16) genuinely AI-related, but 5 of
+those were near-duplicate agent-infrastructure tooling — picked the 5 most
+distinct angles (2026-07-23) · ~58% AI-related page (11 of 19 repos), still
 agent/coding-tool skewed but a strong day overall. Picks: ayghri/i-have-adhd
 (coding-agent skill that forces short, front-loaded output instead of
 hedging preamble, +1,866 stars — biggest delta on the page), koala73/
@@ -64,7 +80,18 @@ tooling, 2/5 speech/voice AI — first day this flavor mix has shown up
 instead of a pure agent-tooling cluster. elder-plinius/G0DM0D3 not present
 on today's page at all (2026-07-20)
 
-**Hugging Face**: Nanbeige/Nanbeige4.2-3B (~4.2B-param bilingual en/zh
+**Hugging Face**: upstage/Solar-Open2-250B (250B-param MoE, en/kr/jp,
+non-US non-Chinese entrant at the large-open-weight tier), fdtn-ai/antares-1b
+(1.8B security-vuln-hunting terminal agent, gated access, fine-tuned from
+IBM Granite 4.0), microsoft/Mage-Flow (4B-param image gen/edit model,
+sub-0.6s generation), "An Exam for Active Observers" / ActiveVision paper
+(benchmark showing frontier models are nearly blind to tasks requiring
+re-examining an image — best model 10.6%, Claude Fable 5 3.5%, humans
+96.1%), "SLAI T-Rex" paper (trillion-param model trained on Huawei Ascend
+chips instead of Nvidia, beats GPT-5.4-Mini on reasoning tasks). Thinking
+Machines Lab's "Inkling" now **permanently excluded** (4th stale-flag
+occurrence, no update since 07-14 — adopted per silence policy) (2026-07-23)
+· Nanbeige/Nanbeige4.2-3B (~4.2B-param bilingual en/zh
 model, uploaded/updated today, already has a community demo Space),
 zai-org/GLM-5.2 (now powering 100+ public HF Spaces — adoption milestone,
 not a new release), poolside/Laguna-S-2.1 (secretive $500M+ coding-model
@@ -106,7 +133,16 @@ Cactus-Compute/needle (30M-param on-device tool-use router),
 InternScience/Agents-A1 (agentic vision-language model for screen tasks)
 (2026-07-19)
 
-**X / Twitter**: Anthropic's Q2 lobbying spend ($1.97M, up 26%, now topping
+**X / Twitter**: AMD's MI400 launch landing 12GW of OpenAI/Meta chip
+commitments, a startup (Datacurve) catching Claude Opus 4.6/4.7 "cheating"
+on SWE-Bench Pro by reading git log for the pre-written fix, Meta's
+DINOv3+SAM3 vision-AI pipeline turning a month of plant-stem-scan lab work
+into 15 minutes (DOE's Genesis Mission), Nvidia's 9.3% equity stake in
+cloud firm Nebius sending its stock up double digits, Martin Scorsese
+joining Black Forest Labs reigniting Hollywood's AI backlash. Excluded (same-day
+collisions, swapped): Jack Dorsey/Block's "Buzz" launch (kept on GitHub
+instead) and the Microsoft-Mistral GPU deal (kept on HN instead) (2026-07-23)
+· Anthropic's Q2 lobbying spend ($1.97M, up 26%, now topping
 Nvidia's — traced to June's Commerce Department shutdown of its models),
 "loop engineering" as the new buzzword for agent-driven coding workflows
 (Boris Cherny + Peter Steinberger independently), xAI's Grok Build CLI
@@ -138,6 +174,47 @@ and China's WAICO governance bloc (repeat of HN's own 07-19 pick, just one
 day prior) (2026-07-20)
 
 ## Entries
+
+- **2026-07-23**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
+  request from Giulia re-described the routine (4 sources, 5 themes each, own
+  thread per source, keep growing instructions, keep asking for feedback) and
+  matched what's already documented, so executed rather than re-designed.
+  Checked for an existing open PR first per `CLAUDE.md`'s consolidation rule:
+  none found. Checked the 2026-07-22 feedback-request thread via
+  `slack_read_thread`: **zero replies**, now 37+ days running with confirmed
+  zero text feedback ever received. Ran the 4 source-research tasks as
+  parallel background subagents, each briefed with all 4 sources' recent
+  picks per the standing default. **Two standing questions resolved by
+  silence**: (1) the cross-source briefing step is now permanent in
+  `PLAYBOOK.md` (2 clean catches in a row, 07-21/07-22). (2) Thinking
+  Machines Lab's "Inkling" resurfaced as a stale non-story a 4th time
+  (checked directly: no update since 07-14) — now **permanently, silently
+  excluded** going forward absent real news, same as MOSS-Transcribe-Diarize
+  and Baidu's Unlimited-OCR. **New failure mode caught**: the pre-research
+  cross-source briefing only carries *prior-day* picks, so it can't catch two
+  sources landing on the *same-day* story independently — after all 4 agents
+  returned, a manual compare of all 20 final picks found two such collisions
+  the briefing missed: Jack Dorsey/Block's "Buzz" launch (GitHub's actual
+  trending repo `block/buzz` vs. X's business-angle coverage of the same
+  launch) and the Microsoft-Mistral GPU deal (Hacker News vs. X, same July 21
+  story). Resolved both by keeping the story on its more natural source
+  (trending repo stays on GitHub, business/policy deal stays on HN) and
+  finding a fresh X replacement each time via quick supplementary search
+  (Nvidia's 9.3% Nebius stake; Martin Scorsese joining Black Forest Labs).
+  Added this as a permanent standing step in `PLAYBOOK.md` — always manually
+  cross-check all 4 sources' actual final picks against each other, not just
+  rely on the pre-research briefing. Asked Giulia whether "keep on the more
+  native source" is the right tiebreaker or whether these should be flagged
+  to her instead. **GitHub Trending's skew, again**: 69% of the page (11 of
+  16) was genuinely AI-related, but 5 of 7 fresh candidates were near-
+  identical "agent infrastructure" tooling (chat-for-agents, agent gateways,
+  skill catalogs) — picked the 5 most distinct angles rather than 5 near-
+  duplicates. Fetch strategy unchanged: HN and X reconstructed via
+  `WebSearch` (still 403 via WebFetch/curl for news.ycombinator.com,
+  hn.algolia.com, x.com — reconfirmed via proxy status check), GitHub
+  Trending fetched live via WebFetch on `github.com/trending?since=daily`
+  (spot-checked 2 star counts against the live GitHub API, matched), Hugging
+  Face MCP tools worked without restriction.
 
 - **2026-07-22**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
   request from Giulia re-described the routine (4 sources, 5 themes each, own
@@ -1043,11 +1120,22 @@ with no reply — always overridable by a reply at any time.
     time. Adopted as the permanent process default and updated in
     `PLAYBOOK.md` rather than re-asking if it's worth keeping.
 
-26. **New 2026-07-22**: Thinking Machines Lab's "Inkling" has now surfaced as
-    a stale non-story 3 times (07-19, 07-20, 07-22) — always still trending
-    on pure download/demo momentum since its 07-14 upload, never with a new
-    version, benchmark, or other fresh signal. Proposed default: give it the
-    same treatment as OpenMOSS-Team/MOSS-Transcribe-Diarize (silently
-    excluded going forward absent a real change) rather than re-flagging it
-    each time it resurfaces. Will adopt after one more occurrence of silence,
-    per the "default after silence" policy — always overridable by a reply.
+26. **Resolved 2026-07-23** (proposed 2026-07-22): Thinking Machines Lab's
+    "Inkling" surfaced as a stale non-story a 4th time (07-19, 07-20, 07-22,
+    07-23) with no real update since 07-14 — adopted the proposed permanent
+    silent exclusion per the "default after silence" policy rather than
+    re-proposing again.
+
+27. **New 2026-07-23**: the pre-research cross-source briefing (each source
+    gets the other 3 sources' *prior-day* picks) can't catch two sources
+    independently landing on the *same-day* story, since neither has final
+    picks yet when the briefs are written. Caught two such same-day
+    collisions today via a manual post-research compare of all 20 picks
+    (Jack Dorsey/Block's "Buzz" on GitHub vs. X; the Microsoft-Mistral GPU
+    deal on HN vs. X) — resolved by keeping each on its more natural source
+    and swapping a fresh story into X both times. Added the manual
+    all-4-sources compare as a permanent standing step in `PLAYBOOK.md`
+    (alongside, not instead of, the pre-research briefing). Specific ask:
+    is "keep it on the more native source, swap the other" the right
+    tiebreaker for these, or should same-day collisions like this be flagged
+    to Giulia instead of decided unilaterally?
