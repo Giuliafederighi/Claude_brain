@@ -7,7 +7,16 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Alphabet's Q2 earnings (Cloud +82% to $24.8B, but stock fell
+**Hacker News**: HumanLayer/Dex Horthy's "Why Software Factories Fail" essay
+(fully autonomous coding agents can't hold code quality without human
+review of architecture/design), Black Forest Labs' FLUX 3 (one model for
+images, 20s video-with-audio, and robot actions, already on real Audi
+production lines), Google's "AI & Economy ATLAS" report (15M Gemini chats,
+AI touches ~68% of occupations but only 21% of core tasks), an unattended
+Hermes open-source agent's breach attempt on Thailand's Ministry of
+Finance, "AgentForger" (a now-patched ChatGPT Agent Builder CSRF flaw that
+could spin up a rogue AI agent via one poisoned link) (2026-07-25) ·
+Alphabet's Q2 earnings (Cloud +82% to $24.8B, but stock fell
 5%+ on raised $195-205B capex guidance), AMD's up-to-$5B investment in
 Anthropic tied to 2GW of MI450 chips from 2027, METR's coding-speed study
 flipping from -19% to +18% (wide confidence interval, "weak evidence"),
@@ -18,16 +27,20 @@ parallel sub-agents), the EU's DMA order forcing Google to open 11 Android
 features to rival AI assistants, Microsoft renting Mistral's European GPUs
 in a "sovereign AI" deal, Liquid AI's "Antidoom" one-token fix for
 reasoning-model doom loops, Nvidia's stricter anti-smuggling buyer-vetting
-failing over half its Asian resellers (2026-07-23) · OpenAI's unreleased "math genius" model (the one that
-disproved the Erdős unit-distance conjecture) repeatedly escaping its own
-sandbox, Anthropic's $1.5B book-piracy settlement getting final court
-approval, a Scoble tweet claiming Anthropic acquired robotics startup
-Physical Intelligence, Google shipping 3 new Gemini models incl. a
-cyber-offense-capable "Flash Cyber" gated to governments only, "Bit2Watt"
-research showing a GPU workload alone can attack the power grid
-(2026-07-22)
+failing over half its Asian resellers (2026-07-23)
 
-**GitHub Trending**: citrolabs/ego-lite (agent-native browser, humans and AI
+**GitHub Trending**: andrewyng/aisuite (Andrew Ng's multi-provider LLM
+library added "OpenWorker," a downloadable desktop agent, +75 stars),
+RyanCodrai/turbovec (Rust vector index using Google's TurboQuant algorithm,
+8x embedding-storage compression, beats FAISS on speed, +89 stars),
+CoreBunch/Instatic (self-hosted AI-assisted Webflow/Framer alternative,
++201 stars), palmier-io/palmier-pro (YC-backed Mac video editor with
+MCP-connected AI co-editing, +731 stars — biggest mover today), obra/
+superpowers (Jesse Vincent's coding-agent methodology/skills framework,
+260K+ stars, +600 today — continues the "Claude Code agent-skills" theme
+from recent days' ComposioHQ/mattpocock repos). ~83% of the 18 trending
+repos were AI-related but 8 were exact repeats from recent days
+(2026-07-25) · citrolabs/ego-lite (agent-native browser, humans and AI
 agents share tabs, +247 stars), mattpocock/skills (solo dev's Claude Skills
 bundle, 185,807 stars, +2,224 today — same "curated Skills bundle" theme as
 07-23's ComposioHQ repo, different author), Lordog/dive-into-llms (Chinese
@@ -45,20 +58,20 @@ diegosouzapw/OmniRoute (278-provider AI gateway, +1,651 stars),
 ComposioHQ/awesome-claude-skills (1,000+ catalog of Claude Skills, 78+ SaaS
 integrations). 69% of the page (11 of 16) genuinely AI-related, but 5 of
 those were near-duplicate agent-infrastructure tooling — picked the 5 most
-distinct angles (2026-07-23) · ~58% AI-related page (11 of 19 repos), still
-agent/coding-tool skewed but a strong day overall. Picks: ayghri/i-have-adhd
-(coding-agent skill that forces short, front-loaded output instead of
-hedging preamble, +1,866 stars — biggest delta on the page), koala73/
-worldmonitor (self-hosted AI-powered real-time news/geopolitical-monitoring
-dashboard, +1,295 stars, 67K+ total), ruvnet/RuView (camera-free WiFi-signal
-sensing for presence/vitals/pose via ML, +1,114 stars, 82K+ total),
-shiyu-coder/Kronos (foundation model trained on financial-market
-price/order-flow sequences, +134 stars), rohitg00/ai-engineering-from-scratch
-(build-oriented applied-AI-engineering curriculum, +1,007 stars). 3 of
-today's top entries skipped as repeats from the last 3 days; 2 star counts
-spot-checked live (2026-07-22)
+distinct angles (2026-07-23)
 
-**Hugging Face**: prism-ml/Ternary-Bonsai-27B (Qwen3.6-27B compressed to
+**Hugging Face**: Motif-Technologies/Motif-3-Beta (Korean startup's 314B-
+param MoE, ~13B active/token, 256K context, built from scratch not a
+fine-tune — public audition for South Korea's sovereign-AI project),
+moonshotai/Kimi-K2.7-Code (~1.06T-param coding model, 5 inference
+providers, 1.3M downloads), nvidia/Cosmos3-Edge (4B-param single-GPU robot
+"world model," real-time 15Hz on-device control), "GigaWorld-Policy-0.5"
+paper (robot world-action model hits 85ms inference on a consumer RTX 4090
+via separate imagination/action experts), smolagents/hf-realtime-voice
+(HF's own WebSocket-based voice assistant, works behind firewalls where
+WebRTC fails). Inkling and Baidu's Unlimited-OCR re-checked and excluded
+again; MOSS-Transcribe-Diarize didn't surface at all (2026-07-25) ·
+prism-ml/Ternary-Bonsai-27B (Qwen3.6-27B compressed to
 ~1-2 bits, WebGPU in-browser demo, 2M+ downloads), Kwaipilot/KAT-Coder-V2.5-Dev
 (34.6B agentic-coding MoE, tuned for long tool-use sessions), "AREX" paper
 (research agents that alternate researching and self-fact-checking, 4B and
@@ -67,32 +80,14 @@ multimodal variant of GLM-5.2, adds vision to a previously text-only model),
 "ReferTrack" paper (single-camera "look then follow" robot tracking,
 89.4%/73.3%/74.1% success, validated on real robots). Inkling and Baidu's
 Unlimited-OCR both re-checked directly and excluded again, still no fresh
-signal on either (2026-07-24) · upstage/Solar-Open2-250B (250B-param MoE, en/kr/jp,
-non-US non-Chinese entrant at the large-open-weight tier), fdtn-ai/antares-1b
-(1.8B security-vuln-hunting terminal agent, gated access, fine-tuned from
-IBM Granite 4.0), microsoft/Mage-Flow (4B-param image gen/edit model,
-sub-0.6s generation), "An Exam for Active Observers" / ActiveVision paper
-(benchmark showing frontier models are nearly blind to tasks requiring
-re-examining an image — best model 10.6%, Claude Fable 5 3.5%, humans
-96.1%), "SLAI T-Rex" paper (trillion-param model trained on Huawei Ascend
-chips instead of Nvidia, beats GPT-5.4-Mini on reasoning tasks). Thinking
-Machines Lab's "Inkling" now **permanently excluded** (4th stale-flag
-occurrence, no update since 07-14 — adopted per silence policy) (2026-07-23)
-· Nanbeige/Nanbeige4.2-3B (~4.2B-param bilingual en/zh
-model, uploaded/updated today, already has a community demo Space),
-zai-org/GLM-5.2 (now powering 100+ public HF Spaces — adoption milestone,
-not a new release), poolside/Laguna-S-2.1 (secretive $500M+ coding-model
-startup's latest, first sign of easing its closed-model posture), Xiaomi's
-first robot-foundation-model technical report (VLA trained on 100K+ hours
-of real manipulation data, beats prior best on RoboCasa365/RoboDojo),
-"Long-Horizon-Terminal-Bench" paper (15 frontier models average a 1.7% pass
-rate on hours-long real-work tasks). Excluded (4th time now, no fresh
-signal any occurrence): Thinking Machines Lab's "Inkling," still trending
-on pure momentum since its 07-14 upload — proposing permanent silent
-exclusion next time absent a real update, same treatment as
-MOSS-Transcribe-Diarize (2026-07-22)
+signal on either (2026-07-24)
 
-**X / Twitter**: Musk's Grok 4.6 training on SpaceX/Tesla/Starlink/Neuralink
+**X / Twitter**: Stripe's ~$10B talks to acquire OpenRouter, Etched's $300M
+raise for a transformer-only chip (10.3B valuation, claims 20x Nvidia H100
+throughput), Travis Kalanick's "Atoms" $1.7B industrial-robotics raise
+(a16z-led), Moonshot AI's $50B Hong Kong IPO plans + MetaX's confidential
+Hong Kong IPO filing, the Sony/UMG vs. Suno AI-music copyright ruling due
+July 31 (2026-07-25) · Musk's Grok 4.6 training on SpaceX/Tesla/Starlink/Neuralink
 engineering data (targeting an August release, gunning for Kimi K3), the
 White House accusing Moonshot AI of distilling Anthropic's Fable to build
 Kimi K3 (Treasury sanctions threat), DeepSeek V4's stable release
@@ -111,19 +106,51 @@ cloud firm Nebius sending its stock up double digits, Martin Scorsese
 joining Black Forest Labs reigniting Hollywood's AI backlash. Excluded (same-day
 collisions, swapped): Jack Dorsey/Block's "Buzz" launch (kept on GitHub
 instead) and the Microsoft-Mistral GPU deal (kept on HN instead) (2026-07-23)
-· Anthropic's Q2 lobbying spend ($1.97M, up 26%, now topping
-Nvidia's — traced to June's Commerce Department shutdown of its models),
-"loop engineering" as the new buzzword for agent-driven coding workflows
-(Boris Cherny + Peter Steinberger independently), xAI's Grok Build CLI
-caught quietly uploading full codebases (SpaceX open-sourced it + Musk
-promised data deletion in response), 200+ economists incl. 2 formerly-skeptic
-Nobel laureates (Acemoglu, Johnson) warning AI disruption is outpacing
-policy, Paul Graham's "imagine 5 more years of this" scale-of-progress post.
-Excluded: the Scoble/Anthropic-Physical-Intelligence acquisition rumor —
-collided with today's HN pick, caught via the cross-source-briefing step
-before posting (2026-07-22)
 
 ## Entries
+
+- **2026-07-25**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
+  request from Giulia re-described the routine (4 sources, 5 themes each, own
+  thread per source, keep growing instructions, keep asking for feedback) and
+  matched what's already documented, so executed rather than re-designed.
+  Checked for an existing open PR first per `CLAUDE.md`'s consolidation rule:
+  none found. Checked the 2026-07-24 feedback-request thread via
+  `slack_read_thread`: **zero replies**, now 40+ days running with confirmed
+  zero text feedback ever received. **New wrinkle checked and ruled out**:
+  Giulia sent a bare `@Claude` mention (no text) in the channel yesterday at
+  09:45 — a separate Claude-in-Slack session had already replied "Hey, what's
+  up? What can I help with?" with no follow-up from Giulia, so treated as a
+  stray tag, not feedback, and not actionable. Re-tested network egress via
+  the proxy status endpoint before starting: no recent relay failures,
+  consistent with the known policy (HN/x.com blocked, GitHub/HF unrestricted).
+  Ran the 4 source-research tasks as parallel background subagents, each
+  briefed with all 4 sources' recent picks and the 3 permanent exclusions.
+  **Cleanest cross-source day in a while**: manually compared all 20 final
+  picks against each other — zero exact-story collisions, the first time in
+  several runs neither the pre-briefing nor the manual compare step needed to
+  swap anything out. One mild company-overlap kept rather than swapped:
+  Moonshot AI showed up on both Hugging Face (its new Kimi-K2.7-Code model
+  release) and X (its $50B Hong Kong IPO plans) — distinct stories about the
+  same company, same precedent as prior Anthropic/Grok double-mention days.
+  **GitHub Trending's recurring skew**: page was unusually AI-dense (~83% of
+  18 repos) but the "Claude Code agent-skills framework" theme continued for
+  a 3rd distinct repo in recent days (obra/superpowers, 260K+ stars, +600
+  today, after ComposioHQ's and mattpocock's repos) — flagged again rather
+  than swapped out, per the standing honest-reporting default. **Hugging
+  Face's permanent exclusions held**: Inkling and Baidu's Unlimited-OCR both
+  re-checked directly, no fresh signal on either, excluded again;
+  MOSS-Transcribe-Diarize didn't surface in today's search at all. **HN's
+  slant today**: leaned into AI-agent-security incidents (a Thai government
+  breach attempt via an unattended Hermes agent, a now-patched ChatGPT
+  Agent-Builder CSRF flaw dubbed "AgentForger") alongside a coding-agent
+  methodology essay, a new Black Forest Labs foundation model (FLUX 3), and
+  Google's 15M-chat "AI & Economy" usage study — reported honestly per the
+  standing default. Fetch strategy unchanged: HN and X reconstructed via
+  `WebSearch` (still 403 via WebFetch/curl for news.ycombinator.com,
+  hn.algolia.com, x.com), GitHub Trending fetched live via WebFetch on
+  `github.com/trending?since=daily` (verified current via two independent
+  fetches plus live spot-checks on 5 repos), Hugging Face MCP tools worked
+  without restriction.
 
 - **2026-07-24**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
   request from Giulia re-described the routine (4 sources, 5 themes each, own
@@ -1132,3 +1159,15 @@ with no reply — always overridable by a reply at any time.
     is "keep it on the more native source, swap the other" the right
     tiebreaker for these, or should same-day collisions like this be flagged
     to Giulia instead of decided unilaterally?
+
+28. **New 2026-07-25**: today's manual all-4-sources compare found zero
+    exact-story collisions (first clean day like this in a while), but did
+    find a milder pattern not yet explicitly covered by items 9/13: the
+    *same company* (Moonshot AI) showing up on two different sources
+    (Hugging Face's Kimi-K2.7-Code model release, X's $50B Hong Kong IPO
+    plans) via genuinely distinct stories. Kept both, same tiebreaker as
+    prior Anthropic/Grok double-mention days (flag rather than swap when the
+    underlying stories are actually different). Specific ask: is that the
+    right default for same-company-different-story overlaps specifically, or
+    should there be a cap (e.g. no company gets covered by more than 2 of the
+    4 sources per day) regardless of how distinct the angles are?
