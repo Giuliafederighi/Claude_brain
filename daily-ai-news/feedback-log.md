@@ -7,7 +7,14 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Kimi K3's full 2.8T-param weights actually landing (largest
+**Hacker News**: Microsoft's MAI-Cyber-1-Flash cybersecurity model (claims
+95.95% on CyberGym, beating GPT-5.5 Cyber/Claude Mythos 5/GPT-5.6 Sol), AI
+labs bulk-buying and shredding rare books after scanning them (viral thread
+amplified by Musk), record H1-2026 AI-industry lobbying spend (FT: OpenAI
+$2.22M, Anthropic $3.53M), a Stanford study finding 22-25-year-olds in
+AI-exposed jobs (coding, customer service) losing employment share, nearly
+200 startups' "Little Tech Association" letter to Trump opposing a Chinese
+open-weight-model ban (2026-07-28) · Kimi K3's full 2.8T-param weights actually landing (largest
 open-weight release ever) with an independently-found ~51% hallucination
 rate Moonshot omitted from its own charts, 32 Kimi K3 agents allegedly
 finding a real Redis RCE exploit in 27 minutes, Terence Tao publishing his
@@ -34,7 +41,17 @@ Hermes open-source agent's breach attempt on Thailand's Ministry of
 Finance, "AgentForger" (a now-patched ChatGPT Agent Builder CSRF flaw that
 could spin up a rogue AI agent via one poisoned link) (2026-07-25)
 
-**GitHub Trending**: moeru-ai/airi (self-hosted Live2D/VRM AI companion
+**GitHub Trending**: affaan-m/ECC (coding-agent memory/guardrails toolkit,
+234,403 stars — flagged as disproportionate for a 6-month-old repo, treated
+skeptically), huggingface/speech-to-speech (local voice-agent toolkit),
+virgiliojr94/book-to-skill (PDF-to-Claude-Code-skill converter, continuing
+the recurring "agent skills framework" theme), microsoft/agent-governance-
+toolkit (AI agent security/governance covering the OWASP Agentic Top 10).
+Honest non-AI note: today's actual #1 mover was yorukot/superfile, a
+terminal file manager (+600 stars, beating every AI repo). ~58% of captured
+rows were AI-related; 3 exact repeats excluded. Fetch limitation: WebFetch
+only reliably captured ~12 of the usual ~25 trending rows despite retries —
+star counts spot-checked as live/current regardless (2026-07-28) · moeru-ai/airi (self-hosted Live2D/VRM AI companion
 chasing the Neuro-sama vibe, 43,688 stars, +554 today), bradautomates/
 claude-video (a `/watch` command giving Claude eyes on video via frame
 extraction + transcription, 10,606 stars, +412, only 3 months old),
@@ -66,7 +83,18 @@ from recent days' ComposioHQ/mattpocock repos). ~83% of the 18 trending
 repos were AI-related but 8 were exact repeats from recent days
 (2026-07-25)
 
-**Hugging Face**: Upstage/Solar-Open2-250B (South Korean lab's 250B-param
+**Hugging Face**: moonshotai/Kimi-K3 (official model + "Open Frontier
+Intelligence" paper — first confirmed official HF repo after 07-27 flagged
+only unofficial re-uploads; by far the top trending score on the platform,
+included since neither HN nor X covered it today), Nanbeige/Nanbeige4.2-3B
+(3B-param "Looped Transformer" agentic model, claims to beat 9B/12B rivals
+on tool-use benchmarks), fdtn-ai/antares-1b (Cisco Foundation AI's gated
+1.8B terminal-agent model for autonomous vulnerability hunting), "StateAct"
+paper (computer-use agents work from real program state instead of
+screenshots, lifts Claude Opus 4.8 on OSWorld 2.0 from 20.6%→26.9% at ~9x
+lower cost), "JarvisHub" paper (canvas-as-memory framework for AI creative
+agents). Permanent exclusions (Inkling, Baidu Unlimited-OCR, MOSS-
+Transcribe-Diarize) re-checked and held (2026-07-28) · Upstage/Solar-Open2-250B (South Korean lab's 250B-param
 MoE, English/Korean/Japanese, 600+ likes), prism-ml/Ternary-Bonsai-27B
 (Qwen-27B ternary-quantized to 2-bit, runs via WebGPU in a browser tab,
 648K+ downloads), "Agentic Context Management" paper (names why agents get
@@ -99,7 +127,15 @@ via separate imagination/action experts), smolagents/hf-realtime-voice
 WebRTC fails). Inkling and Baidu's Unlimited-OCR re-checked and excluded
 again; MOSS-Transcribe-Diarize didn't surface at all (2026-07-25)
 
-**X / Twitter**: Nvidia's reported ~$250B backstop for OpenAI's Ohio
+**X / Twitter**: Chamath Palihapitiya's "barrel of intelligence" argument
+that AI model-company valuations are a mathematical mistake (Chinese
+inference ~52x cheaper per token), the White House's AI-generated Rick and
+Morty parody video starring Trump sparking bipartisan-flavored backlash
+(incl. Marjorie Taylor Greene), OpenAI's ChatGPT Health rollout to all US
+users a day after a lawsuit sought to block it, the recurring
+Anthropic/Physical Intelligence acquisition rumor (denied, but real talks
+confirmed last spring), Nvidia's $5B investment in Ilya Sutskever's Safe
+Superintelligence (2026-07-28) · Nvidia's reported ~$250B backstop for OpenAI's Ohio
 data-center lease (kept here after HN couldn't confirm a live thread for it),
 Musk's Grok 4.6 (~2T params) racing to match/beat Kimi K3, a 25-company
 letter (Nvidia, Microsoft, Meta, Hugging Face, a16z, YC, etc.) urging
@@ -125,6 +161,57 @@ Hong Kong IPO filing, the Sony/UMG vs. Suno AI-music copyright ruling due
 July 31 (2026-07-25)
 
 ## Entries
+
+- **2026-07-28**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
+  request from Giulia re-described the routine (4 sources, 5 themes each, own
+  thread per source, keep growing instructions, keep asking for feedback) and
+  matched what's already documented, so executed rather than re-designed.
+  Checked for an existing open PR first per `CLAUDE.md`'s consolidation rule:
+  none found. Checked the 2026-07-27 feedback-request thread and all 4 of its
+  source threads via `slack_read_thread`: **zero replies anywhere**, now 43+
+  days running with confirmed zero text feedback ever received. Ran the 4
+  source-research tasks as parallel background subagents, each briefed with
+  all 4 sources' recent picks and the 3 permanent HF exclusions. **New
+  editorial call, flagged not decided silently**: Hugging Face's research
+  initially set aside `moonshotai/Kimi-K3` to avoid an assumed collision with
+  HN/X, but neither source actually covered Kimi K3 today — and 07-27's
+  digest had explicitly fact-checked and found no *official* HF repo existed
+  yet. Since one now does (by far the platform's top trending item, with a
+  companion paper), swapped it in over a smaller pick rather than holding it
+  back reflexively, closing the loop on Tuesday's open fact-check. **One
+  soft same-company overlap, kept not swapped**: Hacker News (Microsoft's
+  MAI-Cyber-1-Flash cybersecurity model) and GitHub Trending (Microsoft's
+  agent-governance-toolkit) both landed on Microsoft + AI-agent-security
+  today — distinct products, not a repeat, kept both per standing precedent.
+  **No same-day collisions requiring the tiebreaker**: manually compared all
+  20 final picks across sources — none overlapped, first clean cross-source
+  day in a while (after the HN research agent itself flagged an open-weight-
+  letter story as high collision risk with X, which didn't materialize since
+  X's final picks moved to different stories). **Two new honest flags**: (1)
+  GitHub Trending's WebFetch pull only reliably captured ~12 of the usual ~25
+  trending rows despite repeated retries — star counts spot-checked as live
+  and current regardless, so treated as an incomplete crawl rather than a
+  stale one, but worth revisiting the fetch approach if a fuller sweep
+  matters. (2) One GitHub pick (affaan-m/ECC) has a star count (234,403 on a
+  ~6-month-old repo) disproportionate to its actual visibility — included
+  with an explicit skeptical caveat in the digest rather than presented at
+  face value or dropped outright. **Hugging Face's other permanent exclusions
+  held**: Inkling and Baidu's Unlimited-OCR both re-checked directly, no
+  fresh signal on either; MOSS-Transcribe-Diarize didn't surface in today's
+  search at all. **"Newsly" question given a last flag**: the separate
+  inbox-sourced "Newsly" digest (outside this routine's spec since 07-02) has
+  now been asked about 4+ times with zero reply — flagged today as the last
+  time it'll be raised absent a response, per the playbook's own
+  default-after-silence policy, since it's a different automation this
+  routine doesn't control anyway. Fetch strategy unchanged: HN reconstructed
+  via `WebSearch` (a third-party GitHub-hosted HN-digest mirror gave
+  higher-confidence thread IDs than blind reconstruction alone; 3 of 5 picks
+  independently confirmed as live thread IDs), X reconstructed via
+  `WebSearch` (still 403 via WebFetch/curl for news.ycombinator.com,
+  hn.algolia.com, x.com), GitHub Trending fetched live via WebFetch on
+  `github.com/trending?since=daily` (5 star counts spot-checked against the
+  live GitHub API, all matched), Hugging Face MCP tools worked without
+  restriction.
 
 - **2026-07-27**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
   request from Giulia re-described the routine (4 sources, 5 themes each, own
