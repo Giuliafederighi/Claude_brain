@@ -7,7 +7,15 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Microsoft's MAI-Cyber-1-Flash cybersecurity model (claims
+**Hacker News**: Anthropic's blog post explaining why it won't sign the
+industry open-weights pledge (a middle-position argument after public
+criticism), Ed Zitron/MacRumors arguing Apple's low AI capex is a hedge not
+a failure, GPT-5.6 Sol Ultra shipping in Codex at ~750 tok/s on Cerebras
+(91.9% Terminal-Bench 2.1), a federal judge dismissing Google's DMCA suit
+against search-scraper SerpApi. Only 4 picks today — a 5th (a bipartisan
+"AI Kill Switch Act" responding to the OpenAI/HF sandbox-breach incident)
+couldn't be confirmed as a live HN thread despite repeated searches
+(2026-07-29) · Microsoft's MAI-Cyber-1-Flash cybersecurity model (claims
 95.95% on CyberGym, beating GPT-5.5 Cyber/Claude Mythos 5/GPT-5.6 Sol), AI
 labs bulk-buying and shredding rare books after scanning them (viral thread
 amplified by Musk), record H1-2026 AI-industry lobbying spend (FT: OpenAI
@@ -30,18 +38,24 @@ government safety-institute assessment of Moonshot's Kimi K3 cyber
 capabilities (32% vs. 76% for top US models), a viral "em dashes are
 amazing" essay on AI making a legitimate punctuation mark suspect, a
 Guardian investigation into vigilantes destroying Flock's AI license-plate
-cameras (33+ incidents, 23 states) (2026-07-26) ·
-HumanLayer/Dex Horthy's "Why Software Factories Fail" essay
-(fully autonomous coding agents can't hold code quality without human
-review of architecture/design), Black Forest Labs' FLUX 3 (one model for
-images, 20s video-with-audio, and robot actions, already on real Audi
-production lines), Google's "AI & Economy ATLAS" report (15M Gemini chats,
-AI touches ~68% of occupations but only 21% of core tasks), an unattended
-Hermes open-source agent's breach attempt on Thailand's Ministry of
-Finance, "AgentForger" (a now-patched ChatGPT Agent Builder CSRF flaw that
-could spin up a rogue AI agent via one poisoned link) (2026-07-25)
+cameras (33+ incidents, 23 states) (2026-07-26)
 
-**GitHub Trending**: affaan-m/ECC (coding-agent memory/guardrails toolkit,
+**GitHub Trending**: microsoft/VibeVoice (open-source "frontier"-grade
+voice-cloning/TTS model, 51,038 stars, +332), alibaba/open-code-review
+(Alibaba's internal LLM code-review tool, deterministic checks + AI review
+agent, 15,672 stars, +918 — today's biggest mover), deepfakes/faceswap (the
+original 2017 deepfake tool, still climbing, 55,955 stars, +135),
+maderix/ANE (reverse-engineered Apple Neural Engine training, first-ever
+on-device training unlock, 7,065 stars), 1jehuang/jcode (Rust-based
+memory-efficient coding-agent harness, 13,070 stars, +652 — continues the
+"agent harness" wave). Honest note: page rendered only 17 of the usual ~25
+rows again; of those, both the #1 position (opengeos/GeoLibre, a GIS
+platform) and the single biggest mover (NanmiCoder/MediaCrawler, a
+social-media scraper) were non-AI — flagged plainly even with 5 genuine AI
+picks available. Soft cross-source overlap: microsoft/VibeVoice here vs.
+Hugging Face's microsoft/VibeVoice-ASR-BitNet — same company/product family,
+different capability (TTS vs. ASR), kept both, flagged in both threads
+(2026-07-29) · affaan-m/ECC (coding-agent memory/guardrails toolkit,
 234,403 stars — flagged as disproportionate for a 6-month-old repo, treated
 skeptically), huggingface/speech-to-speech (local voice-agent toolkit),
 virgiliojr94/book-to-skill (PDF-to-Claude-Code-skill converter, continuing
@@ -70,20 +84,23 @@ model," tokenizes price data like an LLM tokenizes text, 33,944 stars,
 AAAI 2026), pingdotgg/t3code (Theo/t3.gg's unified GUI for Codex/Claude
 Code/Cursor/OpenCode, 14,910 stars, early-stage). Only 4 picks today —
 page rendered just 17 entries (vs. usual ~25) and 5 of 9 AI-related rows
-were exact repeats from the last 3 days (2026-07-26) · andrewyng/aisuite (Andrew Ng's multi-provider LLM
-library added "OpenWorker," a downloadable desktop agent, +75 stars),
-RyanCodrai/turbovec (Rust vector index using Google's TurboQuant algorithm,
-8x embedding-storage compression, beats FAISS on speed, +89 stars),
-CoreBunch/Instatic (self-hosted AI-assisted Webflow/Framer alternative,
-+201 stars), palmier-io/palmier-pro (YC-backed Mac video editor with
-MCP-connected AI co-editing, +731 stars — biggest mover today), obra/
-superpowers (Jesse Vincent's coding-agent methodology/skills framework,
-260K+ stars, +600 today — continues the "Claude Code agent-skills" theme
-from recent days' ComposioHQ/mattpocock repos). ~83% of the 18 trending
-repos were AI-related but 8 were exact repeats from recent days
-(2026-07-25)
+were exact repeats from the last 3 days (2026-07-26)
 
-**Hugging Face**: moonshotai/Kimi-K3 (official model + "Open Frontier
+**Hugging Face**: zai-org/GLM-5.2 (753B-param MoE, 6 weeks old but still
+1.4M downloads/7 inference providers/100+ Spaces — flagged as "still the
+open model everyone builds on" rather than breaking news), ABot-World-0
+paper (walkable real-time video world model, 16fps/720p on one RTX 5090,
+"LongForcing" training technique stops visual drift over long interaction),
+HuggingFaceCode/stack-v3-train (Stack v2's successor, whole-repository
+context instead of isolated file chunks, freshly crawled today),
+microsoft/VibeVoice-ASR-BitNet (322M-param speech recognition compressed
+with BitNet-style ternary weights, real-time on 3 CPU threads, 1.6-2.3x
+faster than Whisper.cpp — soft overlap with GitHub's microsoft/VibeVoice
+pick today, different capability/story, kept both), conradlocke/
+krea2-identity-edit (identity-preserving photo-edit LoRA on Krea-2, 10+
+community forks within a week). Permanent exclusions (Inkling, Baidu
+Unlimited-OCR, MOSS-Transcribe-Diarize) re-checked and held (2026-07-29) ·
+moonshotai/Kimi-K3 (official model + "Open Frontier
 Intelligence" paper — first confirmed official HF repo after 07-27 flagged
 only unofficial re-uploads; by far the top trending score on the platform,
 included since neither HN nor X covered it today), Nanbeige/Nanbeige4.2-3B
@@ -115,19 +132,21 @@ model, small enough to self-host), "DeepSeek-V4 on Huawei Ascend" paper
 34% MFU, ~3x the open baseline), "Robostral Navigate" paper (8B
 monocular-camera-only robot navigation model, SOTA on room-to-room
 benchmarks). Inkling, Baidu's Unlimited-OCR, and MOSS-Transcribe-Diarize
-all re-checked and excluded again (2026-07-26) · Motif-Technologies/Motif-3-Beta (Korean startup's 314B-
-param MoE, ~13B active/token, 256K context, built from scratch not a
-fine-tune — public audition for South Korea's sovereign-AI project),
-moonshotai/Kimi-K2.7-Code (~1.06T-param coding model, 5 inference
-providers, 1.3M downloads), nvidia/Cosmos3-Edge (4B-param single-GPU robot
-"world model," real-time 15Hz on-device control), "GigaWorld-Policy-0.5"
-paper (robot world-action model hits 85ms inference on a consumer RTX 4090
-via separate imagination/action experts), smolagents/hf-realtime-voice
-(HF's own WebSocket-based voice assistant, works behind firewalls where
-WebRTC fails). Inkling and Baidu's Unlimited-OCR re-checked and excluded
-again; MOSS-Transcribe-Diarize didn't surface at all (2026-07-25)
+all re-checked and excluded again (2026-07-26)
 
-**X / Twitter**: Chamath Palihapitiya's "barrel of intelligence" argument
+**X / Twitter**: over 1,100 AI-safety employees' "Pacing the Frontier"
+statement (OpenAI/Anthropic/DeepMind/Meta AI, endorsed by Dario Amodei,
+Jakub Pachocki, Mark Chen as companies within hours), Nvidia's "Open Secure
+AI Alliance" (30+ members incl. Microsoft/IBM/SpaceX/Hugging Face,
+pointedly excluding OpenAI/Anthropic/Google post-sandbox-breach), FCC ban
+on new Chinese humanoid robots/grid inverters (surveillance/grid-security
+rationale), a Karpathy bio-edit rumor briefly suggesting he'd left
+Anthropic (denied directly, thin/gossip-grade), Anthropic's unreleased
+Claude Mythos Preview autonomously finding two cryptography weaknesses
+(HAWK post-quantum signature scheme, reduced-round AES, ~$100K compute
+each). Nvidia-alliance and Mythos-crypto picks both trace to the same
+underlying OpenAI/HF breach event as trigger — distinct stories, kept both,
+flagged as two mentions of one incident's fallout (2026-07-29) · Chamath Palihapitiya's "barrel of intelligence" argument
 that AI model-company valuations are a mathematical mistake (Chinese
 inference ~52x cheaper per token), the White House's AI-generated Rick and
 Morty parody video starring Trump sparking bipartisan-flavored backlash
@@ -153,14 +172,68 @@ White House's $5B+ "Genesis Mission" AI-for-science funding push, UK
 startup Humanoid's $152M raise ($1.35B valuation, Europe's first
 humanoid-robotics unicorn). Excluded (same-day collisions with HN,
 swapped): the OpenAI/Hugging Face sandbox-breach story and Claude Opus 5's
-launch, both kept on HN instead (2026-07-26) · Stripe's ~$10B talks to acquire OpenRouter, Etched's $300M
-raise for a transformer-only chip (10.3B valuation, claims 20x Nvidia H100
-throughput), Travis Kalanick's "Atoms" $1.7B industrial-robotics raise
-(a16z-led), Moonshot AI's $50B Hong Kong IPO plans + MetaX's confidential
-Hong Kong IPO filing, the Sony/UMG vs. Suno AI-music copyright ruling due
-July 31 (2026-07-25)
+launch, both kept on HN instead (2026-07-26)
 
 ## Entries
+
+- **2026-07-29**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
+  request from Giulia re-described the routine (4 sources, 5 themes each, own
+  thread per source, keep growing instructions, keep asking for feedback) and
+  matched what's already documented, so executed rather than re-designed.
+  Checked for an existing open PR first per `CLAUDE.md`'s consolidation rule:
+  none found. Checked the 2026-07-28 feedback-request thread via
+  `slack_read_thread`: **zero replies**, now 44+ days running with confirmed
+  zero text feedback ever received on any open question. Re-tested network
+  egress via the proxy status endpoint before starting: no recent relay
+  failures, consistent with the known policy (HN/x.com blocked, GitHub/HF
+  unrestricted). Ran the 4 source-research tasks as parallel background
+  subagents, each briefed with all 4 sources' recent picks and the 3
+  permanent HF exclusions. **HN's honestly thin day**: only 4 solidly
+  live-thread-confirmed picks — a plausible 5th (a bipartisan "AI Kill
+  Switch Act" responding to the earlier OpenAI/Hugging-Face sandbox-breach
+  incident) couldn't be pinned to a real `item?id=` despite repeated
+  targeted searches, so left out rather than posted unverified, same call
+  as 07-27. **New kind of soft cross-source overlap, kept not swapped**:
+  Microsoft's VibeVoice landed on both GitHub Trending (the original
+  open-source "frontier" voice-cloning/TTS model) and Hugging Face
+  (`VibeVoice-ASR-BitNet`, an extreme-compression speech-*recognition*
+  spinoff) — same company and product-family name, but a genuinely
+  different capability (generating speech vs. recognizing it) and a
+  different technical story (open-sourcing a frontier model vs. a BitNet
+  quantization result). Kept both per the standing "distinct artifact from
+  the same entity" precedent, flagged explicitly in both threads rather
+  than silently treated as unrelated — closest call yet under this
+  precedent since the product name itself is identical, worth a specific
+  read from Giulia on whether that's too close. **One thematic echo, not a
+  collision**: X's Nvidia "Open Secure AI Alliance" story (pointedly
+  excluding OpenAI/Anthropic/Google) and HN's Anthropic-won't-sign-
+  open-weights-pledge story both center on "who is/isn't signing which
+  industry coalition," but are distinct specific events — not swapped, just
+  noted. **GitHub's honest composition note, again**: page rendered only 17
+  of the usual ~25 rows (same partial-fetch issue as 07-28); of those, both
+  the #1 position (opengeos/GeoLibre, a GIS platform) and the single
+  biggest star-gain mover (NanmiCoder/MediaCrawler, a social-media scraper)
+  were non-AI — flagged plainly even though 5 genuine AI picks were still
+  available today, per the standing honest-reporting default. **Hugging
+  Face's permanent exclusions held again**: Inkling, Baidu's Unlimited-OCR,
+  and MOSS-Transcribe-Diarize all re-checked directly via `hub_repo_details`,
+  no version/benchmark change on any. Also screened out (not presented as
+  news, momentum-only): a wave of "uncensored/abliterated" GGUF merges and
+  several near-identical Wan2.2 video-gen demo reposts. **X's thinnest pick,
+  flagged rather than hidden**: the Karpathy bio-edit rumor (kept 5th) is
+  gossip-grade/single-secondary-source compared to the other 4, included
+  with that caveat per the research agent's own honesty note rather than
+  silently upgraded to equal footing. Fetch strategy unchanged: HN
+  reconstructed via `WebSearch` (news.ycombinator.com, hn.algolia.com, and
+  3 third-party HN mirrors — orangebot.ai, daemonology.net/hn-daily,
+  blog.mean.ceo — all still 403 via the proxy; 4 of 5 candidate picks
+  confirmed as live `item?id=` threads), GitHub Trending fetched live via
+  WebFetch on `github.com/trending?since=daily` (6 star counts spot-checked
+  against the live GitHub API, 5 exact matches and 1 off-by-one from normal
+  live-count drift — confirms the pull is current, not stale), Hugging Face
+  MCP tools worked without restriction, X reconstructed via `WebSearch`
+  (still 403 via WebFetch/curl for x.com), citing the news coverage that
+  reported on each piece of X activity rather than x.com links directly.
 
 - **2026-07-28**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
   request from Giulia re-described the routine (4 sources, 5 themes each, own
