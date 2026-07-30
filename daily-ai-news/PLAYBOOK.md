@@ -200,6 +200,23 @@ step above.
   Baidu's Unlimited-OCR (both already permanently excluded). If it ever
   gets a real update, it's fair game again — check directly before
   excluding, don't just pattern-match on the name.
+- **Added 2026-07-30 — a real repeat slipped through despite a "longer-gap
+  check"**: Hugging Face's research agent picked `microsoft/Fara1.5-27B`,
+  ran a longer-gap check, but compared it against an older, differently-
+  named model (Fara-7B, Nov 2025) and concluded it was fresh — missing that
+  `microsoft/Fara1.5-27B` itself, verbatim, was already a named HF pick on
+  07-26. The per-source research brief only carries the last-3-days list,
+  so by 07-30 that pick had already aged out of it; nothing forced a check
+  against the fuller rolling-list paragraph before posting. Caught after
+  posting, corrected in-thread. **Standing fix**: the manual full
+  cross-check step (added 07-23 for cross-source same-day collisions) must
+  also cover *within-source* dedupe — before posting, re-read each source's
+  own `feedback-log.md` rolling-list paragraph line-by-line and check every
+  final pick's name/repo/model against it directly, rather than trusting a
+  research agent's self-reported longer-gap check alone (a name-pattern
+  mismatch, like Fara1.5-27B vs. Fara-7B, is exactly the kind of near-miss
+  this catches that a research agent checking "does this smell like an old
+  story" can miss).
 
 ## Known constraint: sandboxed network egress
 

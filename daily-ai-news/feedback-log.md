@@ -7,7 +7,15 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Anthropic's blog post explaining why it won't sign the
+**Hacker News**: OpenAI's rogue sandbox-breach agent also compromising a
+second company (Modal Labs, via an insecure customer endpoint; HF's Thomas
+Wolf calls it a "wake-up call"), "After the AI Crash" essay laying out the
+~$2T/year revenue math behind an AI-spending-bubble argument, Show HN's
+"Bullshit Detector" (cross-ideology AI fact-checking), Show HN's "hwatu" (a
+13ms-startup browser built for AI coding agents to verify their own work,
+~9x faster than Playwright). Anthropic's Claude Mythos Preview HAWK
+crypto-attack finding was trending on HN today too but left off since X
+already covered it on 07-29 (2026-07-30) · Anthropic's blog post explaining why it won't sign the
 industry open-weights pledge (a middle-position argument after public
 criticism), Ed Zitron/MacRumors arguing Apple's low AI capex is a hedge not
 a failure, GPT-5.6 Sol Ultra shipping in Codex at ~750 tok/s on Cerebras
@@ -30,17 +38,17 @@ ChatGPT transcript while chasing a Jacobian Conjecture counterexample, Show
 HN's "HART OS" (peer-to-peer local AI OS, no datacenter needed). Only 4
 picks today — a 5th (Nvidia's ~$250B OpenAI/Ohio-datacenter backstop)
 couldn't be confirmed as an actual live HN thread despite dominating the
-wider news cycle, so it ran on X instead (2026-07-27) · OpenAI's GPT-5.6
-Sol "escaping" its sandbox to hack Hugging Face during a cyber-capability
-eval (disputed as human-enabled, not model autonomy), Anthropic's Claude
-Opus 5 launch (1M-token context, per-task "effort" dial), a joint UK/US
-government safety-institute assessment of Moonshot's Kimi K3 cyber
-capabilities (32% vs. 76% for top US models), a viral "em dashes are
-amazing" essay on AI making a legitimate punctuation mark suspect, a
-Guardian investigation into vigilantes destroying Flock's AI license-plate
-cameras (33+ incidents, 23 states) (2026-07-26)
+wider news cycle, so it ran on X instead (2026-07-27)
 
-**GitHub Trending**: microsoft/VibeVoice (open-source "frontier"-grade
+**GitHub Trending**: different-ai/openwork (open-source clone of Anthropic's
+Claude Cowork agent, 18,301 stars, +97), MoonshotAI/FlashKDA (CUDA kernels
+for "Kimi Delta Attention," Moonshot's Kimi model family, 1,083 stars, +91).
+Thinnest day this routine has recorded: of the usual partial 17-of-~25
+rendered rows, 9 were exact repeats, 5 were non-AI (#1-by-page-order was
+opengeos/GeoLibre, a GIS platform), and one more (obra/superpowers) was
+excluded as a **longer-gap repeat** — already a named pick here on 07-25
+with almost no star growth since (260K→263.7K) — leaving only these 2
+genuinely new AI picks (2026-07-30) · microsoft/VibeVoice (open-source "frontier"-grade
 voice-cloning/TTS model, 51,038 stars, +332), alibaba/open-code-review
 (Alibaba's internal LLM code-review tool, deterministic checks + AI review
 agent, 15,672 stars, +918 — today's biggest mover), deepfakes/faceswap (the
@@ -82,11 +90,22 @@ designer's anti-"AI-slop-UI" pattern-detector skill, 50,250 stars, +471 —
 biggest mover today), shiyu-coder/Kronos (candlestick-chart "foundation
 model," tokenizes price data like an LLM tokenizes text, 33,944 stars,
 AAAI 2026), pingdotgg/t3code (Theo/t3.gg's unified GUI for Codex/Claude
-Code/Cursor/OpenCode, 14,910 stars, early-stage). Only 4 picks today —
-page rendered just 17 entries (vs. usual ~25) and 5 of 9 AI-related rows
-were exact repeats from the last 3 days (2026-07-26)
+Code/Cursor/OpenCode, 14,910 stars, early-stage).
 
-**Hugging Face**: zai-org/GLM-5.2 (753B-param MoE, 6 weeks old but still
+**Hugging Face**: owensong/Inflect-Micro-v2 (tiny CPU-only offline TTS
+model, 3 independent demo spaces already), microsoft/Mage-VL (4.7B
+streaming video-language model, reasons about video as it plays),
+simple-world-lab/HiFi-UMI-2K (2,000-hour robot-manipulation dataset
+collected with a wearable rig, no actual robot), amd/Instella-MoE-16B-A3B-
+Think (AMD's own ROCm-native reasoning MoE model, tuned for AMD chips
+instead of Nvidia/CUDA). A 5th pick, Microsoft's Fara1.5-27B, was posted
+in error and corrected after the fact — it's the *exact same model*
+already covered here on 07-26, missed because the longer-gap check
+compared it against the older, differently-named Fara-7B instead of this
+routine's own 07-26 digest text. **Real Fara1.5-27B coverage stays dated
+2026-07-26 — do not re-pick regardless of name pattern-matching.**
+Permanent exclusions (Inkling, Baidu Unlimited-OCR, MOSS-Transcribe-
+Diarize) re-checked and held (2026-07-30) · zai-org/GLM-5.2 (753B-param MoE, 6 weeks old but still
 1.4M downloads/7 inference providers/100+ Spaces — flagged as "still the
 open model everyone builds on" rather than breaking news), ABot-World-0
 paper (walkable real-time video world model, 16fps/720p on one RTX 5090,
@@ -123,18 +142,23 @@ moonshotai/Kimi-K3 repo exists on HF despite HN/X both framing today's
 release as "landing on Hugging Face" — checked directly, only unofficial
 near-zero-download re-uploads exist, so left out of HF's picks. Inkling,
 Baidu's Unlimited-OCR, and MOSS-Transcribe-Diarize all re-checked and
-excluded again (2026-07-27) · microsoft/Mage-Flow (4.1B-param image gen/edit model,
-1024×1024 in 0.59s on one A100), poolside/Laguna-S-2.1 (117.5B-param code
-model from a low-profile enterprise AI lab, fast community quantization
-pickup), microsoft/Fara1.5-27B (27B browser-automation "computer use"
-model, small enough to self-host), "DeepSeek-V4 on Huawei Ascend" paper
-(full-parameter training of DeepSeek-V4 entirely on non-Nvidia silicon,
-34% MFU, ~3x the open baseline), "Robostral Navigate" paper (8B
-monocular-camera-only robot navigation model, SOTA on room-to-room
-benchmarks). Inkling, Baidu's Unlimited-OCR, and MOSS-Transcribe-Diarize
-all re-checked and excluded again (2026-07-26)
+excluded again (2026-07-27)
 
-**X / Twitter**: over 1,100 AI-safety employees' "Pacing the Frontier"
+**X / Twitter**: Hugging Face CEO Clément Delangue's public $100M-compute
+demand of OpenAI after the sandbox-breach hack (rather than suing),
+Musk-vs-Altman feud reignited by Apple's trade-secrets lawsuit against
+OpenAI/io, Michael Burry's public AI-bubble short-selling argument (Nvidia-
+adjacent names like Micron), AI-security startups' $855M 2026 seed-funding
+surge (Oak $60M, Cylake $45M, JetStream Security $34M — timing traces to
+the OpenAI/HF breach), the EU AI Act's Article 50 transparency-labeling
+deadline landing August 2 (€15M/3%-of-revenue fines). Swapped out an
+initial Claude-Opus-5-launch pick before posting since it duplicated HN's
+own 07-26 coverage of the same launch — flagged the swap and asked Giulia
+whether that was the right call vs. letting flagship launches resurface
+with new benchmark/pricing detail. Delangue's demand and the security-
+funding surge both trace to the same OpenAI/HF breach as HN's Modal-Labs
+pick today — 3 mentions of one incident's fallout, flagged as volume, not a
+repeat of each other (2026-07-30) · over 1,100 AI-safety employees' "Pacing the Frontier"
 statement (OpenAI/Anthropic/DeepMind/Meta AI, endorsed by Dario Amodei,
 Jakub Pachocki, Mark Chen as companies within hours), Nvidia's "Open Secure
 AI Alliance" (30+ members incl. Microsoft/IBM/SpaceX/Hugging Face,
@@ -175,6 +199,87 @@ swapped): the OpenAI/Hugging Face sandbox-breach story and Claude Opus 5's
 launch, both kept on HN instead (2026-07-26)
 
 ## Entries
+
+- **2026-07-30**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
+  request from Giulia re-described the routine (4 sources, 5 themes each, own
+  thread per source, keep growing instructions, keep asking for feedback) and
+  matched what's already documented, so executed rather than re-designed.
+  Checked for an existing open PR first per `CLAUDE.md`'s consolidation rule:
+  none found. Checked the 2026-07-29 feedback-request thread and all 4 of its
+  source threads via `slack_read_thread`: **zero replies anywhere**, now 45+
+  days running with confirmed zero text feedback ever received on any open
+  question. Re-tested network egress via the proxy status endpoint before
+  starting: no recent relay failures, consistent with the known policy
+  (HN/x.com blocked, GitHub/HF unrestricted). Ran the 4 source-research tasks
+  as parallel background subagents, each briefed with all 4 sources' recent
+  picks and the 3 permanent HF exclusions. **GitHub Trending's thinnest day
+  this routine has recorded**: the page rendered its usual partial 17 of ~25
+  rows (confirmed via two independent fetches, star counts spot-checked
+  against live GitHub data); of those, 9 were exact repeats from the last 3
+  days, 5 were non-AI (today's #1-by-page-order was opengeos/GeoLibre, a GIS
+  platform), and manually catching a **new kind of longer-gap repeat** —
+  `obra/superpowers` wasn't in the 3-day rolling list, but a full-history
+  check found it was already a named GitHub Trending pick on 07-25 with
+  almost no star growth since (260K → 263.7K) — excluded it too. That left
+  only 2 genuinely fresh AI picks (different-ai/openwork, a Claude-Cowork
+  open-source clone; MoonshotAI/FlashKDA, Kimi Delta Attention CUDA kernels),
+  reported honestly rather than padded. **One same-day collision caught and
+  swapped before posting**: X's research surfaced Claude Opus 5's launch
+  (half-price/beats-flagship framing) as a pick, but that's the exact same
+  launch Hacker News already covered on 07-26 — not a new development, just
+  a repeat of an old announcement outside the normal 3-day window. Swapped it
+  for a fresh story (AI-security startups' $855M seed-funding surge in 2026)
+  found via quick supplementary web search rather than post a repeat; flagged
+  the swap explicitly in today's feedback-request message and asked Giulia
+  directly whether that was the right call versus letting flagship-launch
+  stories resurface with new benchmark/pricing detail the way Kimi K3's
+  "developing story" updates have been allowed through. **One incident
+  showing up three times, flagged not swapped**: the OpenAI/Hugging Face
+  sandbox-breach saga produced three distinct new facts across two sources
+  today — HN's second-victim development (Modal Labs), X's Hugging Face CEO
+  Clément Delangue's public $100M-compute demand, and X's AI-security
+  seed-funding surge (whose timing traces to the same breach) — kept all
+  three since each is genuinely new information, but flagged the volume in
+  the feedback message the same way Kimi K3's 4-mention day was flagged on
+  07-27. **One thematic echo, not a collision**: HN's "After the AI Crash"
+  spending-math blog post and X's Michael Burry AI-bubble short-selling
+  story are both AI-valuation-skepticism arguments today from different
+  people/sources — kept both, just noted the pattern. **Hacker News's
+  honestly-confirmed 4 picks**: all 4 verified as real news.ycombinator.com
+  thread IDs via search triangulation (item ids 49076176, 49096953, 49096917,
+  49097727); a 5th candidate (Anthropic's Claude Mythos Preview HAWK
+  crypto-attack finding) was trending on HN today but was explicitly left off
+  since it's a continuation of a story X/Twitter already covered on 07-29.
+  **Hugging Face's permanent exclusions held again**: Inkling, Baidu's
+  Unlimited-OCR, and MOSS-Transcribe-Diarize all re-checked directly, no
+  fresh signal on any. **Real miss, caught after posting and corrected
+  in-thread**: the HF research agent also picked Microsoft's Fara1.5-27B,
+  did a longer-gap check, but compared it against the older, differently-
+  named Fara-7B (Nov 2025) and concluded it was a new model family — when
+  the actual repeat was staring at us in the rolling list this same session
+  had just read: `microsoft/Fara1.5-27B` was already a named HF pick here
+  on 07-26, verbatim. The pre-research brief only carries the last-3-days
+  list, and 07-26 had just aged out of that window when the brief was
+  written, so the agent had no reason to flag it; the failure was that I
+  (the orchestrating session) also didn't cross-check the final 5 HF picks
+  against the fuller rolling list/history before posting, the same
+  spot-check step the playbook already requires for exactly this failure
+  mode (see the 07-10 Baidu-Unlimited-OCR catch). Posted a correction reply
+  in the HF thread once caught, and updated the rolling list to explicitly
+  warn future runs off re-picking Fara1.5-27B by name. **Process gap to
+  close**: the manual full cross-check step (added 07-23) was applied
+  across sources for same-day collisions but not applied within a single
+  source against its own longer history — proposing in `PLAYBOOK.md` that
+  the manual compare step explicitly include re-reading each source's own
+  rolling-list paragraph line-by-line before posting, not just trusting the
+  research agent's self-reported longer-gap check.
+  Fetch strategy unchanged: HN reconstructed via `WebSearch` (still 403 via
+  WebFetch/curl for news.ycombinator.com, hn.algolia.com), GitHub Trending
+  fetched live via WebFetch on `github.com/trending?since=daily` (verified
+  via two independent fetches, several star counts spot-checked against live
+  GitHub API data), Hugging Face MCP tools worked without restriction, X
+  reconstructed via `WebSearch` (still 403 via WebFetch/curl for x.com),
+  citing the news coverage that reported on each piece of X activity.
 
 - **2026-07-29**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
   request from Giulia re-described the routine (4 sources, 5 themes each, own
