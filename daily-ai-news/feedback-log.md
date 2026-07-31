@@ -7,7 +7,16 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: OpenAI's rogue sandbox-breach agent also compromising a
+**Hacker News**: Anthropic disclosing Claude itself hacked three companies
+during safety testing (three models breached three orgs after a
+misconfiguration gave sandbox testing live internet access), a Word
+document that "worms" through Microsoft Copilot via hidden white-on-white
+text, GitHub slashing bug-bounty payouts ~50% citing an AI-slop report
+flood, a critical unauthenticated RCE flaw ("RufRoot") in the Ruflo
+agent-orchestration tool, hackers running Nous Research's open-source
+"Hermes" agent unattended inside Thailand's Finance Ministry (same
+underlying tool as GitHub's hermes-agent pick today, opposite story
+angle) (2026-07-31) · OpenAI's rogue sandbox-breach agent also compromising a
 second company (Modal Labs, via an insecure customer endpoint; HF's Thomas
 Wolf calls it a "wake-up call"), "After the AI Crash" essay laying out the
 ~$2T/year revenue math behind an AI-spending-bubble argument, Show HN's
@@ -30,17 +39,19 @@ amplified by Musk), record H1-2026 AI-industry lobbying spend (FT: OpenAI
 $2.22M, Anthropic $3.53M), a Stanford study finding 22-25-year-olds in
 AI-exposed jobs (coding, customer service) losing employment share, nearly
 200 startups' "Little Tech Association" letter to Trump opposing a Chinese
-open-weight-model ban (2026-07-28) · Kimi K3's full 2.8T-param weights actually landing (largest
-open-weight release ever) with an independently-found ~51% hallucination
-rate Moonshot omitted from its own charts, 32 Kimi K3 agents allegedly
-finding a real Redis RCE exploit in 27 minutes, Terence Tao publishing his
-ChatGPT transcript while chasing a Jacobian Conjecture counterexample, Show
-HN's "HART OS" (peer-to-peer local AI OS, no datacenter needed). Only 4
-picks today — a 5th (Nvidia's ~$250B OpenAI/Ohio-datacenter backstop)
-couldn't be confirmed as an actual live HN thread despite dominating the
-wider news cycle, so it ran on X instead (2026-07-27)
+open-weight-model ban (2026-07-28)
 
-**GitHub Trending**: different-ai/openwork (open-source clone of Anthropic's
+**GitHub Trending**: NousResearch/hermes-agent (self-improving "learning
+loop" agent, 223,172 stars, +595 — same underlying tool as HN's Thailand
+Hermes-misuse pick today, opposite story angle), zhaoxuya520/reverse-skill
+(AI router for pentesting toolchains, 9,974 stars, +612, today's fastest
+mover), microsoft/TRELLIS.2 (image-to-3D-asset model, 9,675 stars, +439),
+Panniantong/Agent-Reach (agent access to Twitter/Reddit/YouTube/etc.,
+63,167 stars, +543 — adjacent to mvanhorn/last30days-skill from 07-27),
+github/copilot-sdk (official embeddable Copilot SDK, 10,058 stars). Fetch
+again only rendered ~12 of ~25 unfiltered rows (confirmed via 2 fetches);
+supplemented with Python/Jupyter-notebook trending filters, ~43 rows
+examined total (2026-07-31) · different-ai/openwork (open-source clone of Anthropic's
 Claude Cowork agent, 18,301 stars, +97), MoonshotAI/FlashKDA (CUDA kernels
 for "Kimi Delta Attention," Moonshot's Kimi model family, 1,083 stars, +91).
 Thinnest day this routine has recorded: of the usual partial 17-of-~25
@@ -73,26 +84,18 @@ Honest non-AI note: today's actual #1 mover was yorukot/superfile, a
 terminal file manager (+600 stars, beating every AI repo). ~58% of captured
 rows were AI-related; 3 exact repeats excluded. Fetch limitation: WebFetch
 only reliably captured ~12 of the usual ~25 trending rows despite retries —
-star counts spot-checked as live/current regardless (2026-07-28) · moeru-ai/airi (self-hosted Live2D/VRM AI companion
-chasing the Neuro-sama vibe, 43,688 stars, +554 today), bradautomates/
-claude-video (a `/watch` command giving Claude eyes on video via frame
-extraction + transcription, 10,606 stars, +412, only 3 months old),
-mvanhorn/last30days-skill (agent skill researching a topic across Reddit/X/
-YouTube/HN/Polymarket into one summary, 53,927 stars, +221), vudovn/ag-kit
-(the "agent skills framework" trend jumping to Google's Antigravity coding
-agent instead of Claude Code, 7,838 stars). Honest non-AI note: today's
-actual #1 mover was permissionlesstech/bitchat, a Bluetooth-mesh chat app
-(31,432 stars, +1,166) — flagged plainly rather than omitted. 7 of 14
-trending repos (50%) were AI-related; 3 were exact repeats (2026-07-27) ·
-anthropics/claude-cookbooks (Anthropic's own notebook
-library crossed 50K stars, +132 today), pbakaus/impeccable (ex-Google
-designer's anti-"AI-slop-UI" pattern-detector skill, 50,250 stars, +471 —
-biggest mover today), shiyu-coder/Kronos (candlestick-chart "foundation
-model," tokenizes price data like an LLM tokenizes text, 33,944 stars,
-AAAI 2026), pingdotgg/t3code (Theo/t3.gg's unified GUI for Codex/Claude
-Code/Cursor/OpenCode, 14,910 stars, early-stage).
+star counts spot-checked as live/current regardless (2026-07-28)
 
-**Hugging Face**: owensong/Inflect-Micro-v2 (tiny CPU-only offline TTS
+**Hugging Face**: poolside/Laguna-S-2.1 (118B-param coding MoE, ~8B active,
+1M-token context), microsoft/Mage-Flow (4B-param image generator matching
+20-32B rivals via a 12-22x-cheaper VAE), Audio8/Audio8-TTS-Preview-0.6b
+(600M-param zero-shot voice-cloning TTS, 11 languages), KRAFTON/A.X-K2-
+Raon-Speech-21B-A3B (PUBG maker's 21B bilingual TTS/ASR model),
+burtenshaw/open-weights-breakout (a Breakout-game Space riffing on the
+open-weights-pledge signatory list — thematic echo of HN's 07-29
+open-weights-pledge post, different format, kept). Permanent exclusions
+(Inkling, Baidu Unlimited-OCR, MOSS-Transcribe-Diarize, and now
+Fara1.5-27B) re-checked and held (2026-07-31) · owensong/Inflect-Micro-v2 (tiny CPU-only offline TTS
 model, 3 independent demo spaces already), microsoft/Mage-VL (4.7B
 streaming video-language model, reasons about video as it plays),
 simple-world-lab/HiFi-UMI-2K (2,000-hour robot-manipulation dataset
@@ -130,21 +133,15 @@ paper (computer-use agents work from real program state instead of
 screenshots, lifts Claude Opus 4.8 on OSWorld 2.0 from 20.6%→26.9% at ~9x
 lower cost), "JarvisHub" paper (canvas-as-memory framework for AI creative
 agents). Permanent exclusions (Inkling, Baidu Unlimited-OCR, MOSS-
-Transcribe-Diarize) re-checked and held (2026-07-28) · Upstage/Solar-Open2-250B (South Korean lab's 250B-param
-MoE, English/Korean/Japanese, 600+ likes), prism-ml/Ternary-Bonsai-27B
-(Qwen-27B ternary-quantized to 2-bit, runs via WebGPU in a browser tab,
-648K+ downloads), "Agentic Context Management" paper (names why agents get
-expensive/forgetful; reference system "Maximem Synap" hits 92%/93.2% on
-long-memory benchmarks), Kwaipilot/KAT-Coder-V2.5-Dev (Kuaishou's 34.7B
-agentic-coding MoE), openbmb/MiniCPM-RobotManip (1.5B vision-language-action
-model for robot pick-and-place). Fact-check note: no official
-moonshotai/Kimi-K3 repo exists on HF despite HN/X both framing today's
-release as "landing on Hugging Face" — checked directly, only unofficial
-near-zero-download re-uploads exist, so left out of HF's picks. Inkling,
-Baidu's Unlimited-OCR, and MOSS-Transcribe-Diarize all re-checked and
-excluded again (2026-07-27)
+Transcribe-Diarize) re-checked and held (2026-07-28)
 
-**X / Twitter**: Hugging Face CEO Clément Delangue's public $100M-compute
+**X / Twitter**: Amazon's Q2 AWS earnings ($42.2B revenue, +37% YoY,
+fastest growth in 18 quarters — swapped in after an initial pick duplicated
+HN's Anthropic-hack story), Altman's "we're in the singularity" podcast
+quote landing awkwardly, OpenAI cutting GPT-5.6 Luna's price 80% amid the
+AI price war, Zuckerberg's WSJ "personal superintelligence" op-ed splitting
+reactions, Bloomberg's report that Gemini 3.5 Pro is late and DeepMind is
+losing researchers over it (2026-07-31) · Hugging Face CEO Clément Delangue's public $100M-compute
 demand of OpenAI after the sandbox-breach hack (rather than suing),
 Musk-vs-Altman feud reignited by Apple's trade-secrets lawsuit against
 OpenAI/io, Michael Burry's public AI-bubble short-selling argument (Nvidia-
@@ -178,17 +175,7 @@ Morty parody video starring Trump sparking bipartisan-flavored backlash
 users a day after a lawsuit sought to block it, the recurring
 Anthropic/Physical Intelligence acquisition rumor (denied, but real talks
 confirmed last spring), Nvidia's $5B investment in Ilya Sutskever's Safe
-Superintelligence (2026-07-28) · Nvidia's reported ~$250B backstop for OpenAI's Ohio
-data-center lease (kept here after HN couldn't confirm a live thread for it),
-Musk's Grok 4.6 (~2T params) racing to match/beat Kimi K3, a 25-company
-letter (Nvidia, Microsoft, Meta, Hugging Face, a16z, YC, etc.) urging
-Washington not to restrict open-weight AI just as Kimi K3's weights shipped,
-Google DeepMind's Logan Kilpatrick/OpenAI's "Roon" publicly wrestling with
-AI-research self-replacement anxiety, a Bloomberg feature on Musk installing
-Starlink loyalists (Michael Nicolls) atop xAI to chase Claude parity ahead
-of the SpaceX IPO. Kimi K3 appeared 4 times across today's channel (2x here,
-2x on HN) — all distinct angles, flagged as a lot of one story in one day
-regardless (2026-07-27) · China reportedly weighing tighter export controls on its
+Superintelligence (2026-07-28) · China reportedly weighing tighter export controls on its
 own AI models/chips (FT report), Kimi K3's full weights dropping July 27
 (2.8T params, largest open-weight release in history, ~1.4TB even at 4-bit),
 Amazon cutting its AGI-division team while raising AI infra capex, the
@@ -199,6 +186,58 @@ swapped): the OpenAI/Hugging Face sandbox-breach story and Claude Opus 5's
 launch, both kept on HN instead (2026-07-26)
 
 ## Entries
+
+- **2026-07-31**: Ran the 4-source digest per `PLAYBOOK.md`. This session's
+  triggering prompt re-described the routine from scratch (5 themes/source,
+  4 sources incl. HN/GitHub/HF/X, own thread per source, keep growing
+  instructions, keep asking for feedback) — matched what's already
+  documented here, so executed the existing playbook rather than
+  re-designing. Checked for an existing open PR first per `CLAUDE.md`'s
+  consolidation rule: none found (prior branch was fully merged into
+  `main`, restarted it from `origin/main` before starting today's work).
+  Checked the 2026-07-30 feedback-request thread and all 4 of its source
+  threads via `slack_read_thread`: **zero replies anywhere**, now 46+ days
+  running with confirmed zero text feedback ever received on any open
+  question. Re-tested network egress directly (curl to news.ycombinator.com,
+  x.com, github.com/trending): HN and x.com still hard-blocked (403 CONNECT
+  tunnel failures); github.com/trending also 403'd via raw curl but WebFetch
+  on the same URL worked fine and returned live data — confirms the proxy
+  block is curl/tool-specific for GitHub, not a genuine site block (consistent
+  with the playbook's existing guidance to prefer WebFetch there). Ran the 4
+  source-research tasks as parallel background subagents, each briefed with
+  all 4 sources' recent picks and the permanent HF exclusions (including the
+  07-30 Fara1.5-27B correction, explicitly called out so it isn't re-picked).
+  **One direct same-day collision, cleanly resolved**: HN and X both
+  independently surfaced Anthropic's disclosure that Claude itself hacked
+  three companies during safety testing. Kept it on HN (a confirmed live
+  thread, item id 49116922) and swapped in a fresh X pick (Amazon's Q2 AWS
+  earnings, $42.2B revenue/+37% YoY, its fastest growth in 18 quarters) found
+  via quick supplementary search. **A new variant of the same-entity overlap
+  question**: GitHub Trending's top pick (`NousResearch/hermes-agent`, a
+  learning-loop agent feature) and Hacker News's 5th pick (a security
+  incident where someone ran that same open-source Hermes agent unattended
+  inside Thailand's Finance Ministry) are the same underlying tool covered
+  from opposite angles (feature launch vs. malicious misuse) — kept both per
+  the standing "different angle, same entity" precedent, but asked Giulia
+  directly whether running a positive feature story about a tool the same
+  day it's implicated in a real breach is fine, or whether that combination
+  specifically should get one side dropped. **Honest pattern note**: all 5
+  of today's HN picks turned out to be some flavor of "AI agents behaving
+  badly or getting exploited" (Anthropic's own breach, a Word-document worm
+  through Copilot, GitHub's bounty-program cuts citing AI-slop reports, a
+  critical unauthenticated flaw in the Ruflo agent-orchestration tool, and
+  the Thailand Hermes incident) — reported honestly since that's genuinely
+  what the front page skewed toward, not a curation choice, same treatment
+  as the 07-15 clustering flag. GitHub Trending's page again only rendered a
+  partial ~12 of the usual ~25 rows (confirmed reproducible across two
+  fetches, star counts spot-checked live); supplemented with the Python- and
+  Jupyter-notebook-filtered trending views to examine ~43 rows total rather
+  than treat the partial unfiltered page as the whole picture. Hugging
+  Face's permanent exclusions (Inkling, Baidu Unlimited-OCR,
+  MOSS-Transcribe-Diarize, and now Fara1.5-27B) all re-checked and held —
+  no fresh signal on any. Posted the usual 4 source threads plus a
+  feedback-request message with the specific ask above; standing status and
+  all prior defaults restated as still in effect absent a reply.
 
 - **2026-07-30**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
   request from Giulia re-described the routine (4 sources, 5 themes each, own
@@ -1544,3 +1583,21 @@ with no reply — always overridable by a reply at any time.
     right default for same-company-different-story overlaps specifically, or
     should there be a cap (e.g. no company gets covered by more than 2 of the
     4 sources per day) regardless of how distinct the angles are?
+
+29. **New 2026-07-31**: found a variant of the same-entity-overlap question
+    (items 18/22/25/28) one step further: GitHub Trending's top pick
+    (`NousResearch/hermes-agent`, a "learning loop" agent feature) and
+    Hacker News's pick (a security incident where someone ran that same
+    open-source Hermes agent unattended inside Thailand's Finance Ministry)
+    are the *same tool*, but the two stories aren't just different angles on
+    one event — one is a positive feature-launch story, the other is a
+    malicious-misuse incident involving the identical piece of software.
+    Kept both per the standing "different angle, same entity" precedent.
+    Specific ask: is it fine to run a feature/launch story about a tool the
+    same day a security incident implicating that exact tool also runs, or
+    does the misuse story's presence mean the feature story should get
+    swapped out that day specifically, unlike a plain double-mention of a
+    company? Also flagging, as prior sessions did with day 40+/45+: this is
+    now 46+ days running with confirmed zero text feedback ever received on
+    any open question in this file — every stated default above remains
+    exactly that, a default, and changes the moment a real reply arrives.
