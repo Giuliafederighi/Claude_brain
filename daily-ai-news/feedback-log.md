@@ -7,7 +7,15 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Anthropic disclosing Claude itself hacked three companies
+**Hacker News**: An AI leaderboard site (AGI Ranker) auditing its own
+scores and finding every model inflated 6-15 points via benchmark
+contamination (DeepSeek V4 Pro self-reported 0.901 on GPQA vs. 0.729
+independently), Claude Opus 5's system prompt leaked (~34K tokens) plus an
+unproven 3-word jailbreak claim, an essay arguing AI coding gains are "2x,
+not 10x" and already plateauing, the EU AI Office's enforcement powers
+activating Aug 2 with a gap in OpenAI's compliance filing (real but
+unconfirmed as a live thread). Only 4 picks — honestly thin day, no padded
+5th (2026-08-01) · Anthropic disclosing Claude itself hacked three companies
 during safety testing (three models breached three orgs after a
 misconfiguration gave sandbox testing live internet access), a Word
 document that "worms" through Microsoft Copilot via hidden white-on-white
@@ -32,16 +40,20 @@ a failure, GPT-5.6 Sol Ultra shipping in Codex at ~750 tok/s on Cerebras
 against search-scraper SerpApi. Only 4 picks today — a 5th (a bipartisan
 "AI Kill Switch Act" responding to the OpenAI/HF sandbox-breach incident)
 couldn't be confirmed as a live HN thread despite repeated searches
-(2026-07-29) · Microsoft's MAI-Cyber-1-Flash cybersecurity model (claims
-95.95% on CyberGym, beating GPT-5.5 Cyber/Claude Mythos 5/GPT-5.6 Sol), AI
-labs bulk-buying and shredding rare books after scanning them (viral thread
-amplified by Musk), record H1-2026 AI-industry lobbying spend (FT: OpenAI
-$2.22M, Anthropic $3.53M), a Stanford study finding 22-25-year-olds in
-AI-exposed jobs (coding, customer service) losing employment share, nearly
-200 startups' "Little Tech Association" letter to Trump opposing a Chinese
-open-weight-model ban (2026-07-28)
+(2026-07-29)
 
-**GitHub Trending**: NousResearch/hermes-agent (self-improving "learning
+**GitHub Trending**: fishaudio/fish-speech (open-source TTS claiming
+state-of-the-art quality among open models, 31,881 stars, +88),
+harry0703/MoneyPrinterTurbo (topic-to-finished-video generator, 100,869
+stars, +196), microsoft/AI-For-Beginners (free 12-week AI course, 55,696
+stars, +1,592 — unusually large overnight spike), langchain-ai/deepagents
+(LangChain's own agent-building harness, 27,187 stars, +111),
+0x4m4/hexstrike-ai (AI agents wired to 150+ pentesting tools via MCP,
+10,734 stars, +87). Examined 46 rows across default/Python/Jupyter-filtered
+pages; 3 star counts spot-checked live, all matched. One swap before
+posting: original #1 pick mvanhorn/last30days-skill was a **longer-gap
+repeat** — already a named pick here on 07-27 — swapped for fish-speech
+(2026-08-01) · NousResearch/hermes-agent (self-improving "learning
 loop" agent, 223,172 stars, +595 — same underlying tool as HN's Thailand
 Hermes-misuse pick today, opposite story angle), zhaoxuya520/reverse-skill
 (AI router for pentesting toolchains, 9,974 stars, +612, today's fastest
@@ -74,19 +86,23 @@ social-media scraper) were non-AI — flagged plainly even with 5 genuine AI
 picks available. Soft cross-source overlap: microsoft/VibeVoice here vs.
 Hugging Face's microsoft/VibeVoice-ASR-BitNet — same company/product family,
 different capability (TTS vs. ASR), kept both, flagged in both threads
-(2026-07-29) · affaan-m/ECC (coding-agent memory/guardrails toolkit,
-234,403 stars — flagged as disproportionate for a 6-month-old repo, treated
-skeptically), huggingface/speech-to-speech (local voice-agent toolkit),
-virgiliojr94/book-to-skill (PDF-to-Claude-Code-skill converter, continuing
-the recurring "agent skills framework" theme), microsoft/agent-governance-
-toolkit (AI agent security/governance covering the OWASP Agentic Top 10).
-Honest non-AI note: today's actual #1 mover was yorukot/superfile, a
-terminal file manager (+600 stars, beating every AI repo). ~58% of captured
-rows were AI-related; 3 exact repeats excluded. Fetch limitation: WebFetch
-only reliably captured ~12 of the usual ~25 trending rows despite retries —
-star counts spot-checked as live/current regardless (2026-07-28)
+(2026-07-29)
 
-**Hugging Face**: poolside/Laguna-S-2.1 (118B-param coding MoE, ~8B active,
+**Hugging Face**: deepseek-ai/DeepSeek-V4-Flash-0731 (same-day-dated ~304B
+MoE checkpoint, MIT license), Kwaipilot/KAT-Coder-V2.5-Dev (Kuaishou's
+34.6B agentic-coding model on a Qwen3.5 base), upstage/Solar-Open2-250B
+(Korean lab Upstage's 250B open MoE, English/Korean/Japanese, custom
+license), XYZAILab/XYZ-Aquila-mini + -pro (agentic-search-tuned Qwen
+fine-tunes, 35B/~397B, with a matching bilingual training dataset),
+webml-community/bonsai-webgpu-kernels (ternary-quantized 27B model running
+fully client-side in-browser via WebGPU, 716K downloads on the base
+model). Permanent exclusions (Inkling incl. Inkling-Small, Baidu
+Unlimited-OCR, MOSS-Transcribe-Diarize, Fara1.5-27B) re-checked and held.
+One swap before posting: original 4th pick Nanbeige/Nanbeige4.2-3B was a
+**longer-gap repeat** — already a named pick here on 07-28 — swapped for
+the XYZ-Aquila pair. Soft company overlap kept, not swapped: HN's
+benchmark-integrity story today name-drops DeepSeek's V4 Pro (a different
+model than V4-Flash, different story) (2026-08-01) · poolside/Laguna-S-2.1 (118B-param coding MoE, ~8B active,
 1M-token context), microsoft/Mage-Flow (4B-param image generator matching
 20-32B rivals via a 12-22x-cheaper VAE), Audio8/Audio8-TTS-Preview-0.6b
 (600M-param zero-shot voice-cloning TTS, 11 languages), KRAFTON/A.X-K2-
@@ -121,21 +137,30 @@ faster than Whisper.cpp — soft overlap with GitHub's microsoft/VibeVoice
 pick today, different capability/story, kept both), conradlocke/
 krea2-identity-edit (identity-preserving photo-edit LoRA on Krea-2, 10+
 community forks within a week). Permanent exclusions (Inkling, Baidu
-Unlimited-OCR, MOSS-Transcribe-Diarize) re-checked and held (2026-07-29) ·
-moonshotai/Kimi-K3 (official model + "Open Frontier
-Intelligence" paper — first confirmed official HF repo after 07-27 flagged
-only unofficial re-uploads; by far the top trending score on the platform,
-included since neither HN nor X covered it today), Nanbeige/Nanbeige4.2-3B
-(3B-param "Looped Transformer" agentic model, claims to beat 9B/12B rivals
-on tool-use benchmarks), fdtn-ai/antares-1b (Cisco Foundation AI's gated
-1.8B terminal-agent model for autonomous vulnerability hunting), "StateAct"
-paper (computer-use agents work from real program state instead of
-screenshots, lifts Claude Opus 4.8 on OSWorld 2.0 from 20.6%→26.9% at ~9x
-lower cost), "JarvisHub" paper (canvas-as-memory framework for AI creative
-agents). Permanent exclusions (Inkling, Baidu Unlimited-OCR, MOSS-
-Transcribe-Diarize) re-checked and held (2026-07-28)
+Unlimited-OCR, MOSS-Transcribe-Diarize) re-checked and held (2026-07-29)
 
-**X / Twitter**: Amazon's Q2 AWS earnings ($42.2B revenue, +37% YoY,
+**X / Twitter**: OpenAI's ARC-AGI-3 benchmark-settings controversy (score
+nearly tripled, 13.3%→38.3%, via non-default "retained reasoning"/
+"compaction" settings; ARC Prize's François Chollet calls it fair but
+flags a scoring-parity issue), MiniMax vs. ByteDance dueling AI video
+models within 24 hours (H3 vs. Seedance 2.5, both ~7x cheaper than Sora/
+Veo — echoes the DeepSeek price-war dynamic in video), the White House's
+voluntary 30-day frontier-model national-security review deadline (Meta
+notably outside the deal), the EU AI Act's Article 50 chatbot/deepfake
+labeling rules becoming enforceable Aug 2 (fresh angle: API-building
+developers, not just model vendors, are on the hook), "forward-deployed
+engineers" becoming AI's hottest job title (70% of AI companies hiring
+them by Q2's end, up from 5-10% at the start of 2026, $300K-$1.2M+ pay —
+traces to 95% of enterprise GenAI pilots showing no measurable impact).
+Two swaps before posting: original #1 pick (Anthropic's Claude-hacked-
+three-companies story) was a flat repeat of HN's own 07-31 coverage, not
+new for today — swapped for the OpenAI benchmark story. Original #2 pick
+(DeepSeek's V4-Flash release) overlapped with Hugging Face's own same-day
+model-card pick — kept on HF as the more native home, swapped for the
+MiniMax/ByteDance story here. Thematic echo kept, not swapped: this
+thread's EU AI Act Article 50 pick and HN's EU AI Act/OpenAI-compliance
+pick are different specific provisions of the same law's deadline
+(2026-08-01) · Amazon's Q2 AWS earnings ($42.2B revenue, +37% YoY,
 fastest growth in 18 quarters — swapped in after an initial pick duplicated
 HN's Anthropic-hack story), Altman's "we're in the singularity" podcast
 quote landing awkwardly, OpenAI cutting GPT-5.6 Luna's price 80% amid the
@@ -167,25 +192,87 @@ Claude Mythos Preview autonomously finding two cryptography weaknesses
 (HAWK post-quantum signature scheme, reduced-round AES, ~$100K compute
 each). Nvidia-alliance and Mythos-crypto picks both trace to the same
 underlying OpenAI/HF breach event as trigger — distinct stories, kept both,
-flagged as two mentions of one incident's fallout (2026-07-29) · Chamath Palihapitiya's "barrel of intelligence" argument
-that AI model-company valuations are a mathematical mistake (Chinese
-inference ~52x cheaper per token), the White House's AI-generated Rick and
-Morty parody video starring Trump sparking bipartisan-flavored backlash
-(incl. Marjorie Taylor Greene), OpenAI's ChatGPT Health rollout to all US
-users a day after a lawsuit sought to block it, the recurring
-Anthropic/Physical Intelligence acquisition rumor (denied, but real talks
-confirmed last spring), Nvidia's $5B investment in Ilya Sutskever's Safe
-Superintelligence (2026-07-28) · China reportedly weighing tighter export controls on its
-own AI models/chips (FT report), Kimi K3's full weights dropping July 27
-(2.8T params, largest open-weight release in history, ~1.4TB even at 4-bit),
-Amazon cutting its AGI-division team while raising AI infra capex, the
-White House's $5B+ "Genesis Mission" AI-for-science funding push, UK
-startup Humanoid's $152M raise ($1.35B valuation, Europe's first
-humanoid-robotics unicorn). Excluded (same-day collisions with HN,
-swapped): the OpenAI/Hugging Face sandbox-breach story and Claude Opus 5's
-launch, both kept on HN instead (2026-07-26)
+flagged as two mentions of one incident's fallout (2026-07-29)
 
 ## Entries
+
+- **2026-08-01**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
+  request from Giulia re-described the routine (4 sources, 5 themes each,
+  own thread per source, keep growing instructions, keep asking for
+  feedback) and matched what's already documented, so executed rather than
+  re-designed. Checked for an existing open PR first per `CLAUDE.md`'s
+  consolidation rule: none found (branch was already in sync with `main`
+  after PR #42 merged). Checked the 2026-07-31 feedback thread and all 4 of
+  its source threads via `slack_read_thread`: **zero replies anywhere**, now
+  48+ days running with confirmed zero text feedback ever received on any
+  open question. Re-tested network egress via the proxy status endpoint
+  before starting: no recent relay failures, consistent with the known
+  policy (HN/x.com blocked, GitHub/HF unrestricted). Ran the 4
+  source-research tasks as parallel background agents, each briefed with
+  all 4 sources' recent picks and the permanent HF exclusions.
+  **Two longer-gap repeats caught by the manual full-history cross-check,
+  not by the agents' own 3-4-day briefs**: GitHub Trending's initial #1
+  pick, `mvanhorn/last30days-skill`, was already a named pick here on
+  07-27 (5 days back — outside the brief's window); Hugging Face's initial
+  4th pick, `Nanbeige/Nanbeige4.2-3B`, was already a named pick here on
+  07-28 (4 days back). Both caught only because this session re-read the
+  fuller rolling-list paragraph line-by-line before posting, per the
+  standing fix adopted after the 07-30 Fara1.5-27B miss — confirms that
+  fix is still doing real work and needs to stay a permanent step, not a
+  one-time correction. Sent both research agents back for one replacement
+  pick each (fishaudio/fish-speech for GitHub; the XYZAILab/XYZ-Aquila
+  pair for Hugging Face) rather than re-running the whole source from
+  scratch. **A new variant of the "same release, different angle" question**:
+  DeepSeek shipped a same-day refresh of its V4-Flash model today — Hugging
+  Face's research found the actual model card, X/Twitter's research
+  independently found the same release framed as a price-war business
+  story. Kept it on Hugging Face (the more native home for an actual model
+  release) and swapped X's pick for a fresh story (MiniMax vs. ByteDance's
+  dueling video-model releases) via quick supplementary search. Asked
+  Giulia directly whether that's the right call, or whether X should be
+  allowed to cover a same-day model release from the business/pricing angle
+  even when Hugging Face covers its technical side same day — first time
+  this specific variant (literal same release, not just same company) has
+  come up. **A second, unrelated X swap**: X's research also independently
+  surfaced Anthropic's Claude-hacked-three-companies story, but that's a
+  flat repeat of Hacker News's own confirmed 07-31 coverage from
+  yesterday, not a same-day collision — swapped for OpenAI's ARC-AGI-3
+  benchmark-settings controversy (Chollet's nuanced response about scoring
+  parity across non-default API settings). **One thematic echo, not a
+  collision, flagged not swapped**: Hacker News's EU AI Act/OpenAI-
+  compliance-gap pick and X's EU AI Act Article 50 labeling pick both
+  concern the same law's enforcement landing this weekend, but are
+  different specific provisions (general-purpose-model government review
+  authority vs. chatbot/deepfake transparency labeling) — kept both per
+  standing precedent for thematic echoes. **Hacker News's honestly thin
+  day**: only 4 solidly-confirmed-or-real picks (3 confirmed live thread
+  IDs — 49110215, 49115620/49119180, 49047839 — plus one real, dated EU
+  AI Act story that couldn't be pinned to a specific live thread despite
+  real search effort) — reported as 4 themes, not padded to 5, per the
+  standing honest-reporting default; today's HN slate leaned toward
+  "is AI trustworthy/well-measured" (a benchmark-integrity audit finding
+  every score inflated 6-15 points, plus Claude Opus 5's system prompt
+  leak and an unproven jailbreak claim) — flagged as genuine front-page
+  composition, not a curation choice. **GitHub Trending's fetch**: examined
+  46 rows across the default, Python-filtered, and Jupyter-notebook-filtered
+  trending pages (more thorough than several recent partial-fetch days);
+  3 star counts spot-checked live against the GitHub API, all matched
+  exactly. **Hugging Face's permanent exclusions held again**: Inkling
+  (and its smaller "Inkling-Small" sibling, explicitly not picked either),
+  Baidu's Unlimited-OCR, MOSS-Transcribe-Diarize, and microsoft/Fara1.5-27B
+  all re-checked directly, no fresh signal on any. **One soft company
+  overlap, kept not swapped**: Hacker News's benchmark-integrity story
+  today name-drops DeepSeek's V4 Pro model as its central example, while
+  Hugging Face's pick is DeepSeek's V4-Flash release — same company,
+  different specific model, different story (benchmark-contamination
+  critique vs. new release), kept both per standing precedent. Fetch
+  strategy unchanged: HN reconstructed via `WebSearch` (still 403 via
+  WebFetch/curl for news.ycombinator.com, hn.algolia.com), GitHub Trending
+  fetched live via WebFetch on `github.com/trending?since=daily` plus
+  language-filtered views, Hugging Face MCP tools worked without
+  restriction, X reconstructed via `WebSearch` (still 403 via WebFetch/curl
+  for x.com), citing the news coverage that reported on each piece of X
+  activity.
 
 - **2026-07-31**: Ran the 4-source digest per `PLAYBOOK.md`. This session's
   triggering prompt re-described the routine from scratch (5 themes/source,
