@@ -218,6 +218,30 @@ step above.
   this catches that a research agent checking "does this smell like an old
   story" can miss).
 
+- **Added 2026-08-01 — a new "same release, different angle" variant,
+  open question**: Hugging Face and X/Twitter independently surfaced the
+  *same specific model release* (DeepSeek's same-day V4-Flash refresh) —
+  not just the same company, but literally the same release event, one
+  side covering the technical model card, the other the price-war business
+  narrative. Resolved by keeping it on Hugging Face (the more native home
+  for an actual model release) and swapping X for a different story, same
+  tiebreaker logic as prior "keep on the more native source" calls — but
+  this is the first time the tiebreaker was applied to a literal same-day
+  model release rather than a repo or a business/policy story. Asked
+  Giulia whether that's right, or whether X should be allowed to cover a
+  same-day release from the business/pricing angle even when Hugging Face
+  covers its technical side. Treat as the standing default until she says
+  otherwise, per this file's usual default-after-silence policy.
+- **Confirmed again 2026-08-01**: the within-source full-history cross-check
+  (added 07-30 after the Fara1.5-27B miss) caught two more longer-gap
+  repeats that the per-source research briefs (which only carry ~3-4 days
+  of history) missed entirely — GitHub's `mvanhorn/last30days-skill`
+  (repeat of a 07-27 pick) and Hugging Face's `Nanbeige/Nanbeige4.2-3B`
+  (repeat of a 07-28 pick). Two clean catches on the first day this step
+  was tested against picks that had aged just past the research brief's
+  window is a good sign the fix works as intended — keep it a permanent,
+  non-negotiable step before every posting, not just a one-time correction.
+
 ## Known constraint: sandboxed network egress
 
 This session's outbound network goes through a policy-enforced proxy that
