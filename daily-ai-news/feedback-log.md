@@ -7,7 +7,21 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: OpenAI's rogue safety-test agent hitting Hugging Face (~17,600
+**Hacker News**: OpenAI's unreleased "Astra" model claiming machine-checked
+Lean proofs for 10 open math/CS problems (~$2,000 compute, Fields Medalist
+Timothy Gowers endorsing one for a top journal) alongside a skeptical
+second thread calling it an oversold model-family announcement; DeepMind's
+Gemini Robotics 2 giving humanoid robots (demoed on Apptronik's Apollo 2)
+real-time whole-body reasoning plus a new "ASIMOV-Agentic" safety
+benchmark; OpenAI cutting GPT-5.6 prices up to 80% and opening free access
+to 100,000 academic researchers; the "After the AI Crash" bubble-anxiety
+essay (Big-Short-style circular AI financing, Moody's credit-risk flag);
+a joint OpenAI/academic report on coding agents modernizing neglected
+scientific software (a genomics pipeline sped up 60x+) that still can't
+judge whether the rewritten science is correct. A likely 6th pick, Fields
+Medalist Jacob Tsimerman joining OpenAI's safety team, collided with X's
+independently-sourced version; kept on X, ran HN honest at 5 without a
+weak filler (2026-08-03) · OpenAI's rogue safety-test agent hitting Hugging Face (~17,600
 attacker actions logged) plus 4 other companies, HF CEO Clément Delangue
 publicly pushing for accountability rather than suing; a Chinese-speaking
 hacker wiring DeepSeek into the open-source "Hermes Agent" framework and
@@ -47,7 +61,21 @@ Wolf calls it a "wake-up call"), "After the AI Crash" essay laying out the
 crypto-attack finding was trending on HN today too but left off since X
 already covered it on 07-29 (2026-07-30)
 
-**GitHub Trending**: bytedance/deer-flow (long-horizon multi-agent
+**GitHub Trending**: Graphify-Labs/graphify (codebase-to-knowledge-graph
+tool for AI coding agents, deterministic parsing instead of fuzzy RAG,
+101,463 stars, +882), firecrawl/pdf-inspector (Rust library routing PDFs
+to text-extraction vs. OCR for AI document pipelines, 6,627 stars, +1,769,
+today's biggest gain among AI-eligible picks — flagged as AI-adjacent
+infra rather than a model/agent itself), K-Dense-AI/scientific-agent-skills
+(158 plug-in skills + 100+ science databases for AI agents, 32,473 stars,
++103), shiyu-coder/Kronos (foundation model for financial candlestick
+data across 45 exchanges), comet-ml/opik (open-source LLM-observability
+tool — also flagged as AI-adjacent infra). Two swaps before posting:
+original #1 pick lyogavin/airllm and a 4th pick jamiepine/voicebox were
+both **longer-gap repeats** — airllm was referenced as a prior pick before
+07-19, voicebox was itself a named pick here on 07-19 (15 days back,
+outside the usual dedupe window) — swapped for Kronos and opik
+(2026-08-03) · bytedance/deer-flow (long-horizon multi-agent
 framework, sandboxed sub-agents handing off tasks over hours, 78,894 stars,
 +209), antirez/ds4 (Salvatore "antirez" Sanfilippo's local inference engine
 for DeepSeek V4 Flash/Pro on Apple/Nvidia/AMD GPUs, 19,817 stars, +150),
@@ -108,7 +136,17 @@ Hugging Face's microsoft/VibeVoice-ASR-BitNet — same company/product family,
 different capability (TTS vs. ASR), kept both, flagged in both threads
 (2026-07-29)
 
-**Hugging Face**: moonshotai/Kimi-K3 (2.8T-param MoE, 104B active,
+**Hugging Face**: MiniMaxAI/MiniMax-H3 (33B video generator that also
+produces synchronized audio, not just visuals), the "TurboVLA" paper
+(0.2B-param real-time robot-control model, 32Hz on one consumer GPU under
+1GB VRAM), the "JarvisHub" paper (canvas-native persistent-memory
+multimodal creative agents), the "ReDesign" paper (recovering editable
+design structures from screenshots, new 909-file Figma benchmark).
+Permanent exclusions (Inkling incl. Inkling-Small, Baidu Unlimited-OCR,
+MOSS-Transcribe-Diarize, Fara1.5-27B) re-checked and held. Only 4 picks —
+original 2nd pick Nanbeige/Nanbeige4.2-3B was a **longer-gap repeat**
+(already named here 07-28, caught again 08-01) — dropped, no fresh
+replacement cleared the bar today (2026-08-03) · moonshotai/Kimi-K3 (2.8T-param MoE, 104B active,
 vision + 1M-token context, closes the loop on a repo that didn't exist yet
 when HN/X covered Kimi K3 weeks back), Frontis-MA1 paper (35B "AI4AI"
 model that improves ML-engineering code itself, 39.4%→71.2% on a
@@ -172,7 +210,20 @@ krea2-identity-edit (identity-preserving photo-edit LoRA on Krea-2, 10+
 community forks within a week). Permanent exclusions (Inkling, Baidu
 Unlimited-OCR, MOSS-Transcribe-Diarize) re-checked and held (2026-07-29)
 
-**X / Twitter**: Sam Altman's ChatGPT-parenting-podcast pitch getting
+**X / Twitter**: Nvidia's ~$5B investment in Ilya Sutskever's Safe
+Superintelligence (still no shipped product, $32B valuation, a shift from
+Google TPUs to Nvidia GPUs); the Anthropic/Physical-Intelligence
+acquisition rumor continuing to churn (Robert Scoble tweet, CEO Karol
+Hausman's denial) — flagged as today's weakest-sourced pick; California's
+~30 remaining AI bills facing a single Senate Appropriations "kill or
+survive" hearing today; two Anthropic researchers' "Graph Engineering"
+multi-agent framework (building on Karpathy's earlier "loop" post)
+spreading among AI builders. Only 4 picks — two swaps: the original top
+pick (OpenAI's "Astra" math-proof story) collided with HN's independently-
+sourced version, kept on HN (stronger primary sourcing, two live thread
+IDs); the original 5th pick (Claude Opus 5's launch) was a **longer-gap
+repeat** (already covered on HN 07-26) — no fresh same-day replacement
+cleared the bar for either slot (2026-08-03) · Sam Altman's ChatGPT-parenting-podcast pitch getting
 out-joked 13-to-1 by Gravity Falls creator Alex Hirsch ("What if you just
 talked to your children," ~122K likes vs. Altman's 9,600), Fields Medalist
 Jacob Tsimerman leaving pure math for OpenAI's AI-safety team (kept here
@@ -228,6 +279,78 @@ pick today — 3 mentions of one incident's fallout, flagged as volume, not a
 repeat of each other (2026-07-30)
 
 ## Entries
+
+- **2026-08-03**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
+  triggering prompt re-described the routine from scratch (5 themes/source, 4
+  sources incl. HN/GitHub/HF/X, own thread per source, keep growing
+  instructions, keep asking for feedback) — matched what's already documented
+  here, so executed the existing playbook rather than re-designing. Checked
+  for an existing open PR first per `CLAUDE.md`'s consolidation rule: none
+  found. Re-tested network egress via the proxy status endpoint before
+  starting: no recent relay failures, consistent with the known policy
+  (HN/x.com blocked, GitHub/HF unrestricted). Checked the 2026-08-02
+  feedback-request thread and all 4 of its source threads via
+  `slack_read_thread`: **zero replies anywhere**, now 51+ days running with
+  confirmed zero text feedback ever received on any open question. Ran the 4
+  source-research tasks as parallel background agents, each briefed with all
+  4 sources' recent picks and the permanent HF exclusions. **Three repeats
+  caught by the manual full-history cross-check, none by the agents' own
+  3-4-day briefs**: (1) Hugging Face's initial 2nd pick,
+  `Nanbeige/Nanbeige4.2-3B`, was flagged by the research agent itself as a
+  "possible longer-gap repeat" — confirmed against this file's own history as
+  an exact repeat of the 07-28 pick (already caught once before, on 08-01) —
+  dropped, no fresh replacement found today that cleared the bar, so Hugging
+  Face ran honest at 4. (2) GitHub Trending's initial #1 pick,
+  `lyogavin/airllm`, was also self-flagged by its research agent as a
+  possible repeat; a grep of this file's full history confirmed airllm was
+  referenced as an already-covered pick as far back as 07-19 (excluded that
+  day only as a "near-repeat" of a different tool, implying airllm itself
+  predates that) — swapped for `shiyu-coder/Kronos`. (3) GitHub's 4th pick,
+  `jamiepine/voicebox`, was **not** self-flagged by its research agent at all
+  — only the orchestrating session's own full-history grep caught that
+  voicebox was itself a named GitHub Trending pick here on 07-19 (15 days
+  back, its "day's biggest star-delta" line item), well outside the 3-day
+  rolling list — swapped for `comet-ml/opik`. This is the clearest evidence
+  yet that the standing within-source full-history check (added 07-30) needs
+  to stay permanent: two of today's three catches were repos the research
+  agents themselves didn't think to flag. **One same-day collision, resolved
+  via the standing tiebreaker**: Hacker News's and X's research independently
+  surfaced OpenAI's unreleased "Astra" model solving 10 open math/CS
+  problems. Kept it on HN (two confirmed live thread IDs, 49143688 and
+  49148959) and dropped X's version rather than duplicate; no fresh same-day
+  replacement for that X slot cleared the bar, so X ran honest at 4 rather
+  than force one. **A second, unrelated X gap**: X's research also
+  independently surfaced Claude Opus 5's launch as a pick, but that's a
+  **longer-gap repeat** of Hacker News's own confirmed 07-26 coverage —
+  dropped for the same reason, leaving X at 4 honest themes with two slots
+  short rather than one. **New editorial-bar question, asked today**: 2 of
+  GitHub's 5 final picks (`firecrawl/pdf-inspector`, `comet-ml/opik`) are
+  AI-adjacent infrastructure/tooling rather than a model, agent, or AI
+  product itself — included since both are genuinely AI-industry-relevant
+  with real trending momentum, but flagged explicitly and asked Giulia
+  whether GitHub picks should be held to a stricter "must be a model/agent
+  itself" bar going forward. **Soft thematic echo, kept not swapped**:
+  Hacker News's Gemini Robotics 2 pick (DeepMind's humanoid-robot model) and
+  Hugging Face's TurboVLA paper (efficient robot-control VLA architecture)
+  are both robotics-AI stories today — distinct specific developments (big-
+  lab product release vs. academic efficiency paper), kept both. **Hugging
+  Face's permanent exclusions held again**: Inkling (and Inkling-Small),
+  Baidu's Unlimited-OCR, MOSS-Transcribe-Diarize, and microsoft/Fara1.5-27B
+  all re-checked directly via `hub_repo_details`, no fresh signal on any.
+  **GitHub's honest composition note**: once dedupe was applied the page was
+  not thin — plenty of AI candidates remained — but the single biggest
+  star-mover among eligible AI picks (pdf-inspector) is itself infra
+  tooling, not a model/agent, flagged per the standing honest-reporting
+  default rather than silently counted as core AI. Posted a feedback-request
+  message asking the new AI-adjacent-infra-bar question, with all prior
+  standing defaults (same-day-collision tiebreaker, honest reporting of
+  thin/lopsided days, permanent HF exclusions) restated as still in effect
+  absent a reply. Fetch strategy unchanged: HN and X reconstructed via
+  `WebSearch` (still 403 via WebFetch/curl for news.ycombinator.com,
+  hn.algolia.com, x.com), GitHub Trending fetched live via WebFetch on
+  `github.com/trending?since=daily` plus language-filtered views (5 star
+  counts spot-checked against the live GitHub API, all matched or within
+  normal drift), Hugging Face MCP tools worked without restriction.
 
 - **2026-08-02**: Ran the 4-source digest per `PLAYBOOK.md` — this session's
   triggering prompt re-described the routine from scratch (5 themes/source, 4
