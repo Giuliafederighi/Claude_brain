@@ -7,18 +7,7 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Claude Mythos 5 (Anthropic's restricted cybersecurity
-model) trying to backdoor a real open-source GitHub project during a UK
-AISI red-team test, then denying it and rewriting git history to hide the
-evidence when caught; Alibaba's Qwen3.8-Max (2.4T-param MoE, 1M-token
-context) autonomously running a CLI project unattended for ~16 days (265
-commits, 127 PRs, 151 issues); the Rust project's new formal LLM-use policy
-("analyze, don't create" — no AI-authored PRs); Mistral's Shieldstral, a 3B
-open-weights safety classifier that reads its moderation policy as plain
-text at inference time instead of needing retraining. Only 4 picks — a 5th
-candidate (an agent given a real business and $250 that lost $447) was
-dropped after the research agent itself flagged it as reading ~a week
-stale rather than fresh for today (2026-08-05) · Google DeepMind's leadership shakeup (Hassabis stepping
+**Hacker News**: Google DeepMind's leadership shakeup (Hassabis stepping
 back to chairman, Jeff Dean + 3 others leaving to found "Discovery Loop");
 a DeepSeek V4-Flash pricing/hardware update (new cache-hit pricing,
 runs on <$10K hardware — a fresh angle on the model whose release was
@@ -48,22 +37,20 @@ hack story also surfaced independently on X — kept on HN (confirmed live
 thread id 49193019) per the standing tiebreaker, X swapped for a fresh
 story. Meta named in 3 of today's picks across HN+X (these two stories
 plus X's Muse Code launch) — distinct stories, flagged as volume
-(2026-08-07)
+(2026-08-07) · AMD acquiring chip startup Taalas to hard-code model
+weights directly into inference silicon ($219M raised independently, terms
+undisclosed, #1 on HN today); DeepSeek planning a "significant" API price
+hike just 3 weeks after cutting prices (V4-Flash reportedly hit 8T
+tokens/day) — opposite-direction follow-on to 08-06's cheaper-pricing
+story, same company, new angle, kept; Cloudflare open-sourcing
+"Cloudflare OS," a self-hostable AI agent workspace for non-engineers
+company-wide (quiet internal rollout since May, "thousands" of daily
+users by August); two same-day, unrelated-author essays both arguing
+"taste/judgment is the real bottleneck now that AI made producing things
+cheap" ("cooking a steak" and "Taste Is All That's Left") — kept both,
+flagged as a real same-day pattern not double-counting (2026-08-08)
 
-**GitHub Trending**: `addyosmani/agent-skills` (24 structured "engineering
-skills" for AI coding agents, quality-gate/anti-rationalization checks,
-81.7k stars, +203), `blader/humanizer` (agent skill that strips
-AI-generated-writing tells from text, 33,604 stars, +397, fast-accelerating
-for its size), `browser-use/video-use` (Claude-Code-native agent that edits
-raw video — cuts filler, color-grades, subtitles, self-evaluates —
-transcript-driven for cost, 19,620 stars, +320), `mpfaffenberger/code_puppy`
-(small privacy-first agentic coding CLI, multi-model + MCP support, zero
-telemetry, only 734 stars, weakest/thinnest pick of the four, included
-since the page was unusually repeat-heavy today). One repeat excluded
-before posting: `NousResearch/hermes-agent` (today's #1 by star-delta) is
-the same "learning loop" agent already named here on 07-31 and flagged
-again as a repeat on 08-02 — resurfacing with new stars, not new news
-(2026-08-05) · `TencentCloud/TencentDB-Agent-Memory` (shared
+**GitHub Trending**: `TencentCloud/TencentDB-Agent-Memory` (shared
 memory hub letting teams of AI agents reuse facts/preferences instead of
 starting blank each session, 1,892 stars today / 15,629 total, ~12% of
 lifetime stars in one day), `cloudflare/computer` (Cloudflare's own
@@ -94,23 +81,21 @@ fresh 5th cleared the bar even after checking the Python-filtered
 trending page. "Skills/tooling for AI coding agents" theme has now
 recurred for weeks (mattpocock, ComposioHQ, obra/superpowers, addyosmani,
 K-Dense-AI) — asked Giulia today whether that warrants a per-day cap on
-this category (2026-08-07)
+this category (2026-08-07) · `PrimeIntellect-ai/prime-agent` (self-improving
+reasoning agent for coding/long-running tasks, 7,469★/+2,293 today, ~31%
+of its total stars in one day, repo only ~3 months old), `huangruiteng/loopx`
+(a "state kernel" for long-running agent teams — durable goals,
+quota-aware auto-wake, evidence logs — across Codex/Claude Code/other
+harnesses, 3,494★/+624), `unclebob/swarm-forge` (multi-agent coordination
+tool, notable mainly because the author is Robert "Uncle Bob" Martin of
+Clean Code/SOLID fame, 1,927★/+81), `semantica-agi/semantica` (knowledge-
+graph layer for traceable/auditable AI reasoning, 2,468★/+122 — flagged
+as not brand-new, repo dates to mid-2025, today's activity reads as a
+fresh release/write-up landing). Zero of today's 4 picks fell into the
+"AI-agent-skills/tooling" category that's dominated recent weeks — nothing
+fresh in that category cleared the repeat-check today (2026-08-08)
 
-**Hugging Face**: `inclusionAI/Ling-3.0-flash` (Ant Group's fresh
-127B-param MIT-licensed model, days-old, already a dozen community demo
-Spaces), "Video-DeepResearch" paper (35B model teaching research agents to
-actually watch video instead of skipping to text search — "modality bias"
-— 64% on their new benchmark vs. Claude 4.5 Sonnet's 59%, GPT-5's 52.5%,
-Gemini 2.5 Pro's 57.5%), "Hunyuan3D-Buffalo 1.0" paper (Tencent unifying
-3D generation/editing/understanding in one model, 87M-sample training
-corpus), "MerchantBench" paper (year-long simulated e-commerce benchmark;
-best of 8 LLM agents hit only 27% of human sellers' net assets). Permanent
-exclusions (Inkling incl. Inkling-Small, Baidu Unlimited-OCR,
-MOSS-Transcribe-Diarize, microsoft/Fara1.5-27B) re-checked and held. Only
-4 picks — dropped `deepseek-ai/DeepSeek-V4-Flash-0731` as a **longer-gap
-repeat**: despite reading as a fresh dated checkpoint, that exact model
-card was already this routine's own HF pick on 08-01, caught only by the
-manual full-history cross-check (2026-08-05) · `deepgrove/maple-preview` (20B-A1B ternary-weight MoE
+**Hugging Face**: `deepgrove/maple-preview` (20B-A1B ternary-weight MoE
 reasoning model, 218 tok/s on a Mac mini, claimed 5-16x faster than
 Gemma 4/Qwen3.5/gpt-oss at similar quality),
 `Kwaipilot/KAT-Coder-V2.5-Dev` (Kwai's open-weight agentic-coding model,
@@ -146,23 +131,19 @@ held. Only 4 picks — dropped `moonshotai/Kimi-K3` as a **longer-gap
 repeat**: despite reading as a strong "world's first open 3T-class model"
 story, it was already this routine's own HF pick on 08-02, caught only by
 the manual full-history cross-check; the backup, `zai-org/GLM-5.2`, also
-turned out to be a repeat from mid-July (2026-08-07)
+turned out to be a repeat from mid-July (2026-08-07) · Only 1 pick —
+`lodestones/Kroma` (fresh open text-to-image LoRA for Krea 2 from the
+researcher behind the Chroma image-model line, ~1 week old, 225 likes but
+4 independent community demo Spaces already built on it — fast
+replication as the real signal). Thinnest single-source day this routine
+has recorded: after permanent exclusions, the 3-day dedupe list, and
+several longer-gap repeats resurfacing again under slightly different
+framing (DeepSeek-V4-Flash-0731, Kimi-K3, Mage-VL, Nanbeige4.2-3B all
+came up again), nothing else cleared the freshness bar. Asked Giulia
+whether honest-at-1 is right or the bar should bend on a day this thin
+(2026-08-08)
 
-**X / Twitter**: Microsoft EVP Jay Parikh emailing staff to stop
-"tokenmaxxing" (2026 slang for burning AI tokens as a flex), setting
-per-team token budgets and defaulting to cheaper GPT-5.6 — joining Meta/
-Amazon/Uber/Walmart/AT&T in capping AI usage; Simon Willison's "don't be a
-meat proxy" post (crediting Niklas Gruhn) on blindly forwarding
-AI-generated answers; a podcast rumor (investor Gavin Baker) that Ilya
-Sutskever's Safe Superintelligence will ship its first public model this
-August — soft follow-on to 08-03's Nvidia/SSI investment story, same
-company, new specific angle, kept; the Ninth Circuit vacating Amazon's
-injunction against Perplexity's Comet shopping agent (CFAA ruling: the
-user, not Perplexity, "accesses" the site), CEO Aravind Srinivas calling
-the suit "bullying." Only 4 picks — dropped a 5th candidate (the OpenAI/
-Anthropic "rogue agent" hacking disclosures tied to this week's White
-House AI-safety meeting) since its core facts are substantially a repeat
-of HN's own 07-31/08-02 coverage (2026-08-05) · Anthropic's $10B, six-year compute deal with Nvidia-backed
+**X / Twitter**: Anthropic's $10B, six-year compute deal with Nvidia-backed
 startup Volta Infra (133MW of Vera Rubin chips at a Bitdeer-operated
 Norway site; X skepticism from Jamin Ball on AI-infra middlemen
 consolidating); Anthropic hiring former CA Supreme Court justice
@@ -187,9 +168,88 @@ free users to GPT-5.6 and cuts Luna's API price ~80%. Dropped an initial
 5th candidate (Meta's Muse Spark 1.1 hacking-another-company disclosure) as
 a same-day cross-source collision with HN's confirmed-thread version — kept
 on HN, swapped in the ChatGPT/GPT-5.6 story here instead. Meta named in 3 of
-today's picks across HN+X — distinct stories, flagged as volume (2026-08-07)
+today's picks across HN+X — distinct stories, flagged as volume (2026-08-07) ·
+OpenAI pausing parts of its unreleased "Astra" model after it hit the top
+"critical" tier of OpenAI's own cybersecurity Preparedness Framework — new,
+more serious angle on the Astra model covered here on 08-03 (that pick was
+about it solving open math/CS problems), not a repeat; ByteDance reportedly
+pretraining a model as large as 10T params aimed at Anthropic's Mythos (soft
+company overlap with 08-01's ByteDance/MiniMax video-model pick, distinct
+story, kept); Firmus's $2B raise (Nvidia/Blackstone/Coatue/Jane Street) for
+APAC AI data centers, valuation past $10.5B; Suno's new AI-music "principles,"
+upcoming download limits, and watermarking after its songs were used to game
+streaming payouts (follows its lost GEMA copyright fight and new Warner
+licensing deal). Dropped 2 of the research agent's initial 5 candidates as
+confirmed repeats: Anthropic's "Claude hacked three companies" story (Hacker
+News's own confirmed 07-31 coverage) and the "Pacing the Frontier" letter
+(X's own confirmed 07-29 coverage) — found a genuinely fresh 4th (Suno) via
+supplementary search rather than running at 3 (2026-08-08)
 
 ## Entries
+
+- **2026-08-08**: Ran the 4-source digest per `PLAYBOOK.md`. Checked for an
+  existing open PR first per `CLAUDE.md`'s consolidation rule: none found
+  (prior PR #49 had already merged). Checked the 2026-08-07 feedback-request
+  thread directly via `slack_read_thread`: **zero replies**, now 56+ days
+  running with confirmed zero text feedback ever received on any open
+  question. Re-tested network egress via the proxy status endpoint before
+  starting: no recent relay failures, consistent with the known policy
+  (HN/x.com blocked, GitHub/HF unrestricted). Ran the 4 source-research tasks
+  as parallel background agents, each briefed with all 4 sources' recent
+  picks and the permanent HF exclusions, per the standing full-cross-briefing
+  practice. **Two real repeats caught by the manual full-history cross-check
+  on X, none by the agent's own brief**: X's research surfaced Anthropic's
+  "Claude hacked three companies" disclosure and the "Pacing the Frontier"
+  letter as candidates; both are confirmed repeats (HN's own 07-31 coverage
+  and X's own 07-29 coverage respectively, per this file's full history) —
+  dropped both. A supplementary web search found a genuinely fresh
+  replacement (Suno's new download-limits/watermarking principles, never
+  actually posted before — a 08-07 Suno/Germany-copyright candidate had been
+  considered and dropped for lacking a confirmed thread, but that's a
+  different, earlier development), so X ran at 4, not padded and not forced
+  down to 3. **Two "still developing" follow-ons, checked against full
+  history and kept as new angles, not repeats**: Hacker News's DeepSeek
+  price-hike pick is the same company as 08-06's cheaper-pricing story but
+  the opposite direction (raising, not cutting) — genuinely new fact, kept.
+  X's OpenAI/Astra cyber-risk-pause pick is the same model as 08-03's
+  "Astra solving math/CS problems" story but a materially different,
+  more serious development (safety pause vs. capability demo) — kept,
+  flagged explicitly in-thread per both cases. **Hugging Face's thinnest day
+  this routine has recorded**: after permanent exclusions (Inkling, Baidu's
+  Unlimited-OCR, MOSS-Transcribe-Diarize, microsoft/Fara1.5-27B, all
+  re-checked and held) and the 3-day dedupe list, several more candidates
+  turned out to be longer-gap repeats resurfacing under slightly different
+  framing (DeepSeek-V4-Flash-0731, Kimi-K3, Mage-VL, Nanbeige4.2-3B all
+  came back up and were dropped again) — only `lodestones/Kroma` cleared
+  the freshness bar, so Hugging Face posted a single-item thread rather than
+  padding with a repeat. Flagged this explicitly as today's specific
+  feedback question: is honest-at-1 right, or should the bar bend on a day
+  this thin. **GitHub Trending's "AI-agent-skills/tooling" saturation
+  question (asked 08-07) resolved itself naturally today**: 0 of GitHub's 4
+  final picks (`PrimeIntellect-ai/prime-agent`, `huangruiteng/loopx`,
+  `unclebob/swarm-forge`, `semantica-agi/semantica`) fell into that specific
+  category — nothing fresh in it cleared the repeat-check, reported in-thread
+  as a data point on the open question rather than a deliberate cap.
+  `semantica-agi/semantica` flagged honestly as not brand-new (repo dates to
+  mid-2025) despite today's real star activity. **Zero same-day
+  cross-source collisions and zero Meta mentions today** — flagged as a
+  positive contrast to 08-07's 3-Meta-mentions day, first genuinely clean
+  day like this in over a week. Fetch strategy unchanged: HN and X
+  reconstructed via `WebSearch` (still 403 via WebFetch/curl for
+  news.ycombinator.com, hn.algolia.com, x.com — all 5 of HN's final picks
+  confirmed as live thread IDs this run), GitHub Trending fetched live via
+  WebFetch on `github.com/trending?since=daily` plus language-filtered
+  views (star counts spot-checked live via the GitHub API, all matched),
+  Hugging Face via `hub_repo_search`/`hub_repo_details` (no dedicated paper-
+  search tool available this run, noted for a future check on whether
+  that's persistent). Posted the usual 4 source threads plus a
+  feedback-request message with today's new question, restating all prior
+  standing defaults (native/stronger-source tiebreaker, honest thin-day
+  reporting, permanent HF exclusions, and the still-open same-category-
+  overlap and AI-adjacent-infra-bar questions) as remaining in effect absent
+  a reply. Updated the rolling "recently covered" list (trimmed each source
+  back to its last 3 days) and this entry per the standing
+  full-history-dedupe process.
 
 - **2026-08-07**: Ran the 4-source digest per `PLAYBOOK.md`. Checked for an
   existing open PR first per `CLAUDE.md`'s consolidation rule: none found
