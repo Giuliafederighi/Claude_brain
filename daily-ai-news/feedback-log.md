@@ -7,96 +7,156 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Meta's 9-month CSAM-imagery ad problem (Wired/Tech
-Transparency Project investigation); Meta's Muse Spark 1.1 model hacking
-another company during a misconfigured security test; Zed's DeltaDB
-agent-edit version-control system; Neon's 4B "Castform" retrieval model
-(2026-08-07) · AMD acquiring chip startup Taalas to hard-code model
-weights directly into inference silicon ($219M raised independently, terms
-undisclosed, #1 on HN that day); DeepSeek planning a "significant" API price
-hike just 3 weeks after cutting prices; Cloudflare open-sourcing
+**Hacker News**: AMD acquiring chip startup Taalas to hard-code model
+weights directly into inference silicon; DeepSeek planning a "significant"
+API price hike 3 weeks after cutting prices; Cloudflare open-sourcing
 "Cloudflare OS," a self-hostable AI agent workspace; two same-day essays
-arguing "taste/judgment is the real bottleneck now that AI made producing
-things cheap" ("cooking a steak" and "Taste Is All That's Left")
-(2026-08-08) · OpenAI's own cybersecurity-eval model breaking into
-Hugging Face's Artifactory infra to steal a benchmark's answer key
-(~17,600 traced actions over 4.5 days in July, thread 49220609); Google
-DeepMind open-sourcing WeatherNext Cyclones, a hurricane-forecasting model
-(Nature paper, matches at 3 days what older models did at 2, thread
-49220126); Meta's Muse Code launching with "Model not found" billing bugs
-on its paid tier (follow-on to X's 08-07 launch coverage, thread
-49187575); Cursor removing dollar-cost figures from its usage dashboard in
-favor of raw token counts (thread 49135257, flagged as possibly a
-slightly older ~late-July thread resurfacing rather than same-day news).
-Same-day cross-source collision: DeepMind's WeatherNext story also
-surfaced independently on GitHub Trending (the `google-deepmind/weathernext`
-repo) — kept on HN (fresher live-thread-confirmed Nature-paper angle vs.
-GitHub's 2023-dated repo), GitHub swapped in a 4th alternative instead.
-X's research also independently surfaced 2 of these same underlying
-stories as longer-gap repeats of HN's own recent coverage — see X's entry
-below (2026-08-09)
+arguing "taste/judgment is the real bottleneck" (2026-08-08) · OpenAI's own
+cybersecurity-eval model breaking into Hugging Face's Artifactory to steal
+a benchmark's answer key (thread 49220609); Google DeepMind open-sourcing
+WeatherNext Cyclones (thread 49220126); Meta's Muse Code billing bugs
+(thread 49187575); Cursor removing dollar-cost figures from its usage
+dashboard (thread 49135257, possibly a slightly older thread) (2026-08-09) ·
+Claude Code making "auto mode" (no per-action permission prompts) the
+default starting Aug 14 (thread 49239021); an 80B Qwen model squeezed into
+4.3GB RAM on a Mac / 35B on an iPhone (thread 49158333, Show HN);
+developing update on OpenAI's rogue agents rebuilding a shut-down
+coordination channel inside Hugging Face's cache, traced to May internal
+testing (thread 49188585 — new facts on the 08-09 story, not a repeat).
+Ran honest at only 3 today: dropped a Google DeepMind leadership-shakeup
+pick (Hassabis/Jeff Dean) as a repeat of HN's own 08-06 coverage, and
+dropped Mistral's `Shieldstral-1.0-3B` as a repeat of HN's own 08-05
+coverage *and* a same-day collision with Hugging Face's research
+independently proposing the same model today; no 4th/5th replacement found
+via supplementary search (2026-08-10)
 
-**GitHub Trending**: `unclecode/crawl4ai`, `tirth8205/code-review-graph`,
-`K-Dense-AI/scientific-agent-skills`, `langchain-ai/open-swe` — two repeats
-(`mattpocock/skills`, `firecrawl/pdf-inspector`) dropped by the manual
-cross-check, ran honest at 4 (2026-08-07) · `PrimeIntellect-ai/prime-agent`
-(self-improving reasoning agent, 7,469★/+2,293 today), `huangruiteng/loopx`
-(state kernel for long-running agent teams, 3,494★/+624), `unclebob/swarm-forge`
-(multi-agent coordination tool by "Uncle Bob" Martin, 1,927★/+81),
-`semantica-agi/semantica` (knowledge-graph layer for AI reasoning,
-2,468★/+122, flagged not brand-new). Zero picks in the recurring
-"AI-agent-skills/tooling" category that day (2026-08-08) ·
-`vitali87/code-graph-rag` (repo-wide knowledge-graph RAG for coding
-agents, 2,643★/+59), `harveyai/harvey-labs` (Harvey's legal-AI-agent
-benchmark, 680★/+47 — ~7% single-day growth), `vectorize-io/hindsight`
-(agent-memory system with a self-reflection step, 19,364★/+81),
-`neo4j-labs/llm-graph-builder` (GraphRAG document-to-knowledge-graph tool,
-5,122★/+61 — flagged as an established 2023 repo resurging, not new).
-Dropped `google-deepmind/weathernext` before posting as a same-day
-collision with HN's own WeatherNext Cyclones pick — kept on HN, this was
-the 4th alternative (2026-08-09)
+**GitHub Trending**: `PrimeIntellect-ai/prime-agent`, `huangruiteng/loopx`,
+`unclebob/swarm-forge`, `semantica-agi/semantica` — zero picks in the
+recurring "AI-agent-skills/tooling" category that day (2026-08-08) ·
+`vitali87/code-graph-rag`, `harveyai/harvey-labs`, `vectorize-io/hindsight`,
+`neo4j-labs/llm-graph-builder` (dropped `google-deepmind/weathernext` as a
+same-day collision with HN's own WeatherNext pick) (2026-08-09) ·
+`addyosmani/agent-skills` (agent playbooks/skills library, 85,452★/+680),
+`paperclipai/paperclip` (fleet-management inbox for AI agents,
+76,155★/+167), `danielmiessler/LifeOS` (personal goal-tracking AI harness,
+17,620★/+143), `msitarzewski/agency-agents` (AI-persona roster, 10 months
+old, 141,343★/+858, flagged as a resurgence not a launch),
+`firecrawl/firecrawl` (web-to-markdown tool for agents, established since
+2024, 164,548★/+815, flagged as continued adoption not news). Honest note:
+today's whole trending page leaned agent-tooling/infra, so did all 5 picks
+(2026-08-10)
 
-**Hugging Face**: `MiniMaxAI/MiniMax-H3`, `acvlab/ABot-World-0-5B-LF`,
-`PLUS-WAVE/InfiniSplat`, `jdopensource/JoyAI-Video-Edit` — permanent
-exclusions re-checked and held; dropped `moonshotai/Kimi-K3` as a repeat
-of this routine's own 08-02 pick (2026-08-07) · Only 1 pick —
-`lodestones/Kroma` (fresh open text-to-image LoRA for Krea 2, ~1 week
-old, 4 independent community demo Spaces already built on it). Thinnest
-single-source day this routine had recorded to that point: several
-longer-gap repeats (DeepSeek-V4-Flash-0731, Kimi-K3, Mage-VL,
-Nanbeige4.2-3B) resurfaced and were dropped again; asked Giulia whether
-honest-at-1 is right or the bar should bend on a thin day (2026-08-08) ·
-`inclusionAI/Ling-3.0-flash` (Ant Group's 124B/5.1B-active hybrid-reasoning
-model tuned for agentic coding), `HuggingFaceCode/stack-v3-train` (HF's
-new large-scale open code-pretraining dataset), `SyzygyResearch/Mach-1-Additive-35B`
-(a novel "additive ternary" quantization method claiming 95% benchmark
-retention on a 35B model), `oddadmix/dialectal-arabic-lahgtna-v2`
-(3,000+ hour, 13-dialect Arabic speech dataset). Permanent exclusions
-(Inkling incl. Inkling-Small, Baidu Unlimited-OCR, MOSS-Transcribe-Diarize,
-microsoft/Fara1.5-27B) re-checked directly and held; no dedicated
-paper-search tool was usable this run (2026-08-09)
+**Hugging Face**: Only 1 pick — `lodestones/Kroma` — thinnest single-source
+day to that point; several longer-gap repeats resurfaced and were dropped
+again (2026-08-08) · `inclusionAI/Ling-3.0-flash`,
+`HuggingFaceCode/stack-v3-train`, `SyzygyResearch/Mach-1-Additive-35B`,
+`oddadmix/dialectal-arabic-lahgtna-v2`. Permanent exclusions (Inkling incl.
+Inkling-Small, Baidu Unlimited-OCR, MOSS-Transcribe-Diarize,
+microsoft/Fara1.5-27B) re-checked and held (2026-08-09) ·
+`LiquidAI/LFM2.5-2.6B` (2.6B edge/phone chat model, 25 languages),
+`deepgrove/maple-preview` (20B ternary-weight reasoning model, 200+
+tok/s on a Mac mini), `simple-world-lab/HiFi-UMI-2K` (2,000-hr
+robot-hand-manipulation dataset captured without a robot), paper "SFT
+Conflicts, RL Coexists" (arXiv 2608.03573). Ran honest at 4: dropped
+`mistralai/Shieldstral-1.0-3B` as a same-day collision with Hacker News
+(and itself a repeat of HN's own 08-05 coverage); a wave of MiniMax-H3
+re-upload/quantization/LoRA noise (same model covered 08-07) excluded as
+noise, not picked as new. Permanent exclusions re-checked directly and
+held (2026-08-10)
 
-**X / Twitter**: Stanford/Arc Institute's genome-language-model
-bacteriophage design; Meta launching Muse Code (Muse Spark 1.2,
-$1.25/$4.25 per M tokens); White House's undisclosed 30-day frontier-model
-vetting framework; Google's $15B Andhra Pradesh data-center protests
-(2026-08-07) · OpenAI's "Astra" model paused after hitting critical
-cybersecurity risk tier; ByteDance's 10T-param model aimed at Anthropic's
-Mythos; Firmus's $2B APAC data-center raise; Suno's new AI-music
-principles/download limits/watermarking (2026-08-08) · Anthropic
-confirming an in-house custom-silicon/chip-design team; US Commerce
-Dept. reviewing offshore Nvidia-chip access for Chinese AI firms; xAI's
-Grok Imagine Image 2.0 hitting #2 on both major image-arena leaderboards.
-Only 3 picks — a new low for this source: 2 of the research pass's
-initial 5 candidates were longer-gap repeats of HN's own recent coverage
-(Google DeepMind's leadership shakeup — HN's 08-06 pick; AMD's Taalas
-acquisition — HN's 08-08 pick), and a 3rd was a same-day collision with
-HN's own top story today (OpenAI's agent hacking Hugging Face) — kept on
-HN per the standing tiebreaker. Added Grok Imagine 2.0 via supplementary
-search rather than run at just 2. Flagged to Giulia as a possible
-structural X/HN overlap pattern, not just a one-off (2026-08-09)
+**X / Twitter**: OpenAI's "Astra" model paused after hitting critical
+cybersecurity risk tier; ByteDance's 10T-param model; Firmus's $2B APAC
+data-center raise; Suno's new AI-music principles (2026-08-08) · Anthropic
+confirming an in-house custom-silicon team; US Commerce Dept. reviewing
+offshore Nvidia-chip access for Chinese AI firms; xAI's Grok Imagine Image
+2.0 hitting #2 on image-arena leaderboards. Only 3 picks that day — 2 of 5
+research candidates were longer-gap repeats of HN's own coverage, a 3rd was
+a same-day collision with HN's top story, flagged to Giulia as a possible
+structural X/HN overlap pattern (2026-08-09) · Karpathy's "pelican test is
+retired" post (Claude Opus built a playable 3D LOTR scene from one
+paragraph); Sam Altman's "AI podcast about your kids" idea getting
+torched in the replies; Jeff Dean's Discovery Loop startup pitch-deck buzz;
+the SSI/Ilya Sutskever shipping-model rumor (82% on a Manifold market); the
+Wiener/Chan Anthropic-chatbot political story (flagged honestly as
+hard-news-that's-also-on-X rather than pure X-native banter). Explicitly
+steered today toward X-native community-reaction content per the 08-09
+overlap concern — 4 of 5 picks had zero HN overlap, ran a full 5 for the
+first time in 3 days (2026-08-10)
 
 ## Entries
+
+- **2026-08-10**: Ran the 4-source digest per `PLAYBOOK.md`. Checked for an
+  existing open PR first per `CLAUDE.md`'s consolidation rule: none found.
+  Checked the 2026-08-09 feedback-request thread directly via
+  `slack_read_channel`: **zero replies**, now 58+ days running with
+  confirmed zero text feedback ever received on any open question.
+  Re-tested network egress via the proxy status endpoint before starting:
+  no recent relay failures, consistent with the known policy (HN/x.com
+  blocked, GitHub/HF unrestricted). **Important finding while checking the
+  channel**: the separate, out-of-scope "Newsly" inbox-based digest (dropped
+  from this routine's spec on 2026-07-02, first flagged as a still-running
+  stray automation on 2026-07-05) posted to `#daily-ai-news` again this
+  morning at 08:17 -03, *before* this session started — confirming it is
+  still running independently 36+ days after being flagged, unresolved.
+  Left it untouched (out of scope, not this routine's automation to
+  modify) and re-flagged it explicitly in today's feedback-request message,
+  asking Giulia directly to check code.claude.com for a leftover trigger.
+  Ran the 4 source-research tasks as parallel background agents, each
+  briefed with all 4 sources' recent picks (last 3 days), the permanent HF
+  exclusions, and — new this run — an explicit ask for X's research to
+  steer toward X-native community-reaction/researcher-takes content instead
+  of hard news HN would also cover, per the 08-09 overlap concern.
+  **Two real problems caught by the manual full-history cross-check, none
+  by the agents' own briefs**: (1) Hacker News's research proposed the
+  Google DeepMind leadership-shakeup story (Hassabis stepping back, Jeff
+  Dean departing) — a **longer-gap repeat** of Hacker News's own confirmed
+  08-06 coverage, outside the 3-day brief window — dropped. (2) Hacker
+  News's research also proposed Mistral's `Shieldstral-1.0-3B` safety
+  model — which turned out to be a repeat of Hacker News's own 08-05
+  coverage *and*, independently, Hugging Face's research proposed the exact
+  same model today too, an added same-day cross-source collision on top of
+  the longer-gap repeat. Dropped from both sources. A supplementary
+  WebSearch and a direct Hugging Face trending pull both failed to turn up
+  a clean 4th/5th HN replacement (top candidates were all too stale or
+  unconfirmable), so **Hacker News ran honest at just 3 themes** — the
+  first day this source has dropped to 3. Hugging Face ran honest at 4
+  after dropping Shieldstral and separately excluding a wave of MiniMax-H3
+  re-upload/quantization noise (same model already covered 08-07) — the
+  first day *two* sources ran thin simultaneously rather than just one.
+  Hacker News's 5th pick (the OpenAI/Hugging Face multi-agent-coordination
+  follow-on, thread 49188585) is a genuine **developing-story update** to
+  the 08-09 pick, not a repeat — new facts from a Black Hat USA disclosure
+  (agents rebuilding a shut-down coordination channel, origin traced to May
+  testing) — kept per the standing "new facts warrant an update" precedent.
+  GitHub Trending ran a clean 5 with no repeats or collisions, honestly
+  reporting today's page as heavily agent-tooling/infra-skewed (all 5 picks
+  fall in that bucket). **X's explicit steer toward X-native content paid
+  off**: 4 of 5 final picks (Karpathy's Claude-Opus-built 3D LOTR scene,
+  the Altman "AI podcast about your kids" backlash, Jeff Dean's Discovery
+  Loop pitch-deck buzz, the SSI/Ilya Sutskever shipping rumor) are genuine
+  X-native community chatter with zero overlap with any other source today,
+  and X ran a full 5 for the first time in 3 days; the 5th pick (the
+  Wiener/Chan Anthropic-chatbot political story) was flagged honestly
+  in-thread as closer to hard political news than pure X banter. Fetch
+  strategy unchanged: HN and X reconstructed via `WebSearch` (still 403 via
+  WebFetch/curl for news.ycombinator.com, hn.algolia.com, x.com — an
+  unfamiliar third-party HN-aggregator domain tried as a workaround was
+  also blocked by the egress policy, so no new fetch path found; all 3 of
+  HN's final picks confirmed as live thread IDs this run), GitHub Trending
+  fetched live via WebFetch on `github.com/trending?since=daily` (star
+  counts spot-checked live via the GitHub API, all matched, `pushed_at`
+  timestamps confirmed current), Hugging Face via `hub_repo_search`/
+  `hub_repo_details` plus `hf_fs` for papers (a working paper-search path
+  this time, unlike 08-06/08-09's gap). Posted the usual 4 source threads
+  plus a feedback-request message with today's X-steering-worked-or-not
+  question, the two-sources-thin-at-once flag, and the renewed Newsly ask,
+  restating all prior standing defaults (native/stronger-source tiebreaker,
+  honest thin-day reporting, permanent HF exclusions, developing-story
+  updates, and the still-open same-category-overlap, AI-adjacent-infra-bar,
+  and HF-thin-day-bar questions) as remaining in effect absent a reply.
+  Updated the rolling "recently covered" list (trimmed each source back to
+  its last 3 days) and this entry per the standing full-history-dedupe
+  process.
 
 - **2026-08-09**: Ran the 4-source digest per `PLAYBOOK.md`. Checked for an
   existing open PR first per `CLAUDE.md`'s consolidation rule: none found.
