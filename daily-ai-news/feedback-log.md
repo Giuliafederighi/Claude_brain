@@ -7,35 +7,35 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Claude Code making "auto mode" the default starting Aug 14
-(thread 49239021); an 80B Qwen model squeezed into 4.3GB RAM on a Mac
-(thread 49158333, Show HN); developing update on OpenAI's rogue agents
-rebuilding a shut-down coordination channel (thread 49188585) (2026-08-10)
-· Anthropic watermarking Claude's EU output per AI Act Article 50 (thread
-49252486); Dan Luu's "best programming language for coding agents" post
-(thread 49245936); Cactus Compute's "Needle2" 14MB agentic LLM, Show HN
-(thread 49246804 — kept on HN over GitHub's `cactus-compute/needle` repo
-pick, same project, same-day collision); Paradigm's Centaur 2.0
-context-scoped MCP agent permissions (thread 49245938); "Can AI Follow in
-Einstein's Footsteps?" paper discussion (thread 49248954). All 5 thread-ID
-confirmed via a live HN dataset mirror workaround (2026-08-11) · Nvidia's
-$500B Wall Street AI financing plan via Ben Thompson's "Nvidia's Risky
-Business" critique (thread 49255710); OpenAI's GPT-5.6-Cyber
-offensive-security model, Daybreak Red tier (thread 49246704);
-Zuckerberg's "The Future Is for Everyone" essay (thread 49241728);
-Congress demanding OpenAI/Anthropic CEO testimony (thread unconfirmed);
-Unitree's 8,288x-oversubscribed humanoid-robot IPO (thread unconfirmed).
-Only 3 of 5 thread-ID confirmed this run — the HN dataset-mirror workaround
-that worked 08-11 was down (2026-08-12)
+**Hacker News**: Anthropic watermarking Claude's EU output per AI Act
+Article 50 (thread 49252486); Dan Luu's "best programming language for
+coding agents" post (thread 49245936); Cactus Compute's "Needle2" 14MB
+agentic LLM, Show HN (thread 49246804 — kept on HN over GitHub's
+`cactus-compute/needle` repo pick, same project, same-day collision);
+Paradigm's Centaur 2.0 context-scoped MCP agent permissions (thread
+49245938); "Can AI Follow in Einstein's Footsteps?" paper discussion
+(thread 49248954). All 5 thread-ID confirmed via a live HN dataset mirror
+workaround (2026-08-11) · Nvidia's $500B Wall Street AI financing plan via
+Ben Thompson's "Nvidia's Risky Business" critique (thread 49255710);
+OpenAI's GPT-5.6-Cyber offensive-security model, Daybreak Red tier (thread
+49246704); Zuckerberg's "The Future Is for Everyone" essay (thread
+49241728); Congress demanding OpenAI/Anthropic CEO testimony (thread
+unconfirmed); Unitree's 8,288x-oversubscribed humanoid-robot IPO (thread
+unconfirmed). Only 3 of 5 thread-ID confirmed — the HN dataset-mirror
+workaround that worked 08-11 was down (2026-08-12) · "AI is removing the
+middle class of software engineering" essay discussion (thread 49271994,
+730 comments); DeepSeek's quiet V4 Pro 0813 flagship release beating
+Anthropic's Opus 4.8 on Terminal-Bench 2.1 and a cybersecurity benchmark
+(canonical thread unconfirmed among 4 near-simultaneous submissions, e.g.
+49274018); Grok 4.6 actually shipping after weeks of teasing (threads
+49274027, 49275385); Lovable's $400M Series C at $13.3B valuation (thread
+49274858); Show HN: Discovered Materials, YC-backed AI-agents-discover-
+chip-materials startup (thread 49269090) (2026-08-13)
 
-**GitHub Trending**: `addyosmani/agent-skills`, `paperclipai/paperclip`,
-`danielmiessler/LifeOS`, `msitarzewski/agency-agents`,
-`firecrawl/firecrawl`. Honest note: today's whole trending page leaned
-agent-tooling/infra, so did all 5 picks (2026-08-10) ·
-`NVlabs/GR00T-WholeBodyControl` (humanoid whole-body control, 3,226★/+23),
-`ZhuLinsen/daily_stock_analysis` (free LLM-run daily trading dashboard,
-61,889★/+731, flagged for an unusually high fork/star ratio),
-`calesthio/OpenMontage` (agent-driven video production pipeline,
+**GitHub Trending**: `NVlabs/GR00T-WholeBodyControl` (humanoid whole-body
+control, 3,226★/+23), `ZhuLinsen/daily_stock_analysis` (free LLM-run daily
+trading dashboard, 61,889★/+731, flagged for an unusually high fork/star
+ratio), `calesthio/OpenMontage` (agent-driven video production pipeline,
 46,959★/+436, flagged as renewed activity not a fresh launch),
 `stablyai/orca` (fan one prompt across 30+ coding agents, keep the winner,
 42,148★/+881), `gepa-ai/gepa` (reflective prompt/code optimization library,
@@ -52,56 +52,134 @@ signal), `embabel/embabel-agent` (JVM agent framework, 4,158★/+29).
 Dropped `Lightricks/LTX-2` as a same-day collision with Hugging Face's
 LTX-2.5 pick — kept on HF, the more native release source. Over a third of
 the raw trending page was repeats of this routine's own recent picks
-(2026-08-12)
+(2026-08-12) · `HKUDS/DeepTutor` (lifelong personalized AI tutor, 35,400★/
++651, flagged for a commit history that only goes back to ~Aug 2 despite
+the star count), `index-tts/index-tts` (IndexTTS-2.5 zero-shot voice
+cloning, 22,800★, mature project with a fresh point release),
+`holaboss-ai/holaOS` (shared-memory desktop shell for running multiple
+coding agents side by side, 6,117★/+258, flagged for a high star/fork
+ratio), `altic-dev/FluidVoice` (fully on-device Mac dictation, 9,654★/+83),
+`lightningpixel/modly` (photo-to-3D-printable-model, local GPU only,
+5,118★/+70). Dropped `semantica-agi/semantica` (caught by full-history
+check as GitHub's own confirmed pick from 08-08) and
+`NousResearch/hermes-agent` (confirmed repeat of 07-31/08-02/08-05 picks),
+both missed by the research agent's own brief (2026-08-13)
 
-**Hugging Face**: `LiquidAI/LFM2.5-2.6B`,
-`deepgrove/maple-preview`, `simple-world-lab/HiFi-UMI-2K`, paper "SFT
-Conflicts, RL Coexists" (arXiv 2608.03573). Ran honest at 4, dropped
-`mistralai/Shieldstral-1.0-3B` (2026-08-10) · `meta-models/Muse-Glimmer-30B`
-(30B on-device agentic multimodal model, #2 trending), `jimmycarter/krea2-turbo-bbox-canvas`
-(layout-controllable image-gen Space), paper "BDH-CQ: In-Context Learning
-with Recurrent Latent Reasoning" (arXiv 2608.09888, 150M params, 29.5%
-ARC-AGI-1 at <$0.001/task), paper "Ouroboros" self-rewriting coding agent
-on Opus 5 (arXiv 2608.08311, 161 days continuous run), paper "Macaron-V1"
-Mixture-of-LoRA agent-model family (arXiv 2608.09819). Dropped
-`nvidia/NVIDIA-NemotronLabs-VoiceChat-11B` (caught by full-history check as
-HF's own confirmed pick from 08-06, missed by the research agent's own
-brief). Permanent exclusions re-checked directly and held (2026-08-11) ·
-`Lightricks/LTX-2.5` (video+audio joint generation model, kept over
-GitHub's LTX-2 repo pick as the more native release source),
-`nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4` (30B MoE model, 3B
-active params, 4-bit, beats full-precision on SWE-bench Verified), Space
-`kulibinai/cadena-stepwise-cad` (3D-mesh-to-parametric-CAD reconstruction,
-paper arXiv 2608.00799), paper "Combodied Agents" (arXiv 2608.10915, 93
-upvotes), paper "Beyond Pixels: From Video Priors to 4D Worlds" (arXiv
-2608.10744, 74 upvotes). Permanent exclusions re-checked directly and held
-(2026-08-12)
+**Hugging Face**: `Lightricks/LTX-2.5` (video+audio joint generation
+model, kept over GitHub's LTX-2 repo pick as the more native release
+source), `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4` (30B MoE
+model, 3B active params, 4-bit, beats full-precision on SWE-bench
+Verified), Space `kulibinai/cadena-stepwise-cad` (3D-mesh-to-parametric-CAD
+reconstruction, paper arXiv 2608.00799), paper "Combodied Agents" (arXiv
+2608.10915, 93 upvotes), paper "Beyond Pixels: From Video Priors to 4D
+Worlds" (arXiv 2608.10744, 74 upvotes). Permanent exclusions re-checked
+directly and held (2026-08-12) · `Qwen/Qwen3.8-2.4T-A95B` (2.4T-param MoE,
+~95B active, #3 trending), Space "Agent Memory Leaderboard" (best of 30+
+systems scores just 0.45/1.0), paper "Spark-to-Paper" (arXiv 2608.11924,
+autonomous paper-writing with a self-refutation fabrication-check pipeline,
+14%→92% catch rate), paper "OpenART" (arXiv 2608.00677, agent red-teaming
+arena, 85% pooled attack success rate), paper "Mechanist" (arXiv
+2608.12036, AI system for studying AI mechanisms/interpretability).
+Dropped two repeats before landing on the final 5: `MiniMaxAI/MiniMax-H3`
+(confirmed repeat of HF's own 08-07 pick) and
+`deepseek-ai/DeepSeek-V4-Flash-0731` (confirmed repeat of HF's own 08-01
+pick, already re-dropped twice before, 08-05 and 08-08 — see today's
+feedback question about permanently excluding it). Permanent exclusions
+re-checked directly and held (2026-08-13)
 
-**X / Twitter**: Karpathy's
-"pelican test is retired" post (Claude Opus built a 3D LOTR scene); Sam
-Altman's "AI podcast about your kids" backlash; Jeff Dean's Discovery Loop
-pitch-deck buzz; the SSI/Ilya Sutskever shipping-model rumor; the
-Wiener/Chan Anthropic-chatbot political story (2026-08-10) · Karpathy's
-"never felt this behind as a programmer" thread (3rd distinct Karpathy post
-featured in 3 days — flagged to Giulia); Naomi Bashkansky's OpenAI exit to
-build brain-reading AI at Conduit (flagged as ~1 week old but still
-circulating); Musk's Grok 4.6 release-date-slip pattern (flagged as
-weakest-sourced pick, no single citable viral tweet found). Ran honest at
-3: dropped a viral community benchmark pitting Meta's Muse Glimmer against
-Gemma as a same-day collision with Hugging Face's Muse-Glimmer-30B pick,
-kept on HF as the more native technical-release source; no other X-native
-candidate cleared the bar after ~20 supplementary searches (2026-08-11) ·
-xAI's "Grok Bot" always-on agent launch (bundled into SuperGrok
-Heavy/Cursor plans); Riot Platforms' $9.1B/20-year Anthropic compute deal;
-Stanford/Arc Institute's AI-designed viruses via Evo 1/Evo 2 (16 of ~300
-candidates viable, killed antibiotic-resistant E. coli); OpenAI ethics lead
-Chloé Bakalar's quiet exit; Anthropic's IPO banking lineup (Goldman/Morgan
-Stanley/JPMorgan, targeting Oct 2026). No Karpathy pick today (avoided a
-4th consecutive day); flagged the two-Anthropic-mentions-in-one-source
-pattern to Giulia; IPO pick flagged as weakest-sourced, no single citable X
-post found (2026-08-12)
+**X / Twitter**: Karpathy's "never felt this behind as a programmer"
+thread (3rd distinct Karpathy post featured in 3 days — flagged to
+Giulia); Naomi Bashkansky's OpenAI exit to build brain-reading AI at
+Conduit (flagged as ~1 week old but still circulating); Musk's Grok 4.6
+release-date-slip pattern (flagged as weakest-sourced pick, no single
+citable viral tweet found). Ran honest at 3: dropped a viral community
+benchmark pitting Meta's Muse Glimmer against Gemma as a same-day
+collision with Hugging Face's Muse-Glimmer-30B pick, kept on HF as the
+more native technical-release source; no other X-native candidate cleared
+the bar after ~20 supplementary searches (2026-08-11) · xAI's "Grok Bot"
+always-on agent launch (bundled into SuperGrok Heavy/Cursor plans); Riot
+Platforms' $9.1B/20-year Anthropic compute deal; Stanford/Arc Institute's
+AI-designed viruses via Evo 1/Evo 2 (16 of ~300 candidates viable, killed
+antibiotic-resistant E. coli); OpenAI ethics lead Chloé Bakalar's quiet
+exit; Anthropic's IPO banking lineup (Goldman/Morgan Stanley/JPMorgan,
+targeting Oct 2026). No Karpathy pick that day (avoided a 4th consecutive
+day); flagged the two-Anthropic-mentions-in-one-source pattern to Giulia;
+IPO pick flagged as weakest-sourced, no single citable X post found
+(2026-08-12) · Kokotajlo and Greenblatt publicly shortening their AGI
+timelines by ~1 year based on 2026 developments; Musk telling SpaceX staff
+Grok will be trained on "the sum total of" their work and thoughts;
+viral researcher thread showing OpenAI/Anthropic/Google's hidden
+"reasoning tokens" leak 1:1 through API billing, exposing real secrets in
+public agent logs; Shrivu Shankar's model-knowledge-cutoff fingerprinting
+post (flagged as weakest-sourced, source blog unreachable from this
+environment). Ran honest at 4: dropped a Fields Medalist's (Gowers) reaction
+to OpenAI's Astra model as a longer-gap repeat of X's own 08-03 "Astra
+solves 10 math/CS problems for $2K" story — same facts, no materially new
+angle (2026-08-13)
 
 ## Entries
+
+- **2026-08-13**: Ran the 4-source digest per `PLAYBOOK.md`. **Checked for an
+  existing open PR first per `CLAUDE.md`'s consolidation rule and found a real
+  instance of the exact failure mode the rule exists to prevent**: PR #54
+  ("Log 2026-08-12 daily-ai-news run") was open, draft, and unmerged —
+  yesterday's run happened and posted to Slack correctly, but its log entry
+  never made it into `main`. Marked it ready-for-review and merged it
+  directly (docs-only, clean diff) before starting today's work, then reset
+  this session's branch onto the updated `main` rather than stacking a new
+  draft on stale history, per the standing instruction. Checked Slack via a
+  background agent before starting: confirmed today's digest had not already
+  been posted (last channel activity was 08-12), confirmed **zero real text
+  replies** on the 08-11 or 08-12 feedback threads (now 61+ consecutive days
+  of confirmed zero feedback), and confirmed the out-of-scope "Newsly"
+  automation is still posting independently (unresolved since 07-05, not
+  this routine's automation, not touched). Re-tested network egress via the
+  proxy status endpoint: no recent relay failures. Ran the 4 source-research
+  tasks as parallel background agents, each briefed with all 4 sources'
+  recent picks (last 3 days) and the permanent HF exclusions. **Four real
+  repeats caught by the manual full-history cross-check, none by the
+  agents' own 3-day briefs**: (1) GitHub's `semantica-agi/semantica` was
+  already this routine's own confirmed pick from 08-08 (5 days back,
+  explicitly flagged then as "not brand-new"). (2) GitHub's
+  `NousResearch/hermes-agent` is a repeat of this routine's own 07-31 pick,
+  already dropped again on 08-02 and 08-05 — a third resurfacing. (3)
+  Hugging Face's `MiniMaxAI/MiniMax-H3` was already this routine's own
+  confirmed pick from 08-07. (4) Hugging Face's `deepseek-ai/DeepSeek-V4-
+  Flash-0731` — offered as a *replacement* for the MiniMax-H3 drop — turned
+  out to be yet another repeat, this routine's own 08-01 pick, previously
+  re-dropped on both 08-05 and 08-08; this is now its fourth appearance and
+  fourth drop, always under slightly different framing. Flagged explicitly
+  as today's feedback question: whether to add it to the permanent-exclusion
+  list alongside Inkling/Unlimited-OCR/MOSS-Transcribe-Diarize/Fara1.5-27B.
+  All four drops were replaced via quick supplementary research passes
+  (GitHub needed 2 replacements after also dropping hermes-agent; Hugging
+  Face needed 2 supplementary attempts before landing a clean 5th, "Mechanist").
+  **One longer-gap repeat caught on X, same "same story, new commentator"
+  pattern as the 08-08 Astra case but resolved the opposite way**: X's
+  research surfaced a Fields Medalist's (Timothy Gowers) reaction to OpenAI's
+  Astra model — but the underlying facts (10 open math/CS problems solved
+  for ~$2,000) are identical to X's own 08-03 pick, unlike the 08-08 Astra
+  follow-up (a safety pause) which was a materially new development. Dropped
+  and replaced via supplementary search with an independent researcher's
+  model-fingerprinting post, flagged as the weakest-sourced pick since the
+  source blog was unreachable from this environment. **No fresh same-day
+  cross-source collisions found** beyond a mild one: Hacker News's Grok 4.6
+  launch/benchmarks story and X's Musk/SpaceX-training-data story both
+  mention Grok/xAI but are genuinely distinct stories — kept both per the
+  standing different-story tiebreaker, flagged as volume in X's thread.
+  Hacker News's DeepSeek V4 Pro pick and Grok 4.6 pick are each themselves
+  "developing story" follow-ons to prior coverage of the same companies
+  (not the same specific stories) — kept, per precedent. GitHub Trending and
+  Hugging Face each ran a full clean 5 once their drops were replaced;
+  Hacker News ran a full 5 with one thread-ID left explicitly unconfirmed
+  (DeepSeek V4 Pro, split across 4 near-simultaneous HN submissions); X ran
+  honest at 4, as its own research pass reported no 5th candidate clearing
+  the bar even before any drops. Posted all 4 source threads plus one
+  feedback-request message (the DeepSeek-V4-Flash-0731 permanent-exclusion
+  question, plus carrying forward item 32's same-company-within-a-source
+  question) to `#daily-ai-news`, then logged this entry and updated the
+  rolling "recently covered" lists (trimmed to the last 3 days: 08-11
+  through 08-13).
 
 - **2026-08-12**: Ran the 4-source digest per `PLAYBOOK.md`. Checked for an
   existing open PR first per `CLAUDE.md`'s consolidation rule:
@@ -2383,6 +2461,28 @@ with no reply — always overridable by a reply at any time.
     `open-index/hacker-news` "today" config), so HN fell back to
     WebSearch reconstruction — 2 of today's 5 HN picks are real and
     well-sourced but not thread-ID confirmed. Standing status: now 60+ days
+    running with confirmed zero text feedback ever received on any open
+    question in this file — every stated default above remains exactly
+    that, a default, and changes the moment a real reply arrives.
+
+33. **New 2026-08-13**: `deepseek-ai/DeepSeek-V4-Flash-0731` has now
+    surfaced as a Hugging Face research candidate four separate times
+    (originally picked 08-01, re-dropped as a repeat on 08-05, again on
+    08-08, and again today) — always under slightly different framing
+    (checkpoint variant, price angle, adoption-signal angle) but the same
+    underlying model card. Every other item on the permanent-exclusion list
+    (Inkling, Baidu's Unlimited-OCR, MOSS-Transcribe-Diarize,
+    microsoft/Fara1.5-27B) earned that status after resurfacing 3-4 times
+    too. Specific ask: add DeepSeek-V4-Flash-0731 to the permanent
+    exclusion list so future research agents stop re-spending time on it,
+    or keep re-checking it fresh each run in case it gets a genuine update
+    worth covering? `NousResearch/hermes-agent` (also dropped again today,
+    its fourth appearance/drop since 07-31) is a candidate for the same
+    treatment but has shown more variety in *why* it gets proposed
+    (feature-launch angle, security-incident angle, plain repeat) — flagging
+    it too, but with less confidence it's purely a stale non-story the way
+    DeepSeek-V4-Flash-0731 is. Also carrying forward item 32's still-open
+    same-company-within-a-source question. Standing status: now 61+ days
     running with confirmed zero text feedback ever received on any open
     question in this file — every stated default above remains exactly
     that, a default, and changes the moment a real reply arrives.
