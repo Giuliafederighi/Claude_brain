@@ -7,15 +7,7 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Anthropic watermarking Claude's EU output per AI Act
-Article 50 (thread 49252486); Dan Luu's "best programming language for
-coding agents" post (thread 49245936); Cactus Compute's "Needle2" 14MB
-agentic LLM, Show HN (thread 49246804 — kept on HN over GitHub's
-`cactus-compute/needle` repo pick, same project, same-day collision);
-Paradigm's Centaur 2.0 context-scoped MCP agent permissions (thread
-49245938); "Can AI Follow in Einstein's Footsteps?" paper discussion
-(thread 49248954). All 5 thread-ID confirmed via a live HN dataset mirror
-workaround (2026-08-11) · Nvidia's $500B Wall Street AI financing plan via
+**Hacker News**: Nvidia's $500B Wall Street AI financing plan via
 Ben Thompson's "Nvidia's Risky Business" critique (thread 49255710);
 OpenAI's GPT-5.6-Cyber offensive-security model, Daybreak Red tier (thread
 49246704); Zuckerberg's "The Future Is for Everyone" essay (thread
@@ -30,20 +22,22 @@ Anthropic's Opus 4.8 on Terminal-Bench 2.1 and a cybersecurity benchmark
 49274018); Grok 4.6 actually shipping after weeks of teasing (threads
 49274027, 49275385); Lovable's $400M Series C at $13.3B valuation (thread
 49274858); Show HN: Discovered Materials, YC-backed AI-agents-discover-
-chip-materials startup (thread 49269090) (2026-08-13)
+chip-materials startup (thread 49269090) (2026-08-13) · Zhipu/Z.ai's
+GLM-5.3 finding 1,097 critical/high-severity vulnerabilities across Linux/
+WebKit/FreeBSD via emergent exploit-chain reasoning, weights delayed for
+safety review (thread 49294997); Cerebras+OpenAI's "Ultrafast" GPT-5.6 Sol
+tier, 750 tok/s (thread 49289844); Google's Gemini 3.7 Flash pricing/
+coding-benchmark split vs. Claude/GPT-5.6 (thread 49288847); "Stealing
+Reasoning Traces from Proprietary LLM APIs" paper, 704 real secrets
+recovered from public agent logs (thread 49257876, arXiv 2608.09867 —
+flagged as substantially the same finding as X's own 08-13 "reasoning
+tokens leak" pick, kept as the first hard/quantified version of that
+claim, see today's feedback question); Mistral OCR 4.1 paragraph-level
+bounding boxes (thread 49288889, weakest signal). All 5 thread-ID
+confirmed via WebSearch reconstruction (HN dataset-mirror workaround
+500'd again); point/comment counts not retrievable this way (2026-08-14)
 
-**GitHub Trending**: `NVlabs/GR00T-WholeBodyControl` (humanoid whole-body
-control, 3,226★/+23), `ZhuLinsen/daily_stock_analysis` (free LLM-run daily
-trading dashboard, 61,889★/+731, flagged for an unusually high fork/star
-ratio), `calesthio/OpenMontage` (agent-driven video production pipeline,
-46,959★/+436, flagged as renewed activity not a fresh launch),
-`stablyai/orca` (fan one prompt across 30+ coding agents, keep the winner,
-42,148★/+881), `gepa-ai/gepa` (reflective prompt/code optimization library,
-6,072★, flagged as smaller signal). Dropped `cactus-compute/needle` (kept
-on HN's Show HN thread instead — same project) and `shiyu-coder/Kronos`
-(caught by full-history check as GitHub's own confirmed pick from 08-03, 8
-days back, missed by the research agent's own brief) (2026-08-11) ·
-`cathrynlavery/diagram-design` (Claude Code diagram-generation skill,
+**GitHub Trending**: `cathrynlavery/diagram-design` (Claude Code diagram-generation skill,
 8,151★/+1,616, today's biggest mover), `hugohe3/ppt-master` (AI-generated
 native PowerPoint decks, 45,104★/+364), `NVIDIA-NeMo/Switchyard` (Rust
 proxy translating OpenAI/Anthropic API formats for agent routing,
@@ -63,7 +57,22 @@ ratio), `altic-dev/FluidVoice` (fully on-device Mac dictation, 9,654★/+83),
 5,118★/+70). Dropped `semantica-agi/semantica` (caught by full-history
 check as GitHub's own confirmed pick from 08-08) and
 `NousResearch/hermes-agent` (confirmed repeat of 07-31/08-02/08-05 picks),
-both missed by the research agent's own brief (2026-08-13)
+both missed by the research agent's own brief (2026-08-13) ·
+`github/spec-kit` (spec-driven AI coding toolkit, 127,952★/+1,147, renewed
+activity not a fresh launch), `citrolabs/ego-lite` (browser built for AI
+agent automation using your logged-in sessions, 10,078★/+153),
+`unslothai/unsloth` (local LLM fine-tuning toolkit, 71,284★/+328),
+`cursor/plugins` (Cursor's official plugin spec/starter kit, 2,718★/+54,
+smallest by stars), `macro-inc/macro` (team workspace app, 2,821★,
++1,239/day — 44% of its total stars in one day — flagged as loosest AI fit,
+included for the spike). Dropped 6 of 17 trending repos (35%) as repeats:
+`cathrynlavery/diagram-design`, `holaboss-ai/holaOS`, `lightningpixel/modly`,
+`infiniflow/ragflow` (all this routine's own 08-12/08-13 picks, caught by
+the research agent's own brief), plus known repeat-offenders
+`semantica-agi/semantica` and `cactus-compute/needle` (resurfaced again).
+`NousResearch/hermes-agent` did NOT resurface today. Star counts
+spot-checked live against the GitHub API, fetch confirmed current
+(2026-08-14)
 
 **Hugging Face**: `Lightricks/LTX-2.5` (video+audio joint generation
 model, kept over GitHub's LTX-2 repo pick as the more native release
@@ -85,18 +94,28 @@ Dropped two repeats before landing on the final 5: `MiniMaxAI/MiniMax-H3`
 `deepseek-ai/DeepSeek-V4-Flash-0731` (confirmed repeat of HF's own 08-01
 pick, already re-dropped twice before, 08-05 and 08-08 — see today's
 feedback question about permanently excluding it). Permanent exclusions
-re-checked directly and held (2026-08-13)
+re-checked directly and held (2026-08-13) · `deepgrove/maple-preview` (20B
+ternary-weight MoE model compressed to 5.3GB, IMO-level math, 218 tok/s on
+a Mac mini M4), `inclusionAI/Ling-3.0-tiny` (Ant Group's 7.9B/1.3B-active
+phone-and-laptop reasoning model), `MiniMaxAI/MiniMax-Music3` (full
+5-minute song generation, consistent voice/instrumentation throughout —
+distinct product from MiniMax-H3, not a repeat), paper "BDH-CQ: In-Context
+Learning with Recurrent Latent Reasoning" (arXiv 2608.09888, silent/
+latent-space reasoning, 150M params, independently re-verified),
+`LiquidAI/LFM2.5-2.6B` + `LFM2.5-VL-3B` (edge agent models, 220 tok/s on
+Apple M5 Max, no GPU needed). Permanent exclusion for
+`deepseek-ai/DeepSeek-V4-Flash-0731` adopted today (see Entries below) —
+re-checked directly, no update, held. `meta-models/Muse-Glimmer-30B`
+dropped as a near-miss repeat of HF's own 08-11 pick despite being #1 by
+trending score; `MiniMaxAI/MiniMax-H3` derivative swarm (LoRAs/
+quantizations/reuploads, over a third of top-30 trending) dropped as
+repeat of 08-07/08-13; `Qwen/Qwen3.8-2.4T-A95B`, `Lightricks/LTX-2.5`,
+`NVIDIA-Nemotron-3.5-Lightning-30B`, `moonshotai/Kimi-K3`, "Agent Memory
+Leaderboard" space all dropped as literal repeats. Cross-source note:
+`deepseek-ai/DeepSeek-V4-Pro-0813` trending on HF today but left out as
+the same release HN covered yesterday (2026-08-14)
 
-**X / Twitter**: Karpathy's "never felt this behind as a programmer"
-thread (3rd distinct Karpathy post featured in 3 days — flagged to
-Giulia); Naomi Bashkansky's OpenAI exit to build brain-reading AI at
-Conduit (flagged as ~1 week old but still circulating); Musk's Grok 4.6
-release-date-slip pattern (flagged as weakest-sourced pick, no single
-citable viral tweet found). Ran honest at 3: dropped a viral community
-benchmark pitting Meta's Muse Glimmer against Gemma as a same-day
-collision with Hugging Face's Muse-Glimmer-30B pick, kept on HF as the
-more native technical-release source; no other X-native candidate cleared
-the bar after ~20 supplementary searches (2026-08-11) · xAI's "Grok Bot"
+**X / Twitter**: xAI's "Grok Bot"
 always-on agent launch (bundled into SuperGrok Heavy/Cursor plans); Riot
 Platforms' $9.1B/20-year Anthropic compute deal; Stanford/Arc Institute's
 AI-designed viruses via Evo 1/Evo 2 (16 of ~300 candidates viable, killed
@@ -115,9 +134,77 @@ post (flagged as weakest-sourced, source blog unreachable from this
 environment). Ran honest at 4: dropped a Fields Medalist's (Gowers) reaction
 to OpenAI's Astra model as a longer-gap repeat of X's own 08-03 "Astra
 solves 10 math/CS problems for $2K" story — same facts, no materially new
-angle (2026-08-13)
+angle (2026-08-13) · OpenAI's leadership exodus widening (COO Brad
+Lightcap and revenue chief Denise Dresser both quit within days, on top of
+earlier ethics/safety/mission-alignment departures); Anthropic's IPO
+chatter jumping to a $2T+ target (CFO running early investor meetings,
+$47B annualized revenue run rate — new concrete facts, continuation of
+08-12's IPO pick, not a repeat); Grok 4.6's "same price" launch hiding a
+67% cached-input price hike and a 200K-token billing cliff (same model as
+HN's 08-13 launch pick, distinct pricing/backlash angle, kept per
+standing tiebreaker); OpenAI's Sora 2 promo backlash vs. the viral
+Altman-stealing-GPUs joke clip; Gemini's "1 billion users" MAU-vs-WAU
+metrics debate (flagged as weakest-sourced, framing traced to a smaller
+analysis blog). No collisions found against HN/GitHub/HF's recent picks;
+Hassabis/DeepMind leadership-shakeup story considered but excluded as a
+confirmed longer-gap repeat of HN's own 08-06 coverage, already dropped
+twice before (2026-08-14)
 
 ## Entries
+
+- **2026-08-14**: Ran the 4-source digest per `PLAYBOOK.md`. Checked for an
+  existing open PR first per `CLAUDE.md`'s consolidation rule: `list_pull_requests`
+  returned zero open PRs — yesterday's (08-13) PR #55 had already been merged,
+  clean slate. Re-tested network egress: no recent relay failures, same known
+  policy (HN/x.com blocked, GitHub/HF unrestricted). Checked Slack before
+  starting via a background agent: confirmed today's digest had not already
+  been posted (last channel activity was 08-13), and confirmed **zero real
+  human text replies** on the 08-13 feedback-request thread or any of the 4
+  source threads (now 62+ consecutive days of confirmed zero feedback).
+  **Found something new and concerning while checking**: an unexplained
+  message posted to the channel on 08-13 at 19:05:43 -03, titled "AI Daily
+  News — consolidated digest," under Giulia's Slack identity with the
+  "Sent using @Claude" tag, claiming to merge all 5 sources (including the
+  inbox/"Newsly" source dropped from this routine on 2026-07-02) into one
+  post and stating "this replaces the old separate per-source posts." This
+  is not reflected anywhere in `PLAYBOOK.md`, the source of truth this
+  routine reads every run, and there's no record here of Giulia requesting
+  it — it reads exactly like the kind of unilateral format drift
+  `CLAUDE.md` was written to prevent, just via a rogue in-channel post
+  instead of an unmerged PR. Did not adopt it or the reintroduced inbox
+  source: continued with the documented 4-source, separate-thread format,
+  and flagged the anomaly explicitly and prominently in today's feedback
+  message rather than silently picking a side. Adopted `deepseek-ai/
+  DeepSeek-V4-Flash-0731`'s permanent exclusion from Hugging Face's
+  candidates per the playbook's default-after-silence policy (proposed
+  08-13, unopposed, 4th resurfacing matches the threshold that triggered
+  the same treatment for Inkling/Unlimited-OCR/MOSS-Transcribe-Diarize/
+  Fara1.5-27B) — committed to `PLAYBOOK.md` before starting research.
+  `NousResearch/hermes-agent` was NOT added to permanent exclusion (less
+  confidence it's a stale non-story vs. genuinely different framings each
+  time) and, as it happens, did not even resurface today. Ran the 4
+  source-research tasks as parallel background agents, each briefed with
+  all 4 sources' recent picks and the updated permanent-exclusion list.
+  **Full within-source and cross-source history checks found zero
+  undetected repeats today** — grepped `feedback-log.md` directly for
+  every final candidate name/arXiv-ID across all 4 sources; the only hits
+  were expected (Grok 4.6, already handled as a flagged same-entity-
+  different-angle case). **One soft cross-source collision found and kept,
+  not swapped**: Hacker News's pick of a new paper on AI models leaking
+  secrets via hidden reasoning traces (arXiv 2608.09867, 704 secrets
+  recovered) is substantially the same underlying finding as X's own
+  08-13 "viral researcher thread" pick — judged as a genuine escalation
+  (informal claim → hard, quantified, vendor-notified academic paper) per
+  the same "same story, materially new development" precedent as the
+  08-08 Astra case, rather than a plain repeat. Flagged explicitly in both
+  the HN thread and today's feedback message rather than deciding
+  silently. All 4 sources ran a full 5 themes; GitHub's raw trending page
+  was again repeat-heavy (6 of 17, 35%, mostly this routine's own recent
+  picks). Posted all 4 source threads plus one feedback-request message
+  (the consolidated-digest anomaly, the resolved DeepSeek exclusion, and
+  the reasoning-traces-paper question) to `#daily-ai-news`, then logged
+  this entry and updated the rolling "recently covered" lists (trimmed to
+  the last 3 days: 08-12 through 08-14).
 
 - **2026-08-13**: Ran the 4-source digest per `PLAYBOOK.md`. **Checked for an
   existing open PR first per `CLAUDE.md`'s consolidation rule and found a real
@@ -2465,24 +2552,43 @@ with no reply — always overridable by a reply at any time.
     question in this file — every stated default above remains exactly
     that, a default, and changes the moment a real reply arrives.
 
-33. **New 2026-08-13**: `deepseek-ai/DeepSeek-V4-Flash-0731` has now
-    surfaced as a Hugging Face research candidate four separate times
-    (originally picked 08-01, re-dropped as a repeat on 08-05, again on
-    08-08, and again today) — always under slightly different framing
-    (checkpoint variant, price angle, adoption-signal angle) but the same
-    underlying model card. Every other item on the permanent-exclusion list
-    (Inkling, Baidu's Unlimited-OCR, MOSS-Transcribe-Diarize,
-    microsoft/Fara1.5-27B) earned that status after resurfacing 3-4 times
-    too. Specific ask: add DeepSeek-V4-Flash-0731 to the permanent
-    exclusion list so future research agents stop re-spending time on it,
-    or keep re-checking it fresh each run in case it gets a genuine update
-    worth covering? `NousResearch/hermes-agent` (also dropped again today,
-    its fourth appearance/drop since 07-31) is a candidate for the same
-    treatment but has shown more variety in *why* it gets proposed
-    (feature-launch angle, security-incident angle, plain repeat) — flagging
-    it too, but with less confidence it's purely a stale non-story the way
-    DeepSeek-V4-Flash-0731 is. Also carrying forward item 32's still-open
-    same-company-within-a-source question. Standing status: now 61+ days
-    running with confirmed zero text feedback ever received on any open
-    question in this file — every stated default above remains exactly
-    that, a default, and changes the moment a real reply arrives.
+33. **Resolved 2026-08-14** (proposed 08-13, unopposed): `deepseek-ai/
+    DeepSeek-V4-Flash-0731` resurfaced a 4th time (08-01, 08-05, 08-08,
+    08-13), always under slightly different framing over the same
+    underlying model card — same threshold that triggered permanent
+    exclusion for Inkling/Unlimited-OCR/MOSS-Transcribe-Diarize/
+    Fara1.5-27B. Adopted the proposed permanent exclusion per the
+    playbook's default-after-silence policy, documented in `PLAYBOOK.md`,
+    rather than re-proposing again. `NousResearch/hermes-agent` is
+    explicitly NOT included in this exclusion — still showing genuine
+    variety in why it gets proposed (feature-launch, security-incident,
+    plain repeat), and it didn't even resurface on 2026-08-14 — stays a
+    per-run dedupe check, not a permanent one. Item 32's same-company-
+    within-a-source question remains open; no new occurrence on 08-14 to
+    add data to it.
+
+34. **New 2026-08-14, time-sensitive**: an unexplained message posted to
+    `#daily-ai-news` on 2026-08-13 at 19:05:43 -03, titled "AI Daily News —
+    consolidated digest," under Giulia's own Slack identity with a "Sent
+    using @Claude" tag. It claims to merge all 5 sources (HN, GitHub, HF,
+    X, **and** the inbox-based "Newsly" source — the same one explicitly
+    dropped from this routine on 2026-07-02 per item 2 above) into a single
+    post, and states outright "this replaces the old separate per-source
+    posts." Nothing in `PLAYBOOK.md` — the file this routine treats as the
+    single source of truth every run — reflects this format, and there is
+    no trace here of Giulia asking for it. Two live possibilities: (a) she
+    asked a different session directly for this format and it just hasn't
+    been written back into this repo, or (b) it's drift from an unrelated
+    automation (plausibly connected to the still-unresolved "Newsly"
+    question, item 6) posing as this routine. Did not adopt it — 08-14 ran
+    the documented 4-source/separate-thread format and flagged this
+    directly in-channel. **Direct ask, same as item 6's framing**: which
+    format do you actually want — keep the documented per-source-thread
+    format, switch permanently to the single consolidated post (and if so,
+    should the inbox/Newsly source come back as a real 5th source with a
+    documented fetch strategy), or was the 08-13 evening post something
+    else entirely that this routine shouldn't imitate or worry about? This
+    one shouldn't get a silent default the way most items in this list do
+    — a wrong guess here means the next several days' worth of runs drift
+    in the wrong direction, so re-raising it every run until answered
+    rather than adopting anything after a few quiet days.

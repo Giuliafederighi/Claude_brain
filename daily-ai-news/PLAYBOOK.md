@@ -241,6 +241,20 @@ step above.
   was tested against picks that had aged just past the research brief's
   window is a good sign the fix works as intended — keep it a permanent,
   non-negotiable step before every posting, not just a one-time correction.
+- **Adopted 2026-08-14 (proposed 08-13, unopposed)**: `deepseek-ai/
+  DeepSeek-V4-Flash-0731` is now permanently, silently excluded from
+  Hugging Face's picks absent a genuinely new checkpoint/benchmark/signal —
+  it resurfaced as a candidate 4 times (08-01, 08-05, 08-08, 08-13), always
+  under slightly different framing (checkpoint variant, price angle,
+  adoption-signal angle) over the same underlying model card. Same
+  treatment, same resurfacing threshold, as Inkling/Unlimited-OCR/
+  MOSS-Transcribe-Diarize/Fara1.5-27B. If it gets a real update, it's fair
+  game again — check directly before excluding, don't just pattern-match on
+  the name. `NousResearch/hermes-agent` (also flagged 4 times since 07-31,
+  see GitHub's picks) is NOT added here yet — it keeps resurfacing under
+  genuinely different angles (feature launch, security incident, plain
+  repeat) rather than the same stale story, so it stays a per-run dedupe
+  check rather than a permanent exclusion.
 
 ## Known constraint: sandboxed network egress
 
