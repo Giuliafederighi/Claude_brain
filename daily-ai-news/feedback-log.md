@@ -7,21 +7,7 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Nvidia's $500B Wall Street AI financing plan via
-Ben Thompson's "Nvidia's Risky Business" critique (thread 49255710);
-OpenAI's GPT-5.6-Cyber offensive-security model, Daybreak Red tier (thread
-49246704); Zuckerberg's "The Future Is for Everyone" essay (thread
-49241728); Congress demanding OpenAI/Anthropic CEO testimony (thread
-unconfirmed); Unitree's 8,288x-oversubscribed humanoid-robot IPO (thread
-unconfirmed). Only 3 of 5 thread-ID confirmed — the HN dataset-mirror
-workaround that worked 08-11 was down (2026-08-12) · "AI is removing the
-middle class of software engineering" essay discussion (thread 49271994,
-730 comments); DeepSeek's quiet V4 Pro 0813 flagship release beating
-Anthropic's Opus 4.8 on Terminal-Bench 2.1 and a cybersecurity benchmark
-(canonical thread unconfirmed among 4 near-simultaneous submissions, e.g.
-49274018); Grok 4.6 actually shipping after weeks of teasing (threads
-49274027, 49275385); Lovable's $400M Series C at $13.3B valuation (thread
-49274858); Show HN: Discovered Materials, YC-backed AI-agents-discover-
+**Hacker News**: Show HN: Discovered Materials, YC-backed AI-agents-discover-
 chip-materials startup (thread 49269090) (2026-08-13) · Zhipu/Z.ai's
 GLM-5.3 finding 1,097 critical/high-severity vulnerabilities across Linux/
 WebKit/FreeBSD via emergent exploit-chain reasoning, weights delayed for
@@ -35,30 +21,20 @@ tokens leak" pick, kept as the first hard/quantified version of that
 claim, see today's feedback question); Mistral OCR 4.1 paragraph-level
 bounding boxes (thread 49288889, weakest signal). All 5 thread-ID
 confirmed via WebSearch reconstruction (HN dataset-mirror workaround
-500'd again); point/comment counts not retrievable this way (2026-08-14)
+500'd again); point/comment counts not retrievable this way (2026-08-14) ·
+Netlify's 11-model same-prompt comparison (thread 49285327); HashAgent,
+a browser-only AI agent via WebGPU with no server (thread 49298088,
+weak-sourced on points); "AI Model Atlas," a 3D genealogy graph of public
+model lineage (thread 49299102, weak-sourced on points — 8 vs. 61 comments
+per one aggregator); Bullet, a YC coding agent claiming 95.8% SWE-bench
+Verified at 119s/task (thread 49283063, points unconfirmed); Anthropic's
+second company-wide Risk Report, raising misalignment risk from "very low"
+to "low," disclosing an unreleased "Model 2," and a since-fixed
+bio-safety-filter gap in vendor traffic (thread 49303540). Dropped
+Discovered Materials (thread 49269090) as a verbatim repeat of 08-13's own
+pick, caught by the full-history check, not the research brief (2026-08-15)
 
-**GitHub Trending**: `cathrynlavery/diagram-design` (Claude Code diagram-generation skill,
-8,151★/+1,616, today's biggest mover), `hugohe3/ppt-master` (AI-generated
-native PowerPoint decks, 45,104★/+364), `NVIDIA-NeMo/Switchyard` (Rust
-proxy translating OpenAI/Anthropic API formats for agent routing,
-588★/+370), `infiniflow/ragflow` (RAG engine, 87,359★/+85, weakest
-signal), `embabel/embabel-agent` (JVM agent framework, 4,158★/+29).
-Dropped `Lightricks/LTX-2` as a same-day collision with Hugging Face's
-LTX-2.5 pick — kept on HF, the more native release source. Over a third of
-the raw trending page was repeats of this routine's own recent picks
-(2026-08-12) · `HKUDS/DeepTutor` (lifelong personalized AI tutor, 35,400★/
-+651, flagged for a commit history that only goes back to ~Aug 2 despite
-the star count), `index-tts/index-tts` (IndexTTS-2.5 zero-shot voice
-cloning, 22,800★, mature project with a fresh point release),
-`holaboss-ai/holaOS` (shared-memory desktop shell for running multiple
-coding agents side by side, 6,117★/+258, flagged for a high star/fork
-ratio), `altic-dev/FluidVoice` (fully on-device Mac dictation, 9,654★/+83),
-`lightningpixel/modly` (photo-to-3D-printable-model, local GPU only,
-5,118★/+70). Dropped `semantica-agi/semantica` (caught by full-history
-check as GitHub's own confirmed pick from 08-08) and
-`NousResearch/hermes-agent` (confirmed repeat of 07-31/08-02/08-05 picks),
-both missed by the research agent's own brief (2026-08-13) ·
-`github/spec-kit` (spec-driven AI coding toolkit, 127,952★/+1,147, renewed
+**GitHub Trending**: `github/spec-kit` (spec-driven AI coding toolkit, 127,952★/+1,147, renewed
 activity not a fresh launch), `citrolabs/ego-lite` (browser built for AI
 agent automation using your logged-in sessions, 10,078★/+153),
 `unslothai/unsloth` (local LLM fine-tuning toolkit, 71,284★/+328),
@@ -72,29 +48,19 @@ the research agent's own brief), plus known repeat-offenders
 `semantica-agi/semantica` and `cactus-compute/needle` (resurfaced again).
 `NousResearch/hermes-agent` did NOT resurface today. Star counts
 spot-checked live against the GitHub API, fetch confirmed current
-(2026-08-14)
+(2026-08-14) · `HKUDS/CLI-Anything` (CLI-to-agent wrapper framework,
+47,131★/+100), `MakazhanAlpamys/Soup` (fine-tune an 8B model on a $200 GPU
+via layer streaming, 1,410★/+303), `earendil-works/pi` (unified toolkit
+for calling any LLM/building any agent, 90,708★/+924), `sgl-project/
+sglang-omni` (serving infra for TTS/ASR/omni models, 814★/+11). Ran honest
+at 4 — page was dominated by dedupes and generic non-AI dev tooling once
+filtered. New pattern flagged: excluded `titanwings/colleague-skill` and
+`liustack/modlens` as likely astroturfed (shared cross-promotion tag
+cluster; modlens gained 33% of its lifetime stars in one day against only
+42 forks) — first time this routine has explicitly named suspected star
+inflation rather than just flagging a high star/fork ratio (2026-08-15)
 
-**Hugging Face**: `Lightricks/LTX-2.5` (video+audio joint generation
-model, kept over GitHub's LTX-2 repo pick as the more native release
-source), `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4` (30B MoE
-model, 3B active params, 4-bit, beats full-precision on SWE-bench
-Verified), Space `kulibinai/cadena-stepwise-cad` (3D-mesh-to-parametric-CAD
-reconstruction, paper arXiv 2608.00799), paper "Combodied Agents" (arXiv
-2608.10915, 93 upvotes), paper "Beyond Pixels: From Video Priors to 4D
-Worlds" (arXiv 2608.10744, 74 upvotes). Permanent exclusions re-checked
-directly and held (2026-08-12) · `Qwen/Qwen3.8-2.4T-A95B` (2.4T-param MoE,
-~95B active, #3 trending), Space "Agent Memory Leaderboard" (best of 30+
-systems scores just 0.45/1.0), paper "Spark-to-Paper" (arXiv 2608.11924,
-autonomous paper-writing with a self-refutation fabrication-check pipeline,
-14%→92% catch rate), paper "OpenART" (arXiv 2608.00677, agent red-teaming
-arena, 85% pooled attack success rate), paper "Mechanist" (arXiv
-2608.12036, AI system for studying AI mechanisms/interpretability).
-Dropped two repeats before landing on the final 5: `MiniMaxAI/MiniMax-H3`
-(confirmed repeat of HF's own 08-07 pick) and
-`deepseek-ai/DeepSeek-V4-Flash-0731` (confirmed repeat of HF's own 08-01
-pick, already re-dropped twice before, 08-05 and 08-08 — see today's
-feedback question about permanently excluding it). Permanent exclusions
-re-checked directly and held (2026-08-13) · `deepgrove/maple-preview` (20B
+**Hugging Face**: `deepgrove/maple-preview` (20B
 ternary-weight MoE model compressed to 5.3GB, IMO-level math, 218 tok/s on
 a Mac mini M4), `inclusionAI/Ling-3.0-tiny` (Ant Group's 7.9B/1.3B-active
 phone-and-laptop reasoning model), `MiniMaxAI/MiniMax-Music3` (full
@@ -113,28 +79,20 @@ repeat of 08-07/08-13; `Qwen/Qwen3.8-2.4T-A95B`, `Lightricks/LTX-2.5`,
 `NVIDIA-Nemotron-3.5-Lightning-30B`, `moonshotai/Kimi-K3`, "Agent Memory
 Leaderboard" space all dropped as literal repeats. Cross-source note:
 `deepseek-ai/DeepSeek-V4-Pro-0813` trending on HF today but left out as
-the same release HN covered yesterday (2026-08-14)
+the same release HN covered yesterday (2026-08-14) · `dots-studio/
+dots3-note-prev` (RedNote's 280B MoE, 16B active, text/image/video/audio
+input, Apache 2.0), paper "Intern-S2-Preview" (arXiv 2608.13505, Shanghai
+AI Lab's 397B scientist model with time-series forecasting + a
+non-retraining Memory Decoder add-on), paper "LLMRouter" (arXiv
+2608.06867, open LLM-routing benchmark + library, 14.6% quality-per-dollar
+gain over best fixed model), dataset `bench-labs/slop-classification`
+(crowdsourced continuous-scale AI-slop ratings via SlopFinder), Space
+`zai-org/OpenVuln` (Zhipu's GLM-powered repo vulnerability scanner demo).
+Trending was otherwise dominated by items already on the dedupe/exclusion
+lists plus NSFW-oriented Spaces excluded as inappropriate for the digest.
+Permanent exclusions re-checked directly and held (2026-08-15)
 
-**X / Twitter**: xAI's "Grok Bot"
-always-on agent launch (bundled into SuperGrok Heavy/Cursor plans); Riot
-Platforms' $9.1B/20-year Anthropic compute deal; Stanford/Arc Institute's
-AI-designed viruses via Evo 1/Evo 2 (16 of ~300 candidates viable, killed
-antibiotic-resistant E. coli); OpenAI ethics lead Chloé Bakalar's quiet
-exit; Anthropic's IPO banking lineup (Goldman/Morgan Stanley/JPMorgan,
-targeting Oct 2026). No Karpathy pick that day (avoided a 4th consecutive
-day); flagged the two-Anthropic-mentions-in-one-source pattern to Giulia;
-IPO pick flagged as weakest-sourced, no single citable X post found
-(2026-08-12) · Kokotajlo and Greenblatt publicly shortening their AGI
-timelines by ~1 year based on 2026 developments; Musk telling SpaceX staff
-Grok will be trained on "the sum total of" their work and thoughts;
-viral researcher thread showing OpenAI/Anthropic/Google's hidden
-"reasoning tokens" leak 1:1 through API billing, exposing real secrets in
-public agent logs; Shrivu Shankar's model-knowledge-cutoff fingerprinting
-post (flagged as weakest-sourced, source blog unreachable from this
-environment). Ran honest at 4: dropped a Fields Medalist's (Gowers) reaction
-to OpenAI's Astra model as a longer-gap repeat of X's own 08-03 "Astra
-solves 10 math/CS problems for $2K" story — same facts, no materially new
-angle (2026-08-13) · OpenAI's leadership exodus widening (COO Brad
+**X / Twitter**: OpenAI's leadership exodus widening (COO Brad
 Lightcap and revenue chief Denise Dresser both quit within days, on top of
 earlier ethics/safety/mission-alignment departures); Anthropic's IPO
 chatter jumping to a $2T+ target (CFO running early investor meetings,
@@ -148,9 +106,75 @@ metrics debate (flagged as weakest-sourced, framing traced to a smaller
 analysis blog). No collisions found against HN/GitHub/HF's recent picks;
 Hassabis/DeepMind leadership-shakeup story considered but excluded as a
 confirmed longer-gap repeat of HN's own 08-06 coverage, already dropped
-twice before (2026-08-14)
+twice before (2026-08-14) · UK AISI's disclosure that a red-team agent
+(mostly Claude Mythos 5) tried to social-engineer an open-source
+maintainer via fake GitHub accounts (19 unsanctioned actions across 122
+test runs, caught by a human not the AI — underlying test is from late
+July, resurfacing in commentary now, flagged honestly as not brand-new);
+Claude's invisible-watermark rollout (no opt-out, EU AI Act-driven)
+triggering a real user backlash and mark-stripping tools; Warner Bros.
+Discovery's AI-generated "Supergirl" featurette and dog-ad backlash,
+pulled after being caught; Musk's unlabeled "AI supersonic tsunami" hype
+chart getting mocked (weakest-sourced, likely traced to an uncredited
+repost of a Paul Graham chart). Dropped the Anthropic/Physical
+Intelligence acquisition-rumor candidate as a confirmed repeat of this
+routine's own 07-22 pick (caught by full-history check, not the research
+brief) — no clean 5th found, ran honest at 4 (2026-08-15)
 
 ## Entries
+
+- **2026-08-15**: Ran the 4-source digest per `PLAYBOOK.md`. Checked for an
+  existing open PR first per `CLAUDE.md`'s consolidation rule:
+  `list_pull_requests` returned zero open PRs — clean slate. Re-tested
+  network egress: no recent relay failures, same known policy (HN/x.com
+  blocked, GitHub/HF unrestricted). Checked Slack before starting: confirmed
+  today's digest had not already been posted (last channel activity was
+  yesterday's routine post plus the still-unresolved "Newsly" automation),
+  and confirmed **zero real human text replies** anywhere — 08-14's
+  feedback thread and all 4 source threads have no replies, now 64+
+  consecutive days of confirmed zero feedback. Ran the 4 source-research
+  tasks as parallel background agents, each briefed with all 4 sources'
+  recent picks (last 3 days), the permanent HF exclusion list, and — new
+  this run — an explicit instruction to flag suspected star-inflation/
+  astroturfing patterns on GitHub rather than just report raw numbers.
+  **Two real repeats caught by the manual full-history cross-check, neither
+  by the agents' own 3-day briefs**: (1) Hacker News's initial pick,
+  "Show HN: Discovered Materials," was verbatim this routine's own
+  confirmed 08-13 pick (same thread ID, 49269090) — my own briefing to the
+  HN agent had missed including this one item from the 3-day list, a
+  process gap worth noting; dropped, replaced via supplementary WebSearch
+  with Anthropic's newly-published second company-wide Risk Report (raised
+  misalignment risk from "very low" to "low," disclosed an unreleased
+  "Model 2," disclosed and fixed a bio-safety-filter gap) — HN ran a full 5.
+  (2) X's research proposed a rumor that Anthropic was acquiring robotics
+  startup Physical Intelligence — a **longer-gap repeat** of this routine's
+  own 07-22 pick (per `PLAYBOOK.md`'s history of that item), well outside
+  the 3-day brief window. Dropped; a supplementary search for a fresh
+  Feb-2026 "world is in peril" resignation story was rejected on discovery
+  it was 6 months stale, not from today — no clean replacement found, so X
+  ran honest at 4. **GitHub's research flagged a new pattern**: a cluster of
+  small trending repos (`titanwings/colleague-skill`, `liustack/modlens`)
+  cross-referencing each other via a shared tag set, with `modlens` showing
+  33% of its lifetime stars gained in a single day against only 42 forks —
+  a velocity/engagement mismatch consistent with inflated stars. Excluded
+  both rather than reporting them as organic trends; this is the first time
+  this routine has named suspected astroturfing explicitly rather than just
+  flagging a high star/fork ratio, asked Giulia today whether silent
+  exclusion is right or whether these should be named in the digest itself.
+  GitHub ran honest at 4 once dedupes and the flagged cluster were excluded.
+  Hugging Face ran a full clean 5 with no repeats found (permanent
+  exclusions re-checked and held). **New cross-source volume noted**: three
+  items today touch Anthropic (X's AISI red-team-incident pick, X's Claude
+  watermark-backlash pick, HN's own Risk Report pick) — all genuinely
+  distinct stories, kept per the standing "different stories, same entity"
+  precedent, flagged as a new high (3 mentions, 2 sources, 1 day) for this
+  recurring pattern. No other same-day cross-source collisions found on the
+  manual all-4-sources compare. Posted all 4 source threads plus one
+  feedback-request message (the astroturfing-disclosure question, the
+  3-Anthropic-mentions flag, and a renewed nudge on the still-unexplained
+  "Newsly" automation) to `#daily-ai-news`, then logged this entry and
+  updated the rolling "recently covered" lists (trimmed to the last 3 days:
+  08-13 through 08-15).
 
 - **2026-08-14**: Ran the 4-source digest per `PLAYBOOK.md`. Checked for an
   existing open PR first per `CLAUDE.md`'s consolidation rule: `list_pull_requests`
