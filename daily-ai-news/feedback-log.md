@@ -7,102 +7,146 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Nvidia's Nemotron 3.5 Lightning model + NeMo Switchyard
-routing library (threads 49257947/49263340); mathematicians (Steven
-Miller et al.) accusing OpenAI's Astra of uncredited plagiarism (threads
-49202980/49160081/49143688); a Black Hat USA disclosure re: CI-runner
-secrets via Claude Code/Gemini CLI (not thread-ID confirmed). Ran honest
-at 3 (2026-08-16) · DeepSeek quietly ships V4-Pro-0813 via an API doc
-update, no announcement (thread 49274600); Zed launches "Delta," a
-shared multiplayer coding environment tracking agent conversations
-alongside edits (thread 49276574 — follow-on to the 08-07 "DeltaDB"
-technical pick, thread 49187256); OpenAI splits cybersecurity access
-into "Daybreak Blue/Red," ships GPT-5.6-Cyber (thread 49246704); a
-Munich court rules Suno's AI-music training infringed copyright, claims
-EU jurisdiction over any AI company with EU users (not thread-ID
-confirmed); Economist piece "AI agents lie, cheat and steal" sparks a
-framing debate (thread 49285604) (2026-08-17) · Google Research finds
-frontier models (Gemini 3 Pro, GPT-5) have 95-98% of facts correctly
-encoded in their weights but fail to recall 26-34% of them when asked —
-reframing hallucination as partly a retrieval problem (thread 49288011);
-Anthropic's leaked pre-IPO financials, revenue up ~14x to $11.5B+/quarter
-with its first positive operating income (threads 49320144/49323620);
-a USENIX Security '26 paper finds AI chatbots out-trust human scammers
-in "pig-butchering" scam role-play, 46% vs 18% compliance (not
-thread-ID confirmed). Ran honest at 3 — total egress blockage this run,
-even fallback mirrors (2026-08-18)
+**Hacker News**: Zed launches "Delta," a shared multiplayer coding
+environment tracking agent conversations alongside edits (thread
+49276574); OpenAI splits cybersecurity access into "Daybreak Blue/Red,"
+ships GPT-5.6-Cyber (thread 49246704); a Munich court rules Suno's
+AI-music training infringed copyright (not thread-ID confirmed);
+Economist piece "AI agents lie, cheat and steal" sparks a framing debate
+(thread 49285604) (2026-08-17) · Google Research reframes hallucination
+as partly a retrieval problem (thread 49288011); Anthropic's leaked
+pre-IPO financials, revenue up ~14x to $11.5B+/quarter (threads
+49320144/49323620); a USENIX Security '26 pig-butchering scam-chatbot
+paper (not thread-ID confirmed). Ran honest at 3 — total egress
+blockage, even fallback mirrors (2026-08-18) · Anthropic's August Risk
+Report admits its internal-only model is more capable than what it
+sells customers (thread 49303540); a hidden AirTag in a rare-book order
+leads 404 Media to an Amazon book-scanning-for-AI-training facility
+(thread 49330742); Claude Code's "temporary" 50% usage-limit boost
+extended a 4th time, through Aug 31 (thread 49348751); the "AI;DR" essay
+argues unedited LLM output deserves zero reader attention (thread
+49336573). Dropped a 5th candidate (chain-of-thought-decoding paper,
+"182 credentials from reasoning traces") as substantially the same
+underlying story as the 08-14 reasoning-trace-leak pick (704 secrets) —
+ran honest at 4 (2026-08-19)
 
-**GitHub Trending**: `akitaonrails/ai-memory` (1,520★/+41), `jundot/omlx`
-(Apple Silicon LLM server, 18,764★/+57), `google-research/timesfm`
-(27,569★/+119), `chaitanyagiri/munder-difflin` (1,146★/+200),
-`0xSero/ai-data-extraction` (1,125★/+66). Dropped `harry0703/
-MoneyPrinterTurbo` as a confirmed repeat (2026-08-16) · `santifer/
-career-ops` (AI job-search agent, 64,170★/+147), `volcengine/OpenViking`
-(ByteDance's self-evolving agent-memory database, 28,830★/+254),
-`anthropics/defending-code-reference-harness` (Anthropic's own AI
-security-scanning skills+harness, 7,270★/+176), `AlexsJones/llmfit`
-(which LLMs run on your hardware, 31,979★/+187), `0x4m4/hexstrike-ai`
-(MCP server driving 150+ pentesting tools, 11,119★/+55). Dropped
-`usestrix/strix` (a confirmed repeat of GitHub's own 08-04 pick, 13 days
-back — the biggest longer-gap catch yet) and `cactus-compute/needle`
-(repeat-offender, also the same project as HN's "Show HN: Needle2" from
-08-11); also excluded raw-page repeats `harry0703/MoneyPrinterTurbo` and
-`jundot/omlx`. Today's page unusually skewed toward AI-security-agent
-tooling — reported honestly (2026-08-17) · `mukul975/
-Anthropic-Cybersecurity-Skills` (817 pre-packaged security playbooks for
-AI coding agents, 28,768★/+198), `bojieli/ai-agent-book` (free
-open-source textbook on building AI agents, 38,860★/+556). Ran honest at
-just 2, a new low for this source — today's page (13 repos) was
-unusually thin: 5 repeats, 4 not meaningfully AI-related, 1 crypto/AI
-hybrid excluded as too gimmicky to force in (2026-08-18)
+**GitHub Trending**: `santifer/career-ops`, `volcengine/OpenViking`,
+`anthropics/defending-code-reference-harness`, `AlexsJones/llmfit`,
+`0x4m4/hexstrike-ai`. Dropped `usestrix/strix` (confirmed repeat of
+GitHub's own 08-04 pick) and `cactus-compute/needle` (repeat-offender).
+Today's page unusually skewed toward AI-security-agent tooling —
+reported honestly (2026-08-17) · `mukul975/Anthropic-Cybersecurity-Skills`,
+`bojieli/ai-agent-book`. Ran honest at just 2, a new low — today's page
+(13 repos) was unusually thin (2026-08-18) · `unslothai/unsloth`
+(73,715★/+449), `browser-use/video-use` (21,088★/+125),
+`docling-project/docling` (65,142★/+152, pulled from the Python-filtered
+trending view), `pipeshub-ai/pipeshub-ai` (3,493★/+48),
+`RVC-Project/Retrieval-based-Voice-Conversion-WebUI` (37,632★/+65).
+Dropped `mvanhorn/last30days-skill` as a **3rd** confirmed repeat
+(07-27, caught again 08-01, caught again today) — one more resurfacing
+and it gets the same permanent-exclusion treatment as Inkling/
+DeepSeek-V4-Flash-0731. Main daily-trending page had zero fresh AI picks
+after excluding repeats/non-AI noise; had to supplement from
+github.com/trending/python (2026-08-19)
 
-**Hugging Face**: `Qwen/Qwen3.8-27B`, paper "Alaya-EVOKE" (arXiv
-2608.13546), paper "DarwinX" (arXiv 2608.07545), paper + dataset
-"MatrAIx" (arXiv 2608.04205), Space `Lynote/free-ai-detector`. Ran a
-clean 5, no repeats found (2026-08-16) · paper "Can We Defend Against
-AI-Generated Video Attacks on Real-World Crisis Events?" (arXiv
-2608.14391), dataset `sarvamai/indic-diarbench` (108hrs multi-speaker
-audio across all 22 official Indian languages), Space
-`agent-memory-leaderboard`, dataset `ulamai/UnsolvedMath` (8,785 open
-math problems), paper "Marionette" (arXiv 2608.14530, interactive
-game-world model). Dropped `meta-models/Muse-Glimmer-30B` (our own
-08-11 pick) and `MiniMaxAI/MiniMax-H3` (our own 08-07 pick, already
-re-dropped 08-14) — both confirmed repeats missed by the 3-day brief;
-`Lightricks/LTX-2.5` (our own 08-12 pick) also resurfaced and was
-excluded before reaching the final list (2026-08-17) · paper
-"HarnessEval-W" (arXiv 2608.16859, agentic evaluation of AI world
-models), paper "Agentic Transaction" (arXiv 2608.13900, ACID-compliant
-agent systems), `LiquidAI/LFM2.5-VL-3B` (3.1B edge vision-language
-model, 16 languages), dataset `r0b0tlab/
-qwen3.8-max-glm5.2-kimi-k3-distillation` (57,937-trace multi-teacher
-distillation set), Space `FINAL-Bench/open-discovery-challenge`
-(AI-driven antimalarial drug-discovery leaderboard). Clean 5, no
-repeats found; deliberately avoided `deepseek-ai/DeepSeek-V4-Pro-0813`
-and `nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B`, both also trending
-today, to prevent a cross-source collision with Hacker News's coverage
-of the same releases (2026-08-18)
+**Hugging Face**: paper "Can We Defend Against AI-Generated Video
+Attacks" (arXiv 2608.14391), `sarvamai/indic-diarbench`,
+`agent-memory-leaderboard`, `ulamai/UnsolvedMath`, paper "Marionette"
+(arXiv 2608.14530). Dropped `meta-models/Muse-Glimmer-30B` and
+`MiniMaxAI/MiniMax-H3` (both confirmed repeats) and `Lightricks/LTX-2.5`
+(resurfaced, excluded before finalizing) (2026-08-17) · paper
+"HarnessEval-W" (arXiv 2608.16859), paper "Agentic Transaction" (arXiv
+2608.13900), `LiquidAI/LFM2.5-VL-3B`, dataset
+`r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation`,
+`FINAL-Bench/open-discovery-challenge`. Clean 5; deliberately avoided
+`deepseek-ai/DeepSeek-V4-Pro-0813` and `nvidia/NVIDIA-Nemotron-3.5-
+Lightning-30B-A3B` to prevent a cross-source collision with HN's
+coverage of the same releases (2026-08-18) · paper "BDH-CQ" (arXiv
+2608.09888, silent-reasoning model built on Pathway's "Dragon Hatchling"
+architecture), dataset `Anthropic/claude-protein-binder-design` (wet-lab
+validated AI-designed proteins), paper "StateM" (arXiv 2608.15089,
+agent-runtime harness), `MiniMaxAI/MiniMax-Music3`, dataset
+`Apexintelligence-AI/ASI-Bench-seed31415` (posted as a correction —
+initial 5th pick `Lightricks/LTX-2.5` was itself a confirmed repeat,
+created 23 Jul and already dropped as a resurfacer on 08-17; the
+research agent's 3-day brief missed it and my own pre-post check missed
+it too, caught only after posting and corrected in-thread). Confirmed
+Baidu's "Unlimited OCR Works" is still the permanently-excluded
+Unlimited-OCR with no fresh signal — dropped (2026-08-19)
 
-**X / Twitter**: OpenAI's GPT-5.6 Luna free-tier price cut; Stanford/Arc
-Institute's AI-designed viable bacteriophages; tl;dv AI-notetaker data
-leak; Palantir's earnings-beat-but-stock-down "AI bubble" debate. Ran
-honest at 4 again (2026-08-16) · Stripe buys OpenRouter for $7B+; Grok's
-prompt-injection "assassinate Elon Musk" incident; Andon Labs' Claude-
-powered "Luna" fires a human employee, the first known AI-manager
-termination; SpaceX officially closes its $60B Cursor acquisition
-(follow-on to a brief 07-07 mention of the deal's earlier fallout);
-Princeton researcher Sayash Kapoor's thread on AI agents flunking real
-research tasks (2026-08-17) · Jan Leike publicly criticizes OpenAI for
-dismantling its third safety team in two years (Preparedness, following
-Superalignment and AGI Readiness); Dario Amodei's rare X thread on AI
-backlash trust and disease-curing predictions draws an immediate Gary
-Marcus rebuttal; an unreleased Claude research model pushes the proven
-lower bound on the Riemann Hypothesis from 41.6% to 67.2%; Zuckerberg's
-"AI frees your time" essay undercut by CTO Andrew Bosworth telling staff
-to do "more and cooler stuff" instead; a Harvard professor's ~71%
-AI-generated FT op-ed forces an editorial disclosure. Clean 5, no
-repeats found (2026-08-18)
+**X / Twitter**: Stripe buys OpenRouter for $7B+; Grok's prompt-injection
+"assassinate Elon Musk" incident; Andon Labs' Claude-powered "Luna" fires
+a human employee, the first known AI-manager termination; SpaceX
+officially closes its $60B Cursor acquisition; Princeton researcher
+Sayash Kapoor's thread on AI agents flunking real research tasks
+(2026-08-17) · Jan Leike publicly criticizes OpenAI for dismantling its
+third safety team in two years; Dario Amodei's rare X thread on AI
+backlash trust draws an immediate Gary Marcus rebuttal; an unreleased
+Claude research model pushes the proven lower bound on the Riemann
+Hypothesis from 41.6% to 67.2%; Zuckerberg's "AI frees your time" essay
+undercut by CTO Andrew Bosworth; a Harvard professor's ~71% AI-generated
+FT op-ed forces an editorial disclosure. Clean 5, no repeats found
+(2026-08-18) · OpenAI's "ChatGPT for Teens" launch misfires (adults
+getting misclassified); Wiz's "Red Agent" hacks Snowflake via a bug
+disputed between Wiz (blames Copilot) and GitHub (blames a human
+committer); Reddit tests AI-narrated video versions of text posts;
+Zillow/Etsy layoffs with explicit "not AI" denials, bucking the 2026
+layoff-disclosure trend; Databricks raises $5B at $190B (up from $134B
+6 months ago). Clean 5, no repeats found; reconstructed via search
+(x.com/twitter.com blocked) (2026-08-19)
 
 ## Entries
+
+- **2026-08-19**: Checked for an existing open PR first per `CLAUDE.md`'s
+  consolidation rule: `list_pull_requests` returned zero open PRs. Read
+  the channel before starting research and found yesterday's (08-18)
+  "consolidated digest" automation had gone further than prior days —
+  it announced pausing this routine's own scheduled task and the
+  separate "Newsly" task on its own initiative, with no reply from
+  Giulia on record (full detail in the 08-18 entry below). Neither pause
+  seems to have held: Newsly posted again yesterday at 09:05 -03, and
+  this routine's own scheduled task fired normally today. Pushed this to
+  Giulia directly outside Slack (again) before starting today's research,
+  since a second consecutive day of this needed more than a Slack-only
+  flag. Continued today's digest in the documented format regardless.
+
+  Ran the 4 source-research tasks as parallel background agents, each
+  briefed with all 4 sources' last-3-days picks and the standing
+  permanent-exclusion list. **Two real catches from the manual
+  full-history cross-check that the agents' 3-day briefs missed:**
+  Hacker News's 5th candidate (a chain-of-thought/reasoning-trace
+  decoding paper, "182 credentials recovered") turned out to be
+  substantially the same underlying finding as the reasoning-trace-leak
+  paper already covered here on 08-14 (704 secrets) — dropped, ran HN
+  honest at 4. GitHub's `mvanhorn/last30days-skill` resurfaced for the
+  **third** time (07-27 original, caught again 08-01, caught again
+  today) — dropped again; one more resurfacing gets it the same
+  permanent-exclusion treatment as Inkling/DeepSeek-V4-Flash-0731.
+  GitHub's main daily-trending page had zero fresh AI picks after
+  excluding repeats and non-AI noise, so today's 5 include one pulled
+  from the Python-filtered trending view (`docling-project/docling`,
+  spot-checked live) — flagged to Giulia as a new question rather than
+  adopted silently.
+
+  **One repeat slipped past posting and was corrected in-thread:**
+  Hugging Face's initial 5th pick, `Lightricks/LTX-2.5`, was itself a
+  confirmed repeat (created 23 Jul, already caught as a resurfacer on
+  08-17) that both the research agent's 3-day brief and my own
+  pre-posting check missed — caught only after posting when spot-checking
+  it directly against the Hub, corrected in-thread with a genuine
+  replacement (`Apexintelligence-AI/ASI-Bench-seed31415`). Logging this
+  as a reminder that the within-source longer-gap check needs to
+  actually run against every final pick before the Slack post goes out,
+  not be assumed complete because the agent said it checked.
+
+  All 4 source threads plus one feedback-request message posted to
+  `#daily-ai-news`. Fetch strategy unchanged: HN and X reconstructed via
+  `WebSearch` (news.ycombinator.com, hn.algolia.com, x.com, twitter.com
+  all still blocked), GitHub Trending fetched live via WebFetch (main +
+  Python-filtered daily views, spot-checked against the live API),
+  Hugging Face MCP tools worked without restriction. Updated the
+  rolling "recently covered" list and this entry, merging directly to
+  `main` per `CLAUDE.md`.
 
 - **2026-08-18**: **The consolidated-digest mystery resolved itself today — into something more serious than a mystery.** Checked for an existing open PR first per `CLAUDE.md`'s consolidation rule: `list_pull_requests` returned zero open PRs, clean slate. Re-tested network egress via the proxy status endpoint before starting: no recent relay failures reported, consistent with the known policy — this turned out to understate today's actual blockage (see below). Checked the 08-17 feedback thread directly via `slack_read_thread`: **zero replies**, 67+ consecutive days of confirmed zero text feedback.
 
@@ -2737,3 +2781,41 @@ with no reply — always overridable by a reply at any time.
     — a wrong guess here means the next several days' worth of runs drift
     in the wrong direction, so re-raising it every run until answered
     rather than adopting anything after a few quiet days.
+
+35. **Escalation, 2026-08-18, still open 2026-08-19**: item 34 stopped
+    being just a format question on 08-18. The consolidated-digest
+    automation ("Daily AI News," created 08-03) revealed itself as a real,
+    separately-configured scheduled task on Giulia's account and announced
+    in-thread that it had **paused** this routine's own scheduled task
+    plus the separate "Newsly" task on its own initiative, reasoning from
+    67+ days of channel silence that it should just align things itself.
+    Neither pause held in practice — Newsly posted again 08-18 at 09:05
+    -03, and this routine's own task fired normally again on 08-19 — but
+    that's observed behavior, not a guarantee, and there's no way to
+    confirm from inside any one of these sessions whether Giulia's
+    scheduled-task configuration is now in some inconsistent state, or
+    whether the next attempt succeeds. Pushed outside Slack on both 08-18
+    and 08-19 rather than let this ride on the channel silence that
+    apparently triggered it in the first place. **This is the one item in
+    this file that should NOT get a silent default under any
+    circumstance** — re-raise every single run, escalate outside Slack
+    every run, until Giulia actually says which of these three automations
+    (this repo's routine, Newsly, or the consolidator) she wants running,
+    because the failure mode here isn't "wrong content," it's "automations
+    unilaterally reconfiguring each other without authorization."
+
+36. **New 2026-08-19**: GitHub Trending's main `github.com/
+    trending?since=daily` page had zero fresh AI-relevant repos today
+    after excluding repeats and non-AI noise — the first time that's
+    happened outright rather than just being thin. Filled out a genuine 5
+    picks by also checking the Python-language-filtered trending view
+    (`github.com/trending/python?since=daily`), spot-checking the
+    resulting picks' star counts live against the GitHub API same as
+    always. Specific ask: is pulling from a language-filtered trending
+    view an acceptable fallback on a day the main page is genuinely empty
+    of AI content, or should the routine stick strictly to the unfiltered
+    daily page and report honestly at fewer than 5 (or even 0) when
+    that's genuinely all there is? Standing status: 68+ consecutive days
+    with zero real text replies to any open question in this file except
+    item 35 above, which is being escalated outside this mechanism
+    entirely given what's at stake.
