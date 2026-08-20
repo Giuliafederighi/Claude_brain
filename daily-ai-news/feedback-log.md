@@ -7,35 +7,25 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Zed launches "Delta," a shared multiplayer coding
-environment tracking agent conversations alongside edits (thread
-49276574); OpenAI splits cybersecurity access into "Daybreak Blue/Red,"
-ships GPT-5.6-Cyber (thread 49246704); a Munich court rules Suno's
-AI-music training infringed copyright (not thread-ID confirmed);
-Economist piece "AI agents lie, cheat and steal" sparks a framing debate
-(thread 49285604) (2026-08-17) · Google Research reframes hallucination
-as partly a retrieval problem (thread 49288011); Anthropic's leaked
-pre-IPO financials, revenue up ~14x to $11.5B+/quarter (threads
-49320144/49323620); a USENIX Security '26 pig-butchering scam-chatbot
-paper (not thread-ID confirmed). Ran honest at 3 — total egress
-blockage, even fallback mirrors (2026-08-18) · Anthropic's August Risk
-Report admits its internal-only model is more capable than what it
-sells customers (thread 49303540); a hidden AirTag in a rare-book order
-leads 404 Media to an Amazon book-scanning-for-AI-training facility
-(thread 49330742); Claude Code's "temporary" 50% usage-limit boost
-extended a 4th time, through Aug 31 (thread 49348751); the "AI;DR" essay
-argues unedited LLM output deserves zero reader attention (thread
-49336573). Dropped a 5th candidate (chain-of-thought-decoding paper,
-"182 credentials from reasoning traces") as substantially the same
-underlying story as the 08-14 reasoning-trace-leak pick (704 secrets) —
-ran honest at 4 (2026-08-19)
+**Hacker News**: Anthropic's August Risk Report admits its internal-only
+model is more capable than what it sells customers (thread 49303540); a
+hidden AirTag in a rare-book order leads 404 Media to an Amazon
+book-scanning-for-AI-training facility (thread 49330742); Claude Code's
+"temporary" 50% usage-limit boost extended a 4th time, through Aug 31
+(thread 49348751); the "AI;DR" essay argues unedited LLM output deserves
+zero reader attention (thread 49336573) (2026-08-18) · dropped a 5th
+candidate (chain-of-thought-decoding paper, "182 credentials from
+reasoning traces") as substantially the 08-14 reasoning-trace-leak pick;
+ran honest at 4 (2026-08-19) · Altman/Time: OpenAI paused Astra training
+2 weeks over "misalignment" findings (thread 49351580); Rapid7's
+AI-agent-assisted SharePoint exploit chain, CVE-2026-55040 +
+CVE-2026-63520 (not thread-ID confirmed); Block open-sources "Berd,"
+multi-model agent desktop app (thread 49352040); MLflow SSRF CVE-2026-
+64849 under active attack (not thread-ID confirmed); Meta AI's new Mac
+app for businesses, trains on interactions by default (not thread-ID
+confirmed) (2026-08-20)
 
-**GitHub Trending**: `santifer/career-ops`, `volcengine/OpenViking`,
-`anthropics/defending-code-reference-harness`, `AlexsJones/llmfit`,
-`0x4m4/hexstrike-ai`. Dropped `usestrix/strix` (confirmed repeat of
-GitHub's own 08-04 pick) and `cactus-compute/needle` (repeat-offender).
-Today's page unusually skewed toward AI-security-agent tooling —
-reported honestly (2026-08-17) · `mukul975/Anthropic-Cybersecurity-Skills`,
+**GitHub Trending**: `mukul975/Anthropic-Cybersecurity-Skills`,
 `bojieli/ai-agent-book`. Ran honest at just 2, a new low — today's page
 (13 repos) was unusually thin (2026-08-18) · `unslothai/unsloth`
 (73,715★/+449), `browser-use/video-use` (21,088★/+125),
@@ -47,17 +37,16 @@ Dropped `mvanhorn/last30days-skill` as a **3rd** confirmed repeat
 and it gets the same permanent-exclusion treatment as Inkling/
 DeepSeek-V4-Flash-0731. Main daily-trending page had zero fresh AI picks
 after excluding repeats/non-AI noise; had to supplement from
-github.com/trending/python (2026-08-19)
+github.com/trending/python (2026-08-19) · `modular/modular`
+(27,465★/+340), `mattpocock/skills` (224,733★/+1,894),
+`obra/superpowers` (274,620★/+557), `cursor/plugins` (3,856★/+473),
+`akitaonrails/ai-memory` (3,359★/+606), `Tencent/AI-Infra-Guard`
+(4,748★/+28). Clean 5 (6 listed, skills pair covered as one theme), no
+fallback needed, all star counts spot-checked live (2026-08-20)
 
-**Hugging Face**: paper "Can We Defend Against AI-Generated Video
-Attacks" (arXiv 2608.14391), `sarvamai/indic-diarbench`,
-`agent-memory-leaderboard`, `ulamai/UnsolvedMath`, paper "Marionette"
-(arXiv 2608.14530). Dropped `meta-models/Muse-Glimmer-30B` and
-`MiniMaxAI/MiniMax-H3` (both confirmed repeats) and `Lightricks/LTX-2.5`
-(resurfaced, excluded before finalizing) (2026-08-17) · paper
-"HarnessEval-W" (arXiv 2608.16859), paper "Agentic Transaction" (arXiv
-2608.13900), `LiquidAI/LFM2.5-VL-3B`, dataset
-`r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation`,
+**Hugging Face**: paper "HarnessEval-W" (arXiv 2608.16859), paper
+"Agentic Transaction" (arXiv 2608.13900), `LiquidAI/LFM2.5-VL-3B`,
+dataset `r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation`,
 `FINAL-Bench/open-discovery-challenge`. Clean 5; deliberately avoided
 `deepseek-ai/DeepSeek-V4-Pro-0813` and `nvidia/NVIDIA-Nemotron-3.5-
 Lightning-30B-A3B` to prevent a cross-source collision with HN's
@@ -72,14 +61,17 @@ created 23 Jul and already dropped as a resurfacer on 08-17; the
 research agent's 3-day brief missed it and my own pre-post check missed
 it too, caught only after posting and corrected in-thread). Confirmed
 Baidu's "Unlimited OCR Works" is still the permanently-excluded
-Unlimited-OCR with no fresh signal — dropped (2026-08-19)
+Unlimited-OCR with no fresh signal — dropped (2026-08-19) ·
+`Qwen/Qwen3.8-27B` and its wave of "abliterated"/uncensored quants,
+dataset `MatrAIx2026/MatrAIx_Persona_1M` (paper arXiv 2608.04205), paper
+"Demystifying Agent Skills" (arXiv 2608.14036), paper "Training Leaves
+Traces" (arXiv 2608.14929), "FreeToken" edge-MoE serving system (arXiv
+2608.16157). Re-verified and dropped a resurfacing of the permanently-
+excluded "Unlimited OCR Works"; also dropped `Apexintelligence-AI/
+ASI-Bench-seed42` as same benchmark family as the already-covered
+seed31415 instance. Clean 5, no cross-source collisions (2026-08-20)
 
-**X / Twitter**: Stripe buys OpenRouter for $7B+; Grok's prompt-injection
-"assassinate Elon Musk" incident; Andon Labs' Claude-powered "Luna" fires
-a human employee, the first known AI-manager termination; SpaceX
-officially closes its $60B Cursor acquisition; Princeton researcher
-Sayash Kapoor's thread on AI agents flunking real research tasks
-(2026-08-17) · Jan Leike publicly criticizes OpenAI for dismantling its
+**X / Twitter**: Jan Leike publicly criticizes OpenAI for dismantling its
 third safety team in two years; Dario Amodei's rare X thread on AI
 backlash trust draws an immediate Gary Marcus rebuttal; an unreleased
 Claude research model pushes the proven lower bound on the Riemann
@@ -93,9 +85,60 @@ committer); Reddit tests AI-narrated video versions of text posts;
 Zillow/Etsy layoffs with explicit "not AI" denials, bucking the 2026
 layoff-disclosure trend; Databricks raises $5B at $190B (up from $134B
 6 months ago). Clean 5, no repeats found; reconstructed via search
-(x.com/twitter.com blocked) (2026-08-19)
+(x.com/twitter.com blocked) (2026-08-19) · Cursor's "Origin" GitHub-rival
+launch, timed with GitHub's outage; leaked NRSC memo warns AI data
+centers are an electoral liability; Nvidia in talks to invest in Mercor
+at a $20B valuation; OpenAI CFO Sarah Friar tells staff to expect an IPO
+"in 2027"; Unitree Robotics' Shanghai IPO surges 460-629% to ~$50B.
+Dropped MLflow SSRF (CVE-2026-64849) as a same-day collision with HN's
+identical pick, kept on HN instead; reconstructed via search
+(x.com/twitter.com still blocked) (2026-08-20)
 
 ## Entries
+
+- **2026-08-20**: Checked for an existing open PR first per `CLAUDE.md`'s
+  consolidation rule: `list_pull_requests` returned zero open PRs — clean
+  state. Delegated a full Slack-history review to a background agent
+  before starting research, per the routine's step 2: it confirmed all 5
+  of yesterday's (08-19) messages posted correctly in the documented
+  format, and — critically — that the 68+ day streak of zero real text
+  feedback from Giulia is still unbroken as of this morning (every message
+  in the channel, including today's new consolidator post, traces back to
+  an automation, not a human reply). It also found the consolidator did
+  **not** repeat 08-18's unilateral-pause behavior today, but did post
+  again anyway with a fresh push for Giulia to manually pause "the other
+  two" routines, and that "Newsly" posted yesterday under a **3rd**
+  distinct title/format ("AI Daily Briefing — Wed, Aug 19") in the space of
+  a week. Folded this into today's feedback message and re-raised item 35
+  exactly as required — no silent default, direct ask again this run.
+
+  Ran the 4 source-research tasks as parallel background agents, each
+  briefed with all 4 sources' last-3-days picks and the standing
+  permanent-exclusion list. All 4 sources landed a clean 5 today — first
+  time in over a week all four hit 5/5 with no thin-day fallback needed
+  (GitHub didn't need the Python-filtered-view fallback used 08-19).
+  **One real same-day collision caught by the manual full-4-source
+  compare**: Hacker News and X/Twitter both independently surfaced the
+  identical MLflow SSRF story (CVE-2026-64849, disclosed 08-18, actively
+  exploited via watchTowr's honeypot network) — same tiebreaker as every
+  prior same-day collision (items 27/29/30/32): kept it on Hacker News as
+  the more native technical-disclosure home, swapped X's pick for a fresh
+  story (Unitree Robotics' Shanghai STAR Market IPO debut, +460-629%,
+  ~$50B valuation, DeepSeek among the backers) found via quick
+  supplementary search once the collision was identified. No other
+  cross-source or within-source repeats found on manual review; Hugging
+  Face's agent re-verified "Unlimited OCR Works" resurfacing in the
+  papers feed as the same permanently-excluded Baidu paper (not a new
+  signal) and excluded it correctly. Noted but did not swap: GitHub's
+  Cursor-plugin-spec pick and X's Cursor-Origin pick are the same company
+  via genuinely different products/stories, same "different story, same
+  company" standing default as items 28/32 — flagged in the feedback
+  message as easily overridable, not treated as a new open question since
+  the precedent already covers it.
+
+  Posted all 4 source threads + feedback-request message in the
+  documented format, then this entry, merged directly to `main` per
+  `CLAUDE.md`.
 
 - **2026-08-19**: Checked for an existing open PR first per `CLAUDE.md`'s
   consolidation rule: `list_pull_requests` returned zero open PRs. Read
@@ -2815,7 +2858,20 @@ with no reply — always overridable by a reply at any time.
     view an acceptable fallback on a day the main page is genuinely empty
     of AI content, or should the routine stick strictly to the unfiltered
     daily page and report honestly at fewer than 5 (or even 0) when
-    that's genuinely all there is? Standing status: 68+ consecutive days
-    with zero real text replies to any open question in this file except
-    item 35 above, which is being escalated outside this mechanism
-    entirely given what's at stake.
+    that's genuinely all there is? Not applicable today (2026-08-20) —
+    GitHub's main page had a clean 5 with no fallback needed, so no new
+    data point either way.
+
+37. **Escalation continues, 2026-08-20**: item 35 remains open and
+    unresolved — re-raised directly in today's feedback message per the
+    no-silent-default rule. New data points today: the consolidator did
+    NOT repeat its 08-18 unilateral-pause announcement, but did post
+    again pushing Giulia to manually pause "the other two" routines
+    herself; "Newsly" posted yesterday (08-19) under a 3rd distinct
+    title/format in a week ("AI Daily Briefing"), suggesting that
+    automation itself may be unstable or actively changing, independent
+    of the consolidator's behavior. A background review of the full
+    channel history confirmed, once again, zero genuine human text
+    replies anywhere in the channel — the 68+ day streak (now 69+) is
+    unbroken. Standing status unchanged: this item does not get a silent
+    default, ever, regardless of how many runs pass with silence.
