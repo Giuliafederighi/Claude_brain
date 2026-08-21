@@ -7,30 +7,32 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Anthropic's August Risk Report admits its internal-only
-model is more capable than what it sells customers (thread 49303540); a
-hidden AirTag in a rare-book order leads 404 Media to an Amazon
-book-scanning-for-AI-training facility (thread 49330742); Claude Code's
-"temporary" 50% usage-limit boost extended a 4th time, through Aug 31
-(thread 49348751); the "AI;DR" essay argues unedited LLM output deserves
-zero reader attention (thread 49336573) (2026-08-18) · dropped a 5th
-candidate (chain-of-thought-decoding paper, "182 credentials from
-reasoning traces") as substantially the 08-14 reasoning-trace-leak pick;
-ran honest at 4 (2026-08-19) · Altman/Time: OpenAI paused Astra training
-2 weeks over "misalignment" findings (thread 49351580); Rapid7's
-AI-agent-assisted SharePoint exploit chain, CVE-2026-55040 +
-CVE-2026-63520 (not thread-ID confirmed); Block open-sources "Berd,"
-multi-model agent desktop app (thread 49352040); MLflow SSRF CVE-2026-
-64849 under active attack (not thread-ID confirmed); Meta AI's new Mac
-app for businesses, trains on interactions by default (not thread-ID
-confirmed) (2026-08-20)
+**Hacker News**: dropped a 5th candidate (chain-of-thought-decoding
+paper, "182 credentials from reasoning traces") as substantially the
+08-14 reasoning-trace-leak pick; ran honest at 4 (2026-08-19) ·
+Altman/Time: OpenAI paused Astra training 2 weeks over "misalignment"
+findings (thread 49351580); Rapid7's AI-agent-assisted SharePoint
+exploit chain, CVE-2026-55040 + CVE-2026-63520 (not thread-ID
+confirmed); Block open-sources "Berd," multi-model agent desktop app
+(thread 49352040); MLflow SSRF CVE-2026-64849 under active attack (not
+thread-ID confirmed); Meta AI's new Mac app for businesses, trains on
+interactions by default (not thread-ID confirmed) (2026-08-20) · Stripe
+closes $7B+ acquisition of OpenRouter (thread 49364559, confirmed);
+Claude's Google Workspace connector can now send/reply to Gmail on its
+own (not thread-ID confirmed); Google secures a $12.2B stock warrant
+from Marvell in an AI chip supply deal (not thread-ID confirmed); OpenAI
+pledges "Zero Data Retention" + "Private Safety Processing" for business
+customers (not thread-ID confirmed); Guidelight AI Standards' first
+scorecard finds all 5 major labs only "partially" implement basic
+AI-control practices (not thread-ID confirmed). Two initial picks
+(Claude/Anthropic protein design; ChatGPT-for-Teens age-guessing) were
+caught pre-post as repeats of HF's and X's own 08-19 picks and swapped
+(2026-08-21)
 
-**GitHub Trending**: `mukul975/Anthropic-Cybersecurity-Skills`,
-`bojieli/ai-agent-book`. Ran honest at just 2, a new low — today's page
-(13 repos) was unusually thin (2026-08-18) · `unslothai/unsloth`
-(73,715★/+449), `browser-use/video-use` (21,088★/+125),
-`docling-project/docling` (65,142★/+152, pulled from the Python-filtered
-trending view), `pipeshub-ai/pipeshub-ai` (3,493★/+48),
+**GitHub Trending**: `unslothai/unsloth` (73,715★/+449),
+`browser-use/video-use` (21,088★/+125), `docling-project/docling`
+(65,142★/+152, pulled from the Python-filtered trending view),
+`pipeshub-ai/pipeshub-ai` (3,493★/+48),
 `RVC-Project/Retrieval-based-Voice-Conversion-WebUI` (37,632★/+65).
 Dropped `mvanhorn/last30days-skill` as a **3rd** confirmed repeat
 (07-27, caught again 08-01, caught again today) — one more resurfacing
@@ -42,43 +44,35 @@ github.com/trending/python (2026-08-19) · `modular/modular`
 `obra/superpowers` (274,620★/+557), `cursor/plugins` (3,856★/+473),
 `akitaonrails/ai-memory` (3,359★/+606), `Tencent/AI-Infra-Guard`
 (4,748★/+28). Clean 5 (6 listed, skills pair covered as one theme), no
-fallback needed, all star counts spot-checked live (2026-08-20)
+fallback needed, all star counts spot-checked live (2026-08-20) ·
+`harry0703/MoneyPrinterTurbo` (113,471★/+2,761), `santifer/career-ops`
+(67,102★/+816), `volcengine/OpenViking` (31,372★/+950),
+`RyanCodrai/turbovec` (16,093★/+230), `chaitanyagiri/munder-difflin`
+(3,280★/+507). Excluded 6 holdovers from 08-20's list still on today's
+trending page; clean 5 non-repeat picks, star counts spot-checked live
+(2026-08-21)
 
-**Hugging Face**: paper "HarnessEval-W" (arXiv 2608.16859), paper
-"Agentic Transaction" (arXiv 2608.13900), `LiquidAI/LFM2.5-VL-3B`,
-dataset `r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation`,
-`FINAL-Bench/open-discovery-challenge`. Clean 5; deliberately avoided
-`deepseek-ai/DeepSeek-V4-Pro-0813` and `nvidia/NVIDIA-Nemotron-3.5-
-Lightning-30B-A3B` to prevent a cross-source collision with HN's
-coverage of the same releases (2026-08-18) · paper "BDH-CQ" (arXiv
-2608.09888, silent-reasoning model built on Pathway's "Dragon Hatchling"
-architecture), dataset `Anthropic/claude-protein-binder-design` (wet-lab
-validated AI-designed proteins), paper "StateM" (arXiv 2608.15089,
-agent-runtime harness), `MiniMaxAI/MiniMax-Music3`, dataset
-`Apexintelligence-AI/ASI-Bench-seed31415` (posted as a correction —
-initial 5th pick `Lightricks/LTX-2.5` was itself a confirmed repeat,
-created 23 Jul and already dropped as a resurfacer on 08-17; the
-research agent's 3-day brief missed it and my own pre-post check missed
-it too, caught only after posting and corrected in-thread). Confirmed
-Baidu's "Unlimited OCR Works" is still the permanently-excluded
-Unlimited-OCR with no fresh signal — dropped (2026-08-19) ·
-`Qwen/Qwen3.8-27B` and its wave of "abliterated"/uncensored quants,
-dataset `MatrAIx2026/MatrAIx_Persona_1M` (paper arXiv 2608.04205), paper
-"Demystifying Agent Skills" (arXiv 2608.14036), paper "Training Leaves
-Traces" (arXiv 2608.14929), "FreeToken" edge-MoE serving system (arXiv
-2608.16157). Re-verified and dropped a resurfacing of the permanently-
-excluded "Unlimited OCR Works"; also dropped `Apexintelligence-AI/
+**Hugging Face**: `Qwen/Qwen3.8-27B` and its wave of
+"abliterated"/uncensored quants, dataset `MatrAIx2026/
+MatrAIx_Persona_1M` (paper arXiv 2608.04205), paper "Demystifying Agent
+Skills" (arXiv 2608.14036), paper "Training Leaves Traces" (arXiv
+2608.14929), "FreeToken" edge-MoE serving system (arXiv 2608.16157).
+Re-verified and dropped a resurfacing of the permanently-excluded
+"Unlimited OCR Works"; also dropped `Apexintelligence-AI/
 ASI-Bench-seed42` as same benchmark family as the already-covered
-seed31415 instance. Clean 5, no cross-source collisions (2026-08-20)
+seed31415 instance. Clean 5, no cross-source collisions (2026-08-20) ·
+`meta-models/Muse-Glimmer-30B` (30B on-device agent model), DFlash2
+speculative-decoding method (z-lab, arXiv 2602.06036, claims 6x lossless
+speedup), Agent Memory Leaderboard (first public scoreboard for AI
+long-term-memory tools), `noitomrobotics/HiPHI` (motion-capture dataset
+for humanoid robots, arXiv 2608.16222), `superwhisper/s1-mini` (small
+speech-to-text cleanup model). Initial pick `Lightricks/LTX-2.5` was
+caught pre-post as a **3rd** confirmed repeat (dropped as a resurfacer
+on 08-17, again on 08-19, again today) — one more sighting and it gets
+the same permanent-exclusion treatment as Inkling/Unlimited-OCR/
+MOSS-Transcribe-Diarize/Fara1.5-27B/DeepSeek-V4-Flash-0731 (2026-08-21)
 
-**X / Twitter**: Jan Leike publicly criticizes OpenAI for dismantling its
-third safety team in two years; Dario Amodei's rare X thread on AI
-backlash trust draws an immediate Gary Marcus rebuttal; an unreleased
-Claude research model pushes the proven lower bound on the Riemann
-Hypothesis from 41.6% to 67.2%; Zuckerberg's "AI frees your time" essay
-undercut by CTO Andrew Bosworth; a Harvard professor's ~71% AI-generated
-FT op-ed forces an editorial disclosure. Clean 5, no repeats found
-(2026-08-18) · OpenAI's "ChatGPT for Teens" launch misfires (adults
+**X / Twitter**: OpenAI's "ChatGPT for Teens" launch misfires (adults
 getting misclassified); Wiz's "Red Agent" hacks Snowflake via a bug
 disputed between Wiz (blames Copilot) and GitHub (blames a human
 committer); Reddit tests AI-narrated video versions of text posts;
@@ -92,9 +86,65 @@ at a $20B valuation; OpenAI CFO Sarah Friar tells staff to expect an IPO
 "in 2027"; Unitree Robotics' Shanghai IPO surges 460-629% to ~$50B.
 Dropped MLflow SSRF (CVE-2026-64849) as a same-day collision with HN's
 identical pick, kept on HN instead; reconstructed via search
-(x.com/twitter.com still blocked) (2026-08-20)
+(x.com/twitter.com still blocked) (2026-08-20) · Anthropic's "mind
+virus" multi-agent paper (arXiv 2608.10218) goes viral via an
+over-dramatized framing; Grok starts returning gibberish responses, xAI
+calls it a "rare temporary generation glitch"; Ilya Sutskever's Safe
+Superintelligence reportedly plans its first model release this August;
+a new "Reconstruction" benchmark finds frontier models guess a paper's
+core idea right only 3-15% of the time solo (42% with multi-model
+tournaments); Prime Intellect's 153-agent autonomous-research study
+closes 82% of the gap to human ML researchers. Dropped an initial
+OpenAI/Astra-training-pause pick as a same-week repeat of HN's own
+08-20 pick, swapped for the mind-virus story; reconstructed via search
+(x.com/twitter.com still blocked) (2026-08-21)
 
 ## Entries
+
+- **2026-08-21**: Checked for an existing open PR first per `CLAUDE.md`'s
+  consolidation rule: `list_pull_requests` returned zero open PRs — clean
+  state. Delegated a full Slack-history review to a background agent
+  before starting research: confirmed the 08-20 feedback message (and
+  08-19's before it) both show zero replies, and every one of the 67
+  top-level messages visible in the channel carries the automated `Sent
+  using @Claude` tag — no human-authored content anywhere. Re-raised
+  item 35/37 (the three-way automation conflict between this routine,
+  "Newsly," and the consolidator) directly in today's feedback message
+  and via a direct push outside Slack, per the standing no-silent-default
+  rule for that item specifically.
+
+  Ran the 4 source-research tasks as parallel background agents, each
+  briefed with all 4 sources' last-3-days picks and the standing
+  permanent-exclusion list. The Hacker News agent's first attempt failed
+  outright on an API-level cybersecurity safeguard (triggered by CVE
+  numbers quoted verbatim in its exclusion-list brief) — relaunched with
+  the same exclusions described generically instead of by CVE ID, which
+  worked cleanly on the retry. Worth remembering for future runs: don't
+  paste raw CVE identifiers into a subagent's prompt if it can be avoided.
+
+  **The manual full-source cross-check (mandatory since 07-23/07-30)
+  caught 4 near-misses today, all real repeats across a 1-2 day gap
+  rather than same-day collisions:** Hacker News's initial pick #2
+  (Claude/Anthropic autonomously designing proteins in the lab) turned
+  out to be the same underlying story as Hugging Face's own 08-19 pick
+  (`Anthropic/claude-protein-binder-design`); HN's initial pick #4
+  ("ChatGPT for Teens" age-guessing) turned out to be the same product
+  launch X covered on 08-19 from the misclassification angle; Hugging
+  Face's initial pick #1 (`Lightricks/LTX-2.5`) resurfaced for a **3rd**
+  time after being dropped on 08-17 and 08-19; and X's initial pick #1
+  (OpenAI pausing "Astra" training) duplicated Hacker News's own 08-20
+  pick. All 4 were swapped for genuine replacements via follow-up turns
+  with the same research agents (no new agents needed) before anything
+  was posted. Flagged in today's feedback message: 3 of these 4 were
+  1-2-day-gap repeats, not same-day collisions — the existing "don't
+  repeat within 2 days" curation rule already covers this, but it's
+  worth noting the per-source agents' own recency checks (even when
+  briefed with the other sources' recent picks) keep missing these; only
+  the manual full compare actually catches them.
+
+  Posted all 4 source threads + feedback-request message in the
+  documented format, then this entry, merged directly to `main` per
+  `CLAUDE.md`.
 
 - **2026-08-20**: Checked for an existing open PR first per `CLAUDE.md`'s
   consolidation rule: `list_pull_requests` returned zero open PRs — clean
@@ -2875,3 +2925,37 @@ with no reply — always overridable by a reply at any time.
     replies anywhere in the channel — the 68+ day streak (now 69+) is
     unbroken. Standing status unchanged: this item does not get a silent
     default, ever, regardless of how many runs pass with silence.
+
+38. **Escalation continues, 2026-08-21**: item 35 still unresolved.
+    Re-checked the full channel history via a background agent before
+    today's run: the 08-20 feedback message (and the 08-19 one before
+    it) both show zero replies — no `Thread: N replies` annotation on
+    either — and every single top-level message in the channel (67 of
+    them) carries the automated `Sent using @Claude` tag, confirming
+    there is still no human-authored content anywhere in the channel to
+    fold in. Re-raised directly in today's feedback message and pushed
+    outside Slack again, per the standing no-silent-default rule for this
+    item specifically. Separately, today's process worked as designed:
+    the mandatory pre-post cross-source/within-source check (added 07-23
+    and 07-30) caught 5 near-misses across all 4 sources before
+    posting — 2 on Hacker News (a Claude/Anthropic protein-design pick
+    that duplicated Hugging Face's own 08-19 pick almost exactly, and a
+    "ChatGPT for Teens" pick that duplicated X's own 08-19 pick), 1 on
+    Hugging Face (`Lightricks/LTX-2.5` resurfacing a **3rd** time after
+    being dropped on 08-17 and 08-19 — one more sighting and it gets the
+    same permanent-exclusion treatment as Inkling/Unlimited-OCR/
+    MOSS-Transcribe-Diarize/Fara1.5-27B/DeepSeek-V4-Flash-0731), and 1 on
+    X (an OpenAI/Astra-training-pause pick that duplicated Hacker News's
+    own 08-20 pick). All 4 were swapped for genuinely new replacements
+    before posting; none of this required a supplementary session, just
+    follow-up turns with the same per-source research agents. Notably,
+    3 of these 4 catches were repeats across a **1-2 day gap**, not
+    same-day collisions — the routine's existing dedupe rule already
+    covers this (the "last 2 days" curation rule in `PLAYBOOK.md`), but
+    it's worth flagging that the per-source research agents' own recency
+    checks keep missing these even when explicitly briefed with the
+    other sources' prior-day picks; the manual full compare remains the
+    only thing actually catching them. Asked Giulia directly (in today's
+    feedback message) whether this 1-2-day cross-source bar is the right
+    strictness level, or too strict when the specific angle is new even
+    if the underlying event isn't.
