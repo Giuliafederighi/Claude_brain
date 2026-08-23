@@ -200,6 +200,13 @@ step above.
   Baidu's Unlimited-OCR (both already permanently excluded). If it ever
   gets a real update, it's fair game again — check directly before
   excluding, don't just pattern-match on the name.
+- **Adopted 2026-08-23 (proposed 08-21, resurfaced 08-17/08-19/08-21/
+  08-23)**: `Lightricks/LTX-2.5` is now permanently, silently excluded
+  from Hugging Face's picks absent a genuinely new version/benchmark/
+  signal — same treatment and same one-more-sighting threshold as
+  Inkling/Unlimited-OCR/MOSS-Transcribe-Diarize/Fara1.5-27B/
+  DeepSeek-V4-Flash-0731. If it gets a real update, it's fair game again
+  — check directly before excluding, don't just pattern-match on the name.
 - **Added 2026-07-30 — a real repeat slipped through despite a "longer-gap
   check"**: Hugging Face's research agent picked `microsoft/Fara1.5-27B`,
   ran a longer-gap check, but compared it against an older, differently-
