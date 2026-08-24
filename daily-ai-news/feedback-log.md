@@ -27,7 +27,15 @@ floats making it permanent (thread 49348751, found via search not
 independently fetch-verified). Initial pick "Stealing Reasoning Traces
 from Proprietary LLM APIs" was dropped as ~2 weeks stale (broke ~Aug
 11-12, likely off the front page) and swapped for the Claude Code
-weekly-limit story (2026-08-23)
+weekly-limit story (2026-08-23) · GLM-5.3 rooting an Android tablet via an
+old CVE in a day (thread 49409073); a locally-run Qwen3.8-27B bypassing a
+commercial app's license check offline (thread 49407507); Anthropic's
+Claude hitting its 10th outage in two weeks (thread 49415907); Show HN
+"Caspian," giving AI agents one identity across messaging apps (thread
+49390329). Ran honest at 4 — a GLM-5.3 "beat Anthropic/OpenAI for 1/5 the
+cost" candidate (thread 49410097, confirmed real) was dropped for
+GLM-5.3-fatigue overlap with pick #1, and a real SilkParasite AI-malware
+espionage story had no confirmable thread ID (2026-08-24)
 
 **GitHub Trending**: `apache/maka` (2,132★/+148, Apache incubator local-first agent
 workspace), `elder-plinius/OBLITERATUS` (7,910★/+63, abliteration/
@@ -47,7 +55,16 @@ not astroturfing). Main page was clean (18 repos), no Python-filtered
 fallback needed; 7 repos spot-checked live against the GitHub API,
 all matched. Excluded gray-area candidate `Alishahryar1/free-claude-code`
 (ToS-skirting token-pooling tool) since clean alternatives filled all 5
-slots (2026-08-23)
+slots (2026-08-23) · `openclaw/openclaw` (387,290★/+160, personal AI
+assistant), `tinyhumansai/openhuman` (37,002★/+39, local-first memory/agent
+layer), `rohitg00/ai-engineering-from-scratch` (48,021★/+330, AI-building
+course), `AgriciDaniel/claude-obsidian` (11,462★/+272, Claude Code +
+Obsidian integration), `VoltAgent/awesome-agent-skills` (31,581★/+156,
+1,000+ agent skills directory). Excluded `multica-ai/andrej-karpathy-
+skills` (206,093★ but issues disabled, no commits since April — suspected
+star inflation) and `tashfeenahmed/freellmapi` (free-tier-stacking proxy,
+ToS-skirting). Main page had enough fresh AI content, no Python-filtered
+fallback needed (2026-08-24)
 
 **Hugging Face**: BDH-CQ, a 150M-param no-chain-of-thought reasoning model (arXiv
 2608.09888); StateM, an agent-scaffolding/memory runtime layer (arXiv
@@ -70,7 +87,19 @@ repeat of HF's own 08-19 pick (X's research independently proposed the
 same story today too, also dropped — see X's entry). `Lightricks/
 LTX-2.5` resurfaced for a **4th** time (08-17, 08-19, 08-21, now
 08-23) — added to the permanent-exclusion list per the stated
-one-more-sighting threshold (2026-08-23)
+one-more-sighting threshold (2026-08-23) · FreeToken, a system for running
+MoE models on personal hardware instead of a data center (arXiv
+2608.16157); 4DAnyone, turning a single phone video into an explorable 4D
+scene (arXiv 2608.20335, Zhejiang University/Ant Group/Robbyant);
+UnsolvedMath, a benchmark dataset of 8,785 genuinely unsolved math
+problems (`ulamai/UnsolvedMath`); Agent Memory Leaderboard, the first
+cross-method benchmark for AI agent memory systems. Ran honest at 4 —
+dropped `deepseek-ai/DeepSeek-V4-Pro-0813` as a repeat under new framing
+(same release Hacker News covered ~08-13, already skipped once before on
+08-18 for the same reason — see Entries below for the permanent-exclusion
+proposal); also excluded a longer-gap repeat, `froggeric/Qwen-Fixed-Chat-
+Templates` (this routine's own 07-16 pick), caught by full-history grep
+before it could slip through (2026-08-24)
 
 **X / Twitter**: Dario Amodei vs. investor Gavin Baker on who's to blame
 for the AI backlash; OpenAI's Codex "banked reset" for hitting 20M users
@@ -100,9 +129,78 @@ Face's own research independently proposed today (dropped on both
 sides). Also proactively avoided during research: a "near-autonomous AI
 attack on Taiwan" story built on Nous Research's own Hermes framework,
 which would have collided with GitHub's `NousResearch/hermes-agent` pick.
-Reconstructed via search (x.com/twitter.com still blocked) (2026-08-23)
+Reconstructed via search (x.com/twitter.com still blocked) (2026-08-23) ·
+Grok's multi-day gibberish-response glitch on Grok.com; the US trying to
+close the loophole letting China rent banned Nvidia chips via offshore
+data centers; Pennsylvania Governor Shapiro's executive order imposing the
+toughest US AI-data-center rules yet; Anthropic's planned reversal to let
+business customers hold their own data instead of Anthropic retaining it;
+OpenAI's wave of senior-executive departures (Denise Dresser, Brad
+Lightcap, heads of ethics/safety) right before its IPO. Reconstructed via
+search (x.com/twitter.com still blocked). Excluded: the Anthropic
+protein-binder-design story (repeat, dropped twice already); David Sacks'
+"DMV for AI" jab (too close to the Amodei-vs-Baker story); OpenAI's Astra
+safety-pause restatement (likely repeat of 08-08); a DeepSeek V4-Flash
+multimodal variant (too close to the permanently-excluded V4-Flash-0731)
+(2026-08-24)
 
 ## Entries
+
+- **2026-08-24**: Checked for an existing open PR first per `CLAUDE.md`'s
+  consolidation rule: `list_pull_requests` returned zero open PRs — clean
+  state. Delegated the Slack check to a background agent before starting
+  research: confirmed zero genuine human text replies anywhere in the
+  08-23 batch (every reply present traces back to the automated
+  dedup-notes signature, `Sent using @Claude`), now 72+ consecutive days
+  of confirmed zero real feedback. Found one real, new development in that
+  same check: the separate "Newsly" automation has gone quiet — no posts
+  since 08-20, a genuine change from its prior daily pattern — while the
+  "consolidated digest" automation kept posting (again today, at 08:21,
+  before this session even started) with the same unresolved 3-automation
+  overlap flagged in its own thread. Folded this into today's feedback
+  message as a status update rather than a fresh push notification, since
+  it's an incremental state change on an already-escalated, already
+  multiply-pushed item, not a new action or a reply that changes anything.
+
+  Ran the 4 source-research tasks as parallel background agents, each
+  briefed with all 4 sources' last-3-days picks and the permanent-
+  exclusion list. **The manual cross-check caught one real repeat**:
+  Hugging Face's candidate `deepseek-ai/DeepSeek-V4-Pro-0813` (its own
+  research agent had already flagged it as a possible collision) turned
+  out to be the same Aug 13 release Hacker News covered from the pricing
+  angle, and the exact same model this routine's own 08-18 entry already
+  skipped once for being "already covered by Hacker News in the last few
+  days" — a third circling with zero new benchmark or version since.
+  Dropped it rather than force a weak/repeat 5th pick; Hugging Face ran
+  honest at 4. Also caught by Hugging Face's own full-history check before
+  it reached final picks: `froggeric/Qwen-Fixed-Chat-Templates`, a
+  confirmed repeat of this routine's own 07-16 pick, over a month back —
+  a good example of the longer-gap check doing its job.
+
+  Hacker News also ran honest at 4 today (its own research, not the manual
+  cross-check): a GLM-5.3 "beat Anthropic/OpenAI for 1/5 the cost"
+  candidate was dropped for overlapping with pick #1 (both GLM-5.3, to
+  avoid same-model fatigue within one day), and a real, current
+  SilkParasite AI-malware espionage story never turned up a confirmable
+  thread ID. No same-day cross-source collisions found on the manual
+  all-4-sources compare (checked HN's Qwen3.8-27B pick against HF's recent
+  Qwen3.8-2.4T-A95B release — different story, a practical task vs. a
+  model release, kept per precedent). GitHub Trending and X/Twitter each
+  ran a clean 5; GitHub flagged and excluded two suspected astroturf
+  candidates (`multica-ai/andrej-karpathy-skills` — 206K★ with issues
+  disabled and no commits since April; `tashfeenahmed/freellmapi` — a
+  free-tier-stacking proxy whose own README says "personal experimentation
+  only") rather than reporting them as organic.
+
+  Proposed a new permanent-exclusion candidate in today's feedback message
+  (`deepseek-ai/DeepSeek-V4-Pro-0813`, third circling with no new signal —
+  same threshold used for Inkling/LTX-2.5/DeepSeek-V4-Flash-0731) with a
+  stated default to adopt it if unopposed, per the playbook's
+  default-after-silence policy. Posted all 4 source threads (HN and HF
+  both transparently marked "honest at 4") plus one feedback-request
+  message to `#daily-ai-news`, then logged this entry, updated the rolling
+  "recently covered" lists (now holding 08-22 through 08-24), merged
+  directly to `main` per `CLAUDE.md`.
 
 - **2026-08-23**: Checked for an existing open PR first per `CLAUDE.md`'s
   consolidation rule: `list_pull_requests` returned zero open PRs — clean
