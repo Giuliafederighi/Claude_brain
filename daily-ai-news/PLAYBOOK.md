@@ -207,6 +207,24 @@ step above.
   Inkling/Unlimited-OCR/MOSS-Transcribe-Diarize/Fara1.5-27B/
   DeepSeek-V4-Flash-0731. If it gets a real update, it's fair game again
   — check directly before excluding, don't just pattern-match on the name.
+- **Adopted 2026-08-25 (proposed 08-24, unopposed)**: `deepseek-ai/
+  DeepSeek-V4-Pro-0813` is now permanently, silently excluded from
+  Hugging Face's picks absent a genuinely new checkpoint/benchmark/
+  signal — it circled 3 times (covered by Hacker News from the pricing
+  angle ~08-13, skipped as already-covered on 08-18, resurfaced again
+  08-24 with no new signal) before this default kicked in. Same
+  treatment as LTX-2.5/DeepSeek-V4-Flash-0731/etc. Reconsider if it gets
+  a real update — check directly, don't pattern-match on the name.
+- **New watchlist item, 2026-08-25**: GitHub Trending's
+  `multica-ai/andrej-karpathy-skills` (a single markdown file with
+  ~206K★, issues disabled, no commits since April) has now been excluded
+  2 days running (08-24, 08-25) for the same suspected-astroturfing
+  profile this routine already treats as exclude-not-report-honestly
+  (per the 07-09 "report honestly" default, astroturfing is the
+  exception, not organic lopsidedness). Proposed to Giulia in the 08-25
+  feedback thread as a candidate for the same permanent-exclusion
+  treatment as the Hugging Face list above, stated default to adopt if
+  unopposed after a few more runs, per this file's usual policy.
 - **Added 2026-07-30 — a real repeat slipped through despite a "longer-gap
   check"**: Hugging Face's research agent picked `microsoft/Fara1.5-27B`,
   ran a longer-gap check, but compared it against an older, differently-

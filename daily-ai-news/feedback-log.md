@@ -7,24 +7,7 @@ accumulate anything (every prior PR was an unmerged draft).
 
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
-**Hacker News**: Anthropic's
-$2T IPO valuation talk, FT sourcing (thread 49323620); Dan Luu's
-"Benchmarkpocalypse" AI-benchmark-gaming essay (thread 49340299); a
-125M-param on-device piano-jam Show HN (thread 49373456); Adversa AI's
-"Cryptographic Context Injection" attack on Grok (not thread-ID
-confirmed); Zhipu's GLM-5.3 benchmark results (thread 49353407). Two
-initial picks caught pre-post and swapped: a "mystery Ox Alpha model"
-story turned out to be an internal duplicate of the GLM-5.3 pick (same
-underlying release), and DeepMind's WeatherNext hurricane model turned
-out to be a 13-day repeat of HN's own 08-09 pick (2026-08-22) ·
-OpenAI cuts GPT-5.6 Sol API pricing 20-33% (thread 49396590, confirmed);
-Google donates A2A protocol to the Agentic AI Foundation (thread
-49353146, confirmed); Show HN "OneCLI" credential-firewall gateway
-(thread 49363710, confirmed); Broadcom in talks for a $60-100B debt deal
-to finance Anthropic's chip supply (not thread-ID confirmed); Anthropic
-extends Claude Code's 50% weekly-usage boost a third time through Aug 31,
-floats making it permanent (thread 49348751, found via search not
-independently fetch-verified). Initial pick "Stealing Reasoning Traces
+**Hacker News**: Initial pick "Stealing Reasoning Traces
 from Proprietary LLM APIs" was dropped as ~2 weeks stale (broke ~Aug
 11-12, likely off the front page) and swapped for the Claude Code
 weekly-limit story (2026-08-23) · GLM-5.3 rooting an Android tablet via an
@@ -35,17 +18,20 @@ Claude hitting its 10th outage in two weeks (thread 49415907); Show HN
 49390329). Ran honest at 4 — a GLM-5.3 "beat Anthropic/OpenAI for 1/5 the
 cost" candidate (thread 49410097, confirmed real) was dropped for
 GLM-5.3-fatigue overlap with pick #1, and a real SilkParasite AI-malware
-espionage story had no confirmable thread ID (2026-08-24)
+espionage story had no confirmable thread ID (2026-08-24) ·
+Nvidia's "AVO" agent scores 100% on ARC-AGI-3 by wrapping Claude Opus 5
+in a scaffold rather than a new model (thread 49387755, confirmed);
+a 26,000-student China study finding AI tutoring raises homework scores
+but drops exam scores up to 24% over 2 years (thread 49357530, medium-high
+confidence); Hugging Face reportedly exploring a $13B sale, ~3x its last
+valuation (Business Insider, thread ID not independently confirmed). Ran
+honest at 3 — HN/Algolia access is now more completely egress-blocked
+than before (even prior mirror workarounds failed); two strong-looking
+candidates were caught and dropped as confirmed repeats: OpenAI's "Astra"
+10-math-problems story (3rd resurfacing, X's own 08-03/08-08 picks) and
+xAI's Grok 4.6 launch (repeat of HN's own ~08-13/08-14 coverage) (2026-08-25)
 
-**GitHub Trending**: `apache/maka` (2,132★/+148, Apache incubator local-first agent
-workspace), `elder-plinius/OBLITERATUS` (7,910★/+63, abliteration/
-jailbreak toolkit — flagged as dual-use, kept per honest-reporting
-default), `microsoft/onnxruntime` (21,571★/+5), `Osmantic/ODS`
-(4,641★/+42), `hao-ai-lab/FastVideo` (4,026★/+31). Main daily page was
-6/17 repeats; excluded `affaan-m/ECC` and `debpalash/VoiceStudio` as
-suspected star-inflation/astroturfing (extremely low issue-to-star
-ratios vs. velocity); pulled from the Python-filtered trending view to
-reach a clean 5 (2026-08-22) · `openai/codex` (114,641★/+1,544),
+**GitHub Trending**: `openai/codex` (114,641★/+1,544),
 `anthropics/claude-plugins-community` (690★/+190, official new mirror
 of the Claude Code/Cowork plugin marketplace), `Comfy-Org/ComfyUI`
 (129,097★/+179), `freestylefly/awesome-gpt-image-2` (12,364★/+628),
@@ -64,16 +50,18 @@ Obsidian integration), `VoltAgent/awesome-agent-skills` (31,581★/+156,
 skills` (206,093★ but issues disabled, no commits since April — suspected
 star inflation) and `tashfeenahmed/freellmapi` (free-tier-stacking proxy,
 ToS-skirting). Main page had enough fresh AI content, no Python-filtered
-fallback needed (2026-08-24)
+fallback needed (2026-08-24) · `TauricResearch/TradingAgents`
+(99,824★/+191, multi-agent trading-firm simulator); `MadsLorentzen/
+ai-job-search` (34,646★/+434, Claude-Code job-search framework);
+`anthropics/claude-plugins-official` (33,944★/+47, official plugin
+directory); `marin-community/marin` (1,886★/+214, open foundation-model
+research framework); `langchain-ai/deepagents` (28,426★/+175, deep-agent
+harness framework). `multica-ai/andrej-karpathy-skills` (206,897★)
+resurfaced and was excluded a **2nd day running** for the same
+suspected-astroturfing profile — proposed as a permanent-exclusion
+candidate in today's feedback message (2026-08-25)
 
-**Hugging Face**: BDH-CQ, a 150M-param no-chain-of-thought reasoning model (arXiv
-2608.09888); StateM, an agent-scaffolding/memory runtime layer (arXiv
-2608.15089); `Qwen/Qwen3.8-2.4T-A95B` (a distinct, much larger MoE
-sibling to the already-covered 27B Qwen3.8 — flagged in case of "more
-Qwen" fatigue, kept as a genuinely different release); `MiniMaxAI/
-MiniMax-Music3` text-to-music model; Hugging Face Space "Open Discovery
-Challenge #1 — Malaria" (`FINAL-Bench/open-discovery-challenge`). Clean
-5, no repeats found (2026-08-22) · `mvaccargiu/gitskills` (GitSkills
+**Hugging Face**: `mvaccargiu/gitskills` (GitSkills
 dataset, arXiv 2608.10906, audit of the Agent Skills ecosystem — 3.8M
 SKILL.md files across 282K repos, over half exact duplicates); EnvHarness/
 EnvRigger training-environment-reshaping paper (arXiv 2608.19880,
@@ -99,21 +87,18 @@ dropped `deepseek-ai/DeepSeek-V4-Pro-0813` as a repeat under new framing
 08-18 for the same reason — see Entries below for the permanent-exclusion
 proposal); also excluded a longer-gap repeat, `froggeric/Qwen-Fixed-Chat-
 Templates` (this routine's own 07-16 pick), caught by full-history grep
-before it could slip through (2026-08-24)
+before it could slip through (2026-08-24) · EchoWM/`jd-opensource/
+JoyAI-Echo` (arXiv 2608.23189, generative walkable "world model" with
+synced video/audio); TLive-Omni (arXiv 2608.20958, shopping-livestream
+understanding model, 4B/9B checkpoints); `sensenova/
+SenseNova-U1.5-8B-MoT` (unified image generation + editing model);
+`nvidia/Cosmos3-DROID` (76K-clip robot-arm demonstration dataset
+repackaged into LeRobot format); `inclusionAI/ConceptEdit-12M`
+(12M-example instruction-based photo-editing training dataset).
+`deepseek-ai/DeepSeek-V4-Pro-0813` adopted into the permanent-exclusion
+list today (proposed 08-24, unopposed) (2026-08-25)
 
-**X / Twitter**: Dario Amodei vs. investor Gavin Baker on who's to blame
-for the AI backlash; OpenAI's Codex "banked reset" for hitting 20M users
-landed late, drawing "marketing masterclass" criticism; Robin Williams'
-kids revive his Instagram to push back on AI "resurrections"; a paper
-claiming AI agents are "mathematically doomed to fail" splits AI
-Twitter; Linear's usage data shows AI writes ~half of all issues now but
-deploys haven't sped up (bottleneck moved to CI/CD). Three initial picks
-caught pre-post and swapped: a "Claude invisible watermark backlash"
-story was a 7-day repeat of X's own 08-15 pick; an "Ox Alpha mystery
-model" story collided with HN's GLM-5.3 pick (same underlying release);
-an Anthropic/Mythos-5 AISI red-team social-engineering story was a
-7-day repeat of X's own 08-15 pick. Reconstructed via search
-(x.com/twitter.com still blocked) (2026-08-22) · Nvidia pays $6B to
+**X / Twitter**: Nvidia pays $6B to
 license Poolside's "Model Factory" (plus $1B equity stake, without
 acquiring the company); Cloudflare launches "Kitesurf" Chromium-free
 agent browser + the x402 agent-payment protocol (now its own Linux
@@ -142,9 +127,77 @@ protein-binder-design story (repeat, dropped twice already); David Sacks'
 "DMV for AI" jab (too close to the Amodei-vs-Baker story); OpenAI's Astra
 safety-pause restatement (likely repeat of 08-08); a DeepSeek V4-Flash
 multimodal variant (too close to the permanently-excluded V4-Flash-0731)
-(2026-08-24)
+(2026-08-24) · Anthropic's "Mind Viruses" self-propagating-ideas-in-
+multi-agent-LLMs paper (arXiv 2608.10218) going viral in an exaggerated
+form; ChatGPT ads expanding to Europe (31 countries, Aug 24); Meta
+AI-driven-layoffs discrimination lawsuit (26 employees, judge declined to
+block, Aug 24); "Instinct," a new AI-assistant startup splitting opinion
+between "magic" and "privacy nightmare"; XPeng's robotics arm raising
+$900M+, the largest China physical-AI funding round yet. Dropped as
+confirmed repeats: OpenAI's "Astra" 10-math-problems story (3rd
+resurfacing of X's own 08-03/08-08 picks) and xAI's Grok 4.6 launch
+(repeat of Hacker News's own ~08-13/08-14 coverage). Reconstructed via
+search (x.com/twitter.com still blocked) (2026-08-25)
 
 ## Entries
+
+- **2026-08-25**: Checked for an existing open PR first per `CLAUDE.md`'s
+  consolidation rule: `list_pull_requests` returned zero open PRs — clean
+  state; the local branch was also confirmed already in sync with
+  `origin/main` (no forgotten-push risk this time). Read the 08-24
+  feedback thread directly via `slack_read_thread`: zero reply, confirming
+  73+ consecutive days of zero real text feedback. Per the playbook's
+  default-after-silence policy, adopted `deepseek-ai/DeepSeek-V4-Pro-0813`
+  into Hugging Face's permanent-exclusion list (proposed 08-24, unopposed).
+  The automation-conflict status (Newsly quiet since 08-20, consolidator
+  still posting, still unresolved) had no new developments since
+  yesterday's update, so it was re-noted briefly in today's feedback
+  message rather than re-pushed as a fresh notification.
+
+  Ran the 4 source-research tasks as parallel background agents, each
+  briefed with all 4 sources' last-3-days picks and the permanent-
+  exclusion list. **The mandatory manual full-history cross-check (via
+  targeted `Grep` of this file) caught 3 real issues the agents' own
+  briefs missed, the most since 08-22:**
+  1. X's "OpenAI's Astra solved 10 math/CS problems for ~$2,000" pick was
+     a confirmed repeat — the same underlying facts as X's own 08-03 pick,
+     already re-dropped once before on 08-08 when a Fields Medalist's
+     reaction to the same story resurfaced. This is now its 3rd
+     resurfacing; worth considering for permanent exclusion if it comes
+     back a 4th time.
+  2. X's "xAI's Grok 4.6 launched at half the price of rivals" pick
+     (citing an Aug 12 launch) turned out to be a repeat of Hacker News's
+     own coverage of that same launch around 08-13/08-14.
+  3. GitHub's `multica-ai/andrej-karpathy-skills` resurfaced with the same
+     suspected-astroturfing profile (issues disabled, no commits since
+     April, ~206K★) already excluded yesterday (08-24) — excluded again
+     rather than reported as organic, and proposed as a new permanent-
+     exclusion candidate in today's feedback message given 2 days running
+     with an identical profile.
+
+  All 3 were swapped via supplementary research agent calls before
+  posting: X replaced both drops with fresh picks (an "Instinct" AI-
+  assistant privacy story and XPeng robotics' $900M+ raise) and ran a full
+  5; GitHub replaced its drop with `langchain-ai/deepagents` (spot-checked
+  clean — org-owned, active, healthy issue ratio) and also ran a full 5.
+  **Hacker News ran honest at 3** — its own research found only 3
+  solidly-verifiable picks even before the cross-check, and a dedicated
+  supplementary pass for a 4th came back empty after ~10 additional
+  searches; also surfaced a new access-degradation finding worth flagging
+  going forward: HN/Algolia access is now more completely egress-blocked
+  than before, with even prior mirror workarounds (an HF-hosted HN
+  dataset mirror, hckrnews.com, unrot.co) failing this run, leaving
+  WebSearch as the only remaining path. Hugging Face ran a full clean 5
+  with no repeats found on the manual cross-check.
+
+  Posted all 4 source threads plus one feedback-request message (the
+  DeepSeek-V4-Pro-0813 exclusion adoption, the new GitHub astroturf-repo
+  exclusion question, today's 3 catches, the HN access-degradation note,
+  and the still-unresolved automation conflict) to `#daily-ai-news`, then
+  logged this entry, updated `PLAYBOOK.md`'s permanent-exclusion list and
+  new GitHub watchlist item, updated the rolling "recently covered" lists
+  (trimmed to 08-23 through 08-25), merged directly to `main` per
+  `CLAUDE.md`.
 
 - **2026-08-24**: Checked for an existing open PR first per `CLAUDE.md`'s
   consolidation rule: `list_pull_requests` returned zero open PRs — clean
