@@ -28,6 +28,21 @@ Understanding Inc (real, thread ID unconfirmed). Ran honest at 3 — a 4th
 candidate (a Grok "Cryptographic Context Injection" chat-leak disclosure)
 was dropped for being both unconfirmed and ~5-7 days stale rather than
 padding the count (2026-08-26)
+· IBM-owned Langflow's actively-exploited unauthenticated RCE
+(CVE-2026-9198, added to CISA's Known Exploited Vulnerabilities catalog);
+Aikido Security's lab replication of the AI-agent gym-booking exploit
+(Claude Opus 4.6 exploited it in 9/10 unprompted runs, canceled a
+stranger's booking in 2/10); AnonyMousKIT, an AI-voice-phishing-as-a-
+service ring targeting stolen-iPhone unlocks; OpenAI's ban of a Russian
+ChatGPT-laundered propaganda operation ("International Burke Institute");
+Amazon's 2-million-chip Nvidia order for its 2027-2028 buildout. All
+reconstructed via WebSearch, none thread-ID-confirmed — HN/Algolia remain
+fully blocked. Caught and dropped one confirmed repeat before posting: an
+"Ox Alpha" mystery-model-unmasked-as-GLM-5.3(-Flash) story, the same beat
+as HN's own 08-22 pick (Ox Alpha unmasked as GLM-5.3) — flagged the whole
+"stealth-model whodunit" genre (Pony Alpha→GLM-5, Owl Alpha→LongCat-2.0,
+Ox Alpha→GLM-5.3 twice now) as a recurring pattern worth a standing
+exclusion, proposed in today's feedback message (2026-08-27)
 
 **GitHub Trending**: `TauricResearch/TradingAgents`
 (99,824★/+191, multi-agent trading-firm simulator); `MadsLorentzen/
@@ -51,6 +66,17 @@ proxy) — same ToS-skirting exclusion first made 08-23, resurfaced and
 dropped again, not a permanent-list entry (see PLAYBOOK.md). No clean 5th
 candidate found even checking the Python-filtered trending view — ran
 honest at 4 (2026-08-26)
+· `calesthio/OpenMontage` (~52K★/+1,284, open-source AI
+video-production agent stack — scripting, image-gen, voice, editing);
+`rohitg00/ai-engineering-from-scratch` (~50K★/+838, from-scratch
+AI-engineering curriculum); `AgriciDaniel/claude-obsidian` (~13.7K★/+810,
+self-organizing Claude Code + Obsidian knowledge graph); `thedotmack/
+claude-mem` (~92K★/+133, persistent cross-session memory for coding
+agents); `JetBrains/go-modern-guidelines` (~1.8K★/+314, AI-agent-oriented
+Go style guide). Spot-checked against the live GitHub API. Caught and
+dropped one confirmed repeat: `K-Dense-AI/scientific-agent-skills`, this
+routine's own GitHub pick from 08-07 — 20 days back, well outside any
+research brief's window (2026-08-27)
 
 **Hugging Face**: EchoWM/`jd-opensource/
 JoyAI-Echo` (arXiv 2608.23189, generative walkable "world model" with
@@ -70,20 +96,19 @@ dictation-cleanup model); `LightwheelAI/EgoStandard` (90K-hour headcam
 dataset for robot imitation learning, part of EgoSuite-Open100K).
 Excluded `MiniMaxAI/MiniMax-H3` as a confirmed repeat of this routine's
 own 08-07/08-14 picks (2026-08-26)
+· `Qwen/Qwen3.8-Flash-Next` (early preview of the Qwen4 architecture —
+hybrid QSA attention, gated residuals, n-gram embeddings — top-liked
+model on HF today); VoiceMem (arXiv 2608.26005, dual-"brain" low-latency
+voice-AI memory system, ~30pts over Mem0 at ~134ms retrieval); "The
+Handoff Tax" (arXiv 2608.24358, cost study on escalating/downshifting
+between AI models mid-task); `zai-org/GLM-5.3-Flash` (~321B-param MoE
+model, live today on 4 inference providers); FrontierChallenge (arXiv
+2608.24979, benchmark showing frontier models complete only ~20% of real
+end-to-end scientific workflows). Caught and dropped one confirmed
+repeat: `Anthropic/claude-protein-binder-design`, already run here
+08-19, re-caught 08-21 and 08-23 (2026-08-27)
 
-**X / Twitter**: Grok's multi-day gibberish-response glitch on Grok.com; the US trying to
-close the loophole letting China rent banned Nvidia chips via offshore
-data centers; Pennsylvania Governor Shapiro's executive order imposing the
-toughest US AI-data-center rules yet; Anthropic's planned reversal to let
-business customers hold their own data instead of Anthropic retaining it;
-OpenAI's wave of senior-executive departures (Denise Dresser, Brad
-Lightcap, heads of ethics/safety) right before its IPO. Reconstructed via
-search (x.com/twitter.com still blocked). Excluded: the Anthropic
-protein-binder-design story (repeat, dropped twice already); David Sacks'
-"DMV for AI" jab (too close to the Amodei-vs-Baker story); OpenAI's Astra
-safety-pause restatement (likely repeat of 08-08); a DeepSeek V4-Flash
-multimodal variant (too close to the permanently-excluded V4-Flash-0731)
-(2026-08-24) · Anthropic's "Mind Viruses" self-propagating-ideas-in-
+**X / Twitter**: Anthropic's "Mind Viruses" self-propagating-ideas-in-
 multi-agent-LLMs paper (arXiv 2608.10218) going viral in an exaggerated
 form; ChatGPT ads expanding to Europe (31 countries, Aug 24); Meta
 AI-driven-layoffs discrimination lawsuit (26 employees, judge declined to
@@ -103,8 +128,86 @@ history, judged a genuinely new angle (hack tie-in, Bengio's reaction) not
 a repeat; Ilya Sutskever's SSI reportedly readying its first model this
 month. Reconstructed via search (x.com/twitter.com still blocked)
 (2026-08-26)
+· Rhoda AI's $450M stealth-exit robotics launch (FutureVision,
+"video-predictive control"); Emerald AI's $150M raise to flex AI-data-
+center power draw against grid stress; Nvidia's Groq 3 LPX chip reaching
+full production (Nebius first customer, 256-chip racks); the EU AI Act's
+first real fines (€47M across 3 companies — hiring tech, credit scoring,
+retail emotion-recognition); Ramp's free Router universal AI-model-
+switching tool. Reconstructed via search (x.com/twitter.com still
+blocked). Dropped one pick before posting: Anima Anandkumar's
+"Accelerated Understanding" launch, a same-story repeat of Hacker News's
+own 08-26 pick (2026-08-27)
 
 ## Entries
+
+- **2026-08-27**: Checked for an existing open PR first per `CLAUDE.md`'s
+  consolidation rule: `list_pull_requests` returned zero open PRs — clean
+  state. Confirmed the local branch (`claude/bold-knuth-yrcbko`) was even
+  with `origin/main` after fetching (both at commit 3b538cf, yesterday's
+  merged run) — no forgotten-push risk. Read the 08-26 feedback thread
+  directly via `slack_read_thread`: zero replies — the zero-real-text-
+  feedback streak continues unbroken. Re-tested network egress via the
+  proxy status endpoint: no recent relay failures, consistent with the
+  known policy (HN/x.com blocked, GitHub/HF unrestricted). Checked the
+  channel for today's activity before starting research: neither the
+  "consolidator" nor "Newsly" automation had posted yet as of session
+  start — no new developments on the still-unresolved 3-automation
+  overlap, so it was re-noted briefly in today's feedback message rather
+  than re-pushed as a fresh notification, matching the pattern used on
+  08-24/08-25 for unchanged status.
+
+  Ran the 4 source-research tasks as parallel background agents, each
+  briefed with all 4 sources' last-3-days picks and the standing
+  permanent-exclusion lists. **The mandatory manual full-history
+  cross-check (via targeted `Grep` of this file, not just each agent's
+  own short-window brief) caught 3 real repeats and 1 same-day-adjacent
+  collision before posting — a reminder that even a well-briefed agent
+  keeps missing longer-gap repeats:**
+  1. Hacker News's initial pick #1 — an anonymous "Ox Alpha" model on
+     OpenRouter unmasked as Zhipu's GLM-5.3-Flash — turned out to be the
+     same recurring "stealth-model whodunit" beat this routine's own
+     08-22 entry already ran (Ox Alpha unmasked as GLM-5.3). Dropped;
+     replaced with IBM-owned Langflow's actively-exploited unauthenticated
+     RCE (CVE-2026-9198, on CISA's Known Exploited Vulnerabilities
+     catalog), found via targeted supplementary WebSearch. This also
+     preempted what would have been a same-day collision with Hugging
+     Face's own (kept) GLM-5.3-Flash pick.
+  2. Hugging Face's initial pick #3, `Anthropic/claude-protein-binder-
+     design`, was a confirmed repeat — already run here 08-19, re-caught
+     08-21 and 08-23 by this same manual step, and the research agent's
+     own brief flagged uncertainty about it but didn't catch the exact
+     match. Dropped; replaced with `Qwen/Qwen3.8-Flash-Next` (a fresh
+     Qwen4-architecture preview, today's most-liked HF model), found via
+     `hf_fs` trending lookup.
+  3. GitHub's initial pick #3, `K-Dense-AI/scientific-agent-skills`, was
+     this routine's own GitHub pick from 08-07 — 20 days back, well
+     outside the research brief's 3-day window. Dropped; replaced with
+     `AgriciDaniel/claude-obsidian`, found via a targeted WebFetch re-pull
+     of the trending page excluding all of today's other picks.
+  4. X/Twitter's initial pick #1, Anima Anandkumar's "Accelerated
+     Understanding" stealth-exit launch, was the exact story Hacker News
+     covered here just yesterday (08-26) — a same-story repeat one day
+     removed rather than a same-day collision, but caught by the same
+     full-history check. Dropped; replaced with Rhoda AI's $450M robotics
+     stealth-exit launch (FutureVision, video-predictive control), found
+     via supplementary WebSearch.
+
+  All 4 sources ran a full 5 today after swaps — first clean 5/5/5/5 in
+  several runs with no source forced to go honest-at-4. Flagged the
+  recurring "stealth-model whodunit" genre (Pony Alpha→GLM-5, Owl
+  Alpha→LongCat-2.0, Ox Alpha→GLM-5.3 twice now) as a new specific
+  question in today's feedback message: proposed treating the genre as
+  excluded by default going forward unless the specific model identity
+  being revealed hasn't already run here, per the playbook's
+  default-after-silence policy if unopposed.
+
+  Posted all 4 source threads plus one feedback-request message (leading
+  with the stealth-model-genre question, then today's 4 catches, the
+  access note, and the still-unresolved automation-conflict status) to
+  `#daily-ai-news`, then logged this entry, updated the rolling "recently
+  covered" lists (trimmed to 08-25 through 08-27), merged directly to
+  `main` per `CLAUDE.md`.
 
 - **2026-08-26**: Checked for an existing open PR first per `CLAUDE.md`'s
   consolidation rule: `list_pull_requests` returned zero open PRs — clean
