@@ -215,6 +215,15 @@ step above.
   08-24 with no new signal) before this default kicked in. Same
   treatment as LTX-2.5/DeepSeek-V4-Flash-0731/etc. Reconsider if it gets
   a real update — check directly, don't pattern-match on the name.
+- **Adopted 2026-08-28 (proposed 08-27, unopposed)**: Hacker News's "mystery
+  stealth model on OpenRouter, unmasked via community sleuthing" genre is now
+  excluded by default, unless the specific model identity being revealed is
+  one that hasn't already run in this digest before. The genre recurred at
+  least 3 times under different codenames before this default kicked in
+  (Pony Alpha→GLM-5, Owl Alpha→LongCat-2.0, Ox Alpha→GLM-5.3 twice). Same
+  default-after-silence treatment as the other exclusions on this list —
+  reversible any time Giulia says so, and a genuinely new, not-yet-covered
+  model identity is still fair game.
 - **Adopted 2026-08-26 (proposed 08-25, unopposed)**: GitHub Trending's
   `multica-ai/andrej-karpathy-skills` (a single markdown file with
   ~207K★, issues disabled, no commits since April) is now permanently,
