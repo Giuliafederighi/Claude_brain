@@ -8,16 +8,7 @@ accumulate anything (every prior PR was an unmerged draft).
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
 **Hacker News**:
-Microsoft Paint/Photos secretly baking a linkable tracking GUID into
-every AI image (thread 49421158, confirmed); Nvidia NemoClaw's
-unauthenticated-Ollama flaw (CVE-2026-65105) letting any website hijack a
-local AI agent (real, thread ID unconfirmed); Caltech's Anima Anandkumar
-launching a Transformer-free, physics-only AI startup, Accelerated
-Understanding Inc (real, thread ID unconfirmed). Ran honest at 3 — a 4th
-candidate (a Grok "Cryptographic Context Injection" chat-leak disclosure)
-was dropped for being both unconfirmed and ~5-7 days stale rather than
-padding the count (2026-08-26)
-· IBM-owned Langflow's actively-exploited unauthenticated RCE
+IBM-owned Langflow's actively-exploited unauthenticated RCE
 (CVE-2026-9198, added to CISA's Known Exploited Vulnerabilities catalog);
 Aikido Security's lab replication of the AI-agent gym-booking exploit
 (Claude Opus 4.6 exploited it in 9/10 unprompted runs, canceled a
@@ -48,21 +39,26 @@ July HF breach (same incident as X's already-covered "Astra" pause) and a
 Dream Security report on a Hermes/OpenClaw multi-agent government breach
 (same incident, same July 1-4 timeframe, as the Thailand Finance Ministry
 Hermes breach covered 07-31) (2026-08-28)
+· A federal judge (Rita Lin) ruling the Pentagon's blacklisting of
+Anthropic as a "supply chain risk" was illegal, both First Amendment
+retaliation and a due-process violation (thread 49473522, confirmed);
+Hugging Face's Pollen Robotics unveiling Microduck, a $399 open-source
+bipedal robot duck for "physical AI" hobbyists (thread 49462763,
+confirmed); "UniBLEed," a self-propagating Bluetooth root-RCE exploit
+chain in Unitree's G1 humanoid (CVE-2026-76639/76640, real, thread ID
+unconfirmed); SenteLabs' open-source "AI CEO" framework OpenExecutive,
+posted alongside an unverified "built after AI layoffs" origin story
+flagged explicitly in the post (thread 49458418, confirmed); Australia's
+ARIA banning fully AI-generated songs from official charts and awards
+(thread 49462687, confirmed). Caught and dropped 3 issues before posting:
+initial pick #1 (the Pentagon/Anthropic ruling) collided with X's
+independently-found same-day pick — kept on HN per the native-source
+tiebreaker; initial pick #3 (GLM-5.3 open weights) collided with Hugging
+Face's own same-day pick on the identical release — left on Hugging Face
+instead; initial pick #4 (OpenAI's "Jalapeño" chip vs. Blackwell) was a
+confirmed repeat of this routine's own HN pick from 08-28 (2026-08-29)
 
-**GitHub Trending**: `apache/maka`
-(3,535★/+543, Apache-Incubator agent-observability/audit-log workspace),
-`DietrichGebert/ponytail` (111,801★/+982, minimal-code-nudging plugin for
-20+ AI coding tools), `virgiliojr94/book-to-skill` (25,728★/+351,
-converts technical books into on-demand agent reference skills),
-`MemPalace/mempalace` (58,659★/+42, local-first AI agent memory system).
-`multica-ai/andrej-karpathy-skills` excluded a 3rd day running and adopted
-into permanent exclusion today (proposed 08-25, unopposed); also excluded
-`Alishahryar1/free-claude-code` (50,061★, free-tier-API-key-stacking
-proxy) — same ToS-skirting exclusion first made 08-23, resurfaced and
-dropped again, not a permanent-list entry (see PLAYBOOK.md). No clean 5th
-candidate found even checking the Python-filtered trending view — ran
-honest at 4 (2026-08-26)
-· `calesthio/OpenMontage` (~52K★/+1,284, open-source AI
+**GitHub Trending**: `calesthio/OpenMontage` (~52K★/+1,284, open-source AI
 video-production agent stack — scripting, image-gen, voice, editing);
 `rohitg00/ai-engineering-from-scratch` (~50K★/+838, from-scratch
 AI-engineering curriculum); `AgriciDaniel/claude-obsidian` (~13.7K★/+810,
@@ -83,17 +79,21 @@ browser-based live-data "spy satellite" globe with an OpenAI-Realtime
 voice-agent pilot). `K-Dense-AI/scientific-agent-skills` resurfaced and
 was caught as a confirmed repeat again (2nd catch in 2 days) — swapped for
 `gods-eye-view` (2026-08-28)
+· `anthropics/claude-plugins-official` (35,177★/+457, Anthropic's own
+official curated plugin directory for Claude Code); `abi/screenshot-to-code`
+(75,785★/+326, AI-vision screenshot-to-frontend-code tool, 3 years old and
+still gaining); `marin-community/marin` (2,947★/+236, Stanford-incubated
+open framework for training foundation models from scratch); `ChromeDevTools/
+chrome-devtools-mcp` (50,054★/+67, Chrome team's official MCP server giving
+AI coding agents real-browser debugging access); `livekit/agents`
+(13,446★/+22, Python framework for real-time voice AI assistants). All 5
+star counts spot-checked live against the GitHub API. Flagged (not
+excluded) `tashfeenahmed/freellmapi` (21,876★/+433) as a suspected
+key-stacking proxy in the same spirit as `Alishahryar1/free-claude-code` —
+candidate for the recurring gray-area exclusion list if it resurfaces
+(2026-08-29)
 
-**Hugging Face**: BDH-CQ (arXiv
-2608.09888, 150M-parameter "recurrent latent reasoning" model topping
-ARC-AGI-1's cost/accuracy frontier); Apodex 1.1 (arXiv 2608.23283,
-training agents to recover from mid-task failure); `MiniMaxAI/
-MiniMax-Music3` (2.4B text-to-song model); `superwhisper/s1-mini` (752M
-dictation-cleanup model); `LightwheelAI/EgoStandard` (90K-hour headcam
-dataset for robot imitation learning, part of EgoSuite-Open100K).
-Excluded `MiniMaxAI/MiniMax-H3` as a confirmed repeat of this routine's
-own 08-07/08-14 picks (2026-08-26)
-· `Qwen/Qwen3.8-Flash-Next` (early preview of the Qwen4 architecture —
+**Hugging Face**: `Qwen/Qwen3.8-Flash-Next` (early preview of the Qwen4 architecture —
 hybrid QSA attention, gated residuals, n-gram embeddings — top-liked
 model on HF today); VoiceMem (arXiv 2608.26005, dual-"brain" low-latency
 voice-AI memory system, ~30pts over Mem0 at ~134ms retrieval); "The
@@ -117,18 +117,23 @@ exclusions still trending but with no new signal.
 `Anthropic/claude-protein-binder-design` resurfaced **again** (5th
 dropped sighting: 08-19, 08-21, 08-23, 08-27, 08-28) — proposed as a new
 permanent-exclusion candidate in today's feedback message (2026-08-28)
+· FreeToken (arXiv 2608.16157, UC Berkeley serving system letting a gaming
+PC run a 753B MoE model via dynamic GPU/CPU/disk reshuffling);
+WeMM-Embedding (arXiv 2608.24053, Tencent's multimodal embedding family,
+SOTA 80.6 on MMEB-v2, live in WeChat production); Prime Agent (arXiv
+2608.23552, Prime Intellect's agent harness that took the same model from
+30% to 95.5% on ARC-AGI-3); `zai-org/GLM-5.3` (the full 753B flagship,
+distinct from the Flash variant, released today after a 2-week delay
+attributed to its cybersecurity capability); `markov-ai/cad-1000-hours`
+(1,021-hour dataset of engineers using AutoCAD/BIM software, for training
+computer-use agents). Adopted `Anthropic/claude-protein-binder-design`
+into the permanent-exclusion list today (proposed 08-28, unopposed) — it
+resurfaced again on the trending list, confirming it's still just a
+repeat. `zai-org/GLM-5.3` collided with Hacker News's independently-found
+same-day pick on the identical release — kept here as the more native
+model-release home per the standing tiebreaker (2026-08-29)
 
-**X / Twitter**: Anthropic telling
-investors its TAM could top $30 trillion (WSJ); Musk publicly admitting to
-Cursor's staff that Grok trails Anthropic; OpenAI cutting GPT-5.6 Sol's
-API price 20%+ amid an escalating price war; OpenAI pausing an unreleased
-model ("Astra") for 2 weeks after a hack tied to Hugging Face's
-infrastructure — flagged explicitly in-thread given "Astra"'s repeat-prone
-history, judged a genuinely new angle (hack tie-in, Bengio's reaction) not
-a repeat; Ilya Sutskever's SSI reportedly readying its first model this
-month. Reconstructed via search (x.com/twitter.com still blocked)
-(2026-08-26)
-· Rhoda AI's $450M stealth-exit robotics launch (FutureVision,
+**X / Twitter**: Rhoda AI's $450M stealth-exit robotics launch (FutureVision,
 "video-predictive control"); Emerald AI's $150M raise to flex AI-data-
 center power draw against grid stress; Nvidia's Groq 3 LPX chip reaching
 full production (Nebius first customer, 256-chip racks); the EU AI Act's
@@ -149,8 +154,96 @@ hedging with Nvidia calls; Amazon permanently closing AWS Mechanical Turk
 after 21 years. Reconstructed via search (x.com/twitter.com still
 blocked). Left OpenAI's "Jalapeño chip beats Blackwell" story for Hacker
 News since a live HN thread was found for it (2026-08-28)
+· Bill Gates' essay/NYT interview accusing the AI industry of deliberately
+downplaying its own risks; UK actors' (Coughlan, Bonneville, Lucas, Evans
++80 others) "Save Our Voices Now" campaign for legal voice-ownership
+rights; JPMorgan's ~$5B debt package for Volta's AI data centers, tied to
+a ~$10B Anthropic compute deal; a16z's new $1.1B "Machine Age" fund for
+AI physical infrastructure; Wrtn Technologies' $72M Series C (first
+Korean AI-services startup past $1T won valuation). Reconstructed via
+search (x.com/twitter.com still blocked). Caught and dropped 3 issues
+before posting: initial pick #1 (the Pentagon/Anthropic ruling) collided
+with Hacker News's independently-found same-day pick — left on HN per the
+native-source tiebreaker; initial pick #2 ("Instinct" hitting a $2.5B
+valuation) was a confirmed repeat of this routine's own X pick from
+08-25 — same funding round, same numbers, caught only via the full-history
+grep since it was 4 days outside the 3-day rolling list; initial pick #5
+(Tencent's Hy4 model) was the same underlying release as Hugging Face's
+own 08-27 pick (`tencent/Hy4-preview`) (2026-08-29)
 
 ## Entries
+
+- **2026-08-29**: Checked for an existing open PR first per `CLAUDE.md`'s
+  consolidation rule: `list_pull_requests` returned zero open PRs — clean
+  state. Confirmed the local branch was even with `origin/main` (both at
+  commit e99768f, yesterday's merged run) after fetching — no forgotten-push
+  risk. Read the 08-28 feedback thread directly via `slack_read_thread`:
+  zero replies — the zero-real-text-feedback streak continues unbroken.
+  Checked the channel for today's activity before starting research:
+  neither "Newsly" nor the consolidator automation had posted yet as of
+  session start — no new developments on the still-unresolved
+  3-automation overlap, so it was re-noted briefly in today's feedback
+  message rather than re-pushed as a fresh notification. Re-tested network
+  egress via the proxy status endpoint: no recent relay failures,
+  consistent with the known policy (HN/x.com blocked, GitHub/HF
+  unrestricted).
+
+  Per the playbook's default-after-silence policy, adopted two proposals
+  from 08-28 into `PLAYBOOK.md` today (both unopposed): `Anthropic/
+  claude-protein-binder-design` is now permanently excluded from Hugging
+  Face's picks (5 resurfacings with no new signal); and a new
+  report/postmortem/follow-up on an already-covered incident now counts as
+  a repeat by default unless it surfaces a materially new fact.
+
+  Ran the 4 source-research tasks as parallel background agents, each
+  briefed with all 4 sources' last-3-days picks and the standing
+  permanent-exclusion lists. **The mandatory manual full-history
+  cross-check (via targeted `Grep` of this file) caught 5 real issues
+  before posting — tying 08-22's record for most catches in one run,
+  and including two same-day cross-source collisions plus three
+  longer-gap repeats:**
+  1. Hacker News's initial pick #1 (a federal judge ruling the Pentagon's
+     blacklisting of Anthropic illegal) collided with X's independently-
+     found pick on the identical story — kept on Hacker News as the more
+     native hard-legal/policy home, per the standing tiebreaker.
+  2. Hacker News's initial pick #3 (GLM-5.3's open-weight release)
+     collided with Hugging Face's independently-found pick on the same
+     release — left on Hugging Face as the more native model-release
+     home, per the same tiebreaker used for the 08-01 DeepSeek-V4-Flash
+     case.
+  3. Hacker News's initial pick #4 (OpenAI's "Jalapeño" chip beating
+     Nvidia Blackwell) was a confirmed repeat of this routine's own HN
+     pick from just yesterday (08-28).
+  4. X's initial pick #2 ("Instinct" hitting a $2.5B valuation) was a
+     confirmed repeat of this routine's own X pick from 08-25 — identical
+     funding round, same $250M/Index-Benchmark/$2.5B numbers, 4 days back
+     and outside the 3-day rolling list, caught only by the full-history
+     grep.
+  5. X's initial pick #5 (Tencent's Hy4 model beating rivals on
+     benchmarks) was the same underlying release as Hugging Face's own
+     08-27 pick (`tencent/Hy4-preview`).
+  All 5 were swapped via supplementary research-agent calls before
+  posting; final result was a clean 5/5/5/5 with no source forced honest.
+  One pick (Hacker News's Unitree G1 "UniBLEed" Bluetooth exploit) was
+  posted with an explicit unconfirmed-thread-ID caveat rather than
+  dropped, since it was well-documented same-day by multiple security
+  outlets even without a locatable HN thread link.
+
+  One judgment call, flagged rather than silently decided: Hacker News's
+  pick #4 (SenteLabs' open-source "AI CEO" framework, OpenExecutive) is
+  circulating with an unverified "built after AI layoffs" origin story
+  that the project's own materials don't confirm — included with that
+  caveat spelled out in the post rather than dropped, proposed as the
+  new default in today's feedback message (flag-and-include over
+  drop-or-rewrite when the underlying technical story is solid).
+
+  Posted all 4 source threads plus one feedback-request message (leading
+  with the OpenExecutive-caveat question, then the two 08-28 default
+  adoptions, then today's 5 catches, the automation status update, and
+  the access note) to `#daily-ai-news`, then logged this entry, updated
+  `PLAYBOOK.md`'s permanent-exclusion and curation-rule lists, updated the
+  rolling "recently covered" lists (trimmed to 08-27 through 08-29),
+  merged directly to `main` per `CLAUDE.md`.
 
 - **2026-08-28**: Checked for an existing open PR first per `CLAUDE.md`'s
   consolidation rule: `list_pull_requests` returned zero open PRs — clean
