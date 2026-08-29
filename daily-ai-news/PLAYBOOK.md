@@ -224,6 +224,22 @@ step above.
   default-after-silence treatment as the other exclusions on this list —
   reversible any time Giulia says so, and a genuinely new, not-yet-covered
   model identity is still fair game.
+- **Adopted 2026-08-29 (proposed 08-28, unopposed)**: `Anthropic/
+  claude-protein-binder-design` is now permanently, silently excluded from
+  Hugging Face's picks absent a genuinely new version/benchmark/signal — it
+  resurfaced as a dropped repeat 5 times (08-19, 08-21, 08-23, 08-27, 08-28)
+  with no new signal each time. Same treatment as LTX-2.5/DeepSeek-V4-
+  Flash-0731/DeepSeek-V4-Pro-0813/etc. Reconsider if it gets a real update —
+  check directly, don't pattern-match on the name.
+- **Adopted 2026-08-29 (proposed 08-28, unopposed)**: a new report,
+  postmortem, or follow-up write-up on an incident this digest already
+  covered is treated as a repeat and dropped, unless it surfaces a
+  materially new fact (an arrest, a policy change, a number that wasn't
+  known before) — not just more forensic detail on the same event. First
+  applied 08-28 (OpenAI's postmortem on the Astra/Hugging-Face breach, and a
+  Dream Security report treated as the same incident as the 07-31 Thailand
+  Finance Ministry breach). Standing default now, always overridable by a
+  reply from Giulia in the feedback thread.
 - **Adopted 2026-08-26 (proposed 08-25, unopposed)**: GitHub Trending's
   `multica-ai/andrej-karpathy-skills` (a single markdown file with
   ~207K★, issues disabled, no commits since April) is now permanently,
