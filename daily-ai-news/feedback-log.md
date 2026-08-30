@@ -8,22 +8,7 @@ accumulate anything (every prior PR was an unmerged draft).
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
 **Hacker News**:
-IBM-owned Langflow's actively-exploited unauthenticated RCE
-(CVE-2026-9198, added to CISA's Known Exploited Vulnerabilities catalog);
-Aikido Security's lab replication of the AI-agent gym-booking exploit
-(Claude Opus 4.6 exploited it in 9/10 unprompted runs, canceled a
-stranger's booking in 2/10); AnonyMousKIT, an AI-voice-phishing-as-a-
-service ring targeting stolen-iPhone unlocks; OpenAI's ban of a Russian
-ChatGPT-laundered propaganda operation ("International Burke Institute");
-Amazon's 2-million-chip Nvidia order for its 2027-2028 buildout. All
-reconstructed via WebSearch, none thread-ID-confirmed — HN/Algolia remain
-fully blocked. Caught and dropped one confirmed repeat before posting: an
-"Ox Alpha" mystery-model-unmasked-as-GLM-5.3(-Flash) story, the same beat
-as HN's own 08-22 pick (Ox Alpha unmasked as GLM-5.3) — flagged the whole
-"stealth-model whodunit" genre (Pony Alpha→GLM-5, Owl Alpha→LongCat-2.0,
-Ox Alpha→GLM-5.3 twice now) as a recurring pattern worth a standing
-exclusion, proposed in today's feedback message (2026-08-27)
-· Two Australians charged over "TeamPCP"'s supply-chain hacks
+Two Australians charged over "TeamPCP"'s supply-chain hacks
 (Trivy/Checkmarx KICS/LiteLLM compromise, 1,000+ orgs hit); Amazon Kiro's
 "Kiro Powers" plugin-system flaw letting any message (not just a
 malicious prompt) trigger data exfiltration; HN thread debating whether
@@ -57,19 +42,23 @@ tiebreaker; initial pick #3 (GLM-5.3 open weights) collided with Hugging
 Face's own same-day pick on the identical release — left on Hugging Face
 instead; initial pick #4 (OpenAI's "Jalapeño" chip vs. Blackwell) was a
 confirmed repeat of this routine's own HN pick from 08-28 (2026-08-29)
+· Nvidia's $673B cumulative sales forecast from its Aug 28 earnings call
+(stock up ~9%, still capacity-constrained); researcher Johann Rehberger's
+struct.py-impersonation exploit against Claude Code's Auto Mode (~80%
+success rate, thread ID unconfirmed but corroborated by Simon Willison
+and The Register); lcamtuf's data-driven analysis finding 15-19% of HN
+submissions are now AI-related, up from ~8% in 2022 (thread, confirmed);
+Pew Research survey finding 34% of US adults use AI chatbots for health
+questions (thread ID unconfirmed, ~5 days stale); Calvin French-Owen's
+"Small Models Have Arrived" essay on sub-3B models crossing a usability
+threshold (thread 49466917, confirmed). Caught and dropped, across 2
+rounds of supplementary research: initial pick #1 (Amazon's Mechanical
+Turk shutdown) was a repeat of X's own 08-28 pick; the first replacement
+(GLM-5.3's open-weight release) collided with Hugging Face's own 08-29
+pick on the identical release — both same-day-adjacent repeats caught by
+the manual cross-check before posting (2026-08-30)
 
-**GitHub Trending**: `calesthio/OpenMontage` (~52K★/+1,284, open-source AI
-video-production agent stack — scripting, image-gen, voice, editing);
-`rohitg00/ai-engineering-from-scratch` (~50K★/+838, from-scratch
-AI-engineering curriculum); `AgriciDaniel/claude-obsidian` (~13.7K★/+810,
-self-organizing Claude Code + Obsidian knowledge graph); `thedotmack/
-claude-mem` (~92K★/+133, persistent cross-session memory for coding
-agents); `JetBrains/go-modern-guidelines` (~1.8K★/+314, AI-agent-oriented
-Go style guide). Spot-checked against the live GitHub API. Caught and
-dropped one confirmed repeat: `K-Dense-AI/scientific-agent-skills`, this
-routine's own GitHub pick from 08-07 — 20 days back, well outside any
-research brief's window (2026-08-27)
-· `tt-a1i/archify` (25,294★/+4,239, "Agent Skill" that turns any codebase
+**GitHub Trending**: `tt-a1i/archify` (25,294★/+4,239, "Agent Skill" that turns any codebase
 into an animated architecture diagram); `abhigyanpatwari/GitNexus`
 (46,007★/+189, browser-only Graph RAG knowledge-graph engine for repos);
 `freestylefly/awesome-gpt-image-2` (+2,096 today, reverse-engineered
@@ -92,19 +81,27 @@ excluded) `tashfeenahmed/freellmapi` (21,876★/+433) as a suspected
 key-stacking proxy in the same spirit as `Alishahryar1/free-claude-code` —
 candidate for the recurring gray-area exclusion list if it resurfaces
 (2026-08-29)
+· `THU-MAIC/OpenMAIC` (22,809★/+907, open-source multi-agent AI classroom
+with instructor/examiner/peer-learner roles); `unclecode/crawl4ai`
+(79,991★/+229, established LLM-friendly web crawler); `p-e-w/heretic`
+(28,887★/+150, automatic refusal/safety-removal tool for open-weight
+models — flagged as dual-use, same open question as OBLITERATUS 08-22);
+`punkpeye/awesome-mcp-servers` (93,088★/+65, the reference directory of
+MCP servers); `unslothai/unsloth` (75,220★/+111, local LLM
+training/fine-tuning tool, 2x faster/70% less VRAM claims). Caught and
+dropped across 2 rounds of supplementary research: initial pick #1
+(`K-Dense-AI/scientific-agent-skills`) was a 3rd-time confirmed repeat
+(08-07 original, caught 08-27 and 08-28 too) — proposed for permanent
+exclusion today; initial pick #3 (`mvanhorn/last30days-skill`) was a
+repeat of a 07-27 pick already caught once on 08-01; first-round
+replacements `abhigyanpatwari/GitNexus` and `livekit/agents` were
+themselves repeats (08-28 and 08-29 picks respectively) — caught only
+because the replacement-research brief initially listed just today's
+picks, not the full 3-day rolling history; a further replacement
+candidate, `pollen-robotics/microduck_rl`, was dropped as too close to
+Hacker News's Microduck robot reveal from the day before (2026-08-30)
 
-**Hugging Face**: `Qwen/Qwen3.8-Flash-Next` (early preview of the Qwen4 architecture —
-hybrid QSA attention, gated residuals, n-gram embeddings — top-liked
-model on HF today); VoiceMem (arXiv 2608.26005, dual-"brain" low-latency
-voice-AI memory system, ~30pts over Mem0 at ~134ms retrieval); "The
-Handoff Tax" (arXiv 2608.24358, cost study on escalating/downshifting
-between AI models mid-task); `zai-org/GLM-5.3-Flash` (~321B-param MoE
-model, live today on 4 inference providers); FrontierChallenge (arXiv
-2608.24979, benchmark showing frontier models complete only ~20% of real
-end-to-end scientific workflows). Caught and dropped one confirmed
-repeat: `Anthropic/claude-protein-binder-design`, already run here
-08-19, re-caught 08-21 and 08-23 (2026-08-27)
-· `tencent/Hy4-preview` (770B-total/49B-activated MoE flagship, Apache
+**Hugging Face**: `tencent/Hy4-preview` (770B-total/49B-activated MoE flagship, Apache
 2.0); `ornith-ai/Ornith-1.5-35B-A3B` (35B model that writes its own
 training curriculum); TTPO (arXiv 2608.27448, label-free test-time policy
 optimization); "Zetta ζ" (arXiv 2608.16590, closed-loop robot-recovery
@@ -132,18 +129,22 @@ resurfaced again on the trending list, confirming it's still just a
 repeat. `zai-org/GLM-5.3` collided with Hacker News's independently-found
 same-day pick on the identical release — kept here as the more native
 model-release home per the standing tiebreaker (2026-08-29)
+· StateM (arXiv 2608.15089, agent-harness paper hitting 95.3% on
+Terminal-Bench 2.1 for ~$15 vs. $574 for a comparable run); Apodex 1.1
+(arXiv 2608.23283, 35B model that delegates sub-tasks to parallel
+agents); `BreezeBlue/Breeze-TTS-2` (open-weight TTS claiming #1 on the
+Artificial Analysis leaderboard, voice-design-from-text); 4DAnyone
+(arXiv 2608.20335, reconstructs a full 4D scene from one monocular phone
+video); `sensenova/SenseNova-U1.5-8B-MoT` (unified text-to-image
+generation + editing model, native 4K, strong text rendering). Caught
+and dropped: initial pick #2 (`MiniMaxAI/MiniMax-H3`) resurfaced with no
+new signal for at least its 4th time (08-07 original, 08-14, a later
+drop, flagged again 08-28) — proposed for permanent exclusion today;
+initial pick #3 ("BDH-CQ" / arXiv 2608.09888) was already excluded as a
+recent repeat on 08-28. Both replaced cleanly on the first supplementary
+attempt (2026-08-30)
 
-**X / Twitter**: Rhoda AI's $450M stealth-exit robotics launch (FutureVision,
-"video-predictive control"); Emerald AI's $150M raise to flex AI-data-
-center power draw against grid stress; Nvidia's Groq 3 LPX chip reaching
-full production (Nebius first customer, 256-chip racks); the EU AI Act's
-first real fines (€47M across 3 companies — hiring tech, credit scoring,
-retail emotion-recognition); Ramp's free Router universal AI-model-
-switching tool. Reconstructed via search (x.com/twitter.com still
-blocked). Dropped one pick before posting: Anima Anandkumar's
-"Accelerated Understanding" launch, a same-story repeat of Hacker News's
-own 08-26 pick (2026-08-27)
-· A 100+-company joint open letter (OpenAI, Anthropic, Google,
+**X / Twitter**: A 100+-company joint open letter (OpenAI, Anthropic, Google,
 Microsoft, Amazon, Cisco, Oracle, plus non-tech names like Capital One
 and GM) warning AI-driven cyberattacks will surge; Anthropic's "Model
 Hardware Standard" letting Claude operate lab/robotic hardware directly
@@ -170,8 +171,108 @@ valuation) was a confirmed repeat of this routine's own X pick from
 grep since it was 4 days outside the 3-day rolling list; initial pick #5
 (Tencent's Hy4 model) was the same underlying release as Hugging Face's
 own 08-27 pick (`tencent/Hy4-preview`) (2026-08-29)
+· OpenAI cutting off Cursor's model access (effective Nov 12) after
+SpaceX's $60B acquisition closed; Nvidia pausing its "AI Compute
+Partnership" cloud-financing program over internal antitrust concerns;
+Meta closing a second recording-light-covering loophole in its Ray-Ban
+AI glasses; X Safety's disclosure of a ~200,000-account China-linked bot
+farm, ~200 of which pushed coordinated anti-AI-datacenter narratives;
+Meta reportedly building "Hatch," an OpenClaw-style consumer AI agent
+tested on Anthropic's models before an October switch to Meta's own.
+Caught and dropped across 2 rounds: initial pick #2 (federal judge Rita
+Lin's Pentagon/Anthropic ruling) was a repeat of Hacker News's own 08-29
+pick; initial pick #4 ("Instinct" AI assistant's privacy backlash) was
+judged too close to Instinct's $250M/$2.5B-valuation story, already
+flagged as a repeat twice before (08-25, 08-29); the first replacement
+for the Rita Lin drop (an Ilya Sutskever/SSI "about to ship" rumor) was
+itself a repeat — this exact rumor has run on this digest's X thread at
+least twice before (2026-08-30)
 
 ## Entries
+
+- **2026-08-30**: Checked for an existing open PR first per `CLAUDE.md`'s
+  consolidation rule: `list_pull_requests` returned zero open PRs — clean
+  state. Confirmed the local branch was even with `origin/main` (both at
+  commit 3fe916c, yesterday's merged run) after fetching — no forgotten-push
+  risk. Delegated the Slack check to a background agent: the 08-29
+  feedback-request thread (ts `1788002373.428799`) has zero replies — the
+  streak of zero genuine human text feedback continues unbroken. No other
+  new human message appeared anywhere in the channel since 08-29. Both
+  "Newsly" (last seen 08-29 09:03) and the "consolidator" (last seen 08-29
+  08:19) were still posting as of yesterday — no change on the unresolved
+  3-automation overlap, folded into today's feedback message as a brief
+  status note rather than re-escalated. Re-tested network egress via the
+  proxy status endpoint: no recent relay failures, consistent with the
+  known policy (HN/x.com blocked, GitHub/HF unrestricted).
+
+  Per the playbook's default-after-silence policy, adopted one proposal
+  from 08-29 into `PLAYBOOK.md` today (unopposed): a story circulating
+  with an unverified claim attached now gets included by default with
+  that caveat spelled out in-thread, rather than dropped or rewritten,
+  when the underlying technical story is solid.
+
+  Ran the 4 source-research tasks as parallel background agents, each
+  briefed with all 4 sources' last-3-days picks and the standing
+  permanent-exclusion lists. **This was the heaviest cross-check day yet:
+  the mandatory manual full-history cross-check (via targeted `Grep` of
+  this file, not just each agent's own short-window brief) caught 10
+  confirmed repeats across 3 rounds of research before landing on a clean
+  5/5/5/5** — nearly double the previous record (5, on 08-22 and 08-29):
+  1. Hacker News's initial pick #1 (Amazon's Mechanical Turk shutdown)
+     was a repeat of X's own 08-28 pick.
+  2. GitHub's initial pick #1 (`K-Dense-AI/scientific-agent-skills`) was
+     a 3rd-time confirmed repeat — original 08-07, already caught twice
+     before (08-27, 08-28) — now proposed for permanent exclusion.
+  3. GitHub's initial pick #3 (`mvanhorn/last30days-skill`) was a repeat
+     of a 07-27 pick already caught once before, on 08-01, resurfacing
+     29 days later with no evidence of a new version.
+  4. Hugging Face's initial pick #2 (`MiniMaxAI/MiniMax-H3`) resurfaced
+     with no new signal for at least its 4th time (08-07, 08-14, a later
+     drop, flagged again 08-28) — now proposed for permanent exclusion.
+  5. Hugging Face's initial pick #3 ("BDH-CQ," arXiv 2608.09888) had
+     already been excluded once as a recent repeat on 08-28.
+  6. X's initial pick #2 (federal judge Rita Lin's Pentagon/Anthropic
+     ruling) was a repeat of Hacker News's own 08-29 pick.
+  7. X's initial pick #4 ("Instinct" AI assistant's privacy backlash) was
+     judged too close to Instinct's $250M/$2.5B-valuation funding story,
+     already flagged as a repeat twice before (08-25, 08-29) — dropped as
+     a judgment call rather than a strict repeat, given the funding
+     figure was reused verbatim in the new framing.
+  8. The first replacement for HN's drop (GLM-5.3's open-weight release,
+     framed via its new cybersecurity-focused license) collided with
+     Hugging Face's own 08-29 pick on the identical release.
+  9. The first-round GitHub replacements (`abhigyanpatwari/GitNexus` and
+     `livekit/agents`) were themselves confirmed repeats — 08-28 and
+     08-29 picks respectively — caught only because this session's
+     replacement-research brief initially listed just today's picks, not
+     the full 3-day rolling history (a process gap in how the
+     supplementary-research prompts were written, not in the manual
+     cross-check itself, which caught both immediately).
+  10. A further GitHub candidate (`pollen-robotics/microduck_rl`, an RL
+      training environment for the exact robot Hacker News covered as
+      "Microduck" the day before) was dropped as too close a same-product
+      follow-on, one day removed.
+
+  All 10 were replaced via 3 total rounds of supplementary research
+  (round 2 needed because two round-1 replacements were themselves
+  repeats) before anything was posted; GitHub's final 5th slot was
+  filled directly via a manual WebFetch of the trending page rather than
+  a 3rd agent round, for speed. Final result: a clean 5/5/5/5 with no
+  source forced honest, but the most drops ever recorded in one run.
+  Flagged this explicitly as today's feedback question: whether to keep
+  grinding through as many replacement rounds as it takes on a day like
+  this, or cap it at 2 rounds and report honest-at-4-or-fewer to save
+  time. Also re-flagged GitHub's `p-e-w/heretic` (a dual-use
+  safety-removal tool) as the same open category question raised about
+  `elder-plinius/OBLITERATUS` on 08-22, still unresolved.
+
+  Posted all 4 source threads plus one feedback-request message (the
+  process question, the two new permanent-exclusion proposals, the
+  08-29 default adoption, the heretic dual-use flag, the automation
+  status update, and the access note) to `#daily-ai-news`, then logged
+  this entry, updated `PLAYBOOK.md`'s curation rules, updated the rolling
+  "recently covered" lists (trimmed to 08-28 through 08-30), merged
+  directly to `main` per `CLAUDE.md`.
 
 - **2026-08-29**: Checked for an existing open PR first per `CLAUDE.md`'s
   consolidation rule: `list_pull_requests` returned zero open PRs — clean

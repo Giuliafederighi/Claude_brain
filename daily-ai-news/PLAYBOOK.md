@@ -278,6 +278,14 @@ step above.
   this catches that a research agent checking "does this smell like an old
   story" can miss).
 
+- **Adopted 2026-08-30 (proposed 08-29, unopposed)**: a story circulating with an
+  unverified claim attached (e.g. an origin story a project's own materials
+  don't confirm) is now included by default with that caveat spelled out
+  in-thread, rather than dropped or silently rewritten, as long as the
+  underlying technical story is solid. First applied 08-29 to Hacker News's
+  SenteLabs/OpenExecutive pick (unverified "built after AI layoffs" origin
+  story). Standing default now, always overridable by a reply from Giulia in
+  the feedback thread.
 - **Added 2026-08-01 — a new "same release, different angle" variant,
   open question**: Hugging Face and X/Twitter independently surfaced the
   *same specific model release* (DeepSeek's same-day V4-Flash refresh) —
