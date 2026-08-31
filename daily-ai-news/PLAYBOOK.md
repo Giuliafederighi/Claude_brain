@@ -240,6 +240,21 @@ step above.
   Dream Security report treated as the same incident as the 07-31 Thailand
   Finance Ministry breach). Standing default now, always overridable by a
   reply from Giulia in the feedback thread.
+- **Adopted 2026-08-31 (proposed 08-30, unopposed)**: `K-Dense-AI/
+  scientific-agent-skills` is now permanently, silently excluded from
+  GitHub's picks absent genuine new commit/issue activity — it resurfaced
+  as a confirmed repeat 3 times (original 08-07, caught again 08-27, 08-28,
+  and 08-30). Joining `multica-ai/andrej-karpathy-skills` on GitHub's
+  permanent-exclusion list. Reconsider if it ever shows real activity —
+  check directly before excluding, don't just pattern-match on the name.
+- **Adopted 2026-08-31 (proposed 08-30, unopposed)**: `MiniMaxAI/
+  MiniMax-H3` is now permanently, silently excluded from Hugging Face's
+  picks absent a genuinely new checkpoint/benchmark/signal — it resurfaced
+  with no new signal at least 4 times (08-07 original, 08-14, a later drop,
+  flagged again 08-28 and 08-30). Same treatment as LTX-2.5/DeepSeek-V4-
+  Flash-0731/DeepSeek-V4-Pro-0813/claude-protein-binder-design/etc.
+  Reconsider if it gets a real update — check directly, don't pattern-match
+  on the name.
 - **Adopted 2026-08-26 (proposed 08-25, unopposed)**: GitHub Trending's
   `multica-ai/andrej-karpathy-skills` (a single markdown file with
   ~207K★, issues disabled, no commits since April) is now permanently,
