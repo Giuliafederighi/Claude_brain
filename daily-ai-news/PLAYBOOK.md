@@ -255,6 +255,27 @@ step above.
   Flash-0731/DeepSeek-V4-Pro-0813/claude-protein-binder-design/etc.
   Reconsider if it gets a real update — check directly, don't pattern-match
   on the name.
+- **Proposed 2026-08-31, adopting if unopposed**: OpenAI's "Astra solved
+  10 open math/CS problems for ~$2,000" story is proposed for permanent
+  exclusion from X (and any source) — it resurfaced for at least the 5th
+  time today (08-03 original, re-dropped 08-08, 08-25, and again 08-31)
+  with no new benchmark or version each time. Same treatment as the other
+  permanent exclusions above.
+- **New recurring gray-area item, added 2026-08-31**: `debpalash/
+  VoiceStudio` (GitHub) was excluded 08-22 as suspected star-inflation
+  (extremely high star velocity vs. implausibly low issue count), but
+  resurfaced 08-31 with a clean-looking independent read (real product
+  site, AGPL license, forks scaling proportionally at ~15%). Conflicting
+  verdicts 9 days apart — treat like `Alishahryar1/free-claude-code`: a
+  recurring re-check-by-name item, not a permanent exclusion or a cleared
+  repo. Re-evaluate fresh each time it resurfaces rather than trusting
+  either past verdict.
+- **Proposed 2026-08-31, adopting if unopposed**: cap supplementary
+  research at 2 rounds total per run; if a source is still short of 5
+  after that, post honest-at-N for that source rather than continuing to
+  grind through more rounds. Raised after 08-30 needed 3 rounds (10 drops)
+  and 08-31 needed 1 round (4 drops) with no reply either time on whether
+  unlimited grinding is the right default.
 - **Adopted 2026-08-26 (proposed 08-25, unopposed)**: GitHub Trending's
   `multica-ai/andrej-karpathy-skills` (a single markdown file with
   ~207K★, issues disabled, no commits since April) is now permanently,
