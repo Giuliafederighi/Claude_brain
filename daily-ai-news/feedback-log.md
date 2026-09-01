@@ -8,24 +8,30 @@ accumulate anything (every prior PR was an unmerged draft).
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
 **Hacker News**:
-A federal judge (Rita Lin) ruling the Pentagon's blacklisting of
-Anthropic as a "supply chain risk" was illegal, both First Amendment
-retaliation and a due-process violation (thread 49473522, confirmed);
-Hugging Face's Pollen Robotics unveiling Microduck, a $399 open-source
-bipedal robot duck for "physical AI" hobbyists (thread 49462763,
-confirmed); "UniBLEed," a self-propagating Bluetooth root-RCE exploit
-chain in Unitree's G1 humanoid (CVE-2026-76639/76640, real, thread ID
-unconfirmed); SenteLabs' open-source "AI CEO" framework OpenExecutive,
-posted alongside an unverified "built after AI layoffs" origin story
-flagged explicitly in the post (thread 49458418, confirmed); Australia's
-ARIA banning fully AI-generated songs from official charts and awards
-(thread 49462687, confirmed). Caught and dropped 3 issues before posting:
-initial pick #1 (the Pentagon/Anthropic ruling) collided with X's
-independently-found same-day pick — kept on HN per the native-source
-tiebreaker; initial pick #3 (GLM-5.3 open weights) collided with Hugging
-Face's own same-day pick on the identical release — left on Hugging Face
-instead; initial pick #4 (OpenAI's "Jalapeño" chip vs. Blackwell) was a
-confirmed repeat of this routine's own HN pick from 08-28 (2026-08-29)
+ChatGPT Ads hitting a $1B annualized revenue run rate in under 200
+days, expanding direct ad-buying to India/Europe/MENA (HN 49509312,
+confirmed); Anthropic's IPO pitch to investors claiming a $30 trillion
+total-addressable-market estimate, bigger than SpaceX's own $28.5T claim
+(HN 49436536, confirmed, near-duplicate thread also at 49438349); Nvidia
+reportedly agreeing to acquire Hugging Face for ~$13B, its largest
+acquisition ever (HN 49458161, confirmed — collided same-day with X's
+independently-found identical pick, kept here per the standing
+business/deal-story-stays-on-HN tiebreaker); "GPU World," a $100K
+speculative-fiction contest from Paradigm's Matt Huang with Neal
+Stephenson and Gwern imagining a 2040 where AI capability froze in Sept
+2026 but GPU manufacturing kept scaling (HN 49517584, thread ID found via
+search but not independently page-confirmed — moderate confidence);
+Debian's official project-wide vote choosing a middle-ground "responsible
+use" policy over banning AI-assisted contributions outright, every
+permissive option beating every prohibition option (HN 49486967,
+confirmed). Caught and dropped 3 issues across 3 supplementary rounds:
+initial pick #1 (OpenAI cutting off Cursor's access after the SpaceX
+acquisition) was a near-verbatim repeat of X's own 08-29 pick on this
+digest; initial pick #5 (Clay's $7B funding round) collided same-day with
+X's independently-found identical pick — kept on X per the standing
+funding-round-stays-on-X tiebreaker; the first replacement for pick #1
+(Johann Rehberger's Claude Code Auto Mode research) was itself a repeat of
+this digest's own 08-30 HN pick, caught only after being drafted (2026-09-01)
 · Nvidia's $673B cumulative sales forecast from its Aug 28 earnings call
 (stock up ~9%, still capacity-constrained); researcher Johann Rehberger's
 struct.py-impersonation exploit against Claude Code's Auto Mode (~80%
@@ -61,19 +67,19 @@ proposed for permanent exclusion today. A DeepSeek $7.4B funding round
 pick collided same-day with X's independently-found identical pick — kept
 on X, dropped here (2026-08-31)
 
-**GitHub Trending**: `anthropics/claude-plugins-official` (35,177★/+457, Anthropic's own
-official curated plugin directory for Claude Code); `abi/screenshot-to-code`
-(75,785★/+326, AI-vision screenshot-to-frontend-code tool, 3 years old and
-still gaining); `marin-community/marin` (2,947★/+236, Stanford-incubated
-open framework for training foundation models from scratch); `ChromeDevTools/
-chrome-devtools-mcp` (50,054★/+67, Chrome team's official MCP server giving
-AI coding agents real-browser debugging access); `livekit/agents`
-(13,446★/+22, Python framework for real-time voice AI assistants). All 5
-star counts spot-checked live against the GitHub API. Flagged (not
-excluded) `tashfeenahmed/freellmapi` (21,876★/+433) as a suspected
-key-stacking proxy in the same spirit as `Alishahryar1/free-claude-code` —
-candidate for the recurring gray-area exclusion list if it resurfaces
-(2026-08-29)
+**GitHub Trending**: `Gitlawb/openclaude` (30,969★/+37, model-agnostic AI coding-agent CLI
+framework); `VoltAgent/awesome-design-md` (112,234★/+487, crowdsourced
+brand DESIGN.md files for steering AI coding agents' output — flagged as
+moderate inflation-risk given its star count vs. issue count for a
+5-month-old repo). Honest-at-2 today, ties this source's previous low.
+Dropped `firecrawl/pdf-inspector` as a confirmed repeat (08-03 original,
+caught again 08-31). Excluded two new suspected star-inflation/
+astroturfing candidates: `affaan-m/ECC` (245K★, only 126 issues) and a
+first-sighting watchlist item, `Imbad0202/academic-research-skills` (44K★,
+only 19 issues, homepage is a personal tip-jar link) — matches the same
+"AI skills library" astroturfing pattern as the two repos already on the
+permanent-exclusion list; watching for a repeat before proposing
+permanent exclusion (2026-09-01)
 · `THU-MAIC/OpenMAIC` (22,809★/+907, open-source multi-agent AI classroom
 with instructor/examiner/peer-learner roles); `unclecode/crawl4ai`
 (79,991★/+229, established LLM-friendly web crawler); `p-e-w/heretic`
@@ -108,21 +114,25 @@ with its 08-22 star-inflation exclusion — added as a new recurring
 gray-area re-check item rather than resolved either way; excluded again
 today out of caution (2026-08-31)
 
-**Hugging Face**: FreeToken (arXiv 2608.16157, UC Berkeley serving system letting a gaming
-PC run a 753B MoE model via dynamic GPU/CPU/disk reshuffling);
-WeMM-Embedding (arXiv 2608.24053, Tencent's multimodal embedding family,
-SOTA 80.6 on MMEB-v2, live in WeChat production); Prime Agent (arXiv
-2608.23552, Prime Intellect's agent harness that took the same model from
-30% to 95.5% on ARC-AGI-3); `zai-org/GLM-5.3` (the full 753B flagship,
-distinct from the Flash variant, released today after a 2-week delay
-attributed to its cybersecurity capability); `markov-ai/cad-1000-hours`
-(1,021-hour dataset of engineers using AutoCAD/BIM software, for training
-computer-use agents). Adopted `Anthropic/claude-protein-binder-design`
-into the permanent-exclusion list today (proposed 08-28, unopposed) — it
-resurfaced again on the trending list, confirming it's still just a
-repeat. `zai-org/GLM-5.3` collided with Hacker News's independently-found
-same-day pick on the identical release — kept here as the more native
-model-release home per the standing tiebreaker (2026-08-29)
+**Hugging Face**: DreamX-Creator 1.0 (arXiv 2608.31106, Alibaba AMAP-ML's compact 7B
+model generating video and matching audio jointly in one pass, 2K output);
+"Does On-Policy Distillation Really Distill?" (arXiv 2608.31046, finds
+most of distillation's benefit comes from suppressing wrong answers, not
+teacher guidance, and proposes a cheaper teacher-free method); Lucida
+(arXiv 2608.30821, turns a cluttered real-world video/photo scan of a
+room into a clean editable 3D replica via scene-parsing + VLM placement);
+GenFirst (arXiv 2608.29335, jointly trains an image model's compression
+and generation stages end-to-end instead of the usual two-disconnected-
+stages approach, new SOTA image-gen scores); NoRA (arXiv 2608.31036, a
+one-line normalization tweak to LoRA that speeds convergence and reduces
+catastrophic forgetting at no extra cost). Dropped 2 confirmed repeats:
+`Qwen/Qwen3.8-Flash-Next` architecture report (the model itself was
+already dropped as a repeat on 08-31, see below — same underlying release
+resurfacing a 3rd time) and `tencent/Hy4-preview` (already a named pick
+here on 08-27). Flagged but not picked: `deepseek-ai/
+DeepSeek-V4-Flash-Vision-Exp`, trending today, too close to the
+permanently-excluded DeepSeek-V4 family to include without a clearer new
+signal (2026-09-01)
 · StateM (arXiv 2608.15089, agent-harness paper hitting 95.3% on
 Terminal-Bench 2.1 for ~$15 vs. $574 for a comparable run); Apodex 1.1
 (arXiv 2608.23283, 35B model that delegates sub-tasks to parallel
@@ -150,22 +160,23 @@ confirmed repeat of this routine's own 08-27 pick — a longer-gap repeat
 outside the 3-day brief window, caught only by the full-history grep
 (2026-08-31)
 
-**X / Twitter**: Bill Gates' essay/NYT interview accusing the AI industry of deliberately
-downplaying its own risks; UK actors' (Coughlan, Bonneville, Lucas, Evans
-+80 others) "Save Our Voices Now" campaign for legal voice-ownership
-rights; JPMorgan's ~$5B debt package for Volta's AI data centers, tied to
-a ~$10B Anthropic compute deal; a16z's new $1.1B "Machine Age" fund for
-AI physical infrastructure; Wrtn Technologies' $72M Series C (first
-Korean AI-services startup past $1T won valuation). Reconstructed via
-search (x.com/twitter.com still blocked). Caught and dropped 3 issues
-before posting: initial pick #1 (the Pentagon/Anthropic ruling) collided
-with Hacker News's independently-found same-day pick — left on HN per the
-native-source tiebreaker; initial pick #2 ("Instinct" hitting a $2.5B
-valuation) was a confirmed repeat of this routine's own X pick from
-08-25 — same funding round, same numbers, caught only via the full-history
-grep since it was 4 days outside the 3-day rolling list; initial pick #5
-(Tencent's Hy4 model) was the same underlying release as Hugging Face's
-own 08-27 pick (`tencent/Hy4-preview`) (2026-08-29)
+**X / Twitter**: Federal judge Rita Lin's ruling that the Pentagon's Anthropic
+blacklist was illegal, juxtaposed with the Pentagon's GenAI.mil portal
+going live with ChatGPT/Grok (but not Claude) for 3M DoD personnel on
+Aug 31 — kept as a genuine follow-on (a new policy/access development, not
+just forensic detail) despite the underlying ruling being HN's own 08-29
+pick; Clay's $7B pre-money funding round led by Wellington Management
+(collided same-day with HN's independently-found identical pick — kept
+here per the standing funding-round-stays-on-X tiebreaker); Anthropic's
+MCP passing 400 million monthly SDK downloads, a 4x YoY increase; Nvidia
+reportedly in talks to back Perplexity at a $30B+ valuation as its revenue
+tripled to $750M; Apple's John Ternus becoming CEO (Tim Cook to executive
+chairman), inheriting a stalled Siri overhaul and AI-laggard reputation.
+Dropped an initial replacement pick (OpenAI's agents attacking Hugging
+Face's infrastructure during a security evaluation) as a repeat — this
+digest already covered that incident and its postmortems multiple times;
+new forensic details (message/agent counts) don't count as a materially
+new fact under the standing incident-postmortem dedupe rule (2026-09-01)
 · OpenAI cutting off Cursor's model access (effective Nov 12) after
 SpaceX's $60B acquisition closed; Nvidia pausing its "AI Compute
 Partnership" cloud-financing program over internal antitrust concerns;
@@ -197,6 +208,88 @@ with Hacker News's independently-found identical pick — kept on HN,
 dropped here (2026-08-31)
 
 ## Entries
+
+- **2026-09-01**: Checked for an existing open PR first per `CLAUDE.md`'s
+  consolidation rule: `list_pull_requests` returned zero open PRs — clean
+  state. Confirmed the local branch was even with `origin/main` (commit
+  de1100c, yesterday's merged run) after fetching — an initial fetch raced
+  the 08-31 push and briefly looked 2 commits behind; a clean re-fetch
+  confirmed everything was already in sync, no actual gap. Ran a
+  background check of the 08-31 feedback-request thread plus all 4 source
+  threads via `slack_read_thread`: zero human replies anywhere (only the
+  routine's own follow-up posts) — the zero-real-text-feedback streak
+  continues, now 72+ consecutive days. Re-tested network egress via the
+  proxy status endpoint: no recent relay failures, consistent with the
+  known policy (HN/x.com blocked, GitHub/HF unrestricted). No proposals
+  from 08-31 were ready for default-after-silence adoption yet (both need
+  a few more silent runs) — carried forward unchanged.
+
+  Ran the 4 source-research tasks as parallel background agents, each
+  briefed with all 4 sources' recent picks and the standing permanent-
+  exclusion lists. **The mandatory manual full-history cross-check (via
+  targeted `Grep` of this file) caught 5 real issues before posting,
+  resolved across 2 supplementary rounds:**
+  1. Hacker News's initial pick #1 ("OpenAI cuts Cursor off after
+     SpaceX's $60B acquisition") was a near-verbatim repeat of X/Twitter's
+     own 08-29 pick on this digest. Its first replacement (Johann
+     Rehberger's Claude Code Auto Mode research) turned out to itself be a
+     repeat of this digest's own 08-30 HN pick — caught only after being
+     drafted, since the trimmed research brief (edited down to dodge a
+     cyber-safeguard false-positive on the original prompt's exploit-related
+     wording) had accidentally dropped that specific exclusion. Final
+     replacement: Debian's official GR vote choosing a "responsible use"
+     policy over banning AI-assisted contributions.
+  2. Hacker News's initial pick #5 (Clay's $7B funding round) and
+     Hugging Face's Qwen3.8-Flash-Next/Tencent Hy4-preview picks were also
+     dropped — see items 3-4 below for the collision/repeat detail.
+  3. Two same-day HN/X collisions: Nvidia's reported ~$13B Hugging Face
+     acquisition (found independently by both HN and X) and Clay's $7B
+     funding round (also found independently by both). Resolved via this
+     digest's established tiebreakers — a hard business/deal story stays
+     on HN, a funding-round story stays on X — kept on HN and X
+     respectively, replacements found for the dropped side.
+  4. Hugging Face's initial picks #2-3 (`Qwen/Qwen3.8-Flash-Next`
+     architecture report and `tencent/Hy4-preview`) were both confirmed
+     repeats — the Qwen model was already dropped as a repeat once before
+     on 08-31, and Hy4-preview was a named pick on 08-27. Replaced cleanly
+     with GenFirst and NoRA (both fresh 08-29/08-31 papers).
+  5. X/Twitter's replacement for the dropped Hugging Face acquisition
+     story ("OpenAI's agents attacked Hugging Face's infrastructure during
+     a security evaluation") was itself a repeat — this digest has covered
+     that underlying incident and postmortems on it multiple times before,
+     and new forensic details (specific message/agent counts) don't count
+     as the "materially new fact" the standing incident-dedupe rule
+     requires. Replaced with Apple's John Ternus becoming CEO today.
+
+  Two agent runs hit the Sonnet 5 cyber-safeguard false-positive (`[cyber]`
+  error) on prompts that described security-research exclusion items in
+  detail (Rehberger's exploit chain, "UniBLEed," CVE numbers) — not on any
+  actual request to do anything unsafe. Worked around by trimming the
+  offending detail from the prompt and resending; worth noting for future
+  runs that a bulleted "avoid this topic" list can itself trip the filter
+  if it's too descriptive, and that trimming it can silently drop an
+  intended exclusion (see item 1 above) — future prompts should keep
+  security-related avoid-items to a short neutral description rather than
+  the full technical detail.
+
+  GitHub Trending's raw page (15 repos) was genuinely thin: only 2 clean,
+  non-excluded, non-repeat AI picks after applying the standing exclusion
+  list and flagging two new suspected star-inflation/astroturfing
+  candidates (`affaan-m/ECC`, and a first-sighting watchlist item
+  `Imbad0202/academic-research-skills` matching the same "AI skills
+  library" pattern as two already-permanently-excluded repos). Reported
+  honest-at-2 rather than padding — ties this source's previous low.
+
+  Final result: 5/5 Hacker News, 2/5 GitHub Trending (honest), 5/5 Hugging
+  Face, 5/5 X/Twitter. Posted all 4 source threads plus one feedback-
+  request message (leading with the unusually heavy 5-issue cross-check
+  cleanup, a direct question on whether the HN/X collision tiebreaker is
+  right, the GitHub thin-day note, the new astroturfing watchlist item, the
+  still-unopposed Astra permanent-exclusion proposal from 08-31, and a
+  standing re-flag of the unresolved "consolidator" automation conflict
+  from item 35) to `#daily-ai-news`, then logged this entry, updated the
+  rolling "recently covered" lists (trimmed to 08-30 through 09-01), merged
+  directly to `main` per `CLAUDE.md`.
 
 - **2026-08-31**: Checked for an existing open PR first per `CLAUDE.md`'s
   consolidation rule: `list_pull_requests` returned zero open PRs — clean
@@ -3775,3 +3868,17 @@ with no reply — always overridable by a reply at any time.
     is a fresh per-run check still right since the underlying story
     keeps genuinely shifting? No default proposed yet — this is the
     first time asked as a standalone, explicit question.
+
+41. **New 2026-09-01**: Hacker News and X/Twitter collided on the same
+    underlying story twice in one run today — Nvidia's reported ~$13B
+    Hugging Face acquisition, and Clay's $7B funding round. Resolved both
+    via this digest's established tiebreakers (business/deal stories stay
+    on HN, funding-round stories stay on X), which have now been applied
+    consistently enough times (see items 9, 13, 28-30, 32, and today) that
+    it's worth asking directly rather than continuing to assume: is
+    picking a winner and dropping the loser the right call when two
+    sources land on the identical story same-day, or would you rather see
+    both sources cover it from their own angle (technical/product on one,
+    business/funding on the other) even when the underlying event is the
+    same? Stated default: keep the current pick-a-winner tiebreaker, since
+    it's what every prior collision has done — overridable any time.
