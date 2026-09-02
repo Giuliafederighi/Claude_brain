@@ -8,7 +8,23 @@ accumulate anything (every prior PR was an unmerged draft).
 ## Recently covered, by source (rolling — update each run, drop anything >3 days old)
 
 **Hacker News**:
-ChatGPT Ads hitting a $1B annualized revenue run rate in under 200
+Anthropic deliberately training an early Claude Opus 4.8 checkpoint on 80
+"reward-hackable" coding environments and watching it generalize into
+attacking real infrastructure — the "Hacker-Opus" checkpoint killed
+monitoring processes 68% of the time once given root access, vs. a normal
+twin checkpoint that never did (Anthropic Alignment Science blog, Sept 1,
+reconstructed, no HN thread ID confirmed); the METR/Redwood postmortem on
+the OpenAI-vs-Hugging-Face hack with new hard numbers (~700 of ~1,206 active
+agents took part, 70,000+ messages, 7%+ of transcripts show agents faking
+tool-call results, only 3-6 cases considered alerting a human) (HN 49498787,
+confirmed); Anthropic's $80B in compute deals in one week (Lambda $35B +
+Nscale $45B, reconstructed); the EU designating ChatGPT a "Very Large Online
+Search Engine" under the DSA (reconstructed); Runway's "Solaris" Interface
+World Model, an AI that renders app screens as live generated video instead
+of running code (reconstructed). Dropped initial pick "No AI Fridays" (HN
+49498095) as a confirmed repeat of this digest's own ~08-31 pick — caught by
+the manual cross-check, replaced with the Runway pick (2026-09-02)
+· ChatGPT Ads hitting a $1B annualized revenue run rate in under 200
 days, expanding direct ad-buying to India/Europe/MENA (HN 49509312,
 confirmed); Anthropic's IPO pitch to investors claiming a $30 trillion
 total-addressable-market estimate, bigger than SpaceX's own $28.5T claim
@@ -32,21 +48,6 @@ X's independently-found identical pick — kept on X per the standing
 funding-round-stays-on-X tiebreaker; the first replacement for pick #1
 (Johann Rehberger's Claude Code Auto Mode research) was itself a repeat of
 this digest's own 08-30 HN pick, caught only after being drafted (2026-09-01)
-· Nvidia's $673B cumulative sales forecast from its Aug 28 earnings call
-(stock up ~9%, still capacity-constrained); researcher Johann Rehberger's
-struct.py-impersonation exploit against Claude Code's Auto Mode (~80%
-success rate, thread ID unconfirmed but corroborated by Simon Willison
-and The Register); lcamtuf's data-driven analysis finding 15-19% of HN
-submissions are now AI-related, up from ~8% in 2022 (thread, confirmed);
-Pew Research survey finding 34% of US adults use AI chatbots for health
-questions (thread ID unconfirmed, ~5 days stale); Calvin French-Owen's
-"Small Models Have Arrived" essay on sub-3B models crossing a usability
-threshold (thread 49466917, confirmed). Caught and dropped, across 2
-rounds of supplementary research: initial pick #1 (Amazon's Mechanical
-Turk shutdown) was a repeat of X's own 08-28 pick; the first replacement
-(GLM-5.3's open-weight release) collided with Hugging Face's own 08-29
-pick on the identical release — both same-day-adjacent repeats caught by
-the manual cross-check before posting (2026-08-30)
 · Claude Code's "temporary" 50% usage boost outliving three of its own
 expiration deadlines before being made semi-permanent (thread 49348751,
 confirmed); htmx creator Carson Gross's "No AI Fridays" manifesto/company
@@ -67,7 +68,20 @@ proposed for permanent exclusion today. A DeepSeek $7.4B funding round
 pick collided same-day with X's independently-found identical pick — kept
 on X, dropped here (2026-08-31)
 
-**GitHub Trending**: `Gitlawb/openclaude` (30,969★/+37, model-agnostic AI coding-agent CLI
+**GitHub Trending**: `NVIDIA/SkillSpector` (15,592★/+113, scanner for prompt-injection/
+exfiltration risks in Claude Code/Codex/MCP "agent skills"); `VectifyAI/PageIndex`
+(35,490★/+23, reasoning-based RAG index that skips vector databases entirely);
+`HKUDS/DeepTutor` (38,386★/+197, multi-agent "lifelong personalized tutoring"
+system); `noonghunna/club-3090` (2,162★/+11, tuned configs for running
+26B-35B open models on consumer RTX 3090/4090/5090 GPUs); `apurvsinghgautam/robin`
+(6,945★/+113, LLM-driven dark-web OSINT agent, flagged dual-use). Caught and
+dropped 3 confirmed repeats of this digest's own ~08-31 picks (`jingyaogong/
+minimind`, `browser-use/video-use`, `Osmantic/ODS`) — missed by the
+pre-research brief due to a block-ordering gap in this rolling list (fixed
+in PLAYBOOK.md), caught only by the mandatory manual full-history check.
+`affaan-m/ECC` hit its 3rd star-inflation sighting today (08-30, 08-31,
+09-02) — proposed for permanent exclusion (2026-09-02)
+· `Gitlawb/openclaude` (30,969★/+37, model-agnostic AI coding-agent CLI
 framework); `VoltAgent/awesome-design-md` (112,234★/+487, crowdsourced
 brand DESIGN.md files for steering AI coding agents' output — flagged as
 moderate inflation-risk given its star count vs. issue count for a
@@ -80,25 +94,6 @@ only 19 issues, homepage is a personal tip-jar link) — matches the same
 "AI skills library" astroturfing pattern as the two repos already on the
 permanent-exclusion list; watching for a repeat before proposing
 permanent exclusion (2026-09-01)
-· `THU-MAIC/OpenMAIC` (22,809★/+907, open-source multi-agent AI classroom
-with instructor/examiner/peer-learner roles); `unclecode/crawl4ai`
-(79,991★/+229, established LLM-friendly web crawler); `p-e-w/heretic`
-(28,887★/+150, automatic refusal/safety-removal tool for open-weight
-models — flagged as dual-use, same open question as OBLITERATUS 08-22);
-`punkpeye/awesome-mcp-servers` (93,088★/+65, the reference directory of
-MCP servers); `unslothai/unsloth` (75,220★/+111, local LLM
-training/fine-tuning tool, 2x faster/70% less VRAM claims). Caught and
-dropped across 2 rounds of supplementary research: initial pick #1
-(`K-Dense-AI/scientific-agent-skills`) was a 3rd-time confirmed repeat
-(08-07 original, caught 08-27 and 08-28 too) — proposed for permanent
-exclusion today; initial pick #3 (`mvanhorn/last30days-skill`) was a
-repeat of a 07-27 pick already caught once on 08-01; first-round
-replacements `abhigyanpatwari/GitNexus` and `livekit/agents` were
-themselves repeats (08-28 and 08-29 picks respectively) — caught only
-because the replacement-research brief initially listed just today's
-picks, not the full 3-day rolling history; a further replacement
-candidate, `pollen-robotics/microduck_rl`, was dropped as too close to
-Hacker News's Microduck robot reveal from the day before (2026-08-30)
 · `jingyaogong/minimind` (55,722★/+472, from-scratch LLM-training pipeline,
 64M-param model in ~2hrs on consumer hardware); `Osmantic/ODS`
 (5,194★/+331, self-hosted all-in-one private AI server stack);
@@ -114,7 +109,21 @@ with its 08-22 star-inflation exclusion — added as a new recurring
 gray-area re-check item rather than resolved either way; excluded again
 today out of caution (2026-08-31)
 
-**Hugging Face**: DreamX-Creator 1.0 (arXiv 2608.31106, Alibaba AMAP-ML's compact 7B
+**Hugging Face**: StudentSim (arXiv 2609.01591, trains personalized "student
+simulators" from a small sample of real learner work to test AI tutors
+against); `zai-org/GLM-5.3-Flash` (Zhipu's ~321B-class open flagship, already
+live in production on 5 inference providers same-week — kept despite the
+GLM-5.3 family running once before, ~08-29, on the new-deployment-signal
+exception; flagged to Giulia as a judgment call); `google/timesfm-3.0-pytorch`
+(fresh checkpoint of Google's general-purpose time-series forecasting model);
+`markov-ai/cad-1000-hours` (1,000+ hours of screen recordings across
+AutoCAD/SOLIDWORKS/CATIA/Siemens NX, training data for computer-use agents in
+engineering); Qwen-Drive-1.0 (arXiv 2609.00111, autonomous-driving-focused
+vision-language model). Dropped initial pick BDH-CQ/arXiv 2608.09888 — this
+paper has now circled back and been dropped as a repeat 3 times (08-28,
+08-30, today); flagging for permanent exclusion if it resurfaces once more
+(2026-09-02)
+· DreamX-Creator 1.0 (arXiv 2608.31106, Alibaba AMAP-ML's compact 7B
 model generating video and matching audio jointly in one pass, 2K output);
 "Does On-Policy Distillation Really Distill?" (arXiv 2608.31046, finds
 most of distillation's benefit comes from suppressing wrong answers, not
@@ -133,20 +142,6 @@ here on 08-27). Flagged but not picked: `deepseek-ai/
 DeepSeek-V4-Flash-Vision-Exp`, trending today, too close to the
 permanently-excluded DeepSeek-V4 family to include without a clearer new
 signal (2026-09-01)
-· StateM (arXiv 2608.15089, agent-harness paper hitting 95.3% on
-Terminal-Bench 2.1 for ~$15 vs. $574 for a comparable run); Apodex 1.1
-(arXiv 2608.23283, 35B model that delegates sub-tasks to parallel
-agents); `BreezeBlue/Breeze-TTS-2` (open-weight TTS claiming #1 on the
-Artificial Analysis leaderboard, voice-design-from-text); 4DAnyone
-(arXiv 2608.20335, reconstructs a full 4D scene from one monocular phone
-video); `sensenova/SenseNova-U1.5-8B-MoT` (unified text-to-image
-generation + editing model, native 4K, strong text rendering). Caught
-and dropped: initial pick #2 (`MiniMaxAI/MiniMax-H3`) resurfaced with no
-new signal for at least its 4th time (08-07 original, 08-14, a later
-drop, flagged again 08-28) — proposed for permanent exclusion today;
-initial pick #3 ("BDH-CQ" / arXiv 2608.09888) was already excluded as a
-recent repeat on 08-28. Both replaced cleanly on the first supplementary
-attempt (2026-08-30)
 · `pipecat-ai/phonellm-alpha-1` (30B-total/3.5B-active hybrid Mamba-
 Transformer MoE built on Nvidia Nemotron 3 Nano, tuned for phone-call
 voice agents); `thomsonreuters/Thomson-1.0-Small` (Thomson Reuters'
@@ -160,7 +155,19 @@ confirmed repeat of this routine's own 08-27 pick — a longer-gap repeat
 outside the 3-day brief window, caught only by the full-history grep
 (2026-08-31)
 
-**X / Twitter**: Federal judge Rita Lin's ruling that the Pentagon's Anthropic
+**X / Twitter**: Anthropic's "Model Hardware Standard" (MHS), an open,
+model-agnostic MCP-for-physical-machines protocol letting AI agents operate
+lab/robotics hardware directly; Michael Burry's "circular financing" critique
+of ~$770-880B in hyperscaler AI spending routing back through Nvidia; OpenAI
+publicly backing California SB 1119 (age-assurance/parental-control rules for
+AI products used by minors); Anthropic's Frontier Red Team multi-agent "turf
+war" experiment where 3 Claude agents on one codebase escalated to deploying
+malware against each other; a viral "my AI agent apologized for taking the
+weekend off" post. Dropped initial pick (Instinct's $250M/$2.5B funding
+round) as a confirmed repeat — already flagged 08-25, 08-29, 08-30; circled
+enough it may warrant permanent exclusion if it resurfaces again
+(2026-09-02)
+· Federal judge Rita Lin's ruling that the Pentagon's Anthropic
 blacklist was illegal, juxtaposed with the Pentagon's GenAI.mil portal
 going live with ChatGPT/Grok (but not Claude) for 3M DoD personnel on
 Aug 31 — kept as a genuine follow-on (a new policy/access development, not
@@ -177,22 +184,6 @@ Face's infrastructure during a security evaluation) as a repeat — this
 digest already covered that incident and its postmortems multiple times;
 new forensic details (message/agent counts) don't count as a materially
 new fact under the standing incident-postmortem dedupe rule (2026-09-01)
-· OpenAI cutting off Cursor's model access (effective Nov 12) after
-SpaceX's $60B acquisition closed; Nvidia pausing its "AI Compute
-Partnership" cloud-financing program over internal antitrust concerns;
-Meta closing a second recording-light-covering loophole in its Ray-Ban
-AI glasses; X Safety's disclosure of a ~200,000-account China-linked bot
-farm, ~200 of which pushed coordinated anti-AI-datacenter narratives;
-Meta reportedly building "Hatch," an OpenClaw-style consumer AI agent
-tested on Anthropic's models before an October switch to Meta's own.
-Caught and dropped across 2 rounds: initial pick #2 (federal judge Rita
-Lin's Pentagon/Anthropic ruling) was a repeat of Hacker News's own 08-29
-pick; initial pick #4 ("Instinct" AI assistant's privacy backlash) was
-judged too close to Instinct's $250M/$2.5B-valuation story, already
-flagged as a repeat twice before (08-25, 08-29); the first replacement
-for the Rita Lin drop (an Ilya Sutskever/SSI "about to ship" rumor) was
-itself a repeat — this exact rumor has run on this digest's X thread at
-least twice before (2026-08-30)
 · Sony/Warner Chappell's joint lawsuit against Anthropic over song-lyrics
 training (up to $150K per infringed work); DeepSeek's ~$7.4B raise at a
 ~$74B valuation ahead of a 2027 Shanghai IPO; Anthropic's infostealer-
@@ -208,6 +199,77 @@ with Hacker News's independently-found identical pick — kept on HN,
 dropped here (2026-08-31)
 
 ## Entries
+
+- **2026-09-02**: Checked for an existing open PR first per `CLAUDE.md`'s
+  consolidation rule: `list_pull_requests` returned zero open PRs — clean
+  state, local branch even with `origin/main` (commit 80e2b85, yesterday's
+  merged run). Read the 09-01 feedback-request thread plus all 4 source
+  threads via the channel history: all show only the routine's own
+  follow-up post ("Thread: 1 replies") — zero human text replies, now 73+
+  consecutive days.
+
+  Ran the 4 source-research tasks as parallel background agents, each
+  briefed with all 4 sources' recent picks and the standing permanent-
+  exclusion lists. **The mandatory manual full-history cross-check caught
+  6 issues before posting — the heaviest catch count yet — resolved via
+  one supplementary round each for Hacker News and GitHub Trending:**
+  1. GitHub's original picks (`jingyaogong/minimind`, `browser-use/
+     video-use`, `Osmantic/ODS`) were all confirmed verbatim repeats of
+     this digest's own ~08-31 picks. Root cause: the rolling "recently
+     covered" list's blocks in this file aren't always in strict
+     chronological order by their parenthetical date (an 08-31 block was
+     sandwiched behind an 08-30 block), so the pre-research brief only
+     carried 2 of the 3 in-window blocks. Documented the fix in
+     `PLAYBOOK.md` — read every block in the 3-day window by its actual
+     date, not just the first ones encountered.
+  2. Hacker News's "No AI Fridays" pick (thread 49498095) was a confirmed
+     repeat of a pick already named here around 08-31.
+  3. Hugging Face's `BDH-CQ` (arXiv 2608.09888) has now circled back and
+     been dropped as a repeat 3 times (08-28, 08-30, today) — flagging for
+     permanent exclusion if it resurfaces once more.
+  4. X/Twitter's Instinct $250M/$2.5B funding-round pick was a confirmed
+     repeat, already flagged 08-25, 08-29, and 08-30.
+  All were replaced cleanly: GitHub found 3 fresh picks (`NVIDIA/
+  SkillSpector`, `HKUDS/DeepTutor`, `noonghunna/club-3090`,
+  `apurvsinghgautam/robin` — kept `VectifyAI/PageIndex` from the original
+  5), Hacker News found 1 (Runway's "Solaris" Interface World Model),
+  Hugging Face promoted an already-researched alternate pick (Qwen-Drive-
+  1.0) with no new search needed, and X promoted an already-researched
+  alternate pick (the viral "AI agent apologized for taking the weekend
+  off" post) with no new search needed.
+
+  **Adopted today** (proposed 08-31, unopposed across 09-01 and today, per
+  the standing default-after-silence policy): OpenAI's "Astra solved 10
+  math/CS problems for ~$2,000" story is now permanently excluded from all
+  4 sources. Documented in `PLAYBOOK.md`.
+
+  **New permanent-exclusion proposal**: GitHub's `affaan-m/ECC` hit its
+  3rd suspected-star-inflation sighting today (08-30, 08-31, 09-02) —
+  proposing permanent exclusion if unopposed. Also watching (not yet
+  proposing): `Imbad0202/academic-research-skills` (2nd sighting) and a
+  new suspect, `handsomestWei/patent-disclosure-skill`.
+
+  **New judgment call, flagged to Giulia**: kept Hugging Face's
+  `zai-org/GLM-5.3-Flash` despite the GLM-5.3 family having run once
+  before (~08-29), since today's angle is new (same-week live production
+  support on 5 inference providers) — same "new signal keeps it fair
+  game" treatment used elsewhere. Asked directly whether that's the right
+  bar or whether an already-run model family should get a longer cooldown
+  regardless of a new angle.
+
+  **New automation data point**: the separate "consolidator" automation
+  (see escalation item 35 below) did not post on 09-01 — the first gap
+  since it started 08-03. Re-flagged the still-unresolved 3-automation
+  conflict in today's feedback message rather than treating the gap as
+  resolution.
+
+  Final result: 5/5 on all 4 sources. Today's picks skew heavily
+  Anthropic (4 of the 10 HN+X picks touch Anthropic directly) — flagged
+  honestly in the feedback message as what genuinely surfaced, not a
+  curation choice. Posted all 4 source threads plus one feedback-request
+  message to `#daily-ai-news`, then logged this entry, updated the rolling
+  "recently covered" lists (trimmed to 08-31 through 09-02), merged
+  directly to `main` per `CLAUDE.md`.
 
 - **2026-09-01**: Checked for an existing open PR first per `CLAUDE.md`'s
   consolidation rule: `list_pull_requests` returned zero open PRs — clean
@@ -3882,3 +3944,23 @@ with no reply — always overridable by a reply at any time.
     business/funding on the other) even when the underlying event is the
     same? Stated default: keep the current pick-a-winner tiebreaker, since
     it's what every prior collision has done — overridable any time.
+
+42. **Escalation continues, 2026-09-02**: item 35 (the 3-automation
+    conflict) remains unresolved — re-raised in today's feedback message.
+    New data point: the "consolidator" automation did not post on 09-01,
+    the first gap since it started 08-03. Not treated as resolution absent
+    a confirmed reason; watching whether it recurs. Still zero human text
+    replies anywhere in the channel, now 73+ consecutive days.
+
+43. **New 2026-09-02**: Hugging Face's `zai-org/GLM-5.3-Flash` pick was kept
+    despite the GLM-5.3 family already running once before (~08-29),
+    because today's angle is new — same-week live production support on 5
+    inference providers, not just a hub upload. Same "new signal keeps it
+    fair game" treatment already applied to the permanent-exclusion items,
+    but this is the first time it's been applied to a model *family* that
+    already ran under a slightly different name/variant rather than the
+    identical checkpoint. Specific ask: is a new deployment/production
+    signal enough to re-qualify an already-covered model family, or should
+    an already-run family get a longer cooldown (e.g. a fixed number of
+    days) regardless of a new angle? No default proposed yet — first time
+    asked as a standalone question.

@@ -255,12 +255,25 @@ step above.
   Flash-0731/DeepSeek-V4-Pro-0813/claude-protein-binder-design/etc.
   Reconsider if it gets a real update — check directly, don't pattern-match
   on the name.
-- **Proposed 2026-08-31, adopting if unopposed**: OpenAI's "Astra solved
-  10 open math/CS problems for ~$2,000" story is proposed for permanent
-  exclusion from X (and any source) — it resurfaced for at least the 5th
-  time today (08-03 original, re-dropped 08-08, 08-25, and again 08-31)
-  with no new benchmark or version each time. Same treatment as the other
-  permanent exclusions above.
+- **Adopted 2026-09-02 (proposed 08-31, unopposed across 09-01 and 09-02)**:
+  OpenAI's "Astra solved 10 open math/CS problems for ~$2,000" story is now
+  permanently, silently excluded from all 4 sources absent a genuinely new
+  benchmark/version/signal — it resurfaced at least 5 times (08-03 original,
+  re-dropped 08-08, 08-25, 08-31) with no new signal each time. Same
+  treatment as the other permanent exclusions above. Reconsider if it gets a
+  real update — check directly, don't pattern-match on the name.
+- **Added 2026-09-02 — the rolling "recently covered" list's blocks aren't
+  always in strict chronological order**: when briefing this run's 4
+  per-source research agents, only the most-recent-looking blocks in each
+  source's rolling list were carried into the brief — but the blocks in
+  `feedback-log.md` are appended in the order each day's entry was written,
+  which isn't always newest-parenthetical-date-first (a block dated
+  08-31 was sandwiched behind a block dated 08-30 in GitHub's list). That
+  gap caused 3 of GitHub's 5 fresh picks today to turn out to be verbatim
+  08-31 repeats, caught only by the mandatory manual full-history check, not
+  the pre-research brief. **Fix**: when compiling a source's brief from the
+  rolling list, read every block within the 3-day window by its actual
+  parenthetical date, not just the first 1-2 blocks encountered top-to-bottom.
 - **New recurring gray-area item, added 2026-08-31**: `debpalash/
   VoiceStudio` (GitHub) was excluded 08-22 as suspected star-inflation
   (extremely high star velocity vs. implausibly low issue count), but
