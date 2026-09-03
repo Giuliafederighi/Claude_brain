@@ -300,6 +300,34 @@ step above.
   directly before excluding, don't just pattern-match on the name. This
   is GitHub's first permanent-exclusion entry; add further entries here
   as a dedicated GitHub list if more accumulate.
+- **Adopted 2026-09-03 (proposed 09-02, unopposed)**: `affaan-m/ECC`
+  (245K★, only ~131 open issues) and `Imbad0202/academic-research-skills`
+  (44K★, only 19 issues, homepage is a personal tip-jar link) are now
+  permanently, silently excluded from GitHub's picks — each hit its 3rd
+  suspected-star-inflation sighting (ECC: 08-30, 08-31, 09-02; Imbad0202:
+  around 09-01, 09-02, 09-03). Same treatment and threshold as
+  `multica-ai/andrej-karpathy-skills` and `K-Dense-AI/
+  scientific-agent-skills`. Reconsider if either ever shows real
+  commit/issue activity — check directly before excluding, don't just
+  pattern-match on the name.
+- **Adopted 2026-09-03 (default-after-silence; first flagged 07-31,
+  asked directly 08-23, zero reply since)**: `NousResearch/hermes-agent`
+  is now excluded from GitHub's picks by default absent a concrete new
+  development (a named feature launch, a security incident — not just
+  "still trending"). It resurfaced as a candidate 6+ times since 07-31
+  under a different generic framing each time, was asked about directly
+  as a standalone question on 08-23 with no reply since, and on 09-03
+  showed no new angle beyond current star count. Same default-after-
+  silence treatment as other items on this list — always overridable by
+  a reply from Giulia in the feedback thread, and a genuinely new,
+  concrete development is still fair game.
+- **Noted 2026-09-03 — GitHub Trending's star-inflation pattern is
+  worsening**: 7 repos were excluded in one run for the six-figure-
+  star/near-zero-issue signature (previously 1-3/day was typical). Case-
+  by-case exclusion with direct GitHub API verification (star/issue
+  ratio, push recency) remains the approach for now — flagged to Giulia
+  in the 09-03 feedback thread as a trend worth her attention directly,
+  not just a curation footnote.
 - **Recurring gray-area exclusion, not a dedupe repeat**: `Alishahryar1/
   free-claude-code` (a free-tier-API-key-stacking proxy for paid
   coding-agent subscriptions) was excluded 08-23 as ToS-skirting and
