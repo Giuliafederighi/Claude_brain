@@ -205,6 +205,46 @@ new fact under the standing incident-postmortem dedupe rule (2026-09-01)
 
 ## Entries
 
+- **2026-09-04 — routine blocked, no digest posted**: Checked for an
+  existing open PR first per `CLAUDE.md`'s consolidation rule:
+  `list_pull_requests` returned zero open PRs. Confirmed `main` and this
+  session's branch were in sync at PR #69 (09-03's merge) after an initial
+  stale local `git fetch` misread — a second `git fetch origin main`
+  resolved to the correct tip; not a real state-loss, just a fetch-caching
+  hiccup worth remembering if a future run sees local/remote history
+  disagree unexpectedly.
+
+  Before starting the 4 source-research agents, attempted to check the
+  09-03 feedback thread for a reply, per the standing step — every call
+  addressing channel `C0BAAEKT6G7` (`slack_read_channel`,
+  `slack_list_channel_members`) timed out after 60s. `slack_search_channels`
+  (query "daily-ai-news", "daily", "ai" — all including private channels)
+  returned zero results for this channel, and workspace-wide message search
+  for "📰 Daily AI News" surfaced nothing from it either, despite 70+ days
+  of daily posts. As a fast, non-destructive confirmation,
+  `slack_send_message_draft` targeting `C0BAAEKT6G7` returned
+  `channel_not_found` ("may not exist... your app may lack permission to
+  access it"). Ruled out a general private-channel outage: other private
+  channels (`#ext-toptal`, `#dm-multimodal`, etc.) are visible and
+  searchable fine in this same session. This is specific to
+  `#daily-ai-news`.
+
+  **Conclusion: this routine's Slack app has lost access to
+  `#daily-ai-news` entirely (removed from the channel, or the channel
+  itself was deleted/archived/recreated under a new ID) — not a transient
+  timeout.** No digest could be posted today; no research/curation work
+  was done since there is nowhere to deliver it. Did not attempt to
+  redirect the digest to another channel or DM — given item 44's
+  history of automations unilaterally reconfiguring each other's
+  destinations, picking a substitute channel without asking felt like the
+  same mistake, not a fix. Sent a push notification flagging this as
+  blocking and requiring Giulia's action (reinvite the app to the channel,
+  or confirm the channel ID). Logged this entry and added item 44 below;
+  updated `PLAYBOOK.md` with a pre-flight check for future runs. Merging
+  directly to `main` per the standing docs-only-low-risk rule — there's no
+  curated content to risk being wrong about today, just the incident
+  report itself.
+
 - **2026-09-03**: Checked for an existing open PR first per `CLAUDE.md`'s
   consolidation rule: `list_pull_requests` returned zero open PRs — merging
   directly to `main` again. Read the 09-02 feedback-request thread plus all
@@ -4034,3 +4074,31 @@ with no reply — always overridable by a reply at any time.
     an already-run family get a longer cooldown (e.g. a fixed number of
     days) regardless of a new angle? No default proposed yet — first time
     asked as a standalone question.
+
+44. **New 2026-09-04, blocking — this should NOT get a silent default,
+    same treatment as item 35**: `#daily-ai-news` (`C0BAAEKT6G7`) is fully
+    inaccessible to this routine's Slack app as of today — not a slow
+    read, an actual `channel_not_found` on a write probe
+    (`slack_send_message_draft`), zero hits in channel search even with
+    private channels included, and zero hits in workspace message search
+    for this digest's own past posts. Other private channels remain
+    visible and searchable in the same session, so this isn't a general
+    outage — it's specific to this one channel. No digest ran today; there
+    was nothing to post it to. Possible causes, none confirmed from
+    inside this session: the app was removed from the channel, the
+    channel was archived/deleted, or it was recreated under a new ID (a
+    rename in Slack keeps the ID, so a rename alone wouldn't explain
+    this). Given item 35's history of a separate "consolidator" automation
+    unilaterally pausing/reconfiguring this routine's setup, it's worth
+    Giulia checking whether that automation (or anything else) touched
+    this channel, rather than assuming it's unrelated. **Direct ask,
+    same urgency as item 35**: is the channel gone, renamed, or did the
+    app just lose its invite — and could you either re-add the app to
+    `#daily-ai-news` or confirm the channel this routine should be
+    posting to? Re-raise and push-notify every run until this is
+    confirmed fixed; a run that silently keeps failing to post is worse
+    than one that keeps asking. **Process fix adopted for future runs**:
+    before spending effort on the 4 source-research agents, do a cheap
+    connectivity check against the target channel first (e.g.
+    `slack_send_message_draft`, which fails fast with `channel_not_found`
+    rather than timing out like the read tools did) — see `PLAYBOOK.md`.

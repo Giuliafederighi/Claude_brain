@@ -401,6 +401,30 @@ step above.
   repeat) rather than the same stale story, so it stays a per-run dedupe
   check rather than a permanent exclusion.
 
+## Known blocker: `#daily-ai-news` access lost (as of 2026-09-04)
+
+As of 2026-09-04, this routine's Slack app can no longer reach
+`#daily-ai-news` (`C0BAAEKT6G7`) at all — `slack_read_channel` and
+`slack_list_channel_members` against it time out, it doesn't appear in
+`slack_search_channels` even with private channels included, and a
+`slack_send_message_draft` probe against it returns `channel_not_found`.
+Other private channels remain fully visible/accessible in the same
+session, so this is specific to this one channel, not a general outage.
+See `feedback-log.md` item 44 for full diagnostics. **Do not spend a full
+run's worth of research effort before confirming this is fixed.**
+
+**Pre-flight check, run first thing, before the 4 source-research
+agents**: call `slack_send_message_draft` (channel `C0BAAEKT6G7`, any
+placeholder text — it saves privately to drafts, nothing gets posted) or
+try to read the channel. If it returns `channel_not_found` or times out
+the way `slack_read_channel`/`slack_list_channel_members` did on 09-04,
+the channel is still inaccessible: skip curation entirely, log a dated
+entry in `feedback-log.md`, re-raise the still-open ask from item 44, and
+send a push notification — don't silently retry the same failure daily
+without escalating outside Slack, same as item 35's standing rule. Once
+a run confirms real access again (a successful read or post), remove this
+section and fold the resolution into `feedback-log.md`.
+
 ## Known constraint: sandboxed network egress
 
 This session's outbound network goes through a policy-enforced proxy that
