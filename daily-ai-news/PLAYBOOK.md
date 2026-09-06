@@ -401,17 +401,19 @@ step above.
   repeat) rather than the same stale story, so it stays a per-run dedupe
   check rather than a permanent exclusion.
 
-## Known blocker: `#daily-ai-news` access lost (as of 2026-09-04)
+## Known blocker: `#daily-ai-news` access lost (as of 2026-09-04, still open 2026-09-06 — 3rd consecutive day)
 
 As of 2026-09-04, this routine's Slack app can no longer reach
 `#daily-ai-news` (`C0BAAEKT6G7`) at all — `slack_read_channel` and
 `slack_list_channel_members` against it time out, it doesn't appear in
-`slack_search_channels` even with private channels included, and a
-`slack_send_message_draft` probe against it returns `channel_not_found`.
-Other private channels remain fully visible/accessible in the same
-session, so this is specific to this one channel, not a general outage.
-See `feedback-log.md` item 44 for full diagnostics. **Do not spend a full
-run's worth of research effort before confirming this is fixed.**
+`slack_search_channels` even with private or archived channels included,
+and a `slack_send_message_draft` probe against it returns
+`channel_not_found`. Other private channels remain fully visible/accessible
+in the same session, so this is specific to this one channel, not a general
+outage. Confirmed identically on 09-04, 09-05, and 09-06 — this is a
+sustained outage, not a transient blip. See `feedback-log.md` item 44 for
+full diagnostics. **Do not spend a full run's worth of research effort
+before confirming this is fixed.**
 
 **Pre-flight check, run first thing, before the 4 source-research
 agents**: call `slack_send_message_draft` (channel `C0BAAEKT6G7`, any
