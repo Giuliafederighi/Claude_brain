@@ -205,6 +205,28 @@ new fact under the standing incident-postmortem dedupe rule (2026-09-01)
 
 ## Entries
 
+- **2026-09-06 — routine blocked again, 3rd consecutive day, no digest
+  posted**: Ran the pre-flight connectivity check first, per `PLAYBOOK.md`:
+  `slack_send_message_draft` against `C0BAAEKT6G7` again returned
+  `channel_not_found`; `slack_read_channel` timed out the same way it did
+  09-04/09-05; `slack_search_channels` for "daily-ai-news" returned zero
+  matches even with `include_archived: true`. Identical symptoms 3 days
+  running now rules out any remaining chance this was a transient blip —
+  the channel has been gone or unreachable for at least 3 days straight.
+
+  No source curation attempted — nowhere to post it. Checked for an
+  existing open PR first per `CLAUDE.md`'s consolidation rule: found
+  09-05's PR #71 still open as a draft, merged it directly to `main`
+  (squash) rather than adding a 3rd parallel branch, then based today's
+  entry on the updated `main`. Sent a push notification and also DM'd
+  Giulia directly in Slack (self-DM, same fallback as 09-05) with a
+  status summary, since a notification alone leaves no record inside
+  Slack for her to find later. Re-raising item 44 below with the 3rd-day
+  status — still needs her to check from the Slack admin/workspace side
+  whether the channel was archived, deleted, renamed, or the app simply
+  lost its invite, since nothing inside this session can distinguish
+  those causes or fix them.
+
 - **2026-09-05 — routine blocked again, 2nd consecutive day, no digest
   posted**: Ran the pre-flight connectivity check added to `PLAYBOOK.md`
   yesterday before touching the 4 source-research agents:
@@ -4140,3 +4162,11 @@ with no reply — always overridable by a reply at any time.
     Slack for her to find later. No new information on cause (app
     removed vs. channel deleted/recreated) — still needs her to check
     from the Slack admin side.
+    **Still open, 2026-09-06 (3rd consecutive day)**: identical
+    `channel_not_found` on the same probe, `slack_read_channel` timeout,
+    and zero `slack_search_channels` hits even with `include_archived:
+    true`. Three days of fully identical symptoms rules out a transient
+    blip. Pushed a notification and DM'd Giulia directly again. No new
+    diagnostic information available from inside this session — the
+    remaining unknowns (archived vs. deleted vs. app uninstalled/
+    re-invited) can only be resolved from the Slack admin/workspace side.
