@@ -205,6 +205,32 @@ new fact under the standing incident-postmortem dedupe rule (2026-09-01)
 
 ## Entries
 
+- **2026-09-05 — routine blocked again, 2nd consecutive day, no digest
+  posted**: Ran the pre-flight connectivity check added to `PLAYBOOK.md`
+  yesterday before touching the 4 source-research agents:
+  `slack_send_message_draft` against `C0BAAEKT6G7` again returned
+  `channel_not_found`. `slack_search_channels` for "daily-ai-news",
+  "ai-news", and "ai news" found zero matches for this channel (the only
+  hit for "ai-news" is a *different* channel, `#ai-news` /
+  `C0BND4DQTGF`, created 2026-08-07 by Tonon — not this routine's
+  channel and not something to redirect to without Giulia confirming).
+  Workspace-wide message search for "Daily AI News" turned up nothing
+  posted to `#daily-ai-news` since before 09-04 either — consistent with
+  the channel being genuinely gone, not a permissions flap that cleared
+  overnight. Confirmed there's no open PR (`list_pull_requests` empty)
+  and that `main`/this session's branch are in sync at PR #70's merge
+  (6168b58) — no state-loss this time, clean fetch.
+
+  No source curation attempted, same reasoning as yesterday: nowhere to
+  post it. Sent a push notification again — this is exactly the
+  no-silent-default item (44) the playbook flags, and a second
+  consecutive silent day would be worse than a repeat ask. Also DM'd
+  Giulia directly in Slack (fallback channel, same precedent as the
+  08-15 Newsly incident) since a push notification alone doesn't leave a
+  record inside Slack itself. Logged this entry, updated item 44 below
+  with the 2nd-day status, and am merging this directly to `main` per
+  the standing docs-only-low-risk rule.
+
 - **2026-09-04 — routine blocked, no digest posted**: Checked for an
   existing open PR first per `CLAUDE.md`'s consolidation rule:
   `list_pull_requests` returned zero open PRs. Confirmed `main` and this
@@ -4102,3 +4128,15 @@ with no reply — always overridable by a reply at any time.
     connectivity check against the target channel first (e.g.
     `slack_send_message_draft`, which fails fast with `channel_not_found`
     rather than timing out like the read tools did) — see `PLAYBOOK.md`.
+    **Still open, 2026-09-05 (2nd consecutive day)**: identical
+    `channel_not_found` on the same probe; `slack_search_channels` still
+    returns zero hits for this channel under any of "daily-ai-news",
+    "ai-news", "ai news" (the only "ai-news"-adjacent hit is a distinct,
+    unrelated channel `#ai-news` / `C0BND4DQTGF` created 08-07 by Tonon —
+    not assumed to be a replacement without Giulia confirming it). This
+    rules out a same-day transient blip; the outage has now lasted at
+    least 2 days. Pushed a notification again and also DM'd Giulia
+    directly in Slack, since a notification alone leaves no trace inside
+    Slack for her to find later. No new information on cause (app
+    removed vs. channel deleted/recreated) — still needs her to check
+    from the Slack admin side.
