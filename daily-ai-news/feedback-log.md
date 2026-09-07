@@ -4170,3 +4170,17 @@ with no reply — always overridable by a reply at any time.
     diagnostic information available from inside this session — the
     remaining unknowns (archived vs. deleted vs. app uninstalled/
     re-invited) can only be resolved from the Slack admin/workspace side.
+    **Still open, 2026-09-07 (4th consecutive day)**: ran the pre-flight
+    check first, before any source research, per the standing process fix.
+    Identical `channel_not_found` on `slack_send_message_draft` against
+    `C0BAAEKT6G7`, and `slack_search_channels` for "daily-ai-news" still
+    returns zero hits (public and private channels both included). No
+    source research was run today — no point curating a digest with
+    nowhere confirmed to post it. Four days of byte-for-byte identical
+    symptoms with zero new diagnostic information available from inside
+    this session; the cause (app uninstalled, channel archived/deleted, or
+    recreated under a new ID) can only be confirmed from the Slack
+    admin/workspace side. Pushed a notification again per the standing
+    no-silent-default rule for this item. Not re-attempting the same probe
+    more than once per run per the playbook's guidance to avoid spending
+    full-run effort against a confirmed-broken channel.
