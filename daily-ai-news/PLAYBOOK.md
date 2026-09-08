@@ -401,7 +401,7 @@ step above.
   repeat) rather than the same stale story, so it stays a per-run dedupe
   check rather than a permanent exclusion.
 
-## Known blocker: `#daily-ai-news` access lost (as of 2026-09-04, still open 2026-09-06 — 3rd consecutive day)
+## Known blocker: `#daily-ai-news` access lost (as of 2026-09-04, still open 2026-09-08 — 5th consecutive day)
 
 As of 2026-09-04, this routine's Slack app can no longer reach
 `#daily-ai-news` (`C0BAAEKT6G7`) at all — `slack_read_channel` and
