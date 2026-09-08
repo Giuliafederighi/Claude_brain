@@ -4184,3 +4184,13 @@ with no reply — always overridable by a reply at any time.
     no-silent-default rule for this item. Not re-attempting the same probe
     more than once per run per the playbook's guidance to avoid spending
     full-run effort against a confirmed-broken channel.
+    **Still open, 2026-09-08 (5th consecutive day)**: ran the pre-flight
+    check first, per the standing process fix. Identical `channel_not_found`
+    on `slack_send_message_draft` against `C0BAAEKT6G7`, and
+    `slack_search_channels` for "daily-ai-news" (public and private
+    included) returns zero hits. No source research was run today — same
+    reasoning as 09-07, no point curating a digest with nowhere confirmed to
+    post it. Five days of byte-for-byte identical symptoms, zero new
+    diagnostic information available from inside this session. Pushed a
+    notification again per the standing no-silent-default rule for this
+    item.
