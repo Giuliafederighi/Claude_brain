@@ -4194,3 +4194,27 @@ with no reply — always overridable by a reply at any time.
     diagnostic information available from inside this session. Pushed a
     notification again per the standing no-silent-default rule for this
     item.
+    **Escalated, 2026-09-09 (6th consecutive day) — the symptom changed**:
+    today the Slack MCP connector itself is not authenticated in this
+    session at all — it appears in the session's "requires authentication
+    before its tools can be used" list, meaning **no Slack tool of any
+    kind is callable this run** (not even against other, unrelated private
+    channels). This is a step beyond every prior day's symptom (09-04
+    through 09-08 all had a working, authenticated Slack session that
+    specifically couldn't reach `C0BAAEKT6G7` while every other channel
+    stayed reachable). Two readings, can't distinguish from inside this
+    session: (a) this is the same underlying problem finally surfacing as
+    a full connector drop instead of a single-channel one, or (b) it's a
+    new, separate issue (the workspace OAuth grant for this Slack
+    connector expired or was revoked) layered on top of the original one.
+    Either way this needs the same admin-side fix as items 35/44 always
+    have: **the Slack connector needs to be reauthorized** (per this
+    session's own tooling guidance: via `claude mcp` or `/mcp` in an
+    interactive session, or the connector's settings if this is wired up
+    as a claude.ai connector) before any further diagnosis from inside a
+    run is possible. No source research run today, same reasoning as
+    09-07/09-08. Pushed a notification again per the standing
+    no-silent-default rule — flagging the connector-level escalation
+    specifically, since "re-add the app to the channel" (the ask on file
+    since item 44 opened) may no longer be the right fix if the whole
+    connector is disconnected.
