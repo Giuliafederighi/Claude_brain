@@ -401,19 +401,30 @@ step above.
   repeat) rather than the same stale story, so it stays a per-run dedupe
   check rather than a permanent exclusion.
 
-## Known blocker: `#daily-ai-news` access lost (as of 2026-09-04, still open 2026-09-08 — 5th consecutive day)
+## Known blocker: `#daily-ai-news` access lost (as of 2026-09-04, still open 2026-09-09 — 6th consecutive day, symptom escalated)
 
-As of 2026-09-04, this routine's Slack app can no longer reach
+As of 2026-09-04, this routine's Slack app could no longer reach
 `#daily-ai-news` (`C0BAAEKT6G7`) at all — `slack_read_channel` and
 `slack_list_channel_members` against it time out, it doesn't appear in
 `slack_search_channels` even with private or archived channels included,
 and a `slack_send_message_draft` probe against it returns
-`channel_not_found`. Other private channels remain fully visible/accessible
-in the same session, so this is specific to this one channel, not a general
-outage. Confirmed identically on 09-04, 09-05, and 09-06 — this is a
-sustained outage, not a transient blip. See `feedback-log.md` item 44 for
-full diagnostics. **Do not spend a full run's worth of research effort
-before confirming this is fixed.**
+`channel_not_found`. Other private channels remained fully visible/accessible
+in the same session, so through 09-08 this looked specific to this one
+channel, not a general outage. Confirmed identically on 09-04 through 09-08.
+
+**Update 2026-09-09**: the symptom escalated — the Slack connector itself
+was not authenticated in this session at all (it showed up in the
+session's "requires authentication" list), meaning no Slack tool of any
+kind was callable, not just the one channel. This may be the same
+underlying issue finally surfacing as a full connector drop, or a separate
+new problem (expired/revoked OAuth grant). Either way, the fix now needed
+is **reauthorizing the Slack connector** (via `claude mcp`/`/mcp` in an
+interactive session, or the connector's settings page), not just re-adding
+the app to a channel. See `feedback-log.md` item 44 for full diagnostics.
+**Do not spend a full run's worth of research effort before confirming
+this is fixed — always run the pre-flight check first, and if Slack tools
+aren't even present/authenticated this run, skip straight to logging and
+notifying rather than attempting the channel-level probe.**
 
 **Pre-flight check, run first thing, before the 4 source-research
 agents**: call `slack_send_message_draft` (channel `C0BAAEKT6G7`, any
