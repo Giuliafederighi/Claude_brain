@@ -4218,3 +4218,19 @@ with no reply — always overridable by a reply at any time.
     specifically, since "re-add the app to the channel" (the ask on file
     since item 44 opened) may no longer be the right fix if the whole
     connector is disconnected.
+    **Still open, 2026-09-10 (7th consecutive day)**: ran the pre-flight
+    check first, per the standing process fix. The Slack connector is
+    still listed as unauthenticated for this session — confirmed via the
+    session's own "requires authentication" listing and a `ToolSearch` for
+    any Slack tool, which returned zero results (no `mcp__Slack__*` tools
+    exist to call, not even to attempt the channel-level probe). Same
+    connector-level symptom as 09-09, one more day with zero change — this
+    is now 7 consecutive days blocked (4 single-channel `channel_not_found`
+    days, 09-04 through 09-08, then 2 full-connector-unauthenticated days,
+    09-09 and 09-10). No source research run today, same reasoning as
+    prior days in this streak. Pushed a notification again per the
+    standing no-silent-default rule. Re-stating the ask plainly since it
+    hasn't changed in 2 days: the Slack connector for this workspace needs
+    to be reauthorized (`claude mcp`/`/mcp` interactively, or the
+    connector's settings page) before this routine can post or even read
+    `#daily-ai-news` again.
