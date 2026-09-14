@@ -4284,3 +4284,21 @@ with no reply — always overridable by a reply at any time.
     interactively, or the connector's settings page) before this routine
     can post or even read `#daily-ai-news` again — ten days in, this is
     clearly not going to self-resolve inside a scheduled run.
+    **Still open, 2026-09-14 (11th consecutive day)**: ran the pre-flight
+    check first, per the standing process fix. This session's own tool
+    listing again shows Slack under "requires authentication," and a
+    `ToolSearch` for "slack" returned zero `mcp__Slack__*` tools (only an
+    unrelated Notion tool matched the keyword) — byte-for-byte the same
+    connector-level symptom as 09-09 through 09-13, now a 6th consecutive
+    day with zero change. No source research run today, same reasoning as
+    every day since 09-07 — no point curating 20 picks with nowhere
+    confirmed to post them. This is now 11 consecutive days blocked in
+    total (09-04 through 09-14): 5 single-channel `channel_not_found` days
+    (09-04–09-08), then 6 full-connector-unauthenticated days
+    (09-09–09-14). Pushed a notification again per the standing
+    no-silent-default rule. The ask is unchanged: the Slack connector for
+    this workspace needs to be reauthorized (`claude mcp`/`/mcp`
+    interactively, or the connector's settings page) before this routine
+    can post or even read `#daily-ai-news` again — eleven days in with
+    zero change across six identical checks, this now looks less like a
+    transient outage and more like an unowned or forgotten reauth step.
