@@ -4319,3 +4319,15 @@ with no reply — always overridable by a reply at any time.
     now confirms this is an org-level `needs_reconnect` state, not a
     session-local auth gap) before this routine can post or even read
     `#daily-ai-news` again.
+    **New this run**: acted on `CLAUDE.md`'s "merge and move on" default
+    for docs-only PRs — updated PR #80 in place (title/body now reflect
+    both the 09-14 and 09-15 entries) instead of opening a new draft, then
+    attempted to merge it directly. The merge call failed: `405 Pull
+    Request is still a draft`, and no `mcp__github__*` tool in this
+    session can mark a PR ready-for-review (only create/merge/update
+    exist, no undraft). So PR #80 stays open as a draft despite the
+    "merge and move on" instruction — not a silent skip, a real tool gap.
+    Future runs: keep updating PR #80 in place (right call, avoids the
+    17-PR pileup from before), but the actual merge-to-main needs either
+    Giulia manually clicking "Ready for review" + merge on GitHub, or a
+    session with a tool that can undraft a PR.
