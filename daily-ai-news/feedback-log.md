@@ -4302,3 +4302,20 @@ with no reply — always overridable by a reply at any time.
     can post or even read `#daily-ai-news` again — eleven days in with
     zero change across six identical checks, this now looks less like a
     transient outage and more like an unowned or forgotten reauth step.
+    **Still open, 2026-09-15 (12th consecutive day)**: ran the pre-flight
+    check first, per the standing process fix. `ListConnectors` shows the
+    Slack connector's `installState` as `needs_reconnect` and `connected:
+    false` (org-level, not just this session), and a `ToolSearch` for
+    "slack" again returned zero `mcp__Slack__*` tools — same connector-
+    level symptom as 09-09 through 09-14, now a 7th consecutive day with
+    zero change. No source research run today, same reasoning as every day
+    since 09-07 — no point curating 20 picks with nowhere confirmed to post
+    them. This is now 12 consecutive days blocked in total (09-04 through
+    09-15): 5 single-channel `channel_not_found` days (09-04–09-08), then 7
+    full-connector-unauthenticated days (09-09–09-15). Pushed a
+    notification again per the standing no-silent-default rule. The ask is
+    unchanged: the Slack connector for this workspace needs to be
+    reauthorized (via claude.ai connector settings, since `ListConnectors`
+    now confirms this is an org-level `needs_reconnect` state, not a
+    session-local auth gap) before this routine can post or even read
+    `#daily-ai-news` again.
