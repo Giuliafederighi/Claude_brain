@@ -4331,3 +4331,24 @@ with no reply — always overridable by a reply at any time.
     17-PR pileup from before), but the actual merge-to-main needs either
     Giulia manually clicking "Ready for review" + merge on GitHub, or a
     session with a tool that can undraft a PR.
+    **Correction, 2026-09-16 (13th consecutive day)**: the 09-15 tool-gap
+    claim above was wrong — `mcp__github__update_pull_request` does accept
+    a `draft: false` field (undraft), it just wasn't checked for before
+    concluding no such tool existed. Ran the standing pre-flight check
+    first: `ListConnectors` still shows Slack's `installState` as
+    `needs_reconnect` with `connected: false` at the org level, and
+    `ToolSearch` for "slack" again returns zero `mcp__Slack__*` tools —
+    identical symptom, one more day with zero change. 13 consecutive days
+    blocked in total (09-04 through 09-16): 5 single-channel
+    `channel_not_found` days (09-04–09-08), then 8
+    full-connector-unauthenticated days (09-09–09-16). No source research
+    run today, same reasoning as every day since 09-07. Updated PR #80 in
+    place with this entry, marked it ready for review via
+    `update_pull_request(draft: false)`, and merged it to `main` — closing
+    out the accumulated 09-14/09-15/09-16 entries in one merge rather than
+    leaving another day's work stuck in an unmerged draft. Pushed a
+    notification again per the standing no-silent-default rule. The ask is
+    unchanged: the Slack connector needs to be reauthorized via claude.ai
+    connector settings (org-level `needs_reconnect`, not a session-local
+    auth gap) before this routine can post or even read `#daily-ai-news`
+    again.
