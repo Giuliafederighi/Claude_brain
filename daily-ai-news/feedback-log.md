@@ -4284,3 +4284,71 @@ with no reply — always overridable by a reply at any time.
     interactively, or the connector's settings page) before this routine
     can post or even read `#daily-ai-news` again — ten days in, this is
     clearly not going to self-resolve inside a scheduled run.
+    **Still open, 2026-09-14 (11th consecutive day)**: ran the pre-flight
+    check first, per the standing process fix. This session's own tool
+    listing again shows Slack under "requires authentication," and a
+    `ToolSearch` for "slack" returned zero `mcp__Slack__*` tools (only an
+    unrelated Notion tool matched the keyword) — byte-for-byte the same
+    connector-level symptom as 09-09 through 09-13, now a 6th consecutive
+    day with zero change. No source research run today, same reasoning as
+    every day since 09-07 — no point curating 20 picks with nowhere
+    confirmed to post them. This is now 11 consecutive days blocked in
+    total (09-04 through 09-14): 5 single-channel `channel_not_found` days
+    (09-04–09-08), then 6 full-connector-unauthenticated days
+    (09-09–09-14). Pushed a notification again per the standing
+    no-silent-default rule. The ask is unchanged: the Slack connector for
+    this workspace needs to be reauthorized (`claude mcp`/`/mcp`
+    interactively, or the connector's settings page) before this routine
+    can post or even read `#daily-ai-news` again — eleven days in with
+    zero change across six identical checks, this now looks less like a
+    transient outage and more like an unowned or forgotten reauth step.
+    **Still open, 2026-09-15 (12th consecutive day)**: ran the pre-flight
+    check first, per the standing process fix. `ListConnectors` shows the
+    Slack connector's `installState` as `needs_reconnect` and `connected:
+    false` (org-level, not just this session), and a `ToolSearch` for
+    "slack" again returned zero `mcp__Slack__*` tools — same connector-
+    level symptom as 09-09 through 09-14, now a 7th consecutive day with
+    zero change. No source research run today, same reasoning as every day
+    since 09-07 — no point curating 20 picks with nowhere confirmed to post
+    them. This is now 12 consecutive days blocked in total (09-04 through
+    09-15): 5 single-channel `channel_not_found` days (09-04–09-08), then 7
+    full-connector-unauthenticated days (09-09–09-15). Pushed a
+    notification again per the standing no-silent-default rule. The ask is
+    unchanged: the Slack connector for this workspace needs to be
+    reauthorized (via claude.ai connector settings, since `ListConnectors`
+    now confirms this is an org-level `needs_reconnect` state, not a
+    session-local auth gap) before this routine can post or even read
+    `#daily-ai-news` again.
+    **New this run**: acted on `CLAUDE.md`'s "merge and move on" default
+    for docs-only PRs — updated PR #80 in place (title/body now reflect
+    both the 09-14 and 09-15 entries) instead of opening a new draft, then
+    attempted to merge it directly. The merge call failed: `405 Pull
+    Request is still a draft`, and no `mcp__github__*` tool in this
+    session can mark a PR ready-for-review (only create/merge/update
+    exist, no undraft). So PR #80 stays open as a draft despite the
+    "merge and move on" instruction — not a silent skip, a real tool gap.
+    Future runs: keep updating PR #80 in place (right call, avoids the
+    17-PR pileup from before), but the actual merge-to-main needs either
+    Giulia manually clicking "Ready for review" + merge on GitHub, or a
+    session with a tool that can undraft a PR.
+    **Correction, 2026-09-16 (13th consecutive day)**: the 09-15 tool-gap
+    claim above was wrong — `mcp__github__update_pull_request` does accept
+    a `draft: false` field (undraft), it just wasn't checked for before
+    concluding no such tool existed. Ran the standing pre-flight check
+    first: `ListConnectors` still shows Slack's `installState` as
+    `needs_reconnect` with `connected: false` at the org level, and
+    `ToolSearch` for "slack" again returns zero `mcp__Slack__*` tools —
+    identical symptom, one more day with zero change. 13 consecutive days
+    blocked in total (09-04 through 09-16): 5 single-channel
+    `channel_not_found` days (09-04–09-08), then 8
+    full-connector-unauthenticated days (09-09–09-16). No source research
+    run today, same reasoning as every day since 09-07. Updated PR #80 in
+    place with this entry, marked it ready for review via
+    `update_pull_request(draft: false)`, and merged it to `main` — closing
+    out the accumulated 09-14/09-15/09-16 entries in one merge rather than
+    leaving another day's work stuck in an unmerged draft. Pushed a
+    notification again per the standing no-silent-default rule. The ask is
+    unchanged: the Slack connector needs to be reauthorized via claude.ai
+    connector settings (org-level `needs_reconnect`, not a session-local
+    auth gap) before this routine can post or even read `#daily-ai-news`
+    again.
